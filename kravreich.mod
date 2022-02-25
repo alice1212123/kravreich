@@ -17,5 +17,4 @@ tags={
 name="KRAVREICH OFFICAL"
 picture="thumbnail.png"
 supported_version="1.9.3"
-remote_file_id="2116438833"
 path="workshop/content/281990/2116438833/"
