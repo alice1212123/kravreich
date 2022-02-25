@@ -1,0 +1,37 @@
+
+state={
+	id=33
+	name="STATE_33"
+
+	history={
+		owner = FRA
+		victory_points = {
+			651 1 
+		}
+		victory_points = {
+			3655 1 
+		}
+		victory_points = {
+			620 5 
+		}
+		victory_points = {
+			629 2 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = FRA
+		add_core_of = OCC
+
+	}
+
+	provinces={
+		620 625 629 651 669 3621 3626 3655 3659 6651 9629 11596 11869 
+	}
+	manpower=636400
+	buildings_max_level_factor=1.000
+	state_category=town
+}

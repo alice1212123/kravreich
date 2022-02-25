@@ -1,0 +1,490 @@
+﻿
+division_template = {
+	name = "División de Infantería"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "División de Reserva"
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "División de Caballería"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "División Mecanizada"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "División Guardia Imperial"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+        motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "División de Infantería Naval"
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "División Indio"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+        mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+        mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+
+
+
+units = {
+
+	division= {	
+		name = "1. División de Infantería Naval"
+		location = 12810
+		division_template = "División de Infantería Naval"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "1. División Mecanizada"
+		location = 10337
+		division_template = "División Mecanizada"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "2. División Mecanizada"
+		location = 10337
+		division_template = "División Mecanizada"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "3. División Mecanizada"
+		location = 10337
+		division_template = "División Mecanizada"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "1. División Guardia Imperial"
+		location = 1965
+		division_template = "División Guardia Imperial"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "2. División Guardia Imperial"
+		location = 1965
+		division_template = "División Guardia Imperial"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "3. División Guardia Imperial"
+		location = 1965
+		division_template = "División Guardia Imperial"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "1. División de Caballería"
+		location = 8236
+		division_template = "División de Caballería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "1. División de Reserva"
+		location = 4908
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "2. División de Reserva"
+		location = 9814
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "3. División de Reserva"
+		location = 9671
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "4. División de Reserva"
+		location = 9713
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "5. División de Reserva"
+		location = 610
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "6. División de Reserva"
+		location = 1562
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "7. División de Reserva"
+		location = 8097
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "8. División de Reserva"
+		location = 12835
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "9. División de Reserva"
+		location = 8032
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "10. División de Reserva"
+		location = 8057
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "11. División de Reserva"
+		location = 10889
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "12. División de Reserva"
+		location = 2021
+		division_template = "División de Reserva"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "1. División de Infantería"
+		location = 12486
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "2. División de Infantería"
+		location = 12486
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "3. División de Infantería"
+		location = 12486
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "4. División de Infantería"
+		location = 5001
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "5. División de Infantería"
+		location = 5001
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "6. División de Infantería"
+		location = 5001
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "7. División de Infantería"
+		location = 12848
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "8. División de Infantería"
+		location = 12848
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "9. División de Infantería"
+		location = 12848
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "10. División de Infantería"
+		location = 10783
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "11. División de Infantería"
+		location = 10783
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "12. División de Infantería"
+		location = 10783
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	
+	division= {	
+		name = "1. División Indio"
+		location = 10642
+		division_template = "División Indio"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	
+	division= {	
+		name = "2. División Indio"
+		location = 10642
+		division_template = "División Indio"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	
+	division= {	
+		name = "3. División Indio"
+		location = 10642
+		division_template = "División Indio"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	
+	navy = {
+		name = "Imperial Navy"
+		base = 12810
+		location = 12810
+		ship = { name = "Antonio López I" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MEX } } }				
+		ship = { name = "Manuel I" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MEX } } }				
+		ship = { name = "Santa Anna" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }		
+		ship = { name = "Mexico City" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }		
+		ship = { name = "Veracruz" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }		
+		ship = { name = "Los Angeles" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }		
+		ship = { name = "San Francisco" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }		
+	}
+}
+
+air_wings = {
+	### Fuerza Aérea Mexicana -- Mexico City
+	277 = {
+		# CAS Air Group -- de Haviland DH-4Bs
+		CAS_equipment_1 =  {
+			owner = "MEX" 
+			amount = 12
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "MEX"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "MEX" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "MEX" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "MEX"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 13
+	}
+}

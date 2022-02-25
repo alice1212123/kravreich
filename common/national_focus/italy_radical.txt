@@ -1,0 +1,1055 @@
+focus_tree = {
+	id = italy_radical
+	country = {
+		factor = 0
+	}
+
+	shared_focus = ITA_matters_of_the_state
+
+        focus = {
+		id = ITA_a_red_italy
+		icon = GFX_focus_unkown
+		x = 75
+		y = 2
+		cost = 1
+		available_if_capitulated = no
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_the_sicilian_issue
+		icon = GFX_focus_unkown
+		x = 52
+		y = 7
+		cost = 10
+		available_if_capitulated = no
+                available = {
+                has_country_flag = "The Referendum Has Been Held"
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+         }
+
+        focus = {
+		id = ITA_tame_the_south
+		icon = GFX_focus_unkown
+		x = 56
+		y = 8
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_the_sicilian_issue }
+                mutually_exclusive = { focus = ITA_please_the_south }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_replace_the_southern_governors
+		icon = GFX_focus_unkown
+		x = 58
+		y = 9
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_tame_the_south }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_enforced_patriotism
+		icon = GFX_focus_unkown
+		x = 57
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_replace_the_southern_governors }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_listen_or_else
+		icon = GFX_focus_unkown
+		x = 59
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_replace_the_southern_governors }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_daily_patrols
+		icon = GFX_focus_unkown
+		x = 58
+		y = 11
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_listen_or_else }
+                prerequisite = { focus = ITA_enforced_patriotism }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_crackdown_on_the_mafia
+		icon = GFX_focus_unkown
+		x = 54
+		y = 9
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_tame_the_south }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_increase_military_garrisons
+		icon = GFX_focus_unkown
+		x = 54
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_crackdown_on_the_mafia }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_subdue_the_loud_mouths
+		icon = GFX_focus_unkown
+		x = 54
+		y = 11
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_increase_military_garrisons }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_a_tamed_south
+		icon = GFX_focus_unkown
+		x = 56
+		y = 12
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_subdue_the_loud_mouths }
+                prerequisite = { focus = ITA_daily_patrols }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_a_nation_united
+		icon = GFX_focus_unkown
+		x = 52
+		y = 13
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_a_tamed_south OR = ITA_a_pleased_south }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_plough_the_fields
+		icon = GFX_focus_unkown
+		x = 52
+		y = 14
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_a_nation_united  }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_steel_factories
+		icon = GFX_focus_unkown
+		x = 51
+		y = 15
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_plough_the_fields }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_sythetic_rubber
+		icon = GFX_focus_unkown
+		x = 51
+		y = 16
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_steel_factories }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_all_roads_lead_to_rome
+		icon = GFX_focus_unkown
+		x = 53
+		y = 15
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_plough_the_fields }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_synthetic_fuel
+		icon = GFX_focus_unkown
+		x = 53
+		y = 16
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_all_roads_lead_to_rome }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_factory_complexes
+		icon = GFX_focus_unkown
+		x = 52
+		y = 17
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_synthetic_fuel }
+                prerequisite = { focus = ITA_sythetic_rubber }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_second_industrial_revolution
+		icon = GFX_focus_unkown
+		x = 52
+		y = 18
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_factory_complexes }
+                prerequisite = { focus = ITA_increase_the_living_standards }
+                prerequisite = { focus = ITA_help_the_homeless } 
+                prerequisite = { focus = ITA_further_investments }
+                prerequisite = { focus = ITA_northern_wealth }
+                prerequisite = { focus = ITA_lombardian_munitions_plants }
+                prerequisite = { focus = ITA_reconfigure_car_factories }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_northern_industry
+		icon = GFX_focus_unkown
+		x = 58
+		y = 14
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_a_nation_united }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_standardize_wages
+		icon = GFX_focus_unkown
+		x = 56
+		y = 15
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_northern_industry }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_venitian_aluminum_factories
+		icon = GFX_focus_unkown
+		x = 60
+		y = 15
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_northern_industry }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_support_northern_buisiness
+		icon = GFX_focus_unkown
+		x = 58
+		y = 16
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_venitian_aluminum_factories }
+                prerequisite = { focus = ITA_standardize_wages }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_lombardian_munitions_plants
+		icon = GFX_focus_unkown
+		x = 58
+		y = 17
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_support_northern_buisiness }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_northern_wealth
+		icon = GFX_focus_unkown
+		x = 56
+		y = 17
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_support_northern_buisiness }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_reconfigure_car_factories
+		icon = GFX_focus_unkown
+		x = 60
+		y = 17
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_support_northern_buisiness }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_southern_industry
+		icon = GFX_focus_unkown
+		x = 46
+		y = 14
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_a_nation_united  }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_support_the_farmers
+		icon = GFX_focus_unkown
+		x = 44
+		y = 15
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_southern_industry }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_invest_in_the_palermo_port
+		icon = GFX_focus_unkown
+		x = 48
+		y = 15
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_southern_industry }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_support_southern_business
+		icon = GFX_focus_unkown
+		x = 46
+		y = 16
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_invest_in_the_palermo_port }
+                prerequisite = { focus = ITA_support_the_farmers }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_help_the_homeless
+		icon = GFX_focus_unkown
+		x = 46
+		y = 17
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_support_southern_business }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_increase_the_living_standards
+		icon = GFX_focus_unkown
+		x = 48
+		y = 17
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_support_southern_business }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_further_investments
+		icon = GFX_focus_unkown
+		x = 44
+		y = 17
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_support_southern_business }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+
+         focus = {
+		id = ITA_please_the_south
+		icon = GFX_focus_unkown
+		x = 48
+		y = 8
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_the_sicilian_issue }
+                mutually_exclusive = { focus = ITA_tame_the_south }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_negotiate_with_the_mafia
+		icon = GFX_focus_unkown
+		x = 50
+		y = 9
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_please_the_south }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_loyalty_benefits
+		icon = GFX_focus_unkown
+		x = 50
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_negotiate_with_the_mafia }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_minor_tax_reductions
+		icon = GFX_focus_unkown
+		x = 50
+		y = 11
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_loyalty_benefits }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_southern_investments
+		icon = GFX_focus_unkown
+		x = 46
+		y = 9
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_please_the_south }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_listen_to_the_people
+		icon = GFX_focus_unkown
+		x = 47
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_southern_investments }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_unemployment_benefits
+		icon = GFX_focus_unkown
+		x = 45
+		y = 10
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_southern_investments }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_encourage_northern_italian_migrants
+		icon = GFX_focus_unkown
+		x = 46
+		y = 11
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_unemployment_benefits }
+                prerequisite = { focus = ITA_listen_to_the_people }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_a_pleased_south
+		icon = GFX_focus_unkown
+		x = 48
+		y = 12
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_encourage_northern_italian_migrants }
+                prerequisite = { focus = ITA_minor_tax_reductions }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_incorporate_the_unions
+		icon = GFX_focus_unkown
+		x = 73
+		y = 3
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_a_red_italy }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_what_about_the_capitalists
+		icon = GFX_focus_unkown
+		x = 77
+		y = 3
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_a_red_italy }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_gramsci's_speech
+		icon = GFX_focus_unkown
+		x = 75
+		y = 4
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_what_about_the_capitalists }
+                prerequisite = { focus = ITA_incorporate_the_unions }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_a_workers_paradise
+		icon = GFX_focus_unkown
+		x = 75
+		y = 5
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_gramsci's_speech }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+ 
+         focus = {
+		id = ITA_nation
+		icon = GFX_focus_unkown
+		x = 75
+		y = 6
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_a_workers_paradise }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+        focus = {
+		id = ITA_religion
+		icon = GFX_focus_unkown
+		x = 73
+		y = 6
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_a_workers_paradise }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+ 
+         focus = {
+		id = ITA_family
+		icon = GFX_focus_unkown
+		x = 77
+		y = 6
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_a_workers_paradise }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_state_communes
+		icon = GFX_focus_unkown
+		x = 75
+		y = 7
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_family }
+                prerequisite = { focus = ITA_religion }
+                prerequisite = { focus = ITA_nation }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_banish_the_fascists
+		icon = GFX_focus_unkown
+		x = 71
+		y = 8
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_state_communes }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_empty_the_slums
+		icon = GFX_focus_unkown
+		x = 75
+		y = 8
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_state_communes }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_public_works_program
+		icon = GFX_focus_unkown
+		x = 79
+		y = 8
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_state_communes }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_radical_defense_battalions
+		icon = GFX_focus_unkown
+		x = 77
+		y = 9
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_public_works_program }
+                prerequisite = { focus = ITA_empty_the_slums }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_radical_research_initiative
+		icon = GFX_focus_unkown
+		x = 73
+		y = 9
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_banish_the_fascists }
+                prerequisite = { focus = ITA_empty_the_slums }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_red_mediterranean
+		icon = GFX_focus_unkown
+		x = 75
+		y = 10
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_radical_research_initiative }
+                prerequisite = { focus = ITA_radical_defense_battalions }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_make_the_undesirables_work
+		icon = GFX_focus_unkown
+		x = 75
+		y = 11
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_red_mediterranean }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_every_citizen_a_solider
+		icon = GFX_focus_unkown
+		x = 73
+		y = 11
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_red_mediterranean }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_professional_spies
+		icon = GFX_focus_unkown
+		x = 77
+		y = 11
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_red_mediterranean }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_red_utopia
+		icon = GFX_focus_unkown
+		x = 75
+		y = 12
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_professional_spies }
+                prerequisite = { focus = ITA_every_citizen_a_solider }
+                prerequisite = { focus = ITA_make_the_undesirables_work }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_spread_the_revolution
+		icon = GFX_focus_unkown
+		x = 75
+		y = 13
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_red_utopia }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_contact_the_turkish_radicals
+		icon = GFX_focus_unkown
+		x = 75
+		y = 14
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_spread_the_revolution }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_contact_the_spanish_radicals
+		icon = GFX_focus_unkown
+		x = 73
+		y = 14
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_spread_the_revolution }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_contact_the_croatian_radicals
+		icon = GFX_focus_unkown
+		x = 77
+		y = 14
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_spread_the_revolution }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_agitate_piedmont
+		icon = GFX_focus_unkown
+		x = 75
+		y = 15
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_contact_the_croatian_radicals }
+                prerequisite = { focus = ITA_contact_the_spanish_radicals }
+                prerequisite = { focus = ITA_contact_the_turkish_radicals }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_demand_malta
+		icon = GFX_focus_unkown
+		x = 73
+		y = 16
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_agitate_piedmont }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_demand_ticino
+		icon = GFX_focus_unkown
+		x = 77
+		y = 16
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_agitate_piedmont }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }
+
+         focus = {
+		id = ITA_eastern_claims
+		icon = GFX_focus_unkown
+		x = 75
+		y = 17
+		cost = 1
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_demand_ticino }
+                prerequisite = { focus = ITA_demand_malta }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }

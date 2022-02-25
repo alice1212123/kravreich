@@ -1,0 +1,93 @@
+﻿
+add_namespace = deluge_magic
+
+# Mystic requests permission to create a Department of Gnostic Conjuration and Experimental Thaumaturgy
+
+country_event = {
+
+    id = deluge_magic.1
+    title = deluge_magic1title
+    desc = deluge_magic1desc
+
+	trigger = {
+		has_idea = generic_supernatural_mystic
+		NOT = {
+			has_country_flag = flag_department_magic_requested
+		}
+		NOT = {
+			has_country_flag = flag_department_magic_accepted
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	immediate = {
+		set_country_flag = flag_department_magic_requested
+	}
+	
+	option = {
+		name = deluge_magic1opta
+
+		set_country_flag = flag_department_magic_accepted
+		
+		custom_effect_tooltip = tooltip_magic_department_accept
+		
+		hidden_effect = {
+			add_ideas = deluge_paranormal_institution_idea
+		}
+		
+		add_political_power = -25
+	}
+	
+	option = {
+		name = deluge_magic1optb
+		
+		custom_effect_tooltip = tooltip_magic_department_refuse
+	}
+
+}
+
+# Mystic begins abducting university critics of his department
+
+country_event = {
+
+    id = deluge_magic.2
+    title = deluge_magic2title
+    desc = deluge_magic2desc
+
+	trigger = {
+		has_idea = generic_supernatural_mystic
+		has_country_flag = flag_department_magic_accepted
+		NOT = {
+			has_country_flag = flag_magic_department_abductions
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	immediate = {
+		set_country_flag = flag_magic_department_abductions
+	}
+	
+	option = {
+		name = deluge_magic2opta
+
+		set_country_flag = flag_magic_vetting
+		
+		custom_effect_tooltip = tooltip_magic_vetting_accept
+	}
+	
+	option = {
+		name = deluge_magic2optb
+		
+		custom_effect_tooltip = tooltip_magic_vetting_refuse
+		
+		add_timed_idea = { idea = deluge_disappearing_researchers_idea days = 90 }
+	}
+
+}
+

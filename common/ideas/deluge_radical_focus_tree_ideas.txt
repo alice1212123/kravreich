@@ -1,0 +1,319 @@
+ideas = {
+
+	country = {
+
+		deluge_new_bureaucracy_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = trotskyite_plot
+			
+			modifier = {
+				communism_drift = 0.1
+				political_power_factor = 0.15
+			}
+		}
+
+		deluge_old_bureaucracy_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				communism_drift = -0.1
+				political_power_factor = 0.05
+			}
+		}
+		
+		deluge_collectives_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				communism_drift = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		deluge_cooperatives_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_local_self_management
+			
+			modifier = {
+				democratic_drift = 0.05
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		deluge_communes_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				neutrality_drift = 0.05
+				conscription = 0.005
+				consumer_goods_factor = -0.03
+			}
+		}
+		
+		deluge_industrial_cartels_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				communism_drift = 0.05
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		
+		deluge_synarchism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				fascism_drift = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		deluge_new_economic_policy_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = ROM_king_carol_ii_hedonist
+			
+			modifier = {
+				democratic_drift = 0.05
+				global_building_slots_factor = 0.2
+			}
+		}
+		
+		deluge_independent_courts_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+			
+			modifier = {
+				democratic_drift = 0.1
+				drift_defence_factor = 0.5
+				foreign_subversive_activites = -0.5
+			}
+		}
+		
+		deluge_party_run_courts_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = nkvd
+			
+			modifier = {
+				democratic_drift = -0.1
+				drift_defence_factor = 0.5
+				foreign_subversive_activites = -0.5
+			}
+		}
+		
+		deluge_attract_foreign_credit_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = new_deal
+			
+			modifier = {
+				communism_drift = -0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		deluge_great_leap_forwards_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = home_of_revolution
+			
+			modifier = {
+				communism_drift = 0.05
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		
+		deluge_autonomy_for_minorities_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				communism_drift = 0.05
+				conscription = 0.005
+			}
+		}
+		
+		deluge_assimilate_minorities_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				fascism_drift = 0.05
+				resistance_damage_to_garrison = -0.5
+			}
+		}
+		
+		deluge_women_in_the_workforce_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = deluge_women_workforce
+			
+			modifier = {
+				communism_drift = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				conscription = 0.005
+			}
+		}
+		
+		deluge_universal_education_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor	 = 0.03
+			}
+		}
+		
+		deluge_housing_collectives = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				stability_factor = 0.05
+			}
+		}
+		
+		
+		deluge_radical_internationalism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_acceptance = 90
+				join_faction_tension = -0.30
+				communism_drift = 0.15
+				guarantee_cost = -0.5
+				license_purchase_cost = -0.5
+			}
+		}
+
+		deluge_radical_social_patriotism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				fascism_drift = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		deluge_politburo_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = saf_soviet_advisers
+			
+			modifier = {
+				communism_drift = 0.05
+				political_advisor_cost_factor = -0.3
+			}
+		}		
+	}
+}

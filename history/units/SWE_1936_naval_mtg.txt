@@ -1,0 +1,119 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Kungliga Svenska Marinen"			
+		naval_base = 6050 # Stockholm
+		task_force = {				
+			name = "Kustflottan"
+			location = 6050 # Stockholm
+			ship = { name = "HMS Dristigheten" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Sverige Class" } } }				
+			ship = { name = "HMS Örnen" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ehrensköld Class" } } }		
+			ship = { name = "HMS Jacob Bagge" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ehrensköld Class" } } }		
+			ship = { name = "HMS Clas Fleming" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Frøya Class" } } }				
+		}
+		task_force = { 
+			name = "1a Eskadern"
+			location = 11215 # Karlskrona
+			ship = { name = "HMS Gustaf V" pride_of_the_fleet = yes definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Sverige Class" } } }				
+			ship = { name = "HMS Sverige" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Sverige Class" } } }				
+			ship = { name = "HMS Drottning Victoria" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Sverige Class" } } }				
+			ship = { name = "HMS Gotland" definition = light_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gotland Class" } } }				
+			# 1. Jagarflottiljen				
+			ship = { name = "HMS Klas Horn" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ehrensköld Class" } } }		
+			ship = { name = "HMS Klas Uggla" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ehrensköld Class" } } }		
+			ship = { name = "HMS Ehrensköld" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ehrensköld Class" } } }		
+			ship = { name = "HMS Nordenskjöld" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ehrensköld Class" } } }		
+		}
+		task_force = { 
+			name = "Ålandshavseskader"
+			location = 408 # Gotland
+			ship = { name = "HMS Äran" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Sverige Class" } } }				
+			ship = { name = "HMS Tapperheten" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Sverige Class" } } }				
+		}
+		task_force = { 
+			name = "Karlskrona Avdelningen"
+			location = 11215 # Karlskrona
+			ship = { name = "HMS Wasa" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Sverige Class" } } }				
+			ship = { name = "HMS Manligheten" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Sverige Class" } } }
+			# 1. Ubatsflottiljen				
+			ship = { name = "HMS Draken" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_2 = { amount = 1 owner = SWE version_name = "Draken Class" } } }
+			ship = { name = "HMS Gripen" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_2 = { amount = 1 owner = SWE version_name = "Draken Class" } } }
+			ship = { name = "HMS Ulven" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_2 = { amount = 1 owner = SWE version_name = "Draken Class" } } }
+		}
+		task_force = { 
+			name = "Göteborgs Eskadern"
+			location = 383 # Göteborg
+			ship = { name = "HMS Oscar II" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Sverige Class" } } }				
+			ship = { name = "HMS Fylgia" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Norge Class" } } }				
+			# 2. Ubatsflottiljen				
+			ship = { name = "HMS Hajen" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }
+			ship = { name = "HMS Sälen" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }
+			ship = { name = "HMS Valrossen" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }
+			# 3. Ubatsflottiljen				
+			ship = { name = "HMS Bävern" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }
+			ship = { name = "HMS Illern" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }
+			ship = { name = "HMS Uttern" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }
+			ship = { name = "HMS Valen" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Valen Class" } } }
+		}
+		task_force = {
+			name = "Danske Eskadern"
+			location = 6287  # Copenhagen			
+			ship = { name = "HMS Niels Iuel" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Norge Class" } } }
+			ship = { name = "HMS Peder Skram" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Norge Class" } } }
+			ship = { name = "HMS Rota" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }			
+			ship = { name = "HMS Bellona" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }		
+			ship = { name = "HMS Flora" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }
+			ship = { name = "HMS Daphne" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }
+			ship = { name = "HMS Dryaden" definition = submarine start_experience_factor = 0.1  equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "Hajen Class" } } }
+		}				
+	}
+	
+	fleet = {
+		name = "Kongelige Norske Marine"			
+		naval_base = 9296 # Kristiansand
+		task_force = {					
+			name = "1. Sjøforsvarsdistrikt"				
+			location =  9296 # Kristiansand
+			ship = { name = "HMS Harald Haarfagre" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Norge Class" } } }				
+			ship = { name = "HMS Tordenskjold" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Norge Class" } } }				
+			ship = { name = "HMS Göteborg" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_2 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }
+			ship = { name = "HMS Frøya" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Frøya Class" } } }
+			ship = { name = "HMS Narvik" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Draug Class" } } }
+			ship = { name = "HMS Sundsvall" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Draug Class" } } }
+		}					
+		task_force = {
+			name = "2. Sjøforsvarsdistrikt"				
+			location =  122 # Bergen
+			# 1st Destroyer Detachment
+			ship = { name = "HMS Draug" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Draug Class" } } }
+			ship = { name = "HMS Troll" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Draug Class" } } }
+			ship = { name = "HMS Garm" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Draug Class" } } }
+		}					
+		task_force = {					
+			name = "3. Sjøforsvarsdistrikt"				
+			location =  11050 # Tromso
+			ship = { name = "HMS Norge" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Norge Class" } } }				
+			ship = { name = "HMS Eidsvold" definition = heavy_cruiser start_experience_factor = 0.1  equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Norge Class" } } }				
+			ship = { name = "HMS Stavanger" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Draug Class" } } }
+			ship = { name = "HMS Karlstad" definition = destroyer start_experience_factor = 0.1  equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Draug Class" } } }
+		}					
+	}
+
+}
+
+
+### Starting Production ###
+instant_effect = {
+	### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "SWE"
+			version_name = "Göteborg Class"
+		}
+		name = "HMS Olaf Tryggvason" 
+		requested_factories = 6
+		progress = 0.50
+	}
+}

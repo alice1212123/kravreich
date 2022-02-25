@@ -1,0 +1,71 @@
+USA_rep_internal_conflicts = {
+	
+	icon = GFX_icon_usa_rep_pop_front_cat
+
+	allowed = {
+		original_tag = USA
+		has_completed_focus = america_deluge_the_revolution
+	}
+
+	priority = {
+		base = 10
+	}
+
+	scripted_gui = usa_rep_conflicts_decision_gui	
+
+	visible_when_empty = yes
+
+	visible = {
+		original_tag = USA
+		has_completed_focus = america_deluge_the_revolution
+		is_subject = no
+	}
+}
+
+USA_mar_internal_conflicts = {
+	
+	icon = GFX_icon_usa_rep_pop_front_cat
+
+	allowed = {
+		original_tag = MAR
+		has_completed_focus = america_deluge_bostongover
+	}
+
+	priority = {
+		base = 10
+	}
+
+	scripted_gui = usa_maritim_conflicts_decision_gui	
+
+	visible_when_empty = yes
+
+	visible = {
+		original_tag = MAR
+		has_completed_focus = america_deluge_bostongover
+		is_subject = no
+	}
+}
+
+USA_csa_internal_conflicts = {
+	
+	icon = GFX_icon_usa_rep_pop_front_cat
+
+	allowed = {
+		original_tag = CSA
+		has_completed_focus = america_deluge_dixie_start
+	}
+
+	priority = {
+		base = 10
+	}
+
+	scripted_gui = usa_dixieland_conflicts_decision_gui	
+
+	visible_when_empty = yes
+
+	visible = {
+		original_tag = CSA
+		has_completed_focus = america_deluge_dixie_start
+		is_subject = no
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=321
+	name="STATE_321"
+	manpower = 5533952
+
+	state_category = town
+
+	history={
+		owner = NEP
+		buildings = {
+			arms_factory = 1
+			infrastructure = 5
+			1273 ={
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			1273 1
+		}
+		add_core_of = NEP
+		add_core_of = RAJ
+		add_core_of = BHU
+	}
+
+	provinces={
+		1273 4395 12295 7250 4291 7411 10259 10799 12208 4278 12105 7395
+	}
+}

@@ -1,0 +1,7 @@
+state_categories={
+	developing = {
+		local_building_slots = 3
+	
+		color = { 250 130 30 }
+	}
+}

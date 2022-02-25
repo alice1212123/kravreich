@@ -1,0 +1,34 @@
+
+state={
+	id=813
+	name="STATE_813"
+	manpower = 225276
+	resources={
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = URC
+		buildings = {
+			infrastructure = 4
+			4624 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = URC
+		add_core_of = PAN
+		add_core_of = GCB
+		victory_points = {
+			4611 1
+		}
+		victory_points = {
+			4624 3
+		}
+
+	}
+
+	provinces={
+		4611 4624 1633
+	}
+}

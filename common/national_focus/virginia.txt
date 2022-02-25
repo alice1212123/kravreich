@@ -1,0 +1,305 @@
+focus_tree = {
+	id = deluge_america_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = CSA
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = yes
+	
+	focus = {
+		id = america_deluge_dixie_start
+		icon = GFX_focus_usa_dixie
+		x = 5
+		y = 0
+		cost = 1
+		will_lead_to_war_with = USA
+		completion_reward = {
+			country_event = {
+				id = deluge_csa.2
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_dixie_defend
+		icon = GFX_focus_dixie_flag
+		x = 2
+		y = 1
+		cost = 3
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_dixie_start
+		}
+		mutually_exclusive = {
+			focus = america_deluge_dixie_attack
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_csa.3
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = america_deluge_dixie_defend_richmond
+		icon = GFX_focus_def_richmond
+		x = 1
+		y = 2
+		cost = 3
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_dixie_defend
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_csa.4
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_dixie_traditional_warfare
+		icon = GFX_goal_generic_army_artillery
+		x = 3
+		y = 2
+		cost = 3
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_dixie_defend
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = deluge_dixie_trad_army
+				days = 200
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = america_deluge_patton
+		icon = GFX_focus_patton
+		x = 5
+		y = 2
+		cost = 4
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_dixie_start
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_csa.8
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_organied_army
+		icon = GFX_focus_paramilitary
+		x = 4
+		y = 3
+		cost = 2
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_patton
+		}
+		prerequisite = {
+			focus = america_deluge_dixie_traditional_warfare
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = deluge_dixie_org_army
+				days = 90
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = america_deluge_dixie_attack
+		icon = GFX_focus_dixie_attack
+		x = 8
+		y = 1
+		cost = 3
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_dixie_start
+		}
+		mutually_exclusive = {
+			focus = america_deluge_dixie_defend
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_csa.9
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = america_deluge_dixie_ford
+		icon = GFX_focus_ford
+		x = 9
+		y = 2
+		cost = 2
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_dixie_attack
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_csa.10
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = america_deluge_aggressive_army
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 7
+		y = 2
+		cost = 2
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_dixie_attack
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = deluge_dixie_oof_army
+				days = 150
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = america_deluge_lighting_army
+		icon = GFX_focus_crush_usa
+		x = 6
+		y = 3
+		cost = 2
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_patton
+		}
+		prerequisite = {
+			focus = america_deluge_aggressive_army
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = deluge_dixie_gotta_go_fast_army
+				days = 90
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = america_deluge_kill_usa
+		icon = GFX_focus_killreds
+		x = 5
+		y = 4
+		cost = 1
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_lighting_army
+			focus = america_deluge_organied_army
+		}
+		
+		bypass = {
+			OR = {
+				has_war_with = USA
+				USA = {
+					exists = no
+				}
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+    			target = USA
+    			type = annex_everything
+			}
+			add_timed_idea = {
+				idea = deluge_atacker_advantage
+				days = 20
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = 2ACW
+					}
+				}
+				set_global_flag = 2ACW
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+
+
+
+
+}

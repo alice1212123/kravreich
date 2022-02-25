@@ -1,0 +1,36 @@
+
+state={
+	id=463
+	name="STATE_463"
+	manpower = 67500
+	
+	state_category = pastoral
+
+	history={
+		owner = BCA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 1
+			13091 = {
+				naval_base = 1
+			}
+			13090 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = BCA
+		victory_points = {
+			13090 1
+		}
+		victory_points = {
+			13091 2
+		}
+
+	}
+
+	provinces={
+		1135 1830 4833 4848 7855 7884 10679 10694 12661 13069 13090 13091
+	}
+	
+}

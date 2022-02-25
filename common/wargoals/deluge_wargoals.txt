@@ -1,0 +1,24 @@
+wargoal_types = {	
+	deluge_annex = {
+		# PREV = original target country
+		# ROOT = goal owner country
+
+		war_name = WAR_NAME
+
+		allowed = {
+			always = no
+		}
+		
+		available = {
+		
+		}
+		
+		take_states = {
+			
+		}
+		
+		threat = 1
+		annex_threat_factor = 0.1
+		annex_cost = -75
+	}
+}

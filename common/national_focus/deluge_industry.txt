@@ -1,0 +1,849 @@
+
+# Economic/industrial
+	
+shared_focus = {
+	id = deluge_architects
+	icon = GFX_goal_generic_position_armies
+	x = 13
+	y = 0
+	cost = 10
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			name = construction_tech
+			category = construction_tech
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_production_lines
+	icon = GFX_goal_generic_production2
+	prerequisite = { focus = deluge_architects }
+	x = 0
+	y = 1
+	relative_position_id = deluge_architects
+	cost = 10
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			name = industrial_bonus
+			category = industry
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_time_and_motion
+	icon = GFX_goal_generic_consumer_goods
+	prerequisite = { focus = deluge_production_lines }
+	x = 0
+	y = 1
+	relative_position_id = deluge_production_lines
+	cost = 10
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			name = industrial_bonus
+			category = industry
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_synthetic_oils
+	icon = GFX_goal_generic_army_motorized
+	prerequisite = { focus = deluge_time_and_motion }
+	x = 0
+	y = 1
+	relative_position_id = deluge_time_and_motion
+	cost = 10
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			name = industrial_bonus
+			category = industry
+		}
+		add_tech_bonus = {
+			bonus = 2.0
+			uses = 1
+			name = synth_resources
+			category = synth_resources
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_resource_efficiency
+	icon = GFX_goal_generic_construction2
+	x = 2
+	y = 0
+	relative_position_id = deluge_architects
+	cost = 10
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			name = construction_tech
+			category = construction_tech
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_develop_steel
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = deluge_resource_efficiency }
+	x = 0
+	y = 1
+	relative_position_id = deluge_resource_efficiency
+	cost = 10
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				is_in_home_area = yes
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_advanced_alloys
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = deluge_develop_steel }
+	x = 0
+	y = 1
+	relative_position_id = deluge_develop_steel
+	cost = 10
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				is_in_home_area = yes
+			}
+			add_resource = {
+				type = steel
+				amount = 4
+			}
+			add_resource = {
+				type = chromium
+				amount = 2
+			}
+			add_resource = {
+				type = tungsten
+				amount = 2
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_fossil_fuels
+	icon = GFX_goal_generic_oil_refinery
+	prerequisite = { focus = deluge_advanced_alloys }
+	x = 0
+	y = 1
+	relative_position_id = deluge_advanced_alloys
+	cost = 10
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			name = construction_tech
+			category = construction_tech
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				is_in_home_area = yes
+			}
+			add_resource = {
+				type = oil
+				amount = 4
+			}
+			add_resource = {
+				type = aluminium
+				amount = 4
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_infrastructure
+	icon = GFX_goal_generic_construct_infrastructure
+	x = 2
+	y = 0
+	relative_position_id = deluge_resource_efficiency
+	cost = 10
+	bypass = {
+		all_owned_state = {			
+			free_building_slots = {
+				building = infrastructure
+				size < 1
+			}
+		}
+	}
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_civilian_industry
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = deluge_infrastructure }
+	x = 0
+	y = 1
+	relative_position_id = deluge_infrastructure
+	cost = 10
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_military_industry
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = deluge_civilian_industry }
+	x = 0
+	y = 1
+	relative_position_id = deluge_civilian_industry
+	cost = 10
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_more_industry
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = deluge_military_industry }
+	x = 0
+	y = 1
+	relative_position_id = deluge_military_industry
+	cost = 10
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_electronics_research
+	icon = GFX_focus_research
+	x = 2
+	y = 0
+	relative_position_id = deluge_infrastructure
+	cost = 10
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			name = electronics
+			category = electronics
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_radar_research
+	icon = GFX_goal_generic_radar
+	prerequisite = { focus = deluge_electronics_research }
+	x = 0
+	y = 1
+	relative_position_id = deluge_electronics_research
+	cost = 10
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			name = radar_tech
+			category = radar_tech
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_encryption_research
+	icon = GFX_goal_generic_propaganda
+	prerequisite = { focus = deluge_radar_research }
+	x = 0
+	y = 1
+	relative_position_id = deluge_radar_research
+	cost = 10
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			name = encryption_tech
+			category = encryption_tech
+			category = decryption_tech
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_electronics_industry
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = deluge_encryption_research }
+	x = 0
+	y = 1
+	relative_position_id = deluge_encryption_research
+	cost = 10
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			name = electronics
+			category = electronics
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_production_management_agency
+	icon = GFX_focus_generic_license_production
+	prerequisite = { focus = deluge_synthetic_oils }
+	x = 0
+	y = 1
+	relative_position_id = deluge_synthetic_oils
+	cost = 5
+	completion_reward = {
+		add_ideas = deluge_production_management_agency_idea
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+
+shared_focus = {
+	id = deluge_land_management_agency
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus = deluge_fossil_fuels }
+	x = 0
+	y = 1
+	relative_position_id = deluge_fossil_fuels
+	cost = 5
+	completion_reward = {
+		add_ideas = deluge_land_management_agency_idea
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_public_works_agency
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = deluge_more_industry }
+	x = 0
+	y = 1
+	relative_position_id = deluge_more_industry
+	cost = 5
+	completion_reward = {
+		add_ideas = deluge_public_works_agency_idea
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_defence_research_agency
+	icon = GFX_focus_rocketry
+	prerequisite = { focus = deluge_electronics_industry }
+	x = 0
+	y = 1
+	relative_position_id = deluge_electronics_industry
+	cost = 5
+	completion_reward = {
+		add_ideas = deluge_defence_research_agency_idea
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_military_industrial_complex
+	icon = GFX_focus_wonderweapons
+	prerequisite = {
+		focus = deluge_production_management_agency
+		focus = deluge_land_management_agency
+		focus = deluge_public_works_agency
+		focus = deluge_defence_research_agency
+	}
+	available = {
+		num_of_factories > 30
+	}		
+	x = 1
+	y = 1
+	relative_position_id = deluge_land_management_agency
+	cost = 20
+	completion_reward = {
+		add_research_slot = 1
+		add_war_support = 0.05
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}
+
+shared_focus = {
+	id = deluge_war_machine
+	icon = GFX_goal_generic_CAS
+	prerequisite = { focus = deluge_military_industrial_complex }
+	available = {
+		num_of_factories > 60
+	}		
+	x = 0
+	y = 1
+	relative_position_id = deluge_military_industrial_complex
+	cost = 20
+	completion_reward = {
+		add_research_slot = 1
+		add_war_support = 0.05
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+}

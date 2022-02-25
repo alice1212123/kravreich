@@ -1,0 +1,26 @@
+
+state={
+	id=421
+	name="STATE_421"
+	resources={
+		steel=1.000
+	}
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = PER
+		add_core_of = KUR
+
+	}
+
+	provinces={
+		829 1822 4943 5050 5098 9816 10774 12773 
+	}
+	manpower=780278
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

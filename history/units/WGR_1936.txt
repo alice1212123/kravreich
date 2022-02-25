@@ -1,0 +1,400 @@
+﻿division_template = {
+	name = "Königliche-Freikorps"
+
+	division_names_group = WGR_GAR_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Ersatz-Division"
+
+	division_names_group = WGR_GAR_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Infanterie-Division"
+
+	division_names_group = WGR_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Königliche-Kavallerie"
+
+	division_names_group = WGR_CAV_01
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+        cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Panzer-Division"
+
+	division_names_group = WGR_ARM_01
+	
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Infanterie-Division (Mot.)"
+
+	division_names_group = WGR_MOT_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+        motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Gebirgs-Division"
+
+	division_names_group = WGR_MTN_01
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+        mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+        mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division= {	
+		#name = "1. Panzer-Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 200
+		}
+		location = 589
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+	}
+	
+	division= {	
+		#name = "1. Infanterie-Division"
+		location = 6444 # Stuttgart
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "2. Infanterie-Division"
+		location = 9486 # Augsburg
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "3. Infanterie-Division"
+		location = 3524 # Munich
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "4. Infanterie-Division"
+		location = 9515 # Regensburg
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "1. Königliche-Kavallerie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 11533
+		division_template = "Königliche-Kavallerie"
+		start_experience_factor = 0.5
+	}
+	
+	division= {	
+		#name = "2. Königliche-Kavallerie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 564
+		division_template = "Königliche-Kavallerie"
+		start_experience_factor = 0.5
+	}
+	
+	division= {	
+		#name = "3. Königliche-Kavallerie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location = 9524
+		division_template = "Königliche-Kavallerie"
+		start_experience_factor = 0.5
+	}
+	
+	division= {	
+		#name = "4. Königliche-Kavallerie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
+		location = 3561
+		division_template = "Königliche-Kavallerie"
+		start_experience_factor = 0.5
+	}
+		
+	division= {	
+		#name = "1. Königliche-Freikorps"
+		location = 425
+		division_template = "Königliche-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.1
+	}
+		
+	division= {	
+		#name = "2. Königliche-Freikorps"
+		location = 6582
+		division_template = "Königliche-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.1
+	}
+		
+	division= {	
+		#name = "3. Königliche-Freikorps"
+		location = 11545
+		division_template = "Königliche-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.1
+	}
+		
+	division= {	
+		#name = "4. Königliche-Freikorps"
+		location = 6441
+		division_template = "Königliche-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.1
+	}
+		
+	division= {	
+		#name = "5. Königliche-Freikorps"
+		location = 514
+		division_template = "Königliche-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.1
+	}
+		
+	division= {	
+		#name = "6. Königliche-Freikorps"
+		location = 573
+		division_template = "Königliche-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.1
+	}
+		
+	division= {	
+		#name = "7. Königliche-Freikorps"
+		location = 514
+		division_template = "Königliche-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.1
+	}
+		
+	division= {	
+		#name = "8. Königliche-Freikorps"
+		location = 3535
+		division_template = "Königliche-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.1
+	}
+		
+	division= {	
+		#name = "9. Königliche-Freikorps"
+		location = 482
+		division_template = "Königliche-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.1
+	}
+		
+	division= {	
+		#name = "10. Königliche-Freikorps"
+		location = 11404
+		division_template = "Königliche-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.1
+	}
+		
+	division= {	
+		#name = "1. Ersatz-Division"
+		location = 11417
+		division_template = "Ersatz-Division"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.2
+	}
+	
+	division= {	
+		#name = "2. Ersatz-Division"
+		location = 11544
+		division_template = "Ersatz-Division"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.2
+	}
+	
+	division= {	
+		#name = "3. Ersatz-Division"
+		location = 692
+		division_template = "Ersatz-Division"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "WGR" } }
+		start_experience_factor = 0.2
+	}
+}
+
+air_wings = {
+	52 = {
+		fighter_equipment_0 =  {
+			owner = "WGR" 
+			amount = 17
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "WGR" 
+			amount = 10
+		}
+	}
+}
+	
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "WGR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "WGR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "WGR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "WGR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "WGR"
+		}
+		requested_factories = 4
+		progress = 0.1
+		efficiency = 50
+	}
+}
+
+#####################

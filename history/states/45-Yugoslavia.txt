@@ -1,0 +1,31 @@
+
+state={
+	id=45
+	name="STATE_45"
+
+	history={
+		owner = HUN
+		set_variable = {
+			language = 7
+
+		}
+		buildings = {
+			infrastructure = 8
+
+		}
+		add_core_of = CRO
+		add_core_of = SER
+		add_core_of = HUN
+		victory_points = {
+			619 3 
+		}
+
+	}
+
+	provinces={
+		619 3617 3623 6643 9621 11787 
+	}
+	manpower=1026200
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

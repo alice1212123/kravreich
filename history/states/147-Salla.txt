@@ -1,0 +1,27 @@
+
+state={
+	id=147
+	name="STATE_147"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SOV
+		add_core_of = FIN
+		add_core_of = WSR
+		victory_points = {
+			197 1 
+		}
+
+	}
+
+	provinces={
+		197 6128 9158 11030 11085 
+	}
+	manpower=4630
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

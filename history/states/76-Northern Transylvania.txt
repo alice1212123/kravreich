@@ -1,0 +1,32 @@
+
+state={
+	id=76
+	name="STATE_76"
+
+	history={
+		owner = ROM
+		
+		set_variable = {language = 10}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			711 1
+			#Csíkszereda
+		}
+		add_core_of = HUN
+		add_core_of = ROM
+		add_core_of = TRN
+
+	}
+
+	provinces={
+		711 3689 9668 9670 
+	}
+	manpower=784720
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

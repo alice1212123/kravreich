@@ -1,0 +1,132 @@
+focus_tree = {
+	id = italy
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = ITA
+		}
+	}
+	
+	continuous_focus_position = { x = 2050 y = 4000 }
+	
+	default = no
+	reset_on_civilwar = no
+
+        focus = {
+		id = ITA_matters_of_the_state
+		icon = GFX_focus_unkown
+		x = 52
+		y = 2
+		cost = 1
+		available_if_capitulated = no
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+                         country_event = deluge_italy.1
+	        }
+         }
+
+         focus = {
+		id = ITA_hold_the_referendum
+		icon = GFX_focus_unkown
+		x = 52
+		y = 3
+		cost = 2
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_matters_of_the_state }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+                         country_event = deluge_italy.2
+	        }
+         }
+
+         focus = {
+		id = ITA_liberals_win
+		icon = GFX_focus_unkown
+		x = 50
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_hold_the_referendum }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+                         set_country_flag = "The Referendum Has Been Held"
+                         news_event = { days = 4 id =  deluge_italy.7 } 
+                         hidden_effect = {
+                         load_focus_tree = { tree = italy_liberal keep_completed = yes }
+                         } 
+	        }
+         }
+
+         focus = {
+		id = ITA_conservatives_win
+		icon = GFX_focus_unkown
+		x = 54
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_hold_the_referendum }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+                         set_country_flag = "The Referendum Has Been Held"
+                         news_event = { days = 4 id =  deluge_italy.5 }
+                         hidden_effect = {
+                         load_focus_tree = { tree = italy_conservative keep_completed = yes }
+                         } 
+	        }
+         }
+
+         focus = {
+		id = ITA_radicals_win
+		icon = GFX_focus_unkown
+		x = 48
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_hold_the_referendum }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+                         set_country_flag = "The Referendum Has Been Held"
+                         news_event = { days = 4 id = deluge_italy.9 }
+                         hidden_effect = {
+                         load_focus_tree = { tree = italy_radical keep_completed = yes }
+                         set_politics = {
+	                      ruling_party = communism
+	                      elections_allowed = no
+                              }
+                         }
+	        }
+         }
+
+         focus = {
+		id = ITA_fascists_win
+		icon = GFX_focus_unkown
+		x = 56
+		y = 4
+		cost = 10
+		available_if_capitulated = no
+                prerequisite = { focus = ITA_hold_the_referendum }
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+                        set_country_flag = "The Referendum Has Been Held"
+                        news_event = { days = 4 id = deluge_italy.3 } 
+                        hidden_effect = {
+                        load_focus_tree = { tree = italy_fascist keep_completed = yes }
+                        }
+	        }
+         }
+}

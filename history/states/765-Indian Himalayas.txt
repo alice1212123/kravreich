@@ -1,0 +1,21 @@
+state={
+	id=765
+	name="STATE_765"
+	
+	history={
+		owner = RAJ
+		add_core_of = TIB
+		add_core_of = RAJ
+		add_core_of = FIA
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	
+	provinces={
+		1129 7106 2076 1898 3989
+	}
+	manpower=6476800
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

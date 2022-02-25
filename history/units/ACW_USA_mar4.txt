@@ -1,0 +1,62 @@
+division_template = {
+	name = "Bonus Army Veternas"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+
+	}
+	support = {
+
+	}
+}
+
+
+
+units = {
+
+	
+	division= {	
+		name = "Pershing's Owns"
+		location = 6732
+		division_template = "Bonus Army Veternas"
+		start_experience_factor = 2
+		start_equipment_factor = 2
+	}
+
+	division= {	
+		name = "True Yankees"
+		location = 6732
+		division_template = "Bonus Army Veternas"
+		start_experience_factor = 2
+		start_equipment_factor = 2
+	}
+
+	division= {	
+		name = "Our Boys"
+		location = 6732
+		division_template = "Bonus Army Veternas"
+		start_experience_factor = 2
+		start_equipment_factor = 2
+	}
+
+	division= {	
+		name = "Uncle Sam's Regiment"
+		location = 6732
+		division_template = "Bonus Army Veternas"
+		start_experience_factor = 2
+		start_equipment_factor = 2
+	}
+	
+}
+		

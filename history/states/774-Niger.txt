@@ -1,0 +1,26 @@
+
+state={
+	id=774
+	name="STATE_774"
+	resources={
+		rubber=1
+	}
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			2056 1 
+		}
+
+	}
+
+	provinces={
+		1975 2056 8028 10758 10780 10805 12707 
+	}
+	manpower=1920000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

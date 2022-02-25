@@ -1,0 +1,35 @@
+﻿units = {
+	fleet = {
+		name = "Große Flotte"
+		naval_base = 241
+		
+		task_force = {
+			name = "Hochseeflotte"
+			location = 241
+			ship = { name = "VMS Arminius" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DDR version_name = "Arminius Class"} } }
+			ship = { name = "VMS Baden" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DDR version_name = "Arminius Class"} } }
+			ship = { name = "VMS Bayern" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DDR version_name = "Arminius Class"} } }
+			ship = { name = "VMS Sachsen" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DDR version_name = "Arminius Class"} } }
+			ship = { name = "VMS Nassau" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DDR version_name = "Arminius Class"} } }
+			
+			ship = { name = "VMS Beowulf" definition = battle_cruiser start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DDR version_name = "Beowulf Class" } } }
+
+			ship = { name = "VMS Zieten" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = DDR version_name = "Karolus Class" } } }
+			ship = { name = "VMS Blitz" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = DDR version_name = "Karolus Class" } } }
+			ship = { name = "VMS Pfeil" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = DDR version_name = "Karolus Class" } } }
+			ship = { name = "VMS Wacht" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = DDR version_name = "Karolus Class" } } }
+
+			ship = { name = "VMS Meteor" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = DDR version_name = "Meteor Class" } } }
+			ship = { name = "VMS Comet" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = DDR version_name = "Meteor Class" } } }
+			ship = { name = "VMS Hela" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = DDR version_name = "Meteor Class" } } }
+			ship = { name = "VMS Jagd" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = DDR version_name = "Meteor Class" } } }
+			
+			ship = { name = "VMS Koyote" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = DDR version_name = "Iltis Class" } } }
+			ship = { name = "VMS Delphin" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = DDR version_name = "Iltis Class" } } }
+			ship = { name = "VMS Drache" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = DDR version_name = "Iltis Class" } } }
+			ship = { name = "VMS Hornisse" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = DDR version_name = "Iltis Class" } } }
+			ship = { name = "VMS Haifisch" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = DDR version_name = "Iltis Class" } } }
+			ship = { name = "VMS Wespe" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = DDR version_name = "Iltis Class" } } }
+		}
+	}
+}

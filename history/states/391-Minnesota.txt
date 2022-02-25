@@ -1,0 +1,28 @@
+
+state={
+	id=391
+	name="STATE_391"
+	resources={
+		steel=40.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			1866 5 
+		}
+
+	}
+
+	provinces={
+		1719 1734 1866 6752 6767 6827 7896 9880 10618 10719 11667 12550 12588 12597 12693 
+	}
+	manpower=663952
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

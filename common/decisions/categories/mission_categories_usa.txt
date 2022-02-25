@@ -1,0 +1,10 @@
+usa_elect = { 
+	icon = GFX_decision_generic_nationalism
+
+	visible = {
+               tag = USA
+	}
+}
+
+
+

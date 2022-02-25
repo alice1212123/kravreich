@@ -1,0 +1,57 @@
+﻿capital = 629
+
+oob = "HAW_1936"
+
+set_cosmetic_tag = HAW_GB
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 10
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 5
+	communism = 5
+	neutrality = 70
+}
+
+add_ideas = {
+	extensive_conscription
+	deluge_hawaii_march_idea
+}
+
+create_country_leader = {
+	name = "Edward I"
+	desc = ""
+	picture = "gfx/leaders/Oceanic Countries/Hawaii/Edward_A_Kawānanakoa_gb.dds"
+	expire = "1965.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+		#
+	}
+}
+
+
+create_field_marshal = {
+	name = "Edward I"
+	portrait_path = "gfx/leaders/Oceanic Countries/Hawaii/Edward_A_Kawānanakoa_mil.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}

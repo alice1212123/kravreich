@@ -1,0 +1,109 @@
+balkan_war_BUL = {
+	enable = {
+		tag = BUL
+		NOT = {
+		owns_state = 106
+		}
+	}
+
+	abort = {
+	owns_state = 106
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = "ALB"
+		value = 300
+	}
+}
+
+balkan_war_GRE = {
+enable = {
+		tag = GRE
+		NOT = {
+		owns_state = 185
+		}
+	}
+
+	abort = {
+	owns_state = 185
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = "ALB"
+		value = 300
+	}
+}
+
+balkan_war_SER = {
+enable = {
+		tag = SER
+		NOT = {
+		owns_state = 801
+		}
+	}
+
+	abort = {
+	owns_state = 801
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = "ALB"
+		value = 300
+	}
+}
+
+balkan_war_GRE_tur = {
+enable = {
+		tag = GRE
+		NOT = {
+		owns_state = 184
+		
+		}
+	
+		is_in_faction_with = BUL
+		date > 1937.6.1
+		
+		
+		
+	}
+
+	abort = {
+	owns_state = 184
+	
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = "TUR"
+		value = 100
+	}
+}
+
+balkan_war_BUL_tur = {
+enable = {
+		tag = BUL
+		NOT = {
+		owns_state = 341
+		}
+	
+		is_in_faction_with = GRE
+		date > 1937.6.1
+		
+		
+		
+	}
+
+	abort = {
+	owns_state = 341
+	
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = "TUR"
+		value = 100
+	}
+}

@@ -1,0 +1,250 @@
+﻿capital = 10
+
+oob = "POL_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 200
+
+add_opinion_modifier = { target = WGR modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = WGR modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = DDR modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = GER modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = SOV modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = HUN modifier = great_war_alliance_modifier }
+add_opinion_modifier = { target = SER modifier = great_war_alliance_modifier }
+add_opinion_modifier = { target = ITA modifier = great_war_alliance_modifier }
+add_opinion_modifier = { target = TUR modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = FRA modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = SPR modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = CAU modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = BAL modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = UKR modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = BLR modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = ENG modifier = great_war_friendship_modifier }
+add_opinion_modifier = { target = AUS modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = AUS modifier = historic_rivalry_modifier }
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fuel_silos = 1
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+	#set_naval_oob = ""
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+	}
+	#set_naval_oob = ""
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.9.8"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 40
+	fascism = 45
+	communism = 10
+	neutrality = 5
+}
+
+add_ideas = {
+	dictatorial_republic_law
+	state_collectives_law
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+	novote
+	POL_Anti_commie
+	POL_peace
+        POL_frze
+}
+
+set_cosmetic_tag = POL_froz
+
+create_faction = "Central Powers"
+add_to_faction = POL
+add_to_faction = HUN
+add_to_faction = ITA
+
+create_country_leader = {
+	name = "Juliusz Łukasiewicz"
+	desc = "lukasiewicz_desc"
+	picture = "gfx/leaders/European Countries/Poland/Juliusz_Łukasiewicz.dds"
+	expire = "1965.1.1"
+	ideology = social_darwinist_ideology
+	traits = {
+		polish_caeser
+	}
+}
+
+create_country_leader = {
+	name = "Władysław Gomułka"
+	desc = ""
+	picture = "gfx/leaders/European Countries/Poland/wladyslaw_gomulka.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wadysaw Raczkiewicz"
+	desc = ""
+	picture = "gfx/leaders/European Countries/Poland/Wadysaw_Raczkiewicz.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Augustus IV"
+	desc = "wettin_king_desc"
+	picture = "gfx/leaders/European Countries/Poland/king_johann_of_saxony.dds"
+	expire = "1965.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Władysław Anders"
+	portrait_path = "gfx/leaders/European Countries/Poland/Władysław_Anders.dds"
+	traits = {  offensive_doctrine armor_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+create_corps_commander = {
+	name = "Władysław Bortnowski"
+	portrait_path = "gfx/leaders/European Countries/Poland/Władysław_Bortnowski.dds"
+	traits = {  thorough_planner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Stanisław Kopański"
+	portrait_path = "gfx/leaders/European Countries/Poland/Stanisław_Kopański.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Roman Abraham"
+	portrait_path = "gfx/leaders/European Countries/Poland/Roman_Abraham.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Wincenty Kowalski"
+	portrait_path = "gfx/leaders/European Countries/Poland/Wincenty_Kowalski.dds"
+	traits = { trickster }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Stanisław Sosabowski"
+	portrait_path = "gfx/leaders/European Countries/Poland/Stanisław_Sosabowski.dds"
+	traits = { trait_cautious career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Wacław Stachiewicz"
+	portrait_path = "gfx/leaders/European Countries/Poland/Wacław_Stachiewicz.dds"
+	traits = { infantry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Tadeusz Kutrzeba"
+	portrait_path = "gfx/leaders/European Countries/Poland/Tadeusz_Kutrzeba.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_equipment_variant = {
+	name = "PZL P.24"
+	type = fighter_equipment_0
+	upgrades = {
+		plane_gun_upgrade = 3
+		plane_range_upgrade = 0  
+		plane_engine_upgrade = 1
+		plane_reliability_upgrade = 3
+	}
+}

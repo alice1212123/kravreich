@@ -1,0 +1,110 @@
+﻿capital = 100 #Iceland
+
+oob = "ICE_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+set_variable = {language = 2} #north germanic
+
+add_ideas = {
+}
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+	early_bomber = 1
+	tech_recon = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+	}
+	#set_naval_oob = ""
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+	}
+	#set_naval_oob = ""
+}
+
+set_convoys = 30
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.10.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 50
+	fascism = 10
+	communism = 20
+	neutrality = 20
+}
+	
+create_country_leader = {
+	name = "Sveinn Björnsson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Johannes Valurson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Haraldur Gudmunsson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Einar Olgeirsson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}

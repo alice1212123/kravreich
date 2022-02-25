@@ -1,0 +1,88 @@
+﻿###### OOB ######
+units = {
+	##### NAVAL UNITS #####
+	navy = {
+		name = "Base Naval El Ferrol"
+		base = 758
+		location = 758  # Ferrol/Coruna
+		ship = { name = "Jaime I" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "España" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Navío" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Fuerte" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "San Francisco" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "San Juan Bautista" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Príncipe Alfonso" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+		ship = { name = "Almirante Cervera" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+		ship = { name = "San Juan" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+		ship = { name = "Isabela" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+		ship = { name = "Manuela" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+		ship = { name = "Concepción" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+		ship = { name = "Asunción" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+		ship = { name = "Santa Ana" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+		ship = { name = "Magdalena" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+		ship = { name = "Miguel de Cervantes" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+		# Flotilla de Destructores de El Ferrol
+		ship = { name = "Alsedo" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Velasco" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Lazaga" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "San Bartolomé" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Santa María del Juncal" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Espíritu Santo" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+	}
+	navy = {
+		name = "Base Naval Cádiz"
+		base = 1048
+		location = 1048  #Cádiz
+		ship = { name = "Rio de Oro" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Méndez Núñez" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "San Salvador" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "La Lavia" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR } } }
+	}
+	navy = {
+		name = "Base Naval Cartagena"
+		base = 10024
+		location = 10024  #Cartagena/Murcia
+		# Flotilla de Destructores n.1
+		ship = { name = "Almirante Ferrándiz" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Sánchez Barcáiztegui" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Alcalá Galiano" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Almirante Valdés" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		# Flotilla de Destructores n.2
+		ship = { name = "Churucca" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "José Luis Díez" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Lepanto" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+		ship = { name = "Almirante Antequera" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = SPR } } }
+	}
+	navy = {
+		name = "Grupo de Cartagena"
+		base = 10024
+		location = 10024  #Cartagena/Murcia
+		# S101 Flotilla
+		ship = { name = "Castilla I" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "Castilla II" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "Castilla III" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "Castilla IV" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "Castilla V" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "Castilla VI" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "Castilla VII" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "Castilla VIII" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "Castilla IX" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "Castilla X" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+	}
+	navy = {
+		name = "Grupo de Cádiz"
+		base = 1048
+		location = 1048  #Cádiz
+		# S103 Flotilla
+		ship = { name = "León I" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "León II" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "León III" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "León IV" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "León V" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "León VI" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "León VII" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "León VIII" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "León IX" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		ship = { name = "León X" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
+	}
+}

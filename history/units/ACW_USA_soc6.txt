@@ -1,0 +1,108 @@
+﻿division_template = {
+	name = "Conscripted Militias"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+
+	}
+}
+
+
+
+
+
+
+units = {
+
+	
+	division= {	
+		name = "1. Conscripted Division"
+		location = 6713
+		division_template = "Conscripted Militias"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "2. Conscripted Division"
+		location = 6713
+		division_template = "Conscripted Militias"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "3. Conscripted Division"
+		location = 6713
+		division_template = "Conscripted Militias"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "4. Conscripted Division"
+		location = 9684
+		division_template = "Conscripted Militias"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "5. Conscripted Division"
+		location = 9684
+		division_template = "Conscripted Militias"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+
+	division= {	
+		name = "6. Conscripted Division"
+		location = 9684
+		division_template = "Conscripted Militias"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "7. Conscripted Division"
+		location = 12405
+		division_template = "Conscripted Militias"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "8. Conscripted Division"
+		location = 12405
+		division_template = "Conscripted Militias"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "9. Conscripted Division"
+		location = 9657
+		division_template = "Conscripted Militias"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "10. Conscripted Division"
+		location = 9657
+		division_template = "Conscripted Militias"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+
+
+}
+		

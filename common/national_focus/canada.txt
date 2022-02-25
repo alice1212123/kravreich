@@ -1,0 +1,14 @@
+focus_tree = {
+	id = deluge_canada_focus
+	
+	#country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = CAN
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = yes

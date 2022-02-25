@@ -1,0 +1,35 @@
+
+state={
+	id=26
+	name="STATE_26"
+	resources={
+		steel=20.000
+		aluminium=10.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			3594 1 
+		}
+		victory_points = {
+			9748 5 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = FRA
+		add_core_of = OCC
+
+	}
+
+	provinces={
+		590 769 3594 3754 6618 6644 6648 6773 6789 9593 9607 9748 11576 
+	}
+	manpower=877800
+	buildings_max_level_factor=1.000
+	state_category=developing
+}

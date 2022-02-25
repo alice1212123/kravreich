@@ -1,0 +1,51 @@
+add_namespace = deluge_greece
+
+#Balkan Pact GRE
+country_event = {
+	id = deluge_greece.1
+	title = deluge_greece1title
+	desc = deluge_greece1desc
+	picture = ""
+	
+    fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deluge_greece1opta 
+        diplomatic_relation = {
+			country = BUL
+			relation = non_aggression_pact
+			active = yes
+		}
+        diplomatic_relation = {
+			country = SER
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}                     
+
+#Declare War On Albania
+#country_event = {
+	id = deluge_greece.3
+	title = deluge_greece3title
+	desc = deluge_greece3desc
+	picture = ""
+	
+    trigger = {
+		original_tag = GRE
+		date > 1936.5.31
+	}
+    
+	timeout_days = 2
+	
+	option = {
+		name = deluge_greece3opta
+		
+		declare_war_on = {
+			target = ALB
+			type = annex_everything 
+		}	
+    }
+}

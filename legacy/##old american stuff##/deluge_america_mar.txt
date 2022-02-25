@@ -1,0 +1,924 @@
+###add_namespace = deluge_maritimes
+
+country_event = {
+	id = deluge_maritimes.1
+	title = deluge_maritimes1title
+	desc = deluge_maritimes1desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes1opt
+		load_oob = ACW_USA_mar
+		hidden_effect = {
+			country_event = {
+				id = deluge_maritimes.9
+				days = 7
+			}
+		}
+	}
+
+}
+
+
+country_event = {
+	id = deluge_maritimes.2
+	title = deluge_maritimes2title
+	desc = deluge_maritimes2desc
+	picture = GFX_deluge_kennedy
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes2opt
+		set_variable = { kennedy_influence = 40 }
+		set_variable = { big_mac_influence = 5 }
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.3
+	title = deluge_maritimes3title
+	desc = deluge_maritimes3desc
+	picture = GFX_deluge_macarthur
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes3opt
+		add_stability = -0.1
+		add_political_power = -100
+		add_to_variable = { big_mac_influence = 10 } 
+		load_oob = ACW_USA_mar2
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.4
+	title = deluge_maritimes4title
+	desc = deluge_maritimes4esc
+	picture = GFX_deluge_kennedy
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes4opt
+		add_timed_idea = {
+			idea = oligarch_support
+			days = 120
+		}
+		add_to_variable = { kennedy_influence = 5 } 
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.5
+	title = deluge_maritimes5title
+	desc = deluge_maritimes5desc
+	picture = GFX_deluge_kennedy
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes5opta
+		ai_chance = {
+			factor = 6
+		}
+		country_event = {
+			id = deluge_maritimes.6
+			days = 7
+		}
+	}
+
+	option = {
+		name = deluge_maritimes5optb
+		ai_chance = {
+			factor = 2
+		}
+		country_event = {
+			id = deluge_maritimes.7
+			days = 7
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.6
+	title = deluge_maritimes6title
+	desc = deluge_maritimes6desc
+	picture = GFX_deluge_kennedy
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes6opt
+		add_to_variable = { kennedy_influence = 5 } 
+		load_oob = ACW_USA_mar3
+	}
+}
+
+country_event = {
+	id = deluge_maritimes.7
+	title = deluge_maritimes7title
+	desc = deluge_maritimes7desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes6opt
+		add_to_variable = { kennedy_influence = -10 } 
+	}
+}
+
+country_event = {
+	id = deluge_maritimes.8
+	title = deluge_maritimes8title
+	desc = deluge_maritimes8desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes8opt
+		add_to_variable = { big_mac_influence = 5 } 
+		357 = {
+			add_building_construction = {
+    			type = bunker
+    			level = 3
+    			instant_build = yes
+    			province = 9847
+			}
+			add_building_construction = {
+    			type = bunker
+    			level = 3
+    			instant_build = yes
+    			province = 9850
+			}
+			add_building_construction = {
+    			type = bunker
+    			level = 3
+    			instant_build = yes
+    			province = 908
+			}
+			add_building_construction = {
+    			type = bunker
+    			level = 3
+    			instant_build = yes
+    			province = 718
+			}
+
+		}
+	}
+}
+
+country_event = {
+	id = deluge_maritimes.9
+	title = deluge_maritimes9title
+	desc = deluge_maritimes9desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes9opt
+		hidden_effect = {
+			country_event = {
+				id = {
+					deluge_maritimes.10
+					days = 15
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.10
+	title = deluge_maritimes10title
+	desc = deluge_maritimes10desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes10opt
+		hidden_effect = {
+			country_event = {
+				id = {
+					deluge_maritimes.11
+					days = 21
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.11
+	title = deluge_maritimes11title
+	desc = deluge_maritimes11desc
+	picture = GFX_deluge_macarthur
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes11opt
+	
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.12
+	title = deluge_maritimes12title
+	desc = deluge_maritimes12desc
+	picture = GFX_deluge_macarthur
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes12opt
+		add_to_variable = { big_mac_influence = 5 } 
+		add_ideas = {
+			 mac_arthur_officer
+		}
+	}
+}
+
+
+
+country_event = {
+	id = deluge_maritimes.13
+	title = deluge_maritimes13title
+	desc = deluge_maritimes13desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes13opt
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 7600
+    		producer = USA
+		}
+		create_corps_commander = {
+				name = "Mark Clark"
+				portrait_path = "gfx/leaders/American Countries/United States/markclark.dds"
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+		create_corps_commander = {
+				name = "Jacob L. Devers"
+				portrait_path = "gfx/leaders/American Countries/United States/devers.dds"
+				skill = 3
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 5
+				logistics_skill = 2
+			}
+	}
+}
+
+
+
+country_event = {
+	id = deluge_maritimes.14
+	title = deluge_maritimes14title
+	desc = deluge_maritimes14desc
+	picture = GFX_deluge_macarthur
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes14opt
+		load_oob = ACW_USA_mar4
+		add_to_variable = { big_mac_influence = 5 } 
+		create_corps_commander = {
+				name = "John J. Pershing"
+				portrait_path = "gfx/leaders/American Countries/United States/pershing.dds"
+				traits = { superior_tactician }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 6
+				logistics_skill = 3
+			}
+			}
+}
+
+
+country_event = {
+	id = deluge_maritimes.15
+	title = deluge_maritimes15title
+	desc = deluge_maritimes15desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes15opta
+		add_stabiltiy = 0.05
+		add_war_support = 0.05
+		add_political_power = 100
+	}
+
+	option = {
+		name = deluge_maritimes15optb
+		add_manpower = 12541
+		load_oob = ACW_USA_mar5
+		add_ideas = { enlisted_blacks }
+	}
+
+	option = {
+		name = deluge_maritimes15optc
+		add_manpower = 42341
+		add_ideas = { enlisted_blacks }
+		add_political_power = -50
+		load_oob = ACW_USA_mar5
+		hidden_effect = {
+			CSA = {
+				country_event = {
+					id = deluge_maritimes.16
+					days = 21
+					random = 10
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.16
+	title = deluge_maritimes16title
+	desc = deluge_maritimes16desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes16opt
+		add_war_support = 0.06
+		add_to_variable = { secessionists_influence = 5 } 
+		MAR = {
+			load_oob = ACW_USA_mar6_black_revolt
+		}
+	}
+}
+
+
+#####Compulsary events
+
+country_event = { #dewey and the whigh rally around kennedy
+	id = deluge_america.17
+	title = deluge_america17title
+	desc = deluge_america17desc
+	picture = GFX_deluge_dewey
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAR
+		has_global_flag = 2ACW
+	}
+	
+	mean_time_to_happen = {
+		days = 23
+	}
+	
+	option = {
+		name = deluge_america17opt
+		add_political_power = 25
+		add_to_variable = { kennedy_influence = 5 } 
+	}
+}
+
+
+
+country_event = { #roosevelt founds the progressive caucasus
+	id = deluge_america.18
+	title = deluge_america18title
+	desc = deluge_america18desc
+	picture = GFX_deluge_roosevelt
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAR
+		has_global_flag = 2ACW
+		OR = {
+			has_country_flag = landon_prime_minister
+			has_country_flag = moderate_byrd
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 36
+	}
+	
+	option = {
+		name = deluge_america18opt
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.06
+		}
+		set_country_flag = fdr_creates_progressives
+	}
+}
+
+
+
+country_event = { #columbian order
+	id = deluge_america.19
+	title = deluge_america19title
+	desc = deluge_america19desc
+	picture = GFX_deluge_dark_room
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAR
+		has_global_flag = 2ACW
+	}
+	
+	mean_time_to_happen = {
+		days = 41
+	}
+	
+	option = {
+		name = deluge_america19opt
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.04
+		}
+		add_to_variable = { kennedy_influence = -5 } 
+	}
+}
+
+
+country_event = { #rising military influence
+	id = deluge_america.20
+	title = deluge_america20title
+	desc = deluge_america20desc
+	picture = GFX_deluge_macarthur
+	
+	fire_only_once = no
+
+	trigger = {
+		tag = MAR
+		has_global_flag = 2ACW
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+	}
+	
+	option = {
+		name = deluge_america20opt
+		add_to_variable = { big_mac_influence = 5 } 
+	}
+}
+
+
+
+
+country_event = { #rising military influence
+	id = deluge_america.21
+	title = deluge_america21title
+	desc = deluge_america21desc
+	picture = GFX_deluge_macarthur
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAR
+		has_global_flag = 2ACW
+		check_variable = { big_mac_influence > 35 }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = deluge_america21opt
+		set_country_flag = people_want_mac_arthur
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.22
+	title = deluge_maritimes22title
+	desc = deluge_maritimes22desc
+	picture = GFX_deluge_macarthur
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes22opt
+		add_war_support = 0.4
+		add_to_variable = { big_mac_influence = 10 } 
+	}
+}
+
+country_event = { #rising military influence
+	id = deluge_maritimes.23
+	title = deluge_maritimes23title
+	desc = deluge_maritimes23desc
+	picture = GFX_deluge_macarthur
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAR
+		has_global_flag = 2ACW
+		has_country_flag = people_want_mac_arthur
+		has_completed_focus = america_deluge_we_obey
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = deluge_maritimes23opt
+		clr_country_flag = people_want_mac_arthur
+		set_country_flag = mac_in_power
+		create_country_leader = {
+			name = "Regent Douglas MacArthur"
+			picture = "gfx/leaders/American Countries/United States/usa_macarthur.dds"
+			expire = "1965.1.1"
+			ideology = reactionary_ideology
+				traits = {
+		
+			}
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = deluge_maritimes.24
+	title = deluge_maritimes24title
+	desc = deluge_maritimes24desc
+	picture = GFX_deluge_kennedy
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes24opt
+		add_to_variable = { kennedy_influence = 5 } 
+		add_ideas = {
+			 kennedy_friends
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = deluge_maritimes.25
+	title = deluge_maritimes25title
+	desc = deluge_maritimes25desc
+	picture = GFX_deluge_ford
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes25opta
+		add_to_variable = { providence_circle_influence = 1 } 
+		hidden_effect = { 
+			country_event = {
+				id = deluge_maritimes.27
+				days = 5
+				random = 7
+			}
+		}
+	}
+
+	option = {
+		name = deluge_maritimes25optb
+		add_to_variable = { providence_circle_influence = 2 } 
+		hidden_effect = { 
+			country_event = {
+				id = deluge_maritimes.26
+				days = 5
+				random = 7
+			}
+		}
+
+	}
+
+	option = {
+		name = deluge_maritimes25optc
+		add_to_variable = { kennedy_influence = 5 } 
+		add_political_power = 100
+		add_stabiltiy = 0.05
+		add_manpower = 320
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.27
+	title = deluge_maritimes27title
+	desc = deluge_maritimes27desc
+	picture = GFX_deluge_ford
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes27opt
+		add_political_power = -75
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 2500
+    		producer = USA
+		}
+		add_equipment_to_stockpile = {
+    		type = artillery_equipment
+    		amount = 700
+    		producer = USA
+		}
+		add_equipment_to_stockpile = {
+    		type = support_equipment
+    		amount = 700
+    		producer = USA
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.26
+	title = deluge_maritimes26title
+	desc = deluge_maritimes26desc
+	picture = GFX_deluge_ford
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes26opt
+		load_oob = ACW_USA_mar7_ford
+		hidden_effect = {
+			country_event = {
+				id = deluge_maritimes.27
+				days = 12
+				random = 7
+
+			}
+		}
+		hidden_effect = {
+		 	USA = {
+				country_event = {
+					id = deluge_maritimes.28
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.28
+	title = deluge_maritimes28title
+	desc = deluge_maritimes28desc
+	picture = GFX_deluge_ford
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes28opt
+		add_political_power = -75
+	}
+}
+
+
+country_event = { #cardinal asks for more funds
+	id = deluge_maritimes.29
+	title = deluge_maritimes29title
+	desc = deluge_maritimes29desc
+	picture = GFX_deluge_cardinal
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes29opta
+		add_political_power = 75
+		add_to_variable = { kennedy_influence = 5 }
+	}
+
+	option = {
+		name = deluge_maritimes29optb
+		set_country_flag = catholic_influence
+		add_political_power = -50
+		add_manpower = 54420
+	}
+
+	option = {
+		name = deluge_maritimes29optc
+		add_political_power = -50
+		set_country_flag = catholic_influence
+		hidden_effect = {
+			country_event = {
+				id = deluge_maritimes.30
+				days = 23
+				random = 10
+			}
+		}
+		357 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+    			type = arms_factory
+    			level = 2
+    			instant_build = yes
+			}
+
+		}
+			
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.30
+	title = deluge_maritimes30title
+	desc = deluge_maritimes30desc
+	picture = GFX_deluge_dewey
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes30opt
+		add_to_variable = { kennedy_influence = -5 }
+	}
+}
+
+
+
+country_event = { #approaching the knights
+	id = deluge_maritimes.31
+	title = deluge_maritimes31title
+	desc = deluge_maritimes29desc
+	picture = GFX_deluge_cardinal
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes31opta
+		add_manpower = 16320
+		hidden_effect = {
+			country_event = {
+				id = deluge_maritimes.32
+				days = 21
+				random = 5
+			}
+		}
+	}
+
+	option = {
+		name = deluge_maritimes31optb
+		swap_ideas = {
+			add_idea = church_support_columbus
+			remove_idea = church_support
+		}
+		add_manpower = 9873
+	}
+
+	option = {
+		name = deluge_maritimes31optc
+		357 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 2
+    			instant_build = yes
+			}
+
+		}
+			
+	}
+}
+
+
+
+country_event = {
+	id = deluge_maritimes.32
+	title = deluge_maritimes32title
+	desc = deluge_maritimes32desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes32opt
+		load_oob = ACW_USA_mar8
+	}
+}
+
+
+country_event = {
+	id = deluge_maritimes.33
+	title = deluge_maritimes33title
+	desc = deluge_maritimes33desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes33opt
+		MAR = {
+			country_event = {
+				id = deluge_maritimes.34
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = deluge_maritimes.34
+	title = deluge_maritimes34title
+	desc = deluge_maritimes34desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_maritimes34opt
+		load_oob = ACW_USA_mar9
+	}
+}
+

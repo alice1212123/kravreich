@@ -1,0 +1,612 @@
+focus_tree = {
+	id = radical_germany_focus_base_full
+	
+	country = {
+		factor = 0
+	}
+	
+	default = no
+	reset_on_civilwar = yes
+	
+	shared_focus = radical_germany_national_effort
+	shared_focus = radical_germany_kriegswirtschaft
+	shared_focus = germany_army
+	shared_focus = germany_airforce
+	shared_focus = germany_navy
+	
+	#society
+	focus = {
+		id = radical_germany_agragr_society
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = ssp_agrarian_economy
+			has_country_flag = ssp_agrarian_social_order
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 6
+		y = 7
+		cost = 8
+		completion_reward = {add_ideas = DDR_agragr_society}
+	}
+	
+	
+	focus = {
+		id = radical_germany_agrind_society
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			OR = {
+				AND = {
+					has_country_flag = ssp_agrarian_economy
+					has_country_flag = ssp_industrial_social_order
+				}
+				
+				AND = {
+					has_country_flag = ssp_industrial_economy
+					has_country_flag = ssp_agrarian_social_order
+				}
+			}
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 0
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_agrind_society}
+	}
+	
+	
+	focus = {
+		id = radical_germany_agrmil_society
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			OR = {
+				AND = {
+					has_country_flag = ssp_agrarian_economy
+					has_country_flag = ssp_militarist_social_order
+				}
+				
+				AND = {
+					has_country_flag = ssp_militarist_economy
+					has_country_flag = ssp_agrarian_social_order
+				}
+			}
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 0
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_agrmil_society}
+	}
+	
+	
+	focus = {
+		id = radical_germany_indind_society
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = ssp_industrial_economy
+			has_country_flag = ssp_industrial_social_order
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 0
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_indind_society}
+	}
+	
+	
+	focus = {
+		id = radical_germany_indmil_society
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			OR = {
+				AND = {
+					has_country_flag = ssp_industrial_economy
+					has_country_flag = ssp_militarist_social_order
+				}
+				
+				AND = {
+					has_country_flag = ssp_militarist_economy
+					has_country_flag = ssp_industrial_social_order
+				}
+			}
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 0
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_indmil_society}
+	}
+	
+	
+	focus = {
+		id = radical_germany_milmil_society
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = ssp_militarist_economy
+			has_country_flag = ssp_militarist_social_order
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 0
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_milmil_society}
+	}
+	
+	#state
+	focus = {
+		id = radical_germany_agragr_state
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = ssp_agrarian_ownership
+			has_country_flag = ssp_agrarian_judiciary
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 2
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_agragr_state}
+	}
+	
+	
+	focus = {
+		id = radical_germany_agrind_state
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			OR = {
+				AND = {
+					has_country_flag = ssp_agrarian_ownership
+					has_country_flag = ssp_industrial_judiciary
+				}
+				
+				AND = {
+					has_country_flag = ssp_industrial_ownership
+					has_country_flag = ssp_agrarian_judiciary
+				}
+			}
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 2
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_agrind_state}
+	}
+	
+	
+	focus = {
+		id = radical_germany_agrmil_state
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			OR = {
+				AND = {
+					has_country_flag = ssp_agrarian_ownership
+					has_country_flag = ssp_militarist_judiciary
+				}
+				
+				AND = {
+					has_country_flag = ssp_militarist_ownership
+					has_country_flag = ssp_agrarian_judiciary
+				}
+			}
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 2
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_agrmil_state}
+	}
+	
+	
+	focus = {
+		id = radical_germany_indind_state
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = ssp_industrial_ownership
+			has_country_flag = ssp_industrial_judiciary
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 2
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_indind_state}
+	}
+	
+	
+	focus = {
+		id = radical_germany_indmil_state
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			OR = {
+				AND = {
+					has_country_flag = ssp_industrial_ownership
+					has_country_flag = ssp_militarist_judiciary
+				}
+				
+				AND = {
+					has_country_flag = ssp_militarist_ownership
+					has_country_flag = ssp_industrial_judiciary
+				}
+			}
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 2
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_indmil_state}
+	}
+	
+	
+	focus = {
+		id = radical_germany_milmil_state
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = ssp_militarist_ownership
+			has_country_flag = ssp_militarist_judiciary
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 2
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_milmil_state}
+	}
+	
+	#security
+	focus = {
+		id = radical_germany_agragr_security
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = ssp_agrarian_politics
+			has_country_flag = ssp_agrarian_assimilation
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 4
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_agragr_security}
+	}
+	
+	
+	focus = {
+		id = radical_germany_agrind_security
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			OR = {
+				AND = {
+					has_country_flag = ssp_agrarian_politics
+					has_country_flag = ssp_industrial_assimilation
+				}
+				
+				AND = {
+					has_country_flag = ssp_industrial_politics
+					has_country_flag = ssp_agrarian_assimilation
+				}
+			}
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 4
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_agrind_security}
+	}
+	
+	
+	focus = {
+		id = radical_germany_agrmil_security
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			OR = {
+				AND = {
+					has_country_flag = ssp_agrarian_politics
+					has_country_flag = ssp_militarist_assimilation
+				}
+				
+				AND = {
+					has_country_flag = ssp_militarist_politics
+					has_country_flag = ssp_agrarian_assimilation
+				}
+			}
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 4
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_agrmil_security}
+	}
+	
+	
+	focus = {
+		id = radical_germany_indind_security
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = ssp_industrial_politics
+			has_country_flag = ssp_industrial_assimilation
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 4
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_indind_security}
+	}
+	
+	
+	focus = {
+		id = radical_germany_indmil_security
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			OR = {
+				AND = {
+					has_country_flag = ssp_industrial_politics
+					has_country_flag = ssp_militarist_assimilation
+				}
+				
+				AND = {
+					has_country_flag = ssp_militarist_politics
+					has_country_flag = ssp_industrial_assimilation
+				}
+			}
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 4
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_indmil_security}
+	}
+	
+	
+	focus = {
+		id = radical_germany_milmil_security
+		icon = GFX_goal_generic_production2
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = ssp_militarist_politics
+			has_country_flag = ssp_militarist_assimilation
+		}
+		prerequisite = {focus = radical_germany_third_conference}
+		x = 4
+		y = 0
+		relative_position_id = radical_germany_agragr_society
+		cost = 8
+		completion_reward = {add_ideas = DDR_milmil_security}
+	}
+	
+	#finishers
+	focus = {
+		id = radical_germany_agrarian_finisher
+		icon = GFX_focus_prc_agrarian_socialism
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = agrarian_victory
+			OR = {
+					has_country_flag = ssp_agrarian_economy
+					has_country_flag = ssp_industrial_economy
+					has_country_flag = ssp_militarist_economy
+				}
+			OR = {
+				has_country_flag = ssp_agrarian_ownership
+				has_country_flag = ssp_industrial_ownership
+				has_country_flag = ssp_militarist_ownership
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_politics
+				has_country_flag = ssp_industrial_politics
+				has_country_flag = ssp_militarist_politics
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_social_order
+				has_country_flag = ssp_industrial_social_order
+				has_country_flag = ssp_militarist_social_order
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_judiciary
+				has_country_flag = ssp_industrial_judiciary
+				has_country_flag = ssp_militarist_judiciary
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_assimilation
+				has_country_flag = ssp_industrial_assimilation
+				has_country_flag = ssp_militarist_assimilation
+			}
+		}
+		prerequisite = {focus = radical_germany_agragr_society}
+		prerequisite = {focus = radical_germany_agragr_state}
+		prerequisite = {focus = radical_germany_agragr_security}
+		available = {
+			has_country_flag = ssp_agrarian_economy
+			has_country_flag = ssp_agrarian_ownership
+			has_country_flag = ssp_agrarian_politics
+			has_country_flag = ssp_agrarian_social_order
+			has_country_flag = ssp_agrarian_judiciary
+			has_country_flag = ssp_agrarian_assimilation
+		}
+		x = 2
+		y = 1
+		relative_position_id = radical_germany_agragr_society
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = radical_germany_generic_finisher_tooltip
+			hidden_effect = {
+				remove_ideas = {
+					DDR_agragr_society
+					DDR_agragr_state
+					DDR_agragr_security
+				}
+				add_ideas = DDR_agrarian_finisher
+			}
+			add_popularity = {
+					ideology = communism
+					popularity = 0.5
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = radical_germany_industrial_finisher
+		icon = GFX_focus_generic_soviet_politics
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = industrial_victory
+			OR = {
+					has_country_flag = ssp_agrarian_economy
+					has_country_flag = ssp_industrial_economy
+					has_country_flag = ssp_militarist_economy
+				}
+			OR = {
+				has_country_flag = ssp_agrarian_ownership
+				has_country_flag = ssp_industrial_ownership
+				has_country_flag = ssp_militarist_ownership
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_politics
+				has_country_flag = ssp_industrial_politics
+				has_country_flag = ssp_militarist_politics
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_social_order
+				has_country_flag = ssp_industrial_social_order
+				has_country_flag = ssp_militarist_social_order
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_judiciary
+				has_country_flag = ssp_industrial_judiciary
+				has_country_flag = ssp_militarist_judiciary
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_assimilation
+				has_country_flag = ssp_industrial_assimilation
+				has_country_flag = ssp_militarist_assimilation
+			}
+		}
+		prerequisite = {focus = radical_germany_indind_society}
+		prerequisite = {focus = radical_germany_indind_state}
+		prerequisite = {focus = radical_germany_indind_security}
+		available = {
+			has_country_flag = ssp_industrial_economy
+			has_country_flag = ssp_industrial_ownership
+			has_country_flag = ssp_industrial_politics
+			has_country_flag = ssp_industrial_social_order
+			has_country_flag = ssp_industrial_judiciary
+			has_country_flag = ssp_industrial_assimilation
+		}
+		x = 2
+		y = 1
+		relative_position_id = radical_germany_agragr_society
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = radical_germany_generic_finisher_tooltip
+			hidden_effect = {
+				remove_ideas = {
+					DDR_indind_society
+					DDR_indind_state
+					DDR_indind_security
+				}
+				add_ideas = DDR_industrial_finisher
+			}
+			add_popularity = {
+					ideology = communism
+					popularity = 0.5
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = radical_germany_militarist_finisher
+		icon = GFX_focus_generic_manpower
+		allow_branch = {
+			has_country_flag = third_conference
+			has_country_flag = militarist_victory
+			OR = {
+					has_country_flag = ssp_agrarian_economy
+					has_country_flag = ssp_industrial_economy
+					has_country_flag = ssp_militarist_economy
+				}
+			OR = {
+				has_country_flag = ssp_agrarian_ownership
+				has_country_flag = ssp_industrial_ownership
+				has_country_flag = ssp_militarist_ownership
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_politics
+				has_country_flag = ssp_industrial_politics
+				has_country_flag = ssp_militarist_politics
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_social_order
+				has_country_flag = ssp_industrial_social_order
+				has_country_flag = ssp_militarist_social_order
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_judiciary
+				has_country_flag = ssp_industrial_judiciary
+				has_country_flag = ssp_militarist_judiciary
+			}
+			OR = {
+				has_country_flag = ssp_agrarian_assimilation
+				has_country_flag = ssp_industrial_assimilation
+				has_country_flag = ssp_militarist_assimilation
+			}
+		}
+		prerequisite = {focus = radical_germany_milmil_society}
+		prerequisite = {focus = radical_germany_milmil_state}
+		prerequisite = {focus = radical_germany_milmil_security}
+		available = {
+			has_country_flag = ssp_militarist_economy
+			has_country_flag = ssp_militarist_ownership
+			has_country_flag = ssp_militarist_politics
+			has_country_flag = ssp_militarist_social_order
+			has_country_flag = ssp_militarist_judiciary
+			has_country_flag = ssp_militarist_assimilation
+		}
+		x = 2
+		y = 1
+		relative_position_id = radical_germany_agragr_society
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = radical_germany_generic_finisher_tooltip
+			hidden_effect = {
+				remove_ideas = {
+					DDR_milmil_society
+					DDR_milmil_state
+					DDR_milmil_security
+				}
+				add_ideas = DDR_militarist_finisher
+			}
+			add_popularity = {
+					ideology = communism
+					popularity = 0.5
+			}
+		}
+	}
+}

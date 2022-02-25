@@ -1,0 +1,29 @@
+
+state={
+	id=462
+	name="STATE_462"
+	manpower = 1265552
+	
+	state_category = rural
+
+	history={
+		owner = SPR
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 1
+			12857 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			4108 3
+		}
+		victory_points = {
+			12857 1 
+		}
+	}
+
+	provinces={
+		  1989  1102 4108 4022 7203 5046       10107   12857
+	}
+}

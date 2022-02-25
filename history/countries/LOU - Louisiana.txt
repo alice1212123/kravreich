@@ -1,0 +1,298 @@
+﻿capital = 371
+
+oob = "LOU_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+add_opinion_modifier = { target = MEX modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = USA modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = ENG modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = CAN modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = FRA modifier = historic_rivalry_modifier }
+
+set_technology = {
+	infantry_weapons = 1
+	marines  = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	motorised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	early_bomber = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+	}
+	set_naval_oob = "LOU_1936_naval_legacy"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+	}
+	set_naval_oob = "LOU_1936_naval_mtg"
+}
+
+set_convoys = 100
+
+create_import = {
+	resource = iron
+	factories = 1
+	exporter = USA
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 30
+	fascism = 5
+	communism = 10
+	neutrality = 55
+}
+
+give_military_access = USA
+	
+add_ideas = {	
+	civilian_economy
+	limited_conscription
+	free_trade
+	novote
+}
+
+create_country_leader = {
+	name = "Douglas MacArthur"
+	desc = "macarthur_desc"
+	picture = "gfx/leaders/American Countries/United States/usa_macarthur.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Bishop Alphonse-Louis du St Maurice"
+	picture = "gfx/leaders/American Countries/Louisiana/cardinal_newman.dds"
+	expire = "1965.1.1"
+	ideology = religious_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Henri S. Truman"
+	desc = ""
+	picture = "gfx/leaders/American Countries/Louisiana/harry_truman.dds"
+	expire = "1965.1.1"
+	ideology = national_liberalism_ideology
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Simone Girard"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Maxime_Weygand.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Guillaume Laurent"
+	portrait_path = "gfx/leaders/FRA/portrait_france_philippe_leclerc.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lucien Garcia"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin.dds"
+	traits = { infantry_officer trait_engineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Claude Roux"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Maurice Dupont"
+	portrait_path = "gfx/leaders/FRA/portrait_france_henri_giraud.dds"
+	traits = { armor_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Libert Fournier"
+	portrait_path = "gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Leslie Moreau"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Alphonse_Joseph_Georges.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Russell Durand"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Alphonse_Juin.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Raimont Thomas"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Jean_de_Laborde.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+
+create_navy_leader = {
+	name = "Jean Martin"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Jean-Marie_Charles_Abrial.dds"
+	traits = { }
+	skill = 2
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Scorpène Class"
+		type = ship_hull_submarine_1
+		#name_group = USA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Rivière Rouge Class"
+		type = ship_hull_light_1
+		#name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Wichita Class"
+		type = ship_hull_cruiser_1
+		#name_group = USA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Mississipi Class"
+		type = ship_hull_cruiser_1
+		#name_group = USA_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_medium_battery_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+	}
+}
+
+

@@ -1,0 +1,288 @@
+﻿capital = 285
+
+oob = "AST_1936"
+
+set_cosmetic_tag = AST_GB
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+	set_naval_oob = "AST_1936_naval_legacy"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+	}
+	set_naval_oob = "AST_1936_naval_mtg"
+}
+
+set_politics = {
+	ruling_party = fascism 
+	last_election = "1934.9.15"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+	democratic = 30
+	fascism = 50
+	communism = 10
+	neutrality = 10
+}
+
+add_ideas = {
+        AST_white_oceania_policy
+        japanese_threat
+        enforced_naval
+}
+
+create_country_leader = {
+	name = "Richard Dixon"
+	desc = "POLITICS_RICHARD_DIXON_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "John Curtin"
+	desc = "POLITICS_JOHN_CURTIN_DESC"
+	picture = "Portrait_Australia_John_Curtin.dds"
+	expire = "1965.1.1"
+	ideology = jacobin_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William Bridges"
+	desc = "throsby_desc"
+	picture = "gfx/leaders/deluge/wiliam_throsby.dds"
+	expire = "1965.1.1"
+	ideology = social_darwinist_ideology
+	traits = {
+             dislikes_japan
+	}
+}
+
+create_country_leader = {
+	name = "Earle Page"
+	desc = "POLITICS_EARLE_PAGE_DESC"
+	picture = "gfx/leaders/deluge/earle_page.dds"
+	expire = "1965.1.1"
+	ideology = national_liberalism_ideology
+	traits = {
+		dislikes_japan
+	}
+}
+
+create_country_leader = {
+	name = "Lord Scarbrough"
+	desc = ""
+	picture = "gfx/leaders/deluge/earl_scarbrough.dds"
+	expire = "1965.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+		#
+	}
+}
+
+set_convoys = 176
+
+create_field_marshal = { 
+	name = "Jacob Stills"
+	gfx = "GFX_portrait_AST_jacob_stills"
+	traits = { trait_engineer infantry_officer }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 5
+    logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Anthony Miller"
+	gfx = "GFX_portrait_AST_anthony_miller"
+	traits = { }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Leo Wells"
+	gfx = "GFX_portrait_AST_leo_wells"
+	traits = { hill_fighter }
+	skill = 3
+    attack_skill = 5
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Horace Robertson"
+	gfx = "GFX_portrait_AST_horace_robertson"
+	traits = { desert_fox }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 3
+}
+create_navy_leader = {
+	name = "Eli Hudson"
+	gfx = "GFX_portrait_AST_eli_hudson"
+	traits = { air_controller }
+	skill = 4
+        attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Arthur Lee"
+	gfx = "GFX_portrait_AST_arthur_lee"
+	traits = { superior_tactician }
+	skill = 3
+        attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "Colton Torres"
+	gfx = "GFX_portrait_AST_colton_torres"
+	traits = { }
+	skill = 3
+        attack_skill = 4
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Sydney Class"
+	type = light_cruiser_1             
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+	}
+}
+
+create_equipment_variant = {
+	name = "Canberra Class"
+	type = heavy_cruiser_1
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		mid_1_custom_slot = ship_torpedo_1
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = empty
+	}
+}
+
+create_equipment_variant = {
+	name = "Perth Class"
+	type = ship_hull_light_1
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = empty
+	}
+}
+
+create_equipment_variant = {
+	name = "Oceania Class"
+	type = ship_hull_heavy_1
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		front_1_custom_slot = ship_anti_air_1
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = ship_heavy_battery_2
+	}
+}
+
+create_equipment_variant = {
+	name = "Hunter Class"
+	type = ship_hull_submarine_1
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
+}
+

@@ -1,0 +1,18 @@
+soundeffect =
+{
+	name = "superev_germany"
+	sounds = {
+		sound = "super_germany"
+	}
+	volume = 1
+}
+
+soundeffect =
+{
+	name = "superev_france"
+	sounds = {
+		sound = "super_france"
+	}
+	volume = 1
+}
+

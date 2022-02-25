@@ -1,0 +1,49 @@
+# The first trigger to fire determines the localization key,
+# the evaluation is immediately cancelled
+
+defined_text = { # Country
+	name = GetGermanArmyName
+	
+	text = {
+		trigger = {
+			original_tag = DDR
+		}
+		localization_key = germany_focus_red_army
+	}
+	
+	text = {
+		localization_key = germany_focus_royal_army
+	}
+}
+
+
+defined_text = { # Country
+	name = GetGermanNavyName
+	
+	text = {
+		trigger = {
+			original_tag = DDR
+		}
+		localization_key = germany_focus_volksmarine
+	}
+	
+	text = {
+		localization_key = germany_focus_hochseeflotte
+	}
+}
+
+
+defined_text = { # Country
+	name = GetGermanAirforceName
+	
+	text = {
+		trigger = {
+			original_tag = DDR
+		}
+		localization_key = germany_focus_red_airforce
+	}
+	
+	text = {
+		localization_key = germany_focus_royal_airforce
+	}
+}

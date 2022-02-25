@@ -1,0 +1,403 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "División de Infantería"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # Spanish Arty Rgt/Bge had 2 Bn 105mm arty
+		engineer = { x = 0 y = 1 }   # Eng Bn
+	}
+}
+division_template = {
+	name = "División de Milicia"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "División de Caballería"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon consisted of motorcycles and ACs
+	}
+}
+division_template = {
+	name = "División de Milicia"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # Spanish Arty Rgt/Bge had 2 Bn 105mm arty
+		engineer = { x = 0 y = 1 }   # Eng Bn
+	}
+}
+
+###### OOB ######
+units = {
+	#####LAND UNITS #####
+	### MAINLAND UNITS ###
+	division = {			
+		name = "1. División de Infantería"		
+		location = 3938  # Madrid
+		division_template = "División de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+	division = {			
+		name = "2. División de Infantería"		
+		location = 7183  # Sevilla
+		division_template = "División de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+	division = {			
+		name = "3. División de Infantería"		
+		location = 6906  # Valencia
+		division_template = "División de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+	division = {			
+		name = "4. División de Infantería"		
+		location = 4598
+		division_template = "División de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+	division = {			
+		name = "5. División de Infantería"		
+		location = 3816  # Zaragosa
+		division_template = "División de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+	division = {			
+		name = "6. División de Infantería"		
+		location = 885  # Burgos
+		division_template = "División de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+	division = {			
+		name = "7. División de Infantería"		
+		location = 11825  # Valladolid
+		division_template = "División de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+	division = {			
+		name = "8. División de Infantería"		
+		location = 758  # La Coruña
+		division_template = "División de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+
+	division = {			
+		name = "1. División de Caballería"		
+		location = 5046
+		division_template = "División de Caballería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+
+	division = {			
+		name = "2. División de Caballería"		
+		location = 7069
+		division_template = "División de Caballería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+
+	division = {		
+		name = "1. División de Milicia"		
+		location = 13071  # Canary Islands
+		division_template = "División de Milicia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+	division = {			
+		name = "2. División de Milicia"		
+		location = 740  #Bilbao
+		division_template = "División de Milicia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+	division = {			
+		name = "3. División de Milicia"		
+		location = 11707  #Oviedo
+		division_template = "División de Milicia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+
+	division = {			
+		name = "4. División de Milicia"		
+		location = 1048  #Cádiz
+		division_template = "División de Milicia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+
+	##PHI ARMY##
+
+	division = {
+		name = "PHI División #1"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #2"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #3"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #4"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #5"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #6"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #7"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #8"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #9"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #10"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #11"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "PHI División #12"
+		location = 10265
+		division_template = "División de Milicia"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+
+
+	### Island Garrisons ###
+	division = {			
+		name = "1. División de Milicia"		
+		location = 9793  #Mallorca
+		division_template = "División de Milicia"		# garrison division, lower equipment, experience
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SPR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+	division = {			
+		name = "2. División de Milicia"		
+		location = 13071  # Canary Islands
+		division_template = "División de Milicia"		# garrison division, lower equipment, experience
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SPR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+
+
+	### Ejército de África ###
+	division = {			
+		name = "3. División de Milicia"		
+		location = 9945  #Ceuta
+		division_template = "División de Milicia"		# garrison division, lower equipment, experience
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}			
+	division = {			
+		name = "4. División de Milicia"		
+		location = 12100  #Melilla
+		division_template = "División de Milicia"		# garrison division, lower equipment, experience
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}			
+}
+
+### Air Wings
+air_wings = {
+	# Arma de Aviación -- Madrid (Getafe)
+	41 = { 
+		# Grupo n.1 de Caza F'Alas Rojas'
+		fighter_equipment_0 = {
+			owner = "SPR" 
+			amount = 72
+		}
+	}
+	# Arma de Aviación -- Sevilla (and Barcelona)
+	169 = {
+		# Grupo n.3 de Caza F'Malraux'
+		fighter_equipment_0 = {
+			owner = "SPR" 
+			amount = 48
+		}
+	}
+	# Aeronáutica Naval -- Murcia
+	168 = {
+		nav_bomber_equipment_1 = {
+			owner = "SPR" 
+			amount = 80
+		}
+	}
+}
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SPR"
+		}
+		requested_factories = 2
+		progress = 0.42
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.24
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.24
+		efficiency = 100
+	}
+	### Under Contruction Notes ###
+	# DD: Churucca class (x3) ("Almirante Miranda" "Gravina" "Escaño" "Císcar" "Jorge Juan" "Ulloa")
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 3
+	}
+	# CA: Canarias (Canarias class, comm. 1-Oct, 1936), Baleares (Canarias class, comm. 28-Dec, 1936)
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_1
+			creator = "SPR"
+		}
+		requested_factories = 2
+		progress = 0.85
+		amount = 2
+	}
+}

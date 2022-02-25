@@ -1,0 +1,62 @@
+﻿division_template = {
+	name = "Liwa Alfursan"		# Infantry Brigade 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Liwa Almasha"		# Cavalry Brigade
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "1. Liwa Alfursan"
+		location = 10840
+		division_template = "Liwa Alfursan"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2. Liwa Alfursan"
+		location = 10840
+		division_template = "Liwa Alfursan"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3. Liwa Alfursan"
+		location = 10840
+		division_template = "Liwa Alfursan"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+}
+
+##### No air force #####
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "YEM"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 100
+	}
+}

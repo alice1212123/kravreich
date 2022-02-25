@@ -1,0 +1,30 @@
+
+state={
+	id=387
+	name="STATE_387"
+	resources={
+		steel=18.000
+		chromium=1.000
+		tungsten=18.000
+	}
+
+	history={
+		owner = BCA
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = BCA
+		victory_points = {
+			10556 3 
+		}
+
+	}
+
+	provinces={
+		1789 3781 7845 9616 9695 10556 10602 12535 12607 
+	}
+	manpower=645031
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

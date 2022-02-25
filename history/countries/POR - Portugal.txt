@@ -1,0 +1,161 @@
+﻿capital = 112
+
+oob = "POR_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 50
+
+diplomatic_relation = { country = SPR relation = non_aggression_pact }
+diplomatic_relation = { country = FRA relation = non_aggression_pact }
+
+add_opinion_modifier = { target = ENG modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = ENG modifier = great_war_hostility_modifier }
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	fuel_silos = 1
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+	#set_naval_oob = ""
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+	}
+	#set_naval_oob = ""
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 5
+	communism = 25
+	neutrality = 50
+}
+
+
+add_ideas = { 
+POR_stag
+POR_naval
+POR_Afrika
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = NEP
+		autonomous_state = autonomy_colony
+		freedom_level = 0.1
+	}
+	else = {
+		puppet = NEP
+	}
+}
+
+give_military_access = NEP
+
+create_country_leader = {
+	name = "Manuel II"
+	desc = ""
+	picture = "gfx/leaders/European Countries/Portugal/king_manuel.dds"
+	expire = "1989.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Manuel II"
+	desc = ""
+	picture = "gfx/leaders/European Countries/Portugal/rafael_jacome_lopes_de_andrade.dds"
+	expire = "1989.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+		old_king
+	}
+}
+
+create_country_leader = {
+	name = "Francisco de Barcelos Rolão Preto"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = social_darwinist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "António de Oliveira Salazar"
+	desc = ""
+	picture = "gfx/leaders/European Countries/Portugal/salazar.dds"
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Bento Gonçalves"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = jacobin_ideology
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "José Vicente de Freitas"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  }
+	skill = 3
+
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+

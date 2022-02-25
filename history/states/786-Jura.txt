@@ -1,0 +1,36 @@
+
+state={
+	id=786
+	name="STATE_786"
+	resources={
+		aluminium=11.000
+	}
+
+	history={
+		owner = FRA
+		set_variable = {
+			language = 4
+		}
+		victory_points = {
+			9642 3 
+		}
+		victory_points = {
+			6668 10
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			air_base = 2
+
+		}
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		698 3646 3666 6668 6683 6698 9642 9658 
+	}
+	manpower=443120
+	buildings_max_level_factor=1.000
+	state_category=town
+}

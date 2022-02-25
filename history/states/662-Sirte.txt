@@ -1,0 +1,22 @@
+
+state={
+	id=662
+	name="STATE_662"
+
+	history={
+		owner = ITA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		4133 4200 7063 7076 9977 12079 
+	}
+	manpower=13213
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

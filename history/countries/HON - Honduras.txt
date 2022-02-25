@@ -1,0 +1,39 @@
+﻿capital = 312
+
+oob = "HON_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 70
+	fascism = 5
+	communism = 15
+	neutrality = 10
+}
+	
+create_country_leader = {
+	name = "Tiburcio Carías Andino"
+	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+	}
+}
+

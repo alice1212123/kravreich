@@ -1,0 +1,36 @@
+
+state={
+	id=4
+	name="STATE_4"
+	resources={
+		oil=2.000
+	}
+
+	history={
+		owner = AUS
+		set_variable = {
+			language = 1
+
+		}
+		victory_points = {
+			11666 30 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 6
+			anti_air_building = 1
+
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		704 3718 6552 6690 6723 6739 9527 9661 11651 11666 
+	}
+	manpower=2095983
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

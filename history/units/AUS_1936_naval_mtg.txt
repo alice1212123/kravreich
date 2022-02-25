@@ -1,0 +1,42 @@
+﻿units = {
+	fleet = {
+		name = "Kriegsmarine"
+		naval_base = 6626
+			
+		task_force = {
+			name = "1. Flotte"
+			location = 6626
+			ship = { name = "SMS Habsburg" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Habsburg Class" } } }
+			ship = { name = "SMS Admiral von Tagetthoff" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Habsburg Class" } } }
+			
+			ship = { name = "SMS Wien" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AUS version_name = "Wien Class" } } }
+			ship = { name = "SMS Praha" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AUS version_name = "Wien Class" } } }
+			
+			ship = { name = "SMS Metternich" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AUS version_name = "Metternich Class" } } }		
+			ship = { name = "SMS Bach" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AUS version_name = "Metternich Class" } } }		
+
+			ship = { name = "SMS Python" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Python Class" } } }
+			ship = { name = "SMS Cobra" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Python Class" } } }
+			ship = { name = "SMS Boa" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Python Class" } } }
+			ship = { name = "SMS Lika" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Python Class" } } }
+			ship = { name = "SMS Streiter" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Python Class" } } }
+			ship = { name = "SMS Pandur" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Python Class" } } }
+			ship = { name = "SMS Scharfschütze" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Python Class" } } }
+			ship = { name = "SMS Reka" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Python Class" } } }
+		}
+	}
+}
+	
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_1
+			creator = "AUS"
+			version_name = "Metternich Class" 
+		}
+		requested_factories = 6
+		progress = 0.55
+		amount = 1
+	}
+}
+

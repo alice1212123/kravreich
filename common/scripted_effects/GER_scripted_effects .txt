@@ -1,0 +1,717 @@
+
+reload_offa_value = {
+	
+	if = {
+		limit = {
+			check_variable = {
+				var = offa_modifier 
+				value = -10
+				compare = less_than_or_equals
+			}
+		}
+		set_variable = {offa_modifier = -10}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn10
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = -9}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn9
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = -8}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn8
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = -7}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn7
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = -7}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn7
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = -6}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn6
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = -5}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn5
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = -4}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn4
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = -3}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn3
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = -2}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn2
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = -1}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_billsn1
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = 0}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills0
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = 1}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills1
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = 2}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills2
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = 3}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills3
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = 4}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills4
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = 5}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills5
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = 6}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills6
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = 7}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills7
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = 8}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills8
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {offa_modifier = 9}
+		}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills9
+		}
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {
+				var = offa_modifier
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		set_variable = {offa_modifier = 10}
+		remove_ideas = {
+			DDR_offa_bills10
+			DDR_offa_bills9
+			DDR_offa_bills8
+			DDR_offa_bills7
+			DDR_offa_bills6
+			DDR_offa_bills5
+			DDR_offa_bills4
+			DDR_offa_bills3
+			DDR_offa_bills2
+			DDR_offa_bills1
+			DDR_offa_bills0
+			DDR_offa_billsn1
+			DDR_offa_billsn2
+			DDR_offa_billsn3
+			DDR_offa_billsn4
+			DDR_offa_billsn5
+			DDR_offa_billsn6
+			DDR_offa_billsn7
+			DDR_offa_billsn8
+			DDR_offa_billsn9
+			DDR_offa_billsn10
+		}
+		add_ideas = {
+			DDR_offa_bills10
+		}
+	}
+}

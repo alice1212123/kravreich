@@ -1,0 +1,109 @@
+
+persian_neutrality_strategy = {
+	enable = {
+		PER = { is_ai = yes }
+	}
+	abort = {
+		OR = {
+			PER = { has_war = yes }
+			PER = { is_in_faction = yes }
+			PER = { NOT = { has_idea = neutrality_idea } }
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "PER"
+		value = 200
+	}
+}
+
+swedish_neutrality_strategy = {
+	enable = {
+		SWE = { is_ai = yes }
+	}
+	abort = {
+		OR = {
+			SWE = { has_war = yes }
+			SWE = { is_in_faction = yes }
+			SWE = { NOT = { has_idea = neutrality_idea } }
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "SWE"
+		value = 200
+	}
+}
+
+swiss_neutrality_strategy = {
+	enable = {
+		SWI = { is_ai = yes }
+	}
+	abort = {
+		OR = {
+			SWI = { has_war = yes }
+			SWI = { is_in_faction = yes }
+			SWI = { NOT = { has_idea = neutrality_idea } }
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "SWI"
+		value = 200
+	}
+}
+
+tibetan_neutrality_strategy = {
+	enable = {
+		TIB = { is_ai = yes }
+	}
+	abort = {
+		OR = {
+			TIB = { has_war = yes }
+			TIB = { is_in_faction = yes }
+			TIB = { NOT = { has_idea = neutrality_idea } }
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "TIB"
+		value = 200
+	}
+}
+
+afghan_neutrality_strategy = {
+	enable = {
+		AFG = { is_ai = yes }
+	}
+	abort = {
+		OR = {
+			AFG = { has_war = yes }
+			AFG = { is_in_faction = yes }
+			AFG = { NOT = { has_idea = neutrality_idea } }
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "AFG"
+		value = 200
+	}
+}
+
+relations_are_a_waste_of_pp = {
+
+	enable = {
+		always = yes
+	}
+	
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -9999
+	}
+}
+

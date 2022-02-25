@@ -1,0 +1,335 @@
+focus_tree = {
+	id = spain_bone
+	country = {
+		factor = 0
+	}
+	
+	continuous_focus_position = { x = 6050 y = 2200 }
+	
+	shared_focus = SPR_spanish_navy_revitalization
+	shared_focus = SPR_spanish_army
+	shared_focus = SPR_main_colony
+	shared_focus = SPR_spanish_industry
+	shared_focus = SPR_kingdom_of_spain_foreign_policy
+	
+	#Focus for Protect Aristocracy's Influence
+	focus = {
+		id = SPR_protect_aristocracys_influence
+		icon = GFX_goal_generic_production2
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_speak_with_the_dukes_of_spain 
+		}
+		prerequisite = { 
+			focus = SPR_reaffirm_catholic_power 
+		}
+		prerequisite = { 
+			focus = SPR_the_34th_royal_decree 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Economic Polarization
+	focus = {
+		id = SPR_economic_polarization
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_pass_pro_merchant_laws }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = SPR_eco_polar
+		}
+	}
+
+	#Focus for Exclusive Nobility Rights
+	focus = {
+		id = SPR_exclusive_nobility_rights
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_keep_merchant_class_happy 
+		}
+		prerequisite = { 
+			focus = SPR_keep_parliament_weak 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pass Pro Merchant Laws
+	focus = {
+		id = SPR_pass_pro_merchant_laws
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_keep_merchant_class_happy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER }
+		add_stability = -0.05
+		add_political_power = -100
+		}
+	}
+
+	#Focus for Keep Merchant Class Happy
+	focus = {
+		id = SPR_keep_merchant_class_happy
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_protect_aristocracys_influence }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		add_stability = 0.05
+		}
+	}
+
+	#Focus for Elevate Pro-Absolutist To Parliament
+	focus = {
+		id = SPR_elevate_proabsolutist_to_parliament
+		icon = GFX_goal_generic_major_alliance
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_keep_parliament_weak }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 20 
+		add_stability = -0.1
+		}
+	}
+
+	#Focus for Keep Parliament Weak
+	focus = {
+		id = SPR_keep_parliament_weak
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_protect_aristocracys_influence }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	#Focus for Protective Trade Policies
+	focus = {
+		id = SPR_protective_trade_policies
+		icon = GFX_goal_generic_defence
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_the_renovacion_espanola_wins }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		add_stability = 0.05
+		}
+	}
+
+	#Focus for Continue Stratified Society
+	focus = {
+		id = SPR_continue_stratified_society
+		icon = GFX_focus_generic_self_management
+		x = 14
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_the_yesman_parliament 
+		}
+		prerequisite = { 
+			focus = SPR_enlightened_despotism 
+		}
+		prerequisite = { 
+			focus = SPR_economic_polarization 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = SPR_strat
+		}
+	}
+
+	#Focus for Reaffirm Catholic Power
+	focus = {
+		id = SPR_reaffirm_catholic_power
+		icon = GFX_focus_por_concordat
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_protective_trade_policies 
+		}
+		prerequisite = { 
+			focus = SPR_bribe_the_clergy 
+		}
+		prerequisite = { 
+			focus = SPR_the_renovacion_espanola_wins 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		remove_ideas = SPR_COM
+		}
+	}
+
+	#Focus for Speak With The Dukes Of Spain
+	focus = {
+		id = SPR_speak_with_the_dukes_of_spain
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_the_renovacion_espanola_wins }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		country_event = { days = 1 id = finland.1 }
+		}
+	}
+
+	#Focus for The 34th Royal Decree
+	focus = {
+		id = SPR_the_34th_royal_decree
+		icon = GFX_goal_generic_forceful_treaty
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_the_renovacion_espanola_wins }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		country_event = { days = 1 id = finland.1 }
+		}
+	}
+
+	#Focus for The Renovacion Espanola Wins!
+	focus = {
+		id = SPR_the_renovacion_espanola_wins
+		icon = GFX_goal_generic_neutrality_focus
+		x = 14
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+		has_global_flag = reno_wins
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+
+	#Focus for Bribe The Clergy
+	focus = {
+		id = SPR_bribe_the_clergy
+		icon = GFX_focus_mex_privatisation
+		x = 15
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_the_renovacion_espanola_wins }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	#Focus for The Yes-Man Parliament
+	focus = {
+		id = SPR_the_yesman_parliament
+		icon = GFX_focus_usa_voter_registration_act
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_elevate_proabsolutist_to_parliament }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		swap_ideas = { remove_idea = SPR_para add_idea = SPR_para2 }
+		
+		}
+	}
+
+	#Focus for Enlightened Despotism
+	focus = {
+		id = SPR_enlightened_despotism
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_exclusive_nobility_rights }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_country_leader_trait = e_despot 
+		
+		}
+	}
+	
+}

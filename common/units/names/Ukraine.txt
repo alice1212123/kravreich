@@ -1,0 +1,79 @@
+﻿UKR = {
+	submarine = {
+		prefix = ""
+		generic = { "Submarine" }
+		unique = {
+			"S-101" "S-102" "S-103" "S-104" "S-105" "S-106" "S-107" "S-108" "S-109" "S-110"
+			"S-111" "S-112" "S-113" "S-114" "S-115" "S-116" "S-117" "S-118" "S-119" "S-120"
+			"S-121" "S-122" "S-123" "S-124" "S-125" "S-126" "S-127" "S-128" "S-129" "S-130"
+			"S-131" "S-132" "S-133" "S-134" "S-135" "S-136" "S-137" "S-138" "S-139" "S-140"
+			"S-141" "S-142" "S-143" "S-144" "S-145" "S-146" "S-147" "S-148" "S-149" "S-150"
+			"S-151" "S-152" "S-153" "S-154" "S-155" "S-156" "S-157" "S-158" "S-159" "S-160"
+			"S-161" "S-162" "S-163" "S-164" "S-165" "S-166" "S-167" "S-168" "S-169" "S-170"
+			"S-171" "S-172" "S-173" "S-174" "S-175" "S-176" "S-177" "S-178" "S-179" "S-180"
+			"S-181" "S-182" "S-183" "S-184" "S-185" "S-186" "S-187" "S-188" "S-189" "S-180"
+			"S-191" "S-192" "S-193" "S-194" "S-195" "S-196" "S-197" "S-198" "S-199" "S-200"
+		}
+	}
+	destroyer = {
+		prefix = ""
+		generic = { "Destroyer" }
+		unique = {
+			"Zhytomyr" "Khmelnytskyi" "Vinnitsa" "Poltava"
+			"Sumy" "Kharkov" "Krivoy Rog" "Ekaterinoslav"
+			"Crimea" "Donetsk" "Lugansk" "Kherson" "Alexandrovsk"
+			"Odessa" "Kiev" "Cherkasy" "Chernigov" "Shostka"
+		}
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "Light Cruiser" }
+		unique = {
+			"Zhytomyr" "Khmelnytskyi" "Vinnitsa" "Poltava"
+			"Sumy" "Kharkov" "Krivoy Rog" "Ekaterinoslav"
+			"Crimea" "Donetsk" "Lugansk" "Kherson" "Alexandrovsk"
+			"Odessa" "Kiev" "Cherkasy" "Chernigov" "Shostka"
+		}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"Zhytomyr" "Khmelnytskyi" "Vinnitsa" "Poltava"
+			"Sumy" "Kharkov" "Krivoy Rog" "Ekaterinoslav"
+			"Crimea" "Donetsk" "Lugansk" "Kherson" "Alexandrovsk"
+			"Odessa" "Kiev" "Cherkasy" "Chernigov" "Shostka"
+		}
+	}
+	battle_cruiser = {
+        prefix = ""
+        generic = { "Battlecruiser" }
+        unique = {
+			"Zhytomyr" "Khmelnytskyi" "Vinnitsa" "Poltava"
+			"Sumy" "Kharkov" "Krivoy Rog" "Ekaterinoslav"
+			"Crimea" "Donetsk" "Lugansk" "Kherson" "Alexandrovsk"
+			"Odessa" "Kiev" "Cherkasy" "Chernigov" "Shostka"
+      }
+    }
+    battleship = {
+        prefix = ""
+        generic = { "Battleship" }
+        unique = {
+			"Zhytomyr" "Khmelnytskyi" "Vinnitsa" "Poltava"
+			"Sumy" "Kharkov" "Krivoy Rog" "Ekaterinoslav"
+			"Crimea" "Donetsk" "Lugansk" "Kherson" "Alexandrovsk"
+			"Odessa" "Kiev" "Cherkasy" "Chernigov" "Shostka"
+      }
+    }
+	carrier = {
+		prefix = ""
+		generic = { "Carrier" }
+		unique = {
+			"Zhytomyr" "Khmelnytskyi" "Vinnitsa" "Poltava"
+			"Sumy" "Kharkov" "Krivoy Rog" "Ekaterinoslav"
+			"Crimea" "Donetsk" "Lugansk" "Kherson" "Alexandrovsk"
+			"Odessa" "Kiev" "Cherkasy" "Chernigov" "Shostka"
+		}
+	}
+
+}

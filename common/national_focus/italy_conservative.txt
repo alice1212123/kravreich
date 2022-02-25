@@ -1,0 +1,21 @@
+focus_tree = {
+	id = italy_conservative
+	country = {
+		factor = 0
+	}
+
+	shared_focus = ITA_matters_of_the_state
+
+        focus = {
+		id = ITA_a_fair_italy
+		icon = GFX_focus_unkown
+		x = 75
+		y = 2
+		cost = 1
+		available_if_capitulated = no
+	        ai_will_do = {
+			factor = 1
+		}
+                completion_reward = {
+	        }
+         }

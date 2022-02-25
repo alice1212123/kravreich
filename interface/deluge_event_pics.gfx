@@ -1,0 +1,604 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_deluge_napoleon_small"
+		texturefile = "gfx/event_pictures/deluge_napoleon_small.dds"
+	}
+
+        spriteType = {
+		name = "GFX_deluge_berlin_small"
+		texturefile = "gfx/event_pictures/deluge_berlin_small.dds"
+	}
+
+        spriteType = {
+		name = "GFX_deluge_purge"
+		texturefile = "gfx/event_pictures/deluge_purge.dds"
+	}
+
+        spriteType = {
+		name = "GFX_war"
+		texturefile = "gfx/event_pictures/war.dds"
+	}
+ 
+        spriteType = {
+		name = "GFX_pol_death"
+		texturefile = "gfx/event_pictures/pol_death.dds"
+	}
+
+        spriteType = {
+		name = "GFX_pol_conference"
+		texturefile = "gfx/event_pictures/pol_conference.dds"
+	}
+         
+        spriteType = {
+		name = "GFX_deluge_royal_marriage"
+		texturefile = "gfx/event_pictures/deluge_royal_marriage.dds"
+	}
+
+
+        spriteType = {
+		name = "GFX_deluge_coup"
+		texturefile = "gfx/event_pictures/deluge_coup.dds"
+	}
+
+        spriteType = {
+		name = "GFX_deluge_execute"
+		texturefile = "gfx/event_pictures/deluge_execute.dds"
+	}
+ 
+        spriteType = {
+		name = "GFX_deluge_investigation"
+		texturefile = "gfx/event_pictures/deluge_investigation.dds"
+	}
+
+        spriteType = {
+		name = "GFX_deluge_chaos"
+		texturefile = "gfx/event_pictures/deluge_chaos.dds"
+	}
+
+        spriteType = {
+		name = "GFX_deluge_radical_move"
+		texturefile = "gfx/event_pictures/deluge_radical_move.dds"
+	}
+
+        spriteType = {
+		name = "GFX_deluge_germany_order"
+		texturefile = "gfx/event_pictures/deluge_germany_order.dds"
+	}
+
+        spriteType = {
+		name = "GFX_deluge_mack_dead"
+		texturefile = "gfx/event_pictures/deluge_mack_dead.dds"
+	}
+
+        spriteType = {
+		name = "GFX_deluge_mack_dead_small"
+		texturefile = "gfx/event_pictures/deluge_mack_dead_small.dds"
+	}
+
+        spriteType = {
+		name = "GFX_deluge_rev"
+		texturefile = "gfx/event_pictures/deluge_rev.dds"
+	}
+
+
+        spriteType = {
+		name = "GFX_deluge_workers_strike"
+		texturefile = "gfx/event_pictures/deluge_workers_strike.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_clausewitz_small"
+		texturefile = "gfx/event_pictures/deluge_clausewitz_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_friedrich_von_bulow_small"
+		texturefile = "gfx/event_pictures/deluge_friedrich_von_bulow_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_jomini_small"
+		texturefile = "gfx/event_pictures/deluge_jomini_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_chinese_soldiers_march"
+		texturefile = "gfx/event_pictures/news_event_chinese_soldiers_march.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_militia"
+		texturefile = "gfx/event_pictures/deluge_militia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_protest"
+		texturefile = "gfx/event_pictures/deluge_protest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_public_funeral"
+		texturefile = "gfx/event_pictures/deluge_public_funeral.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_paris_small"
+		texturefile = "gfx/event_pictures/deluge_paris_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_paris_large"
+		texturefile = "gfx/event_pictures/deluge_paris_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_brandenburg_ruin"
+		texturefile = "gfx/event_pictures/deluge_brandenburg_ruin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_port"
+		texturefile = "gfx/event_pictures/deluge_port.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_istanbul_small"
+		texturefile = "gfx/event_pictures/deluge_istanbul_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_istanbul_large"
+		texturefile = "gfx/event_pictures/deluge_istanbul_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_mussolini_parade"
+		texturefile = "gfx/event_pictures/deluge_mussolini_parade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_hungarian_parliament_building"
+		texturefile = "gfx/event_pictures/deluge_hungarian_parliament_building.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_package_tour_small"
+		texturefile = "gfx/event_pictures/deluge_package_tour_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_package_tour_large"
+		texturefile = "gfx/event_pictures/deluge_package_tour_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_malta"
+		texturefile = "gfx/event_pictures/deluge_malta.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_malta_large"
+		texturefile = "gfx/event_pictures/deluge_malta_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_league_of_nations_entrance_large"
+		texturefile = "gfx/event_pictures/deluge_league_of_nations_entrance_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_league_of_nations_small"
+		texturefile = "gfx/event_pictures/deluge_league_of_nations_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_whitehouse_small"
+		texturefile = "gfx/event_pictures/deluge_whitehouse_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_american_crowd_small"
+		texturefile = "gfx/event_pictures/deluge_american_crowd_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_ford"
+		texturefile = "gfx/event_pictures/deluge_ford.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_macarthur"
+		texturefile = "gfx/event_pictures/deluge_macarthur.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_butler"
+		texturefile = "gfx/event_pictures/deluge_butler.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_butler_large"
+		texturefile = "gfx/event_pictures/deluge_butler_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_hueylong"
+		texturefile = "gfx/event_pictures/deluge_hueylong.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_deluge_browder"
+		texturefile = "gfx/event_pictures/deluge_browder.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_deluge_longcoup"
+		texturefile = "gfx/event_pictures/deluge_longcoup.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_deluge_ford_large"
+		texturefile = "gfx/event_pictures/deluge_ford_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_macarthur_large"
+		texturefile = "gfx/event_pictures/deluge_macarthur_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_socialist_court"
+		texturefile = "gfx/event_pictures/deluge_socialist_court.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_deluge_duplessis"
+		texturefile = "gfx/event_pictures/deluge_duplessis.dds"
+	}	
+
+    spriteType = {
+		name = "GFX_deluge_roosevelt"
+		texturefile = "gfx/event_pictures/deluge_roosevelt.dds"
+	}	
+
+    spriteType = {
+		name = "GFX_deluge_sinclair"
+		texturefile = "gfx/event_pictures/deluge_sinclair.dds"
+	}		
+	
+    spriteType = {
+		name = "GFX_deluge_zapata"
+		texturefile = "gfx/event_pictures/deluge_zapata.dds"
+	}	
+
+    spriteType = {
+		name = "GFX_deluge_arcand"
+		texturefile = "gfx/event_pictures/deluge_arcand.dds"
+	}		
+	
+	
+	spriteType = {
+		name = "GFX_deluge_battleship_sunk"
+		texturefile = "gfx/event_pictures/deluge_battleship_sunk.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_deluge_nuclear"
+		texturefile = "gfx/event_pictures/deluge_nuclear.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_kennedy"
+		texturefile = "gfx/event_pictures/deluge_kennedy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_hoover"
+		texturefile = "gfx/event_pictures/deluge_hoover.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_us_tank_big"
+		texturefile = "gfx/event_pictures/deluge_us_tank_big.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_henriot"
+		texturefile = "gfx/event_pictures/deluge_henriot.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_thorez"
+		texturefile = "gfx/event_pictures/deluge_thorez.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_blum"
+		texturefile = "gfx/event_pictures/deluge_blum.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_dada"
+		texturefile = "gfx/event_pictures/deluge_dada.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_maurras"
+		texturefile = "gfx/event_pictures/deluge_maurras.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_laval"
+		texturefile = "gfx/event_pictures/deluge_laval.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_petain"
+		texturefile = "gfx/event_pictures/deluge_petain.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_frontpop"
+		texturefile = "gfx/event_pictures/deluge_frontpop.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_blum_large"
+		texturefile = "gfx/event_pictures/deluge_blum_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_dada_large"
+		texturefile = "gfx/event_pictures/deluge_dada_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_laval_large"
+		texturefile = "gfx/event_pictures/deluge_laval_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_maurras_large"
+		texturefile = "gfx/event_pictures/deluge_maurras_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_henriot_large"
+		texturefile = "gfx/event_pictures/deluge_henriot_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_strikef"
+		texturefile = "gfx/event_pictures/deluge_strikef.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_thorez_large"
+		texturefile = "gfx/event_pictures/deluge_thorez_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_chautemps_large"
+		texturefile = "gfx/event_pictures/deluge_chautemps_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_deluge_petain_large"
+		texturefile = "gfx/event_pictures/deluge_petain_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_pope_large"
+		texturefile = "gfx/event_pictures/deluge_pope_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_oustric"
+		texturefile = "gfx/event_pictures/deluge_oustric.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_degaulle"
+		texturefile = "gfx/event_pictures/deluge_degaulle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_napoleon"
+		texturefile = "gfx/event_pictures/deluge_napoleon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_deat"
+		texturefile = "gfx/event_pictures/deluge_deat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_brux_large"
+		texturefile = "gfx/event_pictures/deluge_brux_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_holland_large"
+		texturefile = "gfx/event_pictures/deluge_holland_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_engger_large"
+		texturefile = "gfx/event_pictures/deluge_engger_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_geneva_large"
+		texturefile = "gfx/event_pictures/deluge_geneva_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_spain_large"
+		texturefile = "gfx/event_pictures/deluge_spain_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_bombing_large"
+		texturefile = "gfx/event_pictures/deluge_bombing_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_monnet_large"
+		texturefile = "gfx/event_pictures/deluge_monnet_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_paneuropa"
+		texturefile = "gfx/event_pictures/deluge_paneuropa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_cu"
+		texturefile = "gfx/event_pictures/deluge_cu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_soviet"
+		texturefile = "gfx/event_pictures/deluge_soviet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_westminster"
+		texturefile = "gfx/event_pictures/deluge_westminster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_macdonald"
+		texturefile = "gfx/event_pictures/deluge_macdonald.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_maxton"
+		texturefile = "gfx/event_pictures/deluge_maxton.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_edward_viii"
+		texturefile = "gfx/event_pictures/deluge_edward_viii.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_blair"
+		texturefile = "gfx/event_pictures/deluge_blair.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_attlee"
+		texturefile = "gfx/event_pictures/deluge_attlee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_churchill"
+		texturefile = "gfx/event_pictures/deluge_churchill.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_riots"
+		texturefile = "gfx/event_pictures/deluge_riots.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_sir_sinclair"
+		texturefile = "gfx/event_pictures/deluge_sir_sinclair.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_mosley"
+		texturefile = "gfx/event_pictures/deluge_mosley.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_harris"
+		texturefile = "gfx/event_pictures/deluge_harris.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_sinclair_large"
+		texturefile = "gfx/event_pictures/deluge_sinclair_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_harris_large"
+		texturefile = "gfx/event_pictures/deluge_harris_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_chamb_large"
+		texturefile = "gfx/event_pictures/deluge_chamb_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_church_large"
+		texturefile = "gfx/event_pictures/deluge_church_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_mos_coup"
+		texturefile = "gfx/event_pictures/deluge_mos_coup.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_attlee_large"
+		texturefile = "gfx/event_pictures/deluge_attlee_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_maxton_large"
+		texturefile = "gfx/event_pictures/deluge_maxton_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_pmmos_large"
+		texturefile = "gfx/event_pictures/deluge_pmmos_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_chamb"
+		texturefile = "gfx/event_pictures/deluge_chamb.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_british_act_large"
+		texturefile = "gfx/event_pictures/deluge_british_act_large.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_deluge_usa_kennedy"
+		texturefile = "gfx/event_pictures/usa_kennedy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_usa_wallace"
+		texturefile = "gfx/event_pictures/deluge_wallace.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_usa_byrd"
+		texturefile = "gfx/event_pictures/deluge_byrd.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_usa_cannon"
+		texturefile = "gfx/event_pictures/deluge_cannon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_deluge_usa_murray"
+		texturefile = "gfx/event_pictures/deluge_murray.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_deluge_usa_lindbergh"
+		texturefile = "gfx/event_pictures/deluge_lindebegh.dds"
+	}
+	
+}
+

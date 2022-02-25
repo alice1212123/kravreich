@@ -1,0 +1,26 @@
+
+state={
+	id=641
+	name="STATE_641"
+	manpower=105786
+	state_category = rural
+
+	history={
+		owner = HAW
+		victory_points = {
+			12148 2
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			12148 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = HAW
+	}
+
+	provinces={
+		10188 12148 
+	}
+}

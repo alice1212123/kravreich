@@ -1,0 +1,29 @@
+
+state={
+	id=471
+	name="STATE_471"
+
+	history={
+		owner = BCA
+		buildings = {
+			infrastructure = 3
+			13203 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = BCA
+		victory_points = {
+			13203 1 
+		}
+
+	}
+
+	provinces={
+		917 1411 1799 1872 3606 4678 7869 7891 10548 10707 12508 12571 13202 13203 
+	}
+	manpower=57681
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=495
+	name="STATE_495"
+	manpower = 70000
+	
+	state_category = wasteland
+	impassable = yes
+	
+	resources={
+	}
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = BRA
+	}
+
+	provinces={
+		2198 5083 5214 5216 5232 8172 8185 8254 10956 10960 12919 13083 13285 13283
+	}
+}

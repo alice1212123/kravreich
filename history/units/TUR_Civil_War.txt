@@ -1,0 +1,255 @@
+﻿division_template = {
+	name = "Red Piyade"  			# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Dag Tugayi" 				# Mountain Brigade
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Bogazi Tugay" 				# Fortress Brigade - garrison brigade, lower experience and equipment
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Süvari Tümeni" 				# Cavalry Division
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	## VI. Kolordu ##
+	division = {
+		name = "7. Red Piyade"
+		location = 981
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "17. Red Piyade"
+		location = 981
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "20. Red Piyade"
+		location = 849
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	### Birinci Ordu ###
+	division = {
+		name = "11. Red Piyade"
+		location = 849
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "2. Red Piyade"
+		location = 3893
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	## III. Kolordu ##
+	division = {
+		name = "1. Red Piyade"
+		location = 3893
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "13. Red Piyade"
+		location = 3893
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "19. Red Piyade"
+		location = 922
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	## IV. Kolordu ##
+	division = {
+		name = "8. Red Piyade"
+		location = 922
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "14. Red Piyade"
+		location = 6925
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "1. Dag Tugayi"
+		location = 6925
+		division_template = "Dag Tugayi" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	### Ikinci Ordu Ordu ###
+	division = {
+		name = "2. Dag Tugayi"
+		location = 6925
+		division_template = "Dag Tugayi" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	## I. Kolordu ##
+	division = {
+		name = "6. Red Piyade"
+		location = 9878
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "16. Red Piyade"
+		location = 9878
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	## II.  Kolordu ##
+	division = {
+		name = "4. Red Piyade"
+		location = 9878
+		division_template = "Red Piyade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+
+	##### NAVAL UNITS #####
+	### Türk Donanmasi ###
+	navy = {				
+}
+
+
+### Air Wings ###
+air_wings = {
+	##### Türk Hava Kuvvetleri #####
+	49 = { 
+		# 1. Havacilik Alay -- Curtiss F11C Hawk II fighters (technically CAG fighters)
+		fighter_equipment_0 = {
+			owner = "TUR" 
+			amount = 45
+		}
+		# 2. Havacilik Alay -- Letov S.16T light bombers
+		CAS_equipment_1 = {
+			owner = "TUR" 
+			amount = 16
+		}
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "TUR"
+		}
+		requested_factories = 4
+		progress = 0.43
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "TUR"
+		}
+		requested_factories = 3
+		progress = 0.1
+	}
+}

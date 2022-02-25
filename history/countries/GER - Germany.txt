@@ -1,0 +1,572 @@
+﻿capital = 64
+
+oob = "GER_1936_redux"
+
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0.9
+set_convoys = 200
+
+set_variable = {language = 1}
+
+add_opinion_modifier = { target = HUN modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = ITA modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = SER modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = POL modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = FRA modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = SWI modifier = neutral_diplomacy_modifier }
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	early_bomber = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+	set_naval_oob = "GER_1936_naval_legacy"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		panzerschiffe = 1
+		pre_dreadnoughts = 1
+		early_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_depth_charges = 1
+		sonar = 1
+	}
+	set_naval_oob = "GER_1936_naval_mtg"
+}
+1935.1.1 = {
+	add_named_threat = { threat = 3 name = deluge_teu_threat }
+
+
+	declare_war_on = {
+		target = DDR
+		type = deluge_annex
+	}
+}
+
+create_import = {
+	resource = oil
+	factories = 3
+	exporter = SOV
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 60
+	communism = 10
+	neutrality = 20
+}
+	
+add_ideas = {
+	dictatorial_republic_law
+	state_collectives_law
+	closed_economy
+	labour_camps
+	life_hussar
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+	deluge_german_civil_war_idea
+	printing
+	novote
+	reinhard_heydrich
+	werner_von_blomberg
+	GER_tank
+}
+
+create_country_leader = {
+	name = "August von Mackensen"
+	desc = "life_hussar_desc"
+	picture = "gfx/leaders/European Countries/Prussian Germany/august_mackensen.dds"
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {  
+		old_guard 
+	}
+}
+
+create_country_leader = {
+	name = "Konrad Adenauer"
+	desc = ""
+	picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Pieck"
+	desc = ""
+	picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "August von Mackensen"
+	desc = "life_hussar_desc"
+	portrait_path = "gfx/leaders/European Countries/Prussian Germany/august_mackensen.dds"
+	traits = { cavalry_officer offensive_doctrine old_guard }
+	skill = 3
+	id = 1
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Gerd von Rundstedt"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Gerd_von_Rundstedt.dds"
+	traits = { defensive_doctrine offensive_doctrine old_guard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Friedrich Paulus"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Friedrich_Paulus.dds"
+	traits = { trait_cautious armor_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Johannes Blaskowitz"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Johannes_Blaskowitz.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Paul Hausser"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Paul_Hausser.dds"
+	traits = {  armor_officer politically_connected }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Friedrich Schulz"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Friedrich_Schulz.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Georg von Küchler"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Georg_von_Kuchler.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Alfred Jodl"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Alfred_Jodl.dds"
+	traits = { politically_connected career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Sepp Dietrich"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Josef_Dietrich.dds"
+	traits = { armor_officer politically_connected brilliant_strategist trait_reckless }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hasso von Manteuffel"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Hasso_von_Manteuffel.dds"
+	traits = { armor_officer career_officer trait_cautious }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Albert Kesselring"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Albert_Kesselring.dds"
+	traits = { brilliant_strategist trait_cautious war_hero }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Ernst-Eberhard Hell"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Ernst-Eberhard_Hell.dds"
+	traits = { winter_specialist trait_engineer war_hero }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Wilhelm Ritter von Leeb"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Ritter_von_Leeb.dds"
+	traits = { old_guard infantry_officer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Felix Steiner"
+	gfx = "GFX_portrait_ger_felix_steiner"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Karl Dönitz"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Karl_Donitz.dds"
+	traits = { seawolf }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Günther Lütjens"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Gunter_Lutjens.dds"
+	traits = { superior_tactician }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Hermann Boehm"
+	portrait_path = "gfx/leaders/GER/Portrait_Germany_Hermann_Boehm.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Kurt Fricke"
+	portrait_path = "gfx/leaders/deluge/germans/kurt_fricke.dds"
+	traits = { }
+	skill = 2
+}
+
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	create_equipment_variant = {
+		name = "Type II"
+		type = submarine_1
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Leipzig Class"
+		type = light_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_gun_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Weimar Class"
+		type = heavy_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 1
+			ship_gun_upgrade = 2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Seeadler Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 2
+			destroyer_engine_upgrade = 2
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	
+	# Battleships
+	create_equipment_variant = {
+		name = "Arminius Class"
+		type = ship_hull_heavy_1
+		#name_group = GER_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+	
+	# Battlecruisers
+	create_equipment_variant = {
+		name = "Beowulf Class"
+		type = ship_hull_heavy_1
+		#name_group = GER_BB_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_secondaries_1
+		}
+	}
+	
+	# Heavy Cruisers
+	create_equipment_variant = {
+		name = "Weimar Class"
+		type = ship_hull_cruiser_1
+		#name_group = GER_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_medium_battery_1
+    	}
+	}
+	create_equipment_variant = {
+		name = "Karolus Class"
+		type = ship_hull_cruiser_1
+		#name_group = GER_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+		}
+		obsolete = yes
+	}
+	
+	# Light Cruisers
+	create_equipment_variant = {
+		name = "Leipzig Class"
+		type = ship_hull_cruiser_1
+		#name_group = GER_TB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Meteor Class"
+		type = ship_hull_cruiser_1
+		#name_group = GER_TB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+		}
+		obsolete = yes
+	}
+	
+	# Destroyers
+	create_equipment_variant = {
+		name = "Zerstörer 1930"
+		type = ship_hull_light_1
+		#name_group = GER_TB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Zerstörer 1925"
+		type = ship_hull_light_1
+		#name_group = GER_TB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type I"
+		type = ship_hull_submarine_1
+		#name_group = GER_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type II"
+		type = ship_hull_submarine_1
+		#name_group = GER_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type III"
+		type = ship_hull_submarine_1
+		#name_group = GER_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_2
+		}
+	}
+}

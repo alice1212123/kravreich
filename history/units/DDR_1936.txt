@@ -1,0 +1,535 @@
+﻿division_template = {
+	name = "Kampfgruppe der Arbeiterklasse"
+
+	division_names_group = DDR_GAR_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Schützen-Division"
+
+	division_names_group = DDR_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Grenztruppen"
+
+	division_names_group = DDR_GAR_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Panzer-Division"
+
+	division_names_group = DDR_ARM_01
+	
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Schnelle-Division"
+
+	division_names_group = DDR_CAV_01
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+        cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Motorisierte-Schützen-Division"
+
+	division_names_group = DDR_MOT_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+        motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Gebirgs-Division"
+
+	division_names_group = DDR_MTN_01
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+        mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+        mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division= {	
+		#name = "1. Schützen-Division"
+		location = 495 #Dortmund
+		division_template = "Schützen-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "2. Schützen-Division"
+		location = 495 #Dortmund
+		division_template = "Schützen-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "3. Schützen-Division"
+		location = 495 #Dortmund
+		division_template = "Schützen-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "4. Schützen-Division"
+		location = 6662 #Near Dortmund
+		division_template = "Schützen-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "5. Schützen-Division"
+		location = 6469 #Essen
+		division_template = "Schützen-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "6. Schützen-Division"
+		location = 6469 #Essen
+		division_template = "Schützen-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "1. Kampfgruppe der Arbeiterklasse"
+		location = 529 # Near Essen
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "2. Kampfgruppe der Arbeiterklasse"
+		location = 9547 # Border
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "3. Kampfgruppe der Arbeiterklasse"
+		location = 241 # Wilhelmshaven
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "4. Kampfgruppe der Arbeiterklasse"
+		location = 3326 # Bremen
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "5. Kampfgruppe der Arbeiterklasse"
+		location = 9443 # Border
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "6. Kampfgruppe der Arbeiterklasse"
+		location = 11431 # Border
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "7. Kampfgruppe der Arbeiterklasse"
+		location = 3355 # Border
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "8. Kampfgruppe der Arbeiterklasse"
+		location = 11493 # Border
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "9. Kampfgruppe der Arbeiterklasse"
+		location = 6513 # Border
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "10. Kampfgruppe der Arbeiterklasse"
+		location = 11402
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "11. Kampfgruppe der Arbeiterklasse"
+		location = 6298
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "12. Kampfgruppe der Arbeiterklasse"
+		location = 9509 #Hamm
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "13. Kampfgruppe der Arbeiterklasse"
+		location = 526
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "14. Kampfgruppe der Arbeiterklasse"
+		location = 9281
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "15. Kampfgruppe der Arbeiterklasse"
+		location = 247
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "16. Kampfgruppe der Arbeiterklasse"
+		location = 3355
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "17. Kampfgruppe der Arbeiterklasse"
+		location = 6218
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "18. Kampfgruppe der Arbeiterklasse"
+		location = 529
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "19. Kampfgruppe der Arbeiterklasse"
+		location = 11331
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "20. Kampfgruppe der Arbeiterklasse"
+		location = 9238
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "21. Kampfgruppe der Arbeiterklasse"
+		location = 9509
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "22. Kampfgruppe der Arbeiterklasse"
+		location = 3234
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "23. Kampfgruppe der Arbeiterklasse"
+		location = 3395
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "24. Kampfgruppe der Arbeiterklasse"
+		location = 6298
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "25. Kampfgruppe der Arbeiterklasse"
+		location = 11431
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "26. Kampfgruppe der Arbeiterklasse"
+		location = 6349
+		division_template = "Kampfgruppe der Arbeiterklasse"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		#name = "1. Grenztruppen"
+		location = 6513
+		division_template = "Grenztruppen"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.2
+	}
+	
+	division= {	
+		#name = "2. Grenztruppen"
+		location = 11388 #Munster
+		division_template = "Grenztruppen"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.2
+	}
+	
+	division= {	
+		#name = "3. Grenztruppen"
+		location = 9375
+		division_template = "Grenztruppen"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.2
+	}
+	
+	division= {	
+		#name = "4. Grenztruppen"
+		location = 9320
+		division_template = "Grenztruppen"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.2
+	}
+	
+	division= {	
+		#name = "5. Grenztruppen"
+		location = 6257
+		division_template = "Grenztruppen"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.2
+	}
+	
+	division= {	
+		#name = "6. Grenztruppen"
+		location = 9238
+		division_template = "Grenztruppen"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.2
+	}
+	
+	division= {	
+		#name = "7. Grenztruppen"
+		location = 9264
+		division_template = "Grenztruppen"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.2
+	}
+	
+	division= {	
+		#name = "8. Grenztruppen"
+		location = 11468
+		division_template = "Grenztruppen"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
+		start_experience_factor = 0.2
+	}
+}
+
+air_wings = {
+	57 = {
+		fighter_equipment_0 =  {
+			owner = "DDR" 
+			amount = 15
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "DDR" 
+			amount = 6
+		}
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "DDR"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "DDR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "DDR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "DDR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "DDR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+}
+

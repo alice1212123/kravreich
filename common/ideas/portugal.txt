@@ -1,0 +1,506 @@
+ideas = {
+	country = {
+		POR_stag = {
+		
+			name = POR_stag
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = PORfire
+
+			removal_cost = -1
+			
+			modifier = {
+			production_factory_max_efficiency_factor = -0.1
+			line_change_production_efficiency_factor = -0.1
+			consumer_goods_factor = 0.03
+			production_speed_arms_factory_factor = -0.05
+			production_speed_industrial_complex_factor = -0.05
+				
+			}
+		}
+		
+		
+		POR_naval = {
+		
+			name = POR_naval
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = PORnavy
+
+			removal_cost = -1
+			
+			modifier = {
+			industrial_capacity_dockyard = 0.2
+			conscription_factor = -0.1
+			naval_equipment_upgrade_xp_cost = -0.5
+
+				
+			}
+		}
+		
+		
+		POR_Afrika = {
+		
+			name = POR_Afrika
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = PORAF
+
+			removal_cost = -1
+			
+			modifier = {
+			compliance_gain = -0.05
+			resistance_target = 0.15
+			consumer_goods_factor = 0.05
+
+				
+			}
+		}
+		
+		
+		POR_Afrika2 = {
+		
+			name = POR_Afrika2
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = PORAF2
+
+			removal_cost = -1
+			
+			modifier = {
+			compliance_gain = -0.15
+			resistance_target = 0.25
+			consumer_goods_factor = 0.10
+
+				
+			}
+		}
+		
+		
+		
+		POR_Afrika3 = {
+		
+			name = POR_Afrika3
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = PORAF3
+
+			removal_cost = -1
+			
+			modifier = {
+			compliance_gain = -0.50
+			resistance_target = 0.50
+			consumer_goods_factor = 0.25
+
+				
+			}
+		}
+
+}
+
+	political_advisor = {
+
+		POR_augusto_de_vasconcelos = {
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		POR_raul_brandao = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		POR_jaime_cortesao = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+
+	theorist = {
+
+		POR_jose_norton_de_matos = {
+			
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		POR_jose_manuel_sarmento_de_beires = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		POR_ortins_manuel_bettencourt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+
+
+
+	chief_of_staff_slot = {
+	
+		POR_rolao_pretea = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_humberto_carmona = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+	
+	army_chief = {
+		
+
+
+		POR_lobato_guerra = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+		POR_manuel_gouveia = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_humberto_delgado = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+		
+
+		POR_jaime_afreixo = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_americo_tomas = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+	high_command = {
+
+		POR_manuel_quintao_meireles = {
+	
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POR_jose_adriano_rebelo_pequito = {
+
+			picture = generic_army_europe_2
+		
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_francisco_craveiro_lopes = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_jose_filipe_rodrigues_de_barros = {
+
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		ogma = {
+			
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				light_air = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# military production didn't really start until 1950
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		arsenal_alfeite = {
+			
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				# need to find information on ships made
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	small_arms_manufacturer_slot = {
+			
+		designer = yes
+		
+		fabrica_material_guerra = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			equipment_bonus = {
+				# rifles (mauser 98k) and light artillery
+			}
+			
+			traits = { mass_producer_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+}

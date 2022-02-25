@@ -1,0 +1,342 @@
+﻿SOV = {
+	fleet_names_template = FLEET_NAME_SOV
+	submarine = {
+		prefix = ""
+		generic = { "PL-" }
+		unique = {
+			"PL-001" "PL-002" "PL-003" "PL-004" "PL-005" "PL-006" "PL-007" "PL-008" "PL-009" "PL-010"
+			"PL-011" "PL-012" "PL-013" "PL-014" "PL-015" "PL-016" "PL-017" "PL-018" "PL-019" "PL-020"
+			"PL-021" "PL-022" "PL-023" "PL-024" "PL-025" "PL-026" "PL-027" "PL-028" "PL-029" "PL-030"
+			"PL-031" "PL-032" "PL-033" "PL-034" "PL-035" "PL-036" "PL-037" "PL-038" "PL-039" "PL-040"
+			"PL-041" "PL-042" "PL-043" "PL-044" "PL-045" "PL-046" "PL-047" "PL-048" "PL-049" "PL-050"
+			"PL-051" "PL-052" "PL-053" "PL-054" "PL-055" "PL-056" "PL-057" "PL-058" "PL-059" "PL-060"
+			"PL-061" "PL-062" "PL-063" "PL-064" "PL-065" "PL-066" "PL-067" "PL-068" "PL-069" "PL-070"
+			"PL-071" "PL-072" "PL-073" "PL-074" "PL-075" "PL-076" "PL-077" "PL-078" "PL-079" "PL-080"
+			"PL-081" "PL-082" "PL-083" "PL-084" "PL-085" "PL-086" "PL-087" "PL-088" "PL-089" "PL-080"
+			"PL-091" "PL-092" "PL-093" "PL-094" "PL-095" "PL-096" "PL-097" "PL-098" "PL-099" "PL-100"
+			"PL-101" "PL-102" "PL-103" "PL-104" "PL-105" "PL-106" "PL-107" "PL-108" "PL-109" "PL-110"
+			"PL-111" "PL-112" "PL-113" "PL-114" "PL-115" "PL-116" "PL-117" "PL-118" "PL-119" "PL-120"
+			"PL-121" "PL-122" "PL-123" "PL-124" "PL-125" "PL-126" "PL-127" "PL-128" "PL-129" "PL-130"
+			"PL-131" "PL-132" "PL-133" "PL-134" "PL-135" "PL-136" "PL-137" "PL-138" "PL-139" "PL-140"
+			"PL-141" "PL-142" "PL-143" "PL-144" "PL-145" "PL-146" "PL-147" "PL-148" "PL-149" "PL-150"
+			"PL-151" "PL-152" "PL-153" "PL-154" "PL-155" "PL-156" "PL-157" "PL-158" "PL-159" "PL-160"
+			"PL-161" "PL-162" "PL-163" "PL-164" "PL-165" "PL-166" "PL-167" "PL-168" "PL-169" "PL-170"
+			"PL-171" "PL-172" "PL-173" "PL-174" "PL-175" "PL-176" "PL-177" "PL-178" "PL-179" "PL-180"
+			"PL-181" "PL-182" "PL-183" "PL-184" "PL-185" "PL-186" "PL-187" "PL-188" "PL-189" "PL-180"
+			"PL-191" "PL-192" "PL-193" "PL-194" "PL-195" "PL-196" "PL-197" "PL-198" "PL-199" "PL-200"
+			"PL-201" "PL-202" "PL-203" "PL-204" "PL-205" "PL-206" "PL-207" "PL-208" "PL-209" "PL-210"
+			"PL-211" "PL-212" "PL-213" "PL-214" "PL-215" "PL-216" "PL-217" "PL-218" "PL-219" "PL-220"
+			"PL-221" "PL-222" "PL-223" "PL-224" "PL-225" "PL-226" "PL-227" "PL-228" "PL-229" "PL-230"
+			"PL-231" "PL-232" "PL-233" "PL-234" "PL-235" "PL-236" "PL-237" "PL-238" "PL-239" "PL-240"
+			"PL-241" "PL-242" "PL-243" "PL-244" "PL-245" "PL-246" "PL-247" "PL-248" "PL-249" "PL-250"
+			"PL-251" "PL-252" "PL-253" "PL-254" "PL-255" "PL-256" "PL-257" "PL-258" "PL-259" "PL-260"
+			"PL-261" "PL-262" "PL-263" "PL-264" "PL-265" "PL-266" "PL-267" "PL-268" "PL-269" "PL-270"
+			"PL-271" "PL-272" "PL-273" "PL-274" "PL-275" "PL-276" "PL-277" "PL-278" "PL-279" "PL-280"
+			"PL-281" "PL-282" "PL-283" "PL-284" "PL-285" "PL-286" "PL-287" "PL-288" "PL-289" "PL-280"
+			"PL-291" "PL-292" "PL-293" "PL-294" "PL-295" "PL-296" "PL-297" "PL-298" "PL-299" "PL-300"
+			"PL-301" "PL-302" "PL-303" "PL-304" "PL-305" "PL-306" "PL-307" "PL-308" "PL-309" "PL-310"
+			"PL-311" "PL-312" "PL-313" "PL-314" "PL-315" "PL-316" "PL-317" "PL-318" "PL-319" "PL-320"
+			"PL-321" "PL-322" "PL-323" "PL-324" "PL-325" "PL-326" "PL-327" "PL-328" "PL-329" "PL-330"
+			"PL-331" "PL-332" "PL-333" "PL-334" "PL-335" "PL-336" "PL-337" "PL-338" "PL-339" "PL-340"
+			"PL-341" "PL-342" "PL-343" "PL-344" "PL-345" "PL-346" "PL-347" "PL-348" "PL-349" "PL-350"
+			"PL-351" "PL-352" "PL-353" "PL-354" "PL-355" "PL-356" "PL-357" "PL-358" "PL-359" "PL-360"
+			"PL-361" "PL-362" "PL-363" "PL-364" "PL-365" "PL-366" "PL-367" "PL-368" "PL-369" "PL-370"
+			"PL-371" "PL-372" "PL-373" "PL-374" "PL-375" "PL-376" "PL-377" "PL-378" "PL-379" "PL-380"
+			"PL-381" "PL-382" "PL-383" "PL-384" "PL-385" "PL-386" "PL-387" "PL-388" "PL-389" "PL-380"
+			"PL-391" "PL-392" "PL-393" "PL-394" "PL-395" "PL-396" "PL-397" "PL-398" "PL-399" "PL-400"
+		}
+	}
+	destroyer = {
+		prefix = ""
+		generic = { "Esminets" }
+		unique = {
+			"Sokol" "Yastreb" "Korshun" "Nyrok" "Voron" "Gagara"
+			"Filin" "Sova" "Albatros" "Berkut" "Krechet" "Lebed"
+			"Pelikan" "Pavlin" "Fazan" "Kondor" "Bekas" "Smelyi"
+			"Skoryi" "Statnyi" "Steregushchiy" "Strashnyi" "Storozhevoy"
+			"Sil'nyi" "Stroynyi" "Razyashchiy" "Rastoropnyi"
+			"Burakov" "Kit" "Bditel'nyi" "Del'fin" "Besstrashnyi"
+			"Skat" "Besposhchadnyi" "Kasatka" "Besshumnyi"
+			"Forel" "Vnimatelnyi" "Sterliad" "Vynoslivyi" "Grozovoi"
+			"Osiotr" "Vnushitelnyi" "Kefal" "Vlastnyi" "Losos"
+			"Som" "Boevoy" "Buinyi" "Boikiy" "Bychiok" "Akula"
+			"Burnyi" "Makrel" "Bystryi" "Plotva" "Bravyi" "Nalim"
+			"Blestyashchiy" "Okun" "Bedovyi" "Keta" "Bodryi"
+			"Peskar" "Bezuprechnyi" "Paltus" "Vidnyi" "Sig" "Groznyi"
+			"Gromkiy" "Gromiashchiy" "Zavetnyi" "Karp" "Zavidnyi"
+			"Beluga" "Zhivoy" "Rybets" "Zhutkiy" "Ugor" "Zharkiy"
+			"Zhivuchiy" "Shchuka" "Karas" "Pushchin" "Zadornyi"
+			"Zvonkiy" "Zorkiy" "Metkiy" "Molodetskiy" "Moshchnyi"
+			"Iskusnyi" "Ispolnitelnyi" "Krepkiy" "Liogkiy"
+			"Lovkiy" "Letuchiy" "Likhoy" "Tviordyi" "Tochnyi"
+			"Trevozhnyi" "Anastasov" "Maleev" "Yurasovskiy" "Sergeev"
+			"Zverev" "Dmitriev" "Bditelnyi" "Boevoi" "Patras"
+			"Dostoinyi" "Deyatel'nyi" "Bukharskiy" "Finn"
+			"Moskvityanin" "Dobrovolets" "Vsadnik" "Gaidamak"
+			"Amurets" "Ussuriets" "Kondratenko" "Okhotnik"
+			"Pogranichnik" "Voiskovoy" "Trukhmenets" "Kazanets"
+			"Zabaykalets" "Donskoy Kazak" "Shestakov" "Saken"
+			"Baranov" "Zatsarionnyi" "Bespokoinyi" "Gnevnyi"
+			"Shchastlivyi" "Bystryi" "Pylkiy" "Pobeditel"
+			"Zabiyaka" "Orfey" "Letun" "Desna" "Samson"
+			"Novik" "Avtroil" "Bryachislav" "Prymyslav" "Derzky"
+			"Gromki" "Pylki" "Pospeshny" "Ilyin" "Izylmetyev"
+			"Belli" "Miklukho-Maklay" "Kern"
+			"Konstantin" "Vladimir" "Konon Zotov" "Crown"
+			"Dubasov" "Mikhail" "Mecheslav" "Izyaslav"
+			"Pryamislav" "Fiodor Stratilat" "Gadzhibey"
+			"Fidonisi" "Kerch" "Kaliakriya" "Zante" "Korfu"
+			"Levkas" "Tserigo" "Gogland" "Kulm" "Grengamn"
+		} 
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "Legkiy Kreyser" }
+		unique = {
+			"Minin" "Ladoga" "Monomakh" "Dmitrii Donskoi"
+			"Pamiat Azova" "Dvina" "Gleb" "Triokh"
+			"Rurik" "Rossia" "Gromoboi"
+			"Bayan" "Pallada" "Yaroslav" "Ne Tron' Menia"
+			"Nikolai" "Vitiaz" "Rynda"
+			"Diana" "Aurora" "Varyag" "Soya" "Askold"
+			"Bogatyr" "Kagul" "Pamiat Merkuria" "Ochakov"
+			"Oleg"  "Boyarin" "Zhemchug"
+			"Izumrud" "Prut" "Muraviev Amurski" 
+			"Svetlana" "Almaz" "Kazarskii" "Posadnik" "Voyevoda"
+			"Griden" "Abrek" "Asia" "Peterburg" "Moskva" "Afrika"
+			"Europa" "Kuban" "Don" "Ural" "Dnepr" "Terek"
+			"Rion" "Rus'" "Dadymov"
+		}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Tyazhely Kreyser" }
+		unique = {
+			"Admiral Botsis" "Admiral Sarychev"
+			"Admiral von Wrangel" "Admiral Shishkov"
+			"Admiral Tebenkov" "Admiral Stark"
+			"Admiral Berkov" "Admiral von Schantz"
+			"Admiral Grigorovich" "Admiral Kolchak"
+			"Admiral Cruys" "Admiral Avelan"
+			"Admiral Essen"
+			"Admiral Lavrov" "Admiral Putyatin"
+			"Admiral Nevel'skoi" "Admiral Enkvist"
+			"Admiral Makarov" "Admiral Orlov"
+			"Admiral Jessen" "Admiral Kulchitsky"
+			"Admiral Lazarev" 
+			"Admiral Nakhimov"
+			"Admiral Kornilov"
+			"Admiral Istomin"
+		}
+	}
+	battle_cruiser = {
+		prefix = ""
+		generic = { "Linejnyj Kreyser" }
+		unique = {
+			"Knyaz Aleksandr"
+			"Knyaz Sergei"
+			"Knyaz Viatcheslav"
+			"Knyaz George"
+			"Knyaz Nikolai"
+			"Knyaz Dimitri"
+			"Knyaz Pavel"
+			"Knyaz Cyril"
+			"Knyaz Boris"
+			"Knyaz Konstantine"
+			"Knyaz Nicholas"
+			"Knyaz Suvorov"
+			"Knyaz Rostislav"
+		}
+	}
+	battleship = {
+		prefix = ""
+		generic = { "Linkor" }
+		unique = {
+			"Slava"
+			"Oryol"
+			"Poltava"
+			"Oslyabya"
+			"Pobeda"
+			"Peresvet"
+			"Knyaz Suvorov"
+			"Imperatritsa Ekaterina Velikaya"
+			"Imperator Nikolai I"
+			"Imperator Aleksandr III"
+			"Maria Magdalina"
+			"Panteleimon"
+			"Isaakii"
+			"Ioann Zlatoust"
+			"Arkhangel Gavriil"
+			"Arkhangel Uriil"
+			"Arkhangel Mikhail"
+			"Arkhangel Rafail"
+			"Imperator Pavel I"
+			"Imperatritsa Mariya"
+			"Imperator Piotr I"
+			"Neptunus"
+			"Kronshtadt"
+			"Astrakhan"
+			"Knyaz Rostislav"
+			"Viktor"
+			"Retvizan"
+			"Evstafi"
+			"Andrei Pervozvanny"
+			"Tsesarevich"
+			"Potemkin"
+			"Tsar Konstantin"
+			"Gangut"
+			"Knyaz Sergei"
+			"Knyaz Viatcheslav"
+			"Knyaz George"
+			"Knyaz Nikolai"
+			"Knyaz Dimitri"
+			"Knyaz Pavel"
+			"Knyaz Boris"
+			"Knyaz Konstantine"
+			"Knyaz Nicholas"
+		}
+	}
+	carrier = {
+		prefix = ""
+		generic = { "Avianosets" }
+		unique = {
+			"Moskva" "Sankt-Peterburg" "Ekaterinburg" "Tsaritsyn" "Orel" "Kiev" "Minsk" "Novorossiysk" "Kharkov" "Baku" "Riga" "Simbirsk" "Tblisi"
+		}
+	}
+air_wing_names_template = AIR_WING_NAME_SOV_FALLBACK
+
+	#Air wings can only be named through archetype
+	fighter_equipment = {
+		prefix = ""
+		generic = { "IAD" "IAD-PVO"}
+		generic_pattern = AIR_WING_NAME_SOV_GENERIC
+		unique = {
+		}	
+	}
+
+	jet_fighter_equipment = {
+		prefix = ""
+		generic = { "IAD" "IAD-PVO" "GIAD" }
+		generic_pattern = AIR_WING_NAME_SOV_GENERIC
+		unique = {
+		}	
+	}
+
+	heavy_fighter_equipment = {
+		prefix = ""
+		generic = { "IAD" "IAD-PVO"}
+		generic_pattern = AIR_WING_NAME_SOV_GENERIC
+		unique = {
+		}	
+	}
+
+	CAS_equipment = {
+		prefix = ""
+		generic = { "ShAD" "NBAD" }
+		generic_pattern = AIR_WING_NAME_SOV_GENERIC
+		unique = {
+		}	
+	}
+
+	cv_fighter_equipment = {
+		prefix = ""
+		generic = { "OKIAP" }
+		generic_pattern = AIR_WING_NAME_SOV_CARRIER
+		unique = {
+		}	
+	}
+
+	cv_CAS_equipment = {
+		prefix = ""
+		generic = { "OKShAP" }
+		generic_pattern = AIR_WING_NAME_SOV_CARRIER
+		unique = {
+		}	
+	}
+	cv_nav_bomber_equipment = {
+		prefix = ""
+		generic = { "OKMTAP" }
+		generic_pattern = AIR_WING_NAME_SOV_CARRIER
+		unique = {
+		}	
+	}
+
+	tac_bomber_equipment = {
+		prefix = ""
+		generic = { "BAD" }
+		generic_pattern = AIR_WING_NAME_SOV_GENERIC
+		unique = {
+		}	
+	}
+
+	jet_tac_bomber_equipment = {
+		prefix = ""
+		generic = { "BAD" "GBAD" }
+		generic_pattern = AIR_WING_NAME_SOV_GENERIC
+		unique = {
+		}	
+	}
+
+	nav_bomber_equipment = {
+		prefix = ""
+		generic = { "MBAD" "MTAD" }
+		generic_pattern = AIR_WING_NAME_SOV_GENERIC
+		unique = {
+		}	
+	}
+
+	strategic_bomber_equipment = {
+		prefix = ""
+		generic = { "OTBAD" }
+		generic_pattern = AIR_WING_NAME_SOV_GENERIC
+		unique = {
+		}	
+	}
+
+	jet_strategic_bomber_equipment = {
+		prefix = ""
+		generic = { "OTBAD" }
+		generic_pattern = AIR_WING_NAME_SOV_GENERIC
+		unique = {
+		}	
+	}
+
+	transport_plane_equipment = {
+		prefix = ""
+		generic = { "TrAD" }
+		generic_pattern = AIR_WING_NAME_SOV_GENERIC
+		unique = {
+		}	
+	}
+
+	infantry = {
+		prefix = ""
+		generic = { "Strelkovaya Diviziya" }
+		generic_pattern = "UNIT_GENERIC_NAME_SOV"
+		unique = {}
+	}
+	motorized = {
+		prefix = ""
+		generic = { "Motostrelkovaya Diviziya" }
+		generic_pattern = "UNIT_GENERIC_NAME_SOV"
+		unique = {}
+	}
+	mountaineers = {
+		prefix = ""
+		generic = { "Gornostrelkovaya Diviziya" }
+		generic_pattern = "UNIT_GENERIC_NAME_SOV"
+		unique = {}
+	}
+	cavalry = {
+		prefix = ""
+		generic = { "Kavaleriyskaya Diviziya" }
+		generic_pattern = "UNIT_GENERIC_NAME_SOV"
+		unique = {}
+	}
+	light_armor = {
+		prefix = ""
+		generic = { "Mekhanizirovanaya Korpus" }
+		generic_pattern = "UNIT_GENERIC_NAME_SOV"
+		unique = {}
+	}
+}

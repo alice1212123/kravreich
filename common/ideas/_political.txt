@@ -1,0 +1,756 @@
+ideas = {
+
+	country = {
+
+		deluge_changed_voting_law = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = voting_locked
+			
+			modifier = {
+			}
+		}
+		
+		deluge_changed_social_order = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = order_locked
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	 government_form_law_category = {
+		law = yes
+		
+		constitutional_republic_law = {
+			available = {
+				has_country_flag = flag_can_change_to_constitutional_republic_law
+			}
+			
+			cost = 250
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				democratic_drift = 0.05
+				communism_drift = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		dictatorial_republic_law = {
+			available = {
+				has_country_flag = flag_can_change_to_dictatorial_republic_law
+			}
+			
+			cost = 250
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				fascism_drift = 0.05
+				communism_drift = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		constitutional_monarchy_law = {
+			default = yes
+			
+			available = {
+				has_country_flag = flag_can_change_to_constitutional_monarchy_law
+			}
+			
+			cost = 250
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				democratic_drift = 0.05
+				neutrality_drift = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		absolute_monarchy_law = {
+			available = {
+				has_country_flag = flag_can_change_to_absolute_monarchy_law
+			}
+			
+			cost = 250
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				neutrality_drift = 0.05
+				fascism_drift = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	 government_structure_law_category = {
+		law = yes
+		
+		unitary_authority_law = {
+			default = yes
+			
+			available = {
+				has_country_flag = flag_can_change_to_unitary_authority_law
+			}
+			
+			cost = 250
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		federal_government_law = {
+			available = {
+				has_country_flag = flag_can_change_to_federal_government_law
+			}
+			
+			cost = 250
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		confederation_law = {			
+			available = {
+				has_country_flag = flag_can_change_to_confederation_law
+			}
+			
+			cost = 250
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	repression_law_category = {
+		law = yes
+		
+		policing_by_consent_law = {
+			available = {
+			
+			}
+			
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				monthly_population = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		military_police_law = {
+			default = yes
+			
+			available = {
+			
+			}
+			
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				mobilization_speed = 0.1
+				high_command_cost_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		secret_police_law = {			
+			available = {
+			
+			}
+			
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				security_chief_slot_cost_factor = -0.25
+				intelligence_chief_slot_cost_factor = -0.25
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	religion_law_category = {
+		law = yes
+		
+		atheist_state_law = {
+			available = {
+			
+			}
+			
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				research_speed_factor = 0.03
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		secular_state_law = {
+			available = {
+			
+			}
+			
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		official_religion_law = {
+			default = yes
+			
+			available = {
+			
+			}
+			
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		theocracy_law = {
+			available = {
+			
+			}
+			
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	corruption_law_category = {
+		law = yes
+		
+		ombudsmen_law = {
+			available = {
+			
+			}
+			
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				franchise_cost_factor = -0.3
+				religion_law_category_cost_factor = -0.3
+				repression_law_category_cost_factor = -0.3
+				welfare_law_category_cost_factor = -0.3
+				money_cost_factor = -0.3
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		antitrust_laws_law = {
+			available = {
+			
+			}
+			
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				trade_laws_cost_factor = -0.15
+				economy_cost_factor = -0.15
+				ownership_law_category_cost_factor = -0.15
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		patronage_networks_law = {
+			default = yes
+			
+			available = {
+			
+			}
+			
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				military_leader_cost_factor = -0.2
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	franchise = {
+		law = yes
+		
+		universal = {
+			available = {
+				NOT = { has_idea = deluge_changed_voting_law }
+				has_elections = yes
+			}
+		
+			cost = 50
+			removal_cost = -1
+			
+			on_add = {
+				hidden_effect = {
+					add_timed_idea = { idea = deluge_changed_voting_law days = 180 }
+				}
+			}
+			
+			modifier = {
+				communism_drift = 0.05
+				stability_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+				
+   				modifier = {
+					factor = 10 # don't switch back and forth
+					has_war = yes
+					has_idea = universal
+				}
+				
+   				modifier = {
+					factor = 5
+					surrender_progress > 0.1
+				}
+				
+   				modifier = {
+					factor = 3
+					has_government = communism
+				}
+   			}
+		}
+		
+		restricted = {
+			available = {
+				NOT = { has_idea = deluge_changed_voting_law }
+				has_elections = yes
+			}
+		
+			cost = 50
+			removal_cost = -1
+			
+			on_add = { 
+				hidden_effect = {
+					add_timed_idea = { idea = deluge_changed_voting_law days = 180 }
+				}
+			}
+			
+			modifier = {
+				democratic_drift = 0.05
+				stability_factor = 0.05
+				political_power_factor = 0.1
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+				
+   				modifier = {
+					factor = 3
+					has_government = democratic
+					has_war = no
+				}
+   			}
+		}
+		
+		landed = {
+			available = {
+				NOT = { has_idea = deluge_changed_voting_law }
+				has_elections = yes
+			}
+		
+			default = yes
+
+			cost = 50
+			removal_cost = -1
+			
+			on_add = { 
+				hidden_effect = {
+					add_timed_idea = { idea = deluge_changed_voting_law days = 180 }
+				}
+			}
+			
+			modifier = {
+				neutrality_drift = 0.05
+				war_support_factor = 0.05
+				political_power_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+				
+   				modifier = {
+					factor = 3
+					has_government = neutrality
+					has_war = no
+				}
+				
+  				modifier = {
+					factor = 3
+					has_government = fascism
+					has_war = no
+				}				
+   			}
+		}
+		
+		novote = {
+			available = {
+				has_elections = no
+			}
+				
+			cost = 50
+			removal_cost = -1
+			
+			on_add = { 
+				hidden_effect = {
+					add_timed_idea = { idea = deluge_changed_voting_law days = 180 }
+				}
+			}
+			
+			modifier = {
+				fascism_drift = 0.05
+				war_support_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0 # changes via event
+   			}
+		}
+			
+	}
+	
+	social_order = {
+		law = yes
+		
+		welfare_state = {
+			available = {
+				NOT = { has_idea = deluge_changed_social_order }
+			}
+		
+			cost = 50
+			removal_cost = -1
+			
+			on_add = { 
+				hidden_effect = {
+					add_timed_idea = { idea = deluge_changed_social_order days = 180 }
+				}
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				stability_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+				
+   				modifier = {
+					factor = 10 # don't switch back and forth
+					has_war = yes
+					has_idea = welfare_state
+				}
+				
+   				modifier = {
+					factor = 5
+					surrender_progress > 0.1
+				}
+   			}
+		}
+		
+		labour_camps = {
+			available = {
+				NOT = { has_idea = deluge_changed_social_order }
+			}
+		
+			cost = 50
+			removal_cost = -1
+			
+			on_add = { 
+				hidden_effect = {
+					add_timed_idea = { idea = deluge_changed_social_order days = 180 }
+				}
+			}
+			
+			modifier = {
+				local_resources_factor = 0.10
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+   			}
+		}
+		
+		robber_barons = {
+			available = {
+				NOT = { has_idea = deluge_changed_social_order }
+			}
+		
+			cost = 50
+			removal_cost = -1
+			
+			on_add = { 
+				hidden_effect = {
+					add_timed_idea = { idea = deluge_changed_social_order days = 180 }
+				}
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+								
+   				modifier = {
+					factor = 2
+					has_government = neutrality
+					has_war = no
+					has_idea = welfare_state
+				}
+				
+   				modifier = {
+					factor = 0
+					has_government = communism
+				}
+   			}
+		}
+		
+		established_religion = {
+			available = {
+				NOT = { has_idea = deluge_changed_social_order }
+			}
+				
+			default = yes
+
+			cost = 50
+			removal_cost = -1
+			
+			on_add = { 
+				hidden_effect = {
+					add_timed_idea = { idea = deluge_changed_social_order days = 180 }
+				}
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+				political_power_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+				
+   				modifier = {
+					factor = 2
+					has_government = fascism
+					has_war = no
+					has_idea = welfare_state
+				}
+   			}
+		}
+			
+	}
+}

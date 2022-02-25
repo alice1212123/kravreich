@@ -1,0 +1,1569 @@
+ideas = {
+	country = {
+	
+		#economy
+		DDR_agrarian_economy = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				monthly_population = 0.30
+			}
+		}
+		
+		DDR_industrial_economy = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		
+		DDR_militarist_economy = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.2
+			}
+		}
+		
+		#ownership
+		DDR_agrarian_ownership = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				local_resources_factor = 0.2
+			}
+		}
+		
+		DDR_industrial_ownership = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				global_building_slots_factor = 0.15
+			}
+		}
+		
+		DDR_militarist_ownership = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
+		#politics
+		#n/a
+		
+		#social_order
+		DDR_agrarian_social_order = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.15
+			}
+		}
+		
+		DDR_industrial_social_order = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		DDR_militarist_social_order = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+			}
+		}
+		
+		#judiciary
+		DDR_agrarian_judiciary = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				stability_weekly = 0.002
+			}
+		}
+		
+		DDR_industrial_judiciary = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		
+		DDR_militarist_judiciary = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				war_support_weekly = 0.003
+			}
+		}
+		
+		#assimilation
+		DDR_agrarian_assimilation = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				compliance_growth = 0.5
+			}
+		}
+		
+		DDR_industrial_assimilation = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				compliance_growth = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_militarist_assimilation = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				compliance_growth = 0.3
+				non_core_manpower = 0.03
+			}
+		}
+		
+		#merged lower tree
+		DDR_agragragr_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.15
+				stability_weekly = 0.002
+				compliance_growth = 0.5
+			}
+		}
+		
+		DDR_agragrind_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.15
+				stability_weekly = 0.002
+				compliance_growth = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_agragrmil_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.15
+				stability_weekly = 0.002
+				compliance_growth = 0.3
+				non_core_manpower = 0.03
+			}
+		}
+		
+		DDR_agrindagr_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.15
+				communism_drift = 0.1
+				compliance_growth = 0.5
+			}
+		}
+		
+		DDR_agrindind_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.15
+				communism_drift = 0.1
+				compliance_growth = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_agrindmil_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.15
+				communism_drift = 0.1
+				compliance_growth = 0.3
+				non_core_manpower = 0.03
+			}
+		}
+		
+		DDR_agrmilagr_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.15
+				war_support_weekly = 0.003
+				compliance_growth = 0.5
+			}
+		}
+		
+		DDR_agrmilind_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.15
+				war_support_weekly = 0.003
+				compliance_growth = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_agrmilmil_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.15
+				war_support_weekly = 0.003
+				compliance_growth = 0.3
+				non_core_manpower = 0.03
+			}
+		}
+		
+		#industrial
+		DDR_indagragr_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				stability_weekly = 0.002
+				compliance_growth = 0.5
+			}
+		}
+		
+		DDR_indagrind_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				stability_weekly = 0.002
+				compliance_growth = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_indagrmil_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				stability_weekly = 0.002
+				compliance_growth = 0.3
+				non_core_manpower = 0.03
+			}
+		}
+		
+		DDR_indindagr_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.1
+				compliance_growth = 0.5
+			}
+		}
+		
+		DDR_indindind_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.1
+				compliance_growth = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_indindmil_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				communism_drift = 0.1
+				compliance_growth = 0.3
+				non_core_manpower = 0.03
+			}
+		}
+		
+		DDR_indmilagr_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				war_support_weekly = 0.003
+				compliance_growth = 0.5
+			}
+		}
+		
+		DDR_indmilind_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				war_support_weekly = 0.003
+				compliance_growth = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_indmilmil_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				war_support_weekly = 0.003
+				compliance_growth = 0.3
+				non_core_manpower = 0.03
+			}
+		}
+		
+		#militarist
+		DDR_milagragr_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+				stability_weekly = 0.002
+				compliance_growth = 0.5
+			}
+		}
+		
+		DDR_milagrind_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+				stability_weekly = 0.002
+				compliance_growth = 0.15
+			}
+		}
+		
+		DDR_milagrmil_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+				stability_weekly = 0.002
+				compliance_growth = 0.3
+				non_core_manpower = 0.03
+			}
+		}
+		
+		DDR_milindagr_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+				communism_drift = 0.1
+				compliance_growth = 0.5
+			}
+		}
+		
+		DDR_milindind_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+				communism_drift = 0.1
+				compliance_growth = 0.15
+			}
+		}
+		
+		DDR_milindmil_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+				communism_drift = 0.1
+				compliance_growth = 0.3
+				non_core_manpower = 0.03
+			}
+		}
+		
+		DDR_milmilagr_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+				war_support_weekly = 0.003
+				compliance_growth = 0.5
+			}
+		}
+		
+		DDR_milmilind_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+				war_support_weekly = 0.003
+				compliance_growth = 0.15
+			}
+		}
+		
+		DDR_milmilmil_merged = {
+			allowed = {
+				always= no
+			}
+			name = DDR_merged_new_socialism
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+				war_support_weekly = 0.003
+				compliance_growth = 0.3
+				non_core_manpower = 0.03
+			}
+		}
+		
+#finisher tree
+	#society
+		DDR_agragr_society = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				monthly_population = 0.25
+			}
+		}
+		
+		DDR_agrind_society = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				army_core_defence_factor = 0.15
+				army_morale_factor = 0.1
+			}
+		}
+		
+		DDR_agrmil_society = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				supply_consumption_factor = -0.15
+			}
+		}
+		
+		DDR_indind_society = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		
+		DDR_indmil_society = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		
+		DDR_milmil_society = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		
+	#state
+		DDR_agragr_state = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_agrind_state = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.25
+			}
+		}
+		
+		DDR_agrmil_state = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				training_time_army_factor = -0.2
+			}
+		}
+		
+		DDR_indind_state = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				global_building_slots_factor = 0.1
+			}
+		}
+		
+		DDR_indmil_state = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				fuel_gain_factor_from_states = 0.50
+				fuel_gain_factor = 0.25
+			}
+		}
+		
+		DDR_milmil_state = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				army_org_factor = 0.1
+			}
+		}
+		
+	#security
+		DDR_agragr_security = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				resistance_target = -0.1
+			}
+		}
+		
+		DDR_agrind_security = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				resistance_growth = -0.15
+			}
+		}
+		
+		DDR_agrmil_security = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				line_change_production_efficiency_factor = 0.2
+			}
+		}
+		
+		DDR_indind_security = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
+				resistance_target = -0.1
+			}
+		}
+		
+		DDR_indmil_security = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				army_morale_factor = 0.05
+				breakthrough_factor = 0.05
+			}
+		}
+		
+		DDR_milmil_security = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				experience_gain_army = -0.02
+				resistance_target = -0.2
+			}
+		}
+		
+		#merged finishers
+		DDR_agrarian_finisher = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				monthly_population = 0.25
+				consumer_goods_factor = -0.05
+				resistance_target = -0.1
+			}
+		}
+		
+		DDR_industrial_finisher = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
+				resistance_target = -0.1
+				global_building_slots_factor = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		
+		DDR_militarist_finisher = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				experience_gain_army = -0.02
+				resistance_target = -0.2
+				army_org_factor = 0.1
+				political_power_gain = 0.5
+			}
+		}
+		
+	#the SocDems
+		DDR_disloyal_socialists = {
+			allowed = {always = no}
+			name = DDR_the_social_question
+			picture = trotskyite_plot_purged
+			modifier = {
+				encryption_factor = -0.3
+				communism_drift = -0.1
+				democratic_drift = -0.1
+				conscription_factor = -0.25
+			}
+		}
+		
+		DDR_disloyal_socialists2 = {
+			allowed = {always = no}
+			name = DDR_the_social_question
+			picture = trotskyite_plot_purged
+			modifier = {
+				communism_drift = -0.05
+				democratic_drift = -0.05
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		DDR_social_security = {
+			allowed = {always = no}
+			picture = hol_aloof_neutrality
+			modifier = {
+				monthly_population = 0.2
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		
+		DDR_personal_liberty = {
+			allowed = {always = no}
+			picture = generic_victors_of_ww1
+			modifier = {
+				political_power_gain = 0.25
+				add_stability = 0.1
+			}
+		}
+		
+		DDR_market_socialism = {
+			allowed = {always = no}
+			picture = trotskyite_plot_purged
+			modifier = {
+				trade_opinion_factor = 0.5
+				research_speed_factor = 0.05
+			}
+		}
+		
+		DDR_disloyal_army = {
+			allowed = {always = no}
+			name = DDR_uncontrolled_military
+			picture = MEX_revolutionary_army
+			modifier = {
+				encryption_factor = -0.3
+				army_speed_factor = -0.5
+				army_org_factor = -0.25
+				army_defence_factor = -0.2
+			}
+		}
+		
+		DDR_disloyal_army2 = {
+			allowed = {always = no}
+			name = DDR_uncontrolled_military
+			picture = MEX_revolutionary_army
+			modifier = {
+				encryption_factor = -0.15
+				army_org_factor = -0.05
+			}
+		}
+		
+		DDR_purged_army = {
+			allowed = {always = no}
+			picture = idea_generic_army_problems
+			modifier = {
+				encryption_factor = 0.5
+				army_org_factor = -0.2
+				army_morale_factor = -0.1
+			}
+		}
+		
+		DDR_strengthened_army = {
+			allowed = {always = no}
+			picture = MEX_idea_HUN_secret_rearmament
+			modifier = {
+				experience_gain_army_factor = 0.15
+				army_org_factor = 0.1
+			}
+		}
+		
+		DDR_young_republic1 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.2
+				political_power_factor = -0.5
+			}
+		}
+		
+		#+20%politicalpowergain
+		#+20%constructionspeed
+		DDR_young_republic2 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.3
+			}
+		}
+		
+		#-5%consumergoods
+		#+10%politicalpowergain
+		#+10%constructionspeed
+		DDR_young_republic3 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				political_power_factor = -0.4
+			}
+		}
+		
+		#-5%consumergoods
+		#+10%politicalpowergain
+		#+10%constructionspeed
+		DDR_young_republic24 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				political_power_factor = -0.2
+			}
+		}
+		
+		#-5%consumergoods
+		#+10%politicalpowergain
+		#+10%constructionspeed
+		DDR_young_republic34 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = -0.3
+			}
+		}
+		
+		#+40%politicalpowergain
+		#+10%constructionspeed
+		#+25%civfactoryconstructionspeed
+		DDR_young_republic25 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 0.25
+				political_power_factor = 0.1
+			}
+		}
+		
+		#+40%politicalpowergain
+		#+10%constructionspeed
+		#+25%civfactoryconstructionspeed
+		DDR_young_republic35 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				production_speed_industrial_complex_factor = 0.25
+			}
+		}
+		
+		#after elections
+		#for all: +20%politicalpowergain
+		DDR_young_republic241 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		DDR_young_republic341 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = -0.1
+			}
+		}
+		
+		DDR_young_republic251 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.25
+				political_power_factor = 0.3
+			}
+		}
+		
+		DDR_young_republic351 = {
+			allowed = {always = no}
+			name = DDR_young_republic
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				production_speed_industrial_complex_factor = 0.25
+				political_power_factor = 0.2
+			}
+		}
+		
+		DDR_internal_crackdown = {
+			picture = generic_oppression
+			modifier = {
+				communism_drift = 0.2
+			}
+		}
+		
+		DDR_foreign_crackdown = {
+			picture = generic_oppression
+			modifier = {
+				war_support_weekly = 0.003
+			}
+		}
+		
+		DDR_investigation_stifled = {
+			picture = generic_oppression
+			modifier = {
+				stability_weekly = 0.002
+			}
+		}
+		
+		DDR_national_effort = {
+			available = {
+				OR = {
+					has_war_with = GER
+					has_war_with = WGR
+				}
+			}
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		
+		DDR_bureaucratic_purge = {
+			picture = generic_purge
+			modifier = {
+				political_power_factor = -0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		DDR_redistribution = {
+			picture = generic_flexible_foreign_policy
+			modifier ={
+				stability_weekly = 0.002
+			}
+		}
+		
+		DDR_reichsbahn = {
+			picture = ddr_reichsbahn
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_new_german_spirit1 = {
+			name = DDR_new_german_spirit
+			picture = soviet_german_friendship
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		
+		DDR_new_german_spirit12 = {
+			name = DDR_new_german_spirit
+			picture = soviet_german_friendship
+			modifier = {
+				political_power_factor = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		
+		DDR_new_german_spirit13 = {
+			name = DDR_new_german_spirit
+			picture = soviet_german_friendship
+			modifier = {
+				political_power_factor = 0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+		
+		DDR_new_german_spirit123 = {
+			name = DDR_new_german_spirit
+			picture = soviet_german_friendship
+			modifier = {
+				political_power_factor = 0.1
+				research_speed_factor = 0.05
+				supply_consumption_factor = -0.1
+			}
+		}
+		
+		DDR_new_german_spirit_complete = {
+			name = DDR_new_german_spirit
+			picture = soviet_german_friendship
+			modifier = {
+				political_power_factor = 0.2
+				research_speed_factor = 0.05
+				supply_consumption_factor = -0.1
+			}
+		}
+		
+		internationale_red_brigades = {
+			picture = SPR_international_brigades
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		
+		DDR_diaspora = {
+			picture = generic_political_support
+			modifier = {
+				monthly_population = 0.2
+			}
+		}
+		
+		DDR_austrian_underground = {
+			picture = PRC_low_popular_support3
+			modifier = {
+				political_power_gain = -0.05
+			}
+		}
+		
+		#economic tree
+		DDR_kriegswirtschaft = {
+			picture = generic_production_bonus
+			available = {
+				OR = {
+					has_war_with = GER
+					has_war_with = WGR
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		DDR_land_reform = {
+			picture = generic_agrarian_reform
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		DDR_controlled_industrialisation = {
+			picture = MAN_five_year_plan_industry
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+			}
+		}
+		
+		DDR_socialist_wonder = {
+			picture = JAP_the_unthinkable_option
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_factor = 0.5
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_economic_restructuring = {
+			picture = FRA_factory_strikes
+			modifier = {
+				production_factory_efficiency_gain_factor = -1
+			}
+		}
+		
+		DDR_board_of_industry = {
+			picture = SOV_scientist_defect
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
+		DDR_board_of_industry_trade = {
+			picture = SOV_scientist_defect
+			name = DDR_board_of_industry
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				local_resources_factor = 0.1
+				trade_opinion_factor = 0.5
+			}
+		}
+		
+		DDR_board_of_industry_work = {
+			picture = SOV_scientist_defect
+			name = DDR_board_of_industry
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		
+		DDR_board_of_industry_full_trade = {
+			picture = SOV_scientist_defect
+			name = DDR_board_of_industry
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				local_resources_factor = 0.1
+				trade_opinion_factor = 0.5
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		DDR_board_of_industry_full_work = {
+			picture = SOV_scientist_defect
+			name = DDR_board_of_industry
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		#offa_bills
+		DDR_offa_bills_dummy = {
+			picture = ger_mefo_bills
+			name = DDR_offa_bills
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		DDR_offa_bills_dummy8 = {
+			picture = ger_mefo_bills
+			name = DDR_offa_bills
+			modifier = {
+				consumer_goods_factor = -0.08
+			}
+		}
+		
+		DDR_offa_bills_dummy0 = {
+			picture = ger_mefo_bills
+			name = DDR_offa_bills
+			modifier = {
+				consumer_goods_factor = 0
+			}
+		}
+		
+		DDR_offa_bills10 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+		
+		DDR_offa_bills9 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.18
+			}
+		}
+		
+		DDR_offa_bills8 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.16
+			}
+		}
+		
+		DDR_offa_bills7 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.14
+			}
+		}
+		
+		DDR_offa_bills6 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.12
+			}
+		}
+		
+		DDR_offa_bills5 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		DDR_offa_bills4 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.08
+			}
+		}
+		
+		DDR_offa_bills3 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.06
+			}
+		}
+		
+		DDR_offa_bills2 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.04
+			}
+		}
+		
+		DDR_offa_bills1 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		DDR_offa_bills0 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = 0.00
+			}
+		}
+		
+		DDR_offa_billsn1 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		
+		DDR_offa_billsn2 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = -0.04
+			}
+		}
+		
+		DDR_offa_billsn3 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = -0.06
+			}
+		}
+		
+		DDR_offa_billsn4 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = -0.08
+			}
+		}
+		
+		DDR_offa_billsn5 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = -0.10
+				if = {
+					limit = {owns_state = 5}
+					political_power_factor = 0.1
+				}
+			}
+		}
+		
+		DDR_offa_billsn6 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = -0.12
+			}
+		}
+		
+		DDR_offa_billsn7 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = -0.14
+			}
+		}
+		
+		DDR_offa_billsn8 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = -0.16
+			}
+		}
+		
+		DDR_offa_billsn9 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = -0.18
+			}
+		}
+		
+		DDR_offa_billsn10 = {
+			picture = ger_mefo_bills
+			modifier = {
+				consumer_goods_factor = -0.20
+			}
+		}
+		
+		DDR_offa_bonus_control = {
+			picture = ""
+			name = DDR_offa_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		DDR_offa_bonus_cooperate = {
+			picture = ""
+			name = DDR_offa_bonus
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		
+		DDR_offa_bonus_control_efficiency = {
+			picture = ""
+			name = DDR_offa_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		
+		DDR_offa_bonus_cooperate_efficiency = {
+			picture = ""
+			name = DDR_offa_bonus
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		
+		DDR_offa_bonus_control_innovation = {
+			picture = ""
+			name = DDR_offa_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.025
+			}
+		}
+		
+		DDR_offa_bonus_cooperate_innovation = {
+			picture = ""
+			name = DDR_offa_bonus
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				research_speed_factor = 0.025
+			}
+		}
+		
+		DDR_reprivatisation = {
+			picture = generic_economic_increase
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				production_speed_industrial_complex_factor = 0.3
+			}
+		}
+		
+		DDR_reprivatisation_reformed = {
+			picture = generic_economic_increase
+			name = DDR_reprivatisation
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		
+		DDR_foreign_investment = {
+			picture = generic_foreign_capital
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DDR_liberal_economic_upturn = {
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		DDR_liberal_economic_wonder = {
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		DDR_social_question = {
+			picture = trotskyite_plot_purged
+			modifier = {
+				encryption_factor = -0.5
+				conscription_factor = -0.25
+				industrial_capacity_factory = -0.1
+			}
+		}
+		
+		DDR_military_pragmatism = {
+			picture = soviet_german_friendship
+			modifier = {
+				army_org = 2
+			}
+		}
+		
+		DDR_armour_finisher = {
+			picture = soviet_german_friendship
+			name = DDR_military_pragmatism
+			modifier = {
+				army_org = 2
+				army_armor_speed_factor = 0.1
+			}
+		}
+		
+		DDR_infantry_finisher = {
+			picture = soviet_german_friendship
+			name = DDR_military_pragmatism
+			modifier = {
+				army_org = 2
+				experience_loss_factor = -0.2
+			}
+		}
+		
+		DDR_armour_finisher2 = {
+			picture = soviet_german_friendship
+			name = DDR_military_perfectionism
+			modifier = {
+				army_org = 2
+				army_armor_speed_factor = 0.1
+				land_reinforce_rate = 0.05
+			}
+		}
+		
+		DDR_infantry_finisher2 = {
+			picture = soviet_german_friendship
+			name = DDR_military_perfectionism
+			modifier = {
+				army_org = 2
+				experience_loss_factor = -0.2
+				land_reinforce_rate = 0.05
+			}
+		}
+		
+		DDR_air_production = {
+			picture = MAN_five_year_plan_air
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				strat_bomber_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+		}
+	}
+}

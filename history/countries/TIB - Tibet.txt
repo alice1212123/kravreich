@@ -1,0 +1,66 @@
+﻿capital = 757
+
+oob = "TIB_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	fascism = 40
+	communism = 5
+	neutrality = 50
+}
+
+add_ideas = {
+	novote
+	neutrality_idea
+}
+
+create_country_leader = {
+	name = "Jamphel Yeshe Gyaltsen"
+	desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
+	picture = "Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Dalai Lama Thubten Gyatso"
+	desc = ""
+	picture = "gfx/leaders/Asian Countries/Tibet/13th_dalai_lama.dds"
+	expire = "1965.1.1"
+	ideology = religious_ideology
+	traits = {
+		#
+	}
+}
+
+
+create_field_marshal = {
+	name = "Jamphel Yeshe Gyaltsen"
+	picture = "Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

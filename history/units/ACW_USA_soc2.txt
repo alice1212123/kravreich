@@ -1,0 +1,101 @@
+﻿division_template = {
+	name = "Union Poplar Militia"
+	division_names_group = USA_GAR_01
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0.5
+}
+
+units = {
+
+	division= {	
+		name = "1. Labor Militia"
+		location = 9450
+		division_template = "Union Poplar Militia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+	}
+
+
+	division= {	
+		name = "2. Labor Militia"
+		location = 9450
+		division_template = "Union Poplar Militia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		name = "3. Labor Militia"
+		location = 9450
+		division_template = "Union Poplar Militia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		name = "4. Labor Militia"
+		location = 9450
+		division_template = "Union Poplar Militia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		name = "5. Labor Militia"
+		location = 9450
+		division_template = "Union Poplar Militia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		name = "6. Labor Militia"
+		location = 9450
+		division_template = "Union Poplar Militia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		name = "7. Labor Militia"
+		location = 6710
+		division_template = "Union Poplar Militia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "8. Labor Militia"
+		location = 6710
+		division_template = "Union Poplar Militia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "9. Labor Militia"
+		location = 6710
+		division_template = "Union Poplar Militia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "10. Labor Militia"
+		location = 6710
+		division_template = "Union Poplar Militia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.65
+	}
+
+	
+}
+		

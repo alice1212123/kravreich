@@ -1,0 +1,37 @@
+
+state={
+	id=822
+	name="STATE_822"
+
+	resources={
+		rubber=12
+	}
+
+	history={
+		owner = BRA
+
+		buildings = {
+			infrastructure = 2
+			12853 = {
+				naval_base = 2
+			}
+			4980 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = BRA
+		victory_points = {
+			12853 10
+		}
+		victory_points = {
+			4980 5
+		}
+	}
+
+	provinces={
+		4980 5008 13242 13243 13244 13245 13246 13284 12853 12999 10874 2214 2035 13287 13288 13289 13290 13291 13292 13293 13294 13295
+	}
+	manpower=921700
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,199 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_comecon_icon"
+		texturefile = "gfx/interface/technology_sharing/comecon_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_programme_icon"
+		texturefile = "gfx/interface/technology_sharing/league_programme_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_small_arms_manufacturer_slot"
+		textureFile = "gfx/interface/idea_slot_small_arms_manufacturer_slot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_chief_of_staff_slot"
+		textureFile = "gfx/interface/idea_slot_chief_of_staff_slot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_intelligence_chief_slot"
+		textureFile = "gfx/interface/idea_slot_intelligence_chief_slot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_security_chief_slot"
+		textureFile = "gfx/interface/idea_slot_security_chief_slot.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_slot_vehicle_manufacturer_slot"
+		textureFile = "gfx/interface/idea_slot_vehicle_manufacturer_slot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_guns_manufacturer_slot"
+		textureFile = "gfx/interface/idea_slot_guns_manufacturer_slot.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_krauss-maffei"
+		texturefile = "gfx/interface/ideas/krauss-maffei.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_browning"
+		texturefile = "gfx/interface/ideas/browning.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_degesch"
+		texturefile = "gfx/interface/ideas/degesch.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_aeg"
+		texturefile = "gfx/interface/ideas/aeg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_horch"
+		texturefile = "gfx/interface/ideas/horch.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_erma"
+		texturefile = "gfx/interface/ideas/erma.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hasag"
+		texturefile = "gfx/interface/ideas/hasag.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_dosco"
+		texturefile = "gfx/interface/ideas/dosco.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_carnegie"
+		texturefile = "gfx/interface/ideas/carnegie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_verney-carron"
+		texturefile = "gfx/interface/ideas/verney-carron.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bethlehem_steel"
+		texturefile = "gfx/interface/ideas/bethlehem_steel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_colt"
+		texturefile = "gfx/interface/ideas/colt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_argus"
+		texturefile = "gfx/interface/ideas/argus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ici"
+		texturefile = "gfx/interface/ideas/ici.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_birmingham_small_arms"
+		texturefile = "gfx/interface/ideas/birmingham_small_arms.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_leica"
+		texturefile = "gfx/interface/ideas/leica.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_coventry"
+		texturefile = "gfx/interface/ideas/coventry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_william_foster"
+		texturefile = "gfx/interface/ideas/william_foster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ruston"
+		texturefile = "gfx/interface/ideas/ruston.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_nuffield"
+		texturefile = "gfx/interface/ideas/nuffield.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bth"
+		texturefile = "gfx/interface/ideas/bth.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_hotchkiss"
+		texturefile = "gfx/interface/ideas/hotchkiss.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_berliet"
+		texturefile = "gfx/interface/ideas/berliet.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_latil"
+		texturefile = "gfx/interface/ideas/latil.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_citroen"
+		texturefile = "gfx/interface/ideas/citroen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_texaco"
+		texturefile = "gfx/interface/ideas/texaco.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_koc_holding"
+		texturefile = "gfx/interface/ideas/crimson_banner_koc_holding.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_arcelik"
+		texturefile = "gfx/interface/ideas/crimson_banner_arcelik.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_turkish_petroleum"
+		texturefile = "gfx/interface/ideas/crimson_banner_turkish_petroleum.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_turkish_state_rail"
+		texturefile = "gfx/interface/ideas/crimson_banner_turkish_state_rail.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_turkish_locomotives"
+		texturefile = "gfx/interface/ideas/crimson_banner_turkish_locomotives.dds"
+	}
+	
+	
+}

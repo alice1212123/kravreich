@@ -1,0 +1,31 @@
+
+state={
+	id=385
+	name="STATE_385"
+
+	history={
+		owner = BCA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+			12211 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = BCA
+		victory_points = {
+			3513 5 
+		}
+
+	}
+
+	provinces={
+		505 528 1414 3471 3513 4274 4328 4380 7398 10151 10183 11495 11733 12183 12211 12281 
+	}
+	manpower=2453785
+	buildings_max_level_factor=1.000
+	state_category=city
+}

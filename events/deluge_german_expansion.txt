@@ -1,0 +1,177 @@
+﻿
+# Germany is on the war path and news events inform everyone
+
+add_namespace = german_expansion
+
+# Holland
+
+news_event = {
+	id = german_expansion.1
+	title = german_expansion1title
+	desc = german_expansion1desc
+	
+	picture = GFX_deluge_brandenburg_ruin
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = german_expansion1opta
+		trigger = {
+			OR = {
+				original_tag = DDR
+				original_tag = WGR
+				original_tag = GER
+			}
+		}
+	}
+	option = {
+		name = german_expansion1optb
+		trigger = { original_tag = HOL }
+	}
+	option = {
+		name = german_expansion1optc
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = DDR
+					original_tag = WGR
+					original_tag = GER
+					original_tag = HOL
+				}
+			}
+		}
+	}
+}
+
+
+# France
+
+news_event = {
+	id = german_expansion.2
+	title = german_expansion2title
+	desc = german_expansion2desc
+	
+	picture = GFX_deluge_paris_large
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = german_expansion2opta
+		trigger = {
+			OR = {
+				original_tag = DDR
+				original_tag = WGR
+				original_tag = GER
+			}
+		}
+	}
+	option = {
+		name = german_expansion2optb
+		trigger = { original_tag = FRA }
+	}
+	option = {
+		name = german_expansion2optc
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = DDR
+					original_tag = WGR
+					original_tag = GER
+					original_tag = FRA
+				}
+			}
+		}
+	}
+}
+
+
+# Austria
+
+news_event = {
+	id = german_expansion.3
+	title = german_expansion3title
+	desc = german_expansion3desc
+	
+	picture = GFX_deluge_brandenburg_ruin
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = german_expansion3opta
+		trigger = {
+			OR = {
+				original_tag = DDR
+				original_tag = WGR
+				original_tag = GER
+			}
+		}
+	}
+	option = {
+		name = german_expansion3optb
+		trigger = { original_tag = AUS }
+	}
+	option = {
+		name = german_expansion3optc
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = DDR
+					original_tag = WGR
+					original_tag = GER
+					original_tag = AUS
+				}
+			}
+		}
+	}
+}
+
+
+# Poland
+
+news_event = {
+	id = german_expansion.4
+	title = german_expansion4title
+	desc = german_expansion4desc
+	
+	picture = GFX_deluge_brandenburg_ruin
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = german_expansion4opta
+		trigger = {
+			OR = {
+				original_tag = DDR
+				original_tag = WGR
+				original_tag = GER
+			}
+		}
+	}
+	option = {
+		name = german_expansion4optb
+		trigger = { original_tag = POL }
+	}
+	option = {
+		name = german_expansion4optc
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = DDR
+					original_tag = WGR
+					original_tag = GER
+					original_tag = POL
+				}
+			}
+		}
+	}
+}
+
+

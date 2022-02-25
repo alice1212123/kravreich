@@ -1,0 +1,1106 @@
+﻿add_namespace = germany
+
+country_event = {
+	id = germany.1
+	title = germany1title
+	desc = germany1desc
+	
+	picture = GFX_deluge_berlin_small
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany1opta
+                hidden_effect = {
+                news_event = { days = 15 id = germany.15 }
+                }	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+news_event = {
+	id = germany.2
+	title = germany2title
+	desc = germany2desc
+	
+	picture = GFX_deluge_mack_dead
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany2opta
+                }		
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.3
+	title = germany3title
+	desc = germany3desc
+	
+	picture = GFX_deluge_chaos
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany3opta
+                complete_national_focus = ger_the_monarchists_assume_control
+                country_event = germany.4
+		ai_chance = {
+			factor = 100
+                }
+       }
+       option = {
+		name = germany3optb
+                complete_national_focus = ger_the_military_storms_berlin
+		ai_chance = {
+			factor = 100
+                }
+       }
+}
+
+country_event = {
+	id = germany.4
+	title = germany4title
+	desc = germany4desc
+	
+	picture = GFX_report_event_generic_communist_congress
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany4opta
+		
+		hidden_effect = {
+			kill_country_leader = yes
+                        set_politics = {
+	                ruling_party = neutrality
+	                elections_allowed = no
+                        }
+                        kill_country_leader = yes
+                        create_country_leader = {
+	                            name = "Joachim"
+	                            desc = "jaochim_desc"
+	                            picture = "gfx/leaders/deluge/germans/joachim.dds"
+	                            expire = "1965.1.1"
+	                            ideology = bonapartist_ideology
+		        }
+                }		
+		ai_chance = {
+			factor = 1
+	        }
+        }
+
+	option = {
+		name = germany4optb
+		
+		hidden_effect = {
+			kill_country_leader = yes
+                        set_politics = {
+	                ruling_party = neutrality
+	                elections_allowed = no
+                        }
+                        kill_country_leader = yes
+                        create_country_leader = {
+	                            name = "August Wilhelm"
+	                            desc = "august_desc"
+	                            picture = "gfx/leaders/deluge/germans/august_wilhelm.dds"
+	                            expire = "1965.1.1"
+	                            ideology = bonapartist_ideology
+		        }
+                }
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = germany4optc
+		
+		hidden_effect = {
+			kill_country_leader = yes
+                        set_politics = {
+	                ruling_party = neutrality
+	                elections_allowed = no
+                        }
+                        kill_country_leader = yes
+                        create_country_leader = {
+	                            name = "Wilhelm II"
+	                            desc = "wilhelm_ii_desc"
+	                            picture = "gfx/leaders/deluge/germans/wilhelm_ii.dds"
+	                            expire = "1965.1.1"
+	                            ideology = bonapartist_ideology
+		        }
+                }
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = germany4optd
+
+		hidden_effect = {
+			kill_country_leader = yes
+                        set_politics = {
+	                ruling_party = neutrality
+	                elections_allowed = no
+                        }
+                        kill_country_leader = yes
+                        create_country_leader = {
+	                            name = "Oskar"
+	                            desc = "oskar_desc"
+	                            picture = "gfx/leaders/deluge/germans/oskar.dds"
+	                            expire = "1965.1.1"
+	                            ideology = bonapartist_ideology
+		        }
+                }
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = germany.5
+	title = germany5title
+	desc = germany5desc
+	
+	picture = GFX_deluge_germany_order
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany5opta
+	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.6
+	title = germany6title
+	desc = germany6desc
+	
+	picture = GFX_deluge_radical_move
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany6opta
+	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.7
+	title = germany7title
+	desc = germany7desc
+	
+	picture = GFX_deluge_investigation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany7opta
+                hidden_effect = {
+                country_event = { days = 35 id = germany.8 }
+                }	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.8
+	title = germany8title
+	desc = germany8desc
+	
+	picture = GFX_deluge_investigation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany8opta
+                hidden_effect = {
+                country_event = { days = 30 id = germany.9 }
+                }	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.9
+	title = germany9title
+	desc = germany9desc
+	
+	picture = GFX_deluge_investigation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany9opta
+                hidden_effect = {
+                country_event = { days = 23 id = germany.10 }
+                }	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.10
+	title = germany10title
+	desc = germany10desc
+	
+	picture = GFX_deluge_investigation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany10opta
+                hidden_effect = {
+                country_event = { days = 20 id = germany.11 }
+                }	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.11
+	title = germany11title
+	desc = germany11desc
+	
+	picture = GFX_deluge_investigation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany11opta
+                hidden_effect = {
+                country_event = { days = 20 id = germany.12 }
+                }	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.12
+	title = germany12title
+	desc = germany12desc
+	
+	picture = GFX_deluge_investigation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany12opta
+                hidden_effect = {
+                country_event = { days = 15 id = germany.13 }
+                }	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.13
+	title = germany13title
+	desc = germany13desc
+	
+	picture = GFX_deluge_investigation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany13opta
+                hidden_effect = {
+                news_event = { days = 10 id = germany.14 }
+                }
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+news_event = {
+	id = germany.14
+	title = germany14title
+	desc = germany14desc
+	
+	picture = GFX_deluge_execute
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany14opta
+	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.15
+	title = germany15title
+	desc = germany15desc
+	
+	picture = GFX_deluge_mack_dead_small
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany15opta
+                hidden_effect = {
+                set_country_flag = "Has found Mackensen's killer"
+                news_event = { days = 5 id = germany.2 }
+                complete_national_focus = ger_a_political_mess
+                kill_country_leader = yes 
+                remove_ideas = life_hussar
+                create_country_leader = {
+	        name = "No Central Leadership"
+	        desc = ""
+	        picture = "gfx/leaders/deluge/germans/no_leadership.dds"
+	        expire = "1965.1.1"
+	        ideology = military_junta_ideology
+	        traits = {
+		}
+                }
+                GER = {
+                set_country_flag = "August Von Mackensen is dead"	
+                }	
+                }
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.16
+	title = germany16title
+	desc = germany16desc
+	
+	picture = GFX_deluge_purge
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany16opta
+	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.17
+	title = germany17title
+	desc = germany17desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany17opta
+	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.18
+	title = germany18title
+	desc = germany18desc
+	
+	picture = GFX_deluge_berlin_small
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany18opta
+	
+                }	
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.19
+	title = germany19title
+	desc = germany19desc
+	
+	picture = GFX_deluge_royal_marriage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany19opta
+                set_country_flag = "Married a Briton"
+	        complete_national_focus = ger_marry_a_briton
+                }	
+		ai_chance = {
+			factor = 50
+                }
+        option = {
+		name = germany19optb
+                set_country_flag = "Married an Austrian"
+	        complete_national_focus = ger_marry_an_austrian
+                }	
+		ai_chance = {
+			factor = 50
+                }
+}
+
+country_event = {
+	id = germany.20
+	title = germany20title
+	desc = germany20desc
+	
+	picture = GFX_deluge_royal_marriage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany20opta
+	        GER = {
+                         country_event = { days = 3 id = germany.21 } 
+                         }
+                }	
+		ai_chance = {
+			factor = 100
+                }
+         option = {
+		name = germany20optb
+	        GER = {
+                         country_event = { days = 3 id = germany.22 } 
+                         }
+                }	
+		ai_chance = {
+			factor = 0
+                }
+}
+
+country_event = {
+	id = germany.21
+	title = germany21title
+	desc = germany21desc
+	
+	picture = GFX_deluge_royal_marriage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany21opta	
+                
+                }
+		ai_chance = {
+			factor = 100
+                }
+
+}
+
+country_event = {
+	id = germany.22
+	title = germany22title
+	desc = germany22desc
+	
+	picture = GFX_deluge_royal_marriage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany22opta	
+                
+                }
+		ai_chance = {
+			factor = 100
+                }
+
+}
+
+country_event = {
+	id = germany.23
+	title = germany23title
+	desc = germany23desc
+	
+	picture = GFX_deluge_royal_marriage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany23opta	
+                GER = {
+                         country_event = { days = 3 id = germany.24 } 
+                         }
+                }
+		ai_chance = {
+			factor = 100
+                }
+        option = {
+		name = germany23optb
+                GER = {
+                         country_event = { days = 3 id = germany.25 } 
+                         }	             
+                }
+		ai_chance = {
+			factor = 0
+                }
+
+}
+
+country_event = {
+	id = germany.24
+	title = germany24title
+	desc = germany24desc
+	
+	picture = GFX_deluge_royal_marriage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany24opta	
+                
+                }
+		ai_chance = {
+			factor = 100
+                }
+
+}
+
+country_event = {
+	id = germany.25
+	title = germany25title
+	desc = germany25desc
+	
+	picture = GFX_deluge_royal_marriage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany25opta	
+                
+                }
+		ai_chance = {
+			factor = 100
+                }
+
+}
+
+country_event = {
+	id = germany.26
+	title = germany26title
+	desc = germany26desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany26opta
+	        GER = {
+                country_event = { days = 3 id = germany.27 }
+                }
+                }	
+		ai_chance = {
+			factor = 20
+                }
+         option = {
+		name = germany26optb
+	        GER = {
+                country_event = { days = 3 id = germany.28 }
+                }
+                }	
+		ai_chance = {
+			factor = 80
+                }
+}
+
+country_event = {
+	id = germany.27
+	title = germany27title
+	desc = germany27desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany27opta
+                hidden_effect = {
+                5 = {
+                           add_core_of = GER
+                }
+                66 = {
+                           add_core_of = GER
+                }
+                }
+                }	
+		ai_chance = {
+			factor = 20
+                }
+}
+
+country_event = {
+	id = germany.28
+	title = germany28title
+	desc = germany28desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany28opta	
+                hidden_effect = {
+                GER = {
+                transfer_state = 5
+                transfer_state = 66
+                }
+                }
+                }
+		ai_chance = {
+			factor = 100
+                }
+
+}
+
+country_event = {
+	id = germany.29
+	title = germany29title
+	desc = germany29desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany29opta
+                custom_effect_tooltip = germany14tooltip
+                hidden_effect = {
+                POL = {
+                add_ideas = POL_GER
+                }
+                66 = {
+                add_dynamic_modifier = { modifier = autonomous_state }
+                }
+                5 = {
+                add_dynamic_modifier = { modifier = autonomous_state }
+                }
+                }
+                }	
+		ai_chance = {
+			factor = 20
+                }
+}
+
+country_event = {
+	id = germany.30
+	title = germany30title
+	desc = germany30desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany30opta
+                hidden_effect = {
+                POL = {
+                remove_ideas = POL_GER
+                country_event = { days = 2 id = germany.31 }
+                }
+                GER = {
+                declare_war_on = { type = annex_everything    target = POL }
+                transfer_state = 5
+                transfer_state = 66
+                5 = {
+                           add_core_of = GER
+                }
+                66 = {
+                           add_core_of = GER
+                }
+                }
+                division_template = {
+					name = "German Insurgents"
+					division_names_group = GER_INF_13
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+					}
+					support = {
+                                        }
+				}
+                                5 = {
+                                     create_unit = {
+				     division = "name = \"German Insurgents\" division_template = \"German Insurgents\" start_experience_factor = 1.0" 
+				     owner = GER
+                                     }
+                                }
+                                5 = {
+                                     create_unit = {
+				     division = "name = \"German Insurgents\" division_template = \"German Insurgents\" start_experience_factor = 1.0" 
+				     owner = GER
+                                     }
+                                }
+                                5 = {
+                                     create_unit = {
+				     division = "name = \"German Insurgents\" division_template = \"German Insurgents\" start_experience_factor = 1.0" 
+				     owner = GER
+                                     }
+                                }
+                                5 = {
+                                     create_unit = {
+				     division = "name = \"German Insurgents\" division_template = \"German Insurgents\" start_experience_factor = 1.0" 
+				     owner = GER
+                                     }
+                                } 
+                                66 = {
+                                     create_unit = {
+				     division = "name = \"German Insurgents\" division_template = \"German Insurgents\" start_experience_factor = 1.0" 
+				     owner = GER
+                                     }
+                                }
+                                66 = {
+                                     create_unit = {
+				     division = "name = \"German Insurgents\" division_template = \"German Insurgents\" start_experience_factor = 1.0" 
+				     owner = GER
+                                     }
+                                }
+                                66 = {
+                                     create_unit = {
+				     division = "name = \"German Insurgents\" division_template = \"German Insurgents\" start_experience_factor = 1.0" 
+				     owner = GER
+                                     }
+                                }
+                66 = {
+                remove_dynamic_modifier = { modifier = autonomous_state }
+                }
+                5 = {
+                remove_dynamic_modifier = { modifier = autonomous_state }
+                }
+                }
+                }
+		ai_chance = {
+			factor = 20
+                }
+}
+
+country_event = {
+	id = germany.31
+	title = germany31title
+	desc = germany31desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany31opta	
+                }
+		ai_chance = {
+			factor = 100
+                }
+
+}
+
+country_event = {
+	id = germany.32
+	title = germany32title
+	desc = germany32desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany32opta	
+
+                }
+		ai_chance = {
+			factor = 100
+                }
+
+}
+
+country_event = {
+	id = germany.33
+	title = germany33title
+	desc = germany33desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany33opta
+                GER = { 
+                country_event = { days = 3 id = germany.32 }
+                navy_experience = 35
+                         add_tech_bonus = {
+	                        bonus = 1
+				uses = 2
+				name = naval_doctrine
+				category = naval_doctrine
+                }
+                }
+                }		
+		ai_chance = {
+			factor = 100
+                }
+                if = {
+                limit = {
+                ENG = {
+                has_war_with = GER
+                }
+                ai_chance = {
+			factor = 0
+                }
+                }
+        }
+        option = {
+		name = germany33optb
+                country_event = { days = 3 id = germany.35 }
+                if = {
+                limit = {
+                ENG = {
+                has_war_with = GER
+                }
+                ai_chance = {
+			factor = 100
+                } 
+        }
+        }
+        }
+                
+}
+
+country_event = {
+	id = germany.34
+	title = germany34title
+	desc = germany34desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany34opta
+                GER = {
+                country_event = { days = 3 id = germany.32 }
+                load_oob = "british_ships" 
+                }
+                }		
+		ai_chance = {
+			factor = 100
+                }
+                if = {
+                limit = {
+                ENG = {
+                has_war_with = GER
+                }
+                }
+                }
+                }
+                ai_chance = {
+			factor = 0
+                }
+        option = {
+		name = germany34opta
+                GER = {
+                country_event = { days = 3 id = germany.35 }
+                }
+                }		
+		ai_chance = {
+			factor = 0
+                }
+                if = {
+                limit = {
+                ENG = {
+                has_war_with = GER
+                }
+                }
+                }
+                }
+                ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.35
+	title = germany35title
+	desc = germany35desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany35opta
+                }		
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.36
+	title = germany36title
+	desc = germany36desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany36opta	
+                GER = {
+                country_event = { days = 1 id = germany.37 }
+                }
+                }
+                ai_chance = {
+			factor = 100
+                }
+        }
+        option = {
+		name = germany36optb	
+                GER = {
+                country_event = { days = 1 id = germany.38 }
+                }
+                }
+		ai_chance = {
+			factor = 0
+                }
+        }                
+}
+
+country_event = {
+	id = germany.37
+	title = germany37title
+	desc = germany37desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany37opta
+                GER = {
+                transfer_state = 5
+                }
+                POL = { add_to_faction = GER }	
+                }
+		ai_chance = {
+			factor = 100
+                }
+}
+
+country_event = {
+	id = germany.38
+	title = germany38title
+	desc = germany38desc
+	
+	picture = GFX_deluge_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = germany38opta
+                }
+		ai_chance = {
+			factor = 100
+                }
+
+}
+
+country_event = {
+	id = german_civil_war.344
+	title = german_civil_war344title
+	desc = german_civil_war344desc
+	
+	picture = GFX_report_event_generic_communist_congress
+	
+	is_triggered_only = yes
+
+	option = {
+		name = german_civil_war344opta
+		
+		add_political_power = -25
+		
+		hidden_effect = {
+                        ITA = {
+                            transfer_state = 158
+                            transfer_state = 735
+                            transfer_state = 1
+                            transfer_state = 114
+		        }
+                }		
+		ai_chance = {
+			factor = 100
+                }
+       }
+       option = {
+		name = german_civil_war344optb
+		
+		add_political_power = 25
+		
+		hidden_effect = {
+                        
+		        }
+                }		
+		ai_chance = {
+			factor = 1
+	        }
+        }
+}
+
+country_event = {
+	id = berlin.345
+	title = berlin.345title
+	desc = berlin.345desc
+	
+	picture = GFX_deluge_berlin_small
+	
+	is_triggered_only = yes
+
+	option = {
+		name = berlin.345opta
+		
+		add_political_power = -25
+		
+                }		
+		ai_chance = {
+			factor = 100
+                }
+       }
+}

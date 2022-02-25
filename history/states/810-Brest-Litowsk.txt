@@ -1,0 +1,25 @@
+state={
+	id=810
+	name="STATE_810"
+	provinces={
+		318 3256 3281 3392 6546 11528 13206 
+	}
+	
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			3392 20 
+		}
+		add_core_of = POL
+		add_core_of = BLR
+
+	}
+	
+	manpower=781300
+	state_category=town
+	buildings_max_level_factor=1.000
+}

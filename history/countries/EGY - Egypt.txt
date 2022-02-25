@@ -1,0 +1,126 @@
+﻿capital = 446
+
+oob = "EGY_1936_deluge"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 40
+	fascism = 5
+	communism = 5
+	neutrality = 50
+}
+
+set_convoys = 12
+
+set_cosmetic_tag = EGY_SPR
+
+	
+create_country_leader = {
+	name = "Muhammad Naguib"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
+	ideology = social_liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Youssef Wahba Pasha"
+	desc = ""
+	picture = "gfx/leaders/deluge/youssef_wahba_pasha.dds"
+	ideology = national_liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Saad Zaghloul"
+	desc = ""
+	picture = "gfx/leaders/deluge/saad_zaghloul.dds"
+	ideology = national_liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmed Husayn"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+	ideology = corporatist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Shaykh Abd al-Majid Salim"
+	desc = ""
+	picture = "gfx/leaders/deluge/caucasian_imam.dds"
+	ideology = religious_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Farouk I"
+	desc = ""
+	picture = "gfx/leaders/African Countries/Egypt/king_farouk_egypt.dds"
+	ideology = reactionary_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hosni al-Arabi"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gamal Abdel Nasser"
+	desc = ""
+	picture = "gfx/leaders/deluge/nasser_time_magazine.dds"
+	ideology = jacobin_ideology
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Gamal Abdel Nasser"
+	portrait_path = "gfx/leaders/deluge/nasser_time_magazine.dds"
+	traits = { }
+	skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+

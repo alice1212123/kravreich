@@ -1,0 +1,31 @@
+﻿units = {
+	navy = {
+		name = "Hochseeflotte"
+		base = 241
+		location = 241
+		ship = { name = "VMS Arminius" definition = battleship equipment = { battleship_1 = { amount = 1 owner = DDR } } }
+		ship = { name = "VMS Baden" definition = battleship equipment = { battleship_1 = { amount = 1 owner = DDR } } }		
+		ship = { name = "VMS Bayern" definition = battleship equipment = { battleship_1 = { amount = 1 owner = DDR } } }
+		ship = { name = "VMS Sachsen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = DDR } } }		
+		ship = { name = "VMS Nassau" definition = battleship equipment = { battleship_1 = { amount = 1 owner = DDR } } }		
+
+		ship = { name = "VMS Beowulf" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = DDR } } }
+
+		ship = { name = "VMS Zieten" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DDR } } }	
+		ship = { name = "VMS Blitz" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DDR } } }
+		ship = { name = "VMS Pfeil" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DDR } } }	
+		ship = { name = "VMS Wacht" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DDR } } }
+
+		ship = { name = "VMS Meteor" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DDR } } } 		
+		ship = { name = "VMS Comet" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DDR } } }		
+		ship = { name = "VMS Hela" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DDR } } } 		
+		ship = { name = "VMS Jagd" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DDR } } }
+		
+		ship = { name = "VMS Koyote" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DDR } } }		
+		ship = { name = "VMS Delphin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DDR } } }		
+		ship = { name = "VMS Drache" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DDR } } }
+		ship = { name = "VMS Hornisse" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DDR } } }
+		ship = { name = "VMS Haifisch" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DDR } } }		
+		ship = { name = "VMS Wespe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DDR } } }		
+	}
+}

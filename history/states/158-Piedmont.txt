@@ -1,0 +1,47 @@
+
+state={
+	id=158
+	name="STATE_158"
+	resources={
+		steel=15.000
+		aluminium=10.000
+		chromium=2.000
+		tungsten=1.000
+	}
+
+	history={
+		owner = FRA
+		set_variable = {
+			language = 4
+
+		}
+		victory_points = {
+			770 1 
+		}
+		victory_points = {
+			9741 3 
+		}
+		victory_points = {
+			6780 20 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 8
+			anti_air_building = 1
+
+		}
+		add_core_of = ITA
+		add_core_of = FRA
+		add_core_of = SAV
+
+	}
+
+	provinces={
+		770 3772 3782 6780 9738 9741 11721 11723 11730 11891 
+	}
+	manpower=4165476
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

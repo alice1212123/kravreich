@@ -1,0 +1,42 @@
+
+state={
+	id=36
+	name="STATE_36"
+
+	history={
+		owner = HOL
+		
+		set_variable = {language = 5}
+		
+		victory_points = {
+			11318 10 
+		}
+		victory_points = {
+			9335 2 
+		}
+		victory_points = {
+			6336 1 
+		}
+		victory_points = {
+			11360 3 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			dockyard = 1
+			6336 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6286 6336 9309 9335 9363 9403 11318 11360 
+	}
+	manpower=2364000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

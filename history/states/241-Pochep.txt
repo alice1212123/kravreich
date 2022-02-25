@@ -1,0 +1,33 @@
+
+state={
+	id=241
+	name="STATE_241" # Gomel
+	manpower = 743422
+	
+	state_category = town
+
+	resources={
+		steel=6
+	}
+
+	history={
+		owner = BLR
+		victory_points = {
+			9288 20
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+			9288 = {
+				bunker = 1
+			}
+		}
+		add_core_of = BLR
+	}
+
+	provinces={
+		9288 9342 11230 371 315 11383 11325 11298 11229 9396
+	}
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=109
+	name="STATE_109"
+
+	history={
+		owner = AUS
+		set_variable = {
+			language = 1
+
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+
+		}
+		victory_points = {
+			11581 20 
+		}
+		add_core_of = CRO
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		591 624 3592 3596 3601 3627 6611 6647 9595 9611 11577 11581 11594 
+	}
+	
+	manpower=2224400
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

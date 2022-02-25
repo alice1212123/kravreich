@@ -1,0 +1,35 @@
+
+state={
+	id=233
+	name="STATE_233"
+	manpower = 803970
+	state_category = town
+	resources={
+		chromium=20
+		steel=10
+	}
+
+	history={
+		owner = CAU
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			3667 = {
+				bunker = 1
+			}
+		}
+		victory_points = {
+			9628 1 
+		}
+		victory_points = {
+			9626 1 
+		}
+		add_core_of = CAU
+		add_core_of = OSS
+	}
+
+	provinces={
+		685 1455 3667 9626 9628 9632 9647 11609 11614    
+	} 
+}

@@ -1,0 +1,250 @@
+###add_namespace = deluge_csa
+
+country_event = {
+	id = deluge_csa.1
+	title = deluge_csa1title
+	desc = deluge_csa1desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_csa1opt
+		load_oob = ACW_USA_csa
+		hidden_effect = {
+			country_event = {
+				id = deluge_csa.5
+				days = 7
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_csa.2
+	title = deluge_csa2title
+	desc = deluge_csa2desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_csa2opt
+		set_variable = { secessionists_influence = 35 }
+		set_variable = { longist_influence = 30 }
+	}
+}
+
+
+country_event = {
+	id = deluge_csa.3
+	title = deluge_csa3title
+	desc = deluge_csa3desc
+	picture = GFX_deluge_usa_byrd
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_csa3opt
+		add_to_variable = { secessionists_influence = 5 } 
+		load_oob = ACW_USA_csa2
+	}
+}
+
+
+country_event = { #defend richmond
+	id = deluge_csa.4
+	title = deluge_csa3title
+	desc = deluge_csa3desc
+	picture = GFX_deluge_usa_murray
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_csa4opt
+		add_to_variable = { secessionists_influence = 5 } 
+		362 = {
+			add_building_construction = {
+    			type = bunker
+    			level = 4
+    			instant_build = yes
+    			province = 865
+			}
+			add_building_construction = {
+    			type = bunker
+    			level = 3
+    			instant_build = yes
+    			province = 788
+			}
+			add_building_construction = {
+    			type = bunker
+    			level = 2
+    			instant_build = yes
+    			province = 3917
+			}
+			add_building_construction = {
+    			type = bunker
+    			level = 3
+    			instant_build = yes
+    			province = 11738
+			}
+
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_csa.5
+	title = deluge_csa5title
+	desc = deluge_csa5desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_csa5opt
+		create_field_marshal = {
+				name = "George S. Patton"
+				portrait_path = "gfx/leaders/deluge/usa_patton.dds"
+				skill = 5
+				attack_skill = 7
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_csa.6
+				days = 7
+			}
+		}
+
+	}
+}
+
+
+country_event = {
+	id = deluge_csa.6
+	title = deluge_csa6title
+	desc = deluge_csa6desc
+	picture = GFX_deluge_usa_lindbergh
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_csa6opt
+		add_to_variable = { longist_influence = 5 } 
+		create_corps_commander = {
+				name = "George van Horn Moseley"
+				portrait_path = "gfx/leaders/deluge/usa/moseley.dds"
+				skill = 5
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_csa.7
+				days = 10
+			}
+		}
+
+	}
+}
+
+
+country_event = {
+	id = deluge_csa.7
+	title = deluge_csa7title
+	desc = deluge_csa7desc
+	picture = GFX_deluge_usa_murray
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_csa7opt
+		add_political_power = -100
+		add_manpower = -456
+		hidden_effect = {
+			country_event = {
+				id = deluge_csa.6
+				days = 7
+			}
+		}
+
+	}
+}
+
+
+country_event = {
+	id = deluge_csa.8
+	title = deluge_csa8title
+	desc = deluge_csa8desc
+	picture = GFX_deluge_usa_murray
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_csa8opt
+		load_oob = ACW_USA_csa3
+
+	}
+}
+
+
+country_event = {
+	id = deluge_csa.9
+	title = deluge_csa9title
+	desc = deluge_csa9desc
+	picture = GFX_deluge_usa_long
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_csa9opt
+		add_to_variable = { longist_influence = 5 } 
+		load_oob = ACW_USA_csa4
+	}
+}
+
+country_event = {
+	id = deluge_csa.10
+	title = deluge_csa10title
+	desc = deluge_csa10desc
+	picture = GFX_deluge_ford
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_csa10opt
+		add_to_variable = { longist_influence = 5 } 
+		add_timed_idea = {
+			idea = fordist_dixie_cooop
+			days = 90
+		}
+		set_country_flag = fordist_support
+	}
+}

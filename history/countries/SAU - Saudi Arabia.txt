@@ -1,0 +1,47 @@
+﻿capital = 292
+
+oob = "SAU_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	fascism = 10
+	communism = 5
+	neutrality = 80
+}
+
+add_ideas = {
+	absolute_monarchy_law
+	agrarian_estates_law
+	extensive_conscription
+	novote
+}
+
+create_country_leader = {
+	name = "Abdulaziz Ibn Saud"
+	desc = ""
+	picture = "gfx/leaders/Asian Countries/Saudi Arabia/Ibn_Saud.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+		#
+	}
+}
+

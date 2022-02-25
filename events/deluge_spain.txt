@@ -1,0 +1,218 @@
+
+
+	add_namespace = deluge_spain 
+
+
+	country_event = {  ###election
+	id = deluge_spain.001
+	title = deluge_spain.001.t
+	desc = deluge_spain.001.d
+
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+		date > 1936.7.5
+	}
+
+    option = {
+		name = deluge_spain.commie.opt
+		load_focus_tree = spain_commie
+		hidden_effect = { 
+		country_event = {
+			id = deluge_spain.2
+			days = 15
+			}
+		}
+	}
+	
+	option = {
+		name = deluge_spain.demo.opt
+		load_focus_tree = spain_demo
+		hidden_effect = { 
+		country_event = { 
+			id = deluge_spain.3
+			days = 15
+			}
+		}
+	}
+	
+	option = {
+		name = deluge_spain.bone.opt
+		load_focus_tree = spain_bone
+		hidden_effect = { 
+		country_event = { 
+			id = deluge_spain.4 
+			days = 15
+			}
+		}
+	}
+}
+
+
+	country_event = { ###election
+	id = deluge_spain.2
+	title = deluge_spain.2.t
+	desc = deluge_spain.2.d
+
+	picture = GFX_deluge_henriot
+
+	is_triggered_only = yes
+	
+	immediate = {
+	complete_national_focus = SPR_cabello_victory_in_elections
+	}
+		
+	option = {
+		name = deluge_spain.2.opt
+		add_political_power = 50
+	}
+}
+
+
+	country_event = { ###election
+	id = deluge_spain.3
+	title = deluge_spain.3.t
+	desc = deluge_spain.3.d
+
+	picture = GFX_deluge_henriot
+
+	is_triggered_only = yes
+	
+	immediate = {
+	complete_national_focus = 
+	}
+		
+	option = {
+		name = deluge_spain.3.opt
+		add_political_power = 50
+	}
+}
+
+
+	country_event = { ###election
+	id = deluge_spain.4
+	title = deluge_spain.4.t
+	desc = deluge_spain.4.d
+
+	picture = GFX_deluge_henriot
+
+	is_triggered_only = yes
+	
+	immediate = {
+	complete_national_focus = 
+	}
+		
+	option = {
+		name = deluge_spain.4.opt
+		add_political_power = 50
+	}
+}
+
+
+country_event = { ###commie civil war
+	id = deluge_spain.5
+	title = deluge_spain.5.t
+	desc = deluge_spain.5.d
+
+	picture = GFX_deluge_henriot
+
+	is_triggered_only = yes
+	
+	
+	option = { 
+	hidden_effect = {
+		start_civil_war = {
+		 ruling_party = communism
+		 ideology = neutrality
+		 size = 0.5
+		 capital = 170
+		 states = { 170 791 788 174 790 171 }
+		 }
+		
+		 
+	     load_oob = "Deluge_SPA_Civil_War"
+		 
+		 
+		 
+			
+			set_global_flag = deluge_commie_spanish_civil_war
+			
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.5
+			}	
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = neutrality 
+				}
+				set_cosmetic_tag = SPR_civil_war
+			}
+			
+			
+			set_autonomy = { target = CUB autonomy_state = autonomy_free }
+			set_autonomy = { target = EGY autonomy_state = autonomy_free }
+			release = PHI
+			release = MOR
+		
+		
+		}
+		custom_effect_tooltip = SPR_commie_war
+	}
+}
+
+	country_event = { ###JAVIER JOINS SMASH
+	id = deluge_spain.6
+	title = deluge_spain.6.t
+	desc = deluge_spain.6.d
+	
+	picture = GFX_deluge_henriot
+
+	is_triggered_only = yes
+	
+	option = { 
+	hidden_effect = { 
+		# TODO: implement SSR/SRR (and make up your mind)
+		#SSR = { transfer_state = 172 }
+		#SSR = { transfer_state = 166 }
+		#SSR = { transfer_state = 794 }
+		
+		add_state_core = 172
+		add_state_core = 166
+		add_state_core = 794
+		
+		
+		#SRR = {
+		#load_oob = "deluge_SSR_civil_war"
+		#}
+		
+		
+		
+	
+		}
+	}
+}
+
+	country_event = { ###king meets with demo
+	id = deluge_spain.7
+	title = deluge_spain.7.t
+	desc = deluge_spain.7.d
+
+	picture = GFX_deluge_henriot
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = deluge_spain.7.opt
+		add_political_power = -25
+		add_stability = 0.05
+	}
+}

@@ -1,0 +1,147 @@
+﻿capital = 3
+
+oob = "SWI_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 5
+
+add_opinion_modifier = { target = WGR modifier = neutral_diplomacy_modifier }
+add_opinion_modifier = { target = DDR modifier = neutral_diplomacy_modifier }
+add_opinion_modifier = { target = GER modifier = neutral_diplomacy_modifier }
+add_opinion_modifier = { target = FRA modifier = neutral_diplomacy_modifier }
+add_opinion_modifier = { target = ITA modifier = neutral_diplomacy_modifier }
+add_opinion_modifier = { target = AUS modifier = neutral_diplomacy_modifier }
+
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	early_fighter = 1
+	CAS1 = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 60
+	fascism = 5
+	communism = 15
+	neutrality = 20
+}
+
+add_ideas = {
+	constitutional_republic_law
+	private_capital_law
+	neutrality_idea	
+	limited_conscription
+	restricted
+	welfare_state
+}
+
+create_country_leader = {
+	name = "Federal Council"
+	desc = ""
+	picture = "Portrait_Switzerland_Federal_council.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ernest Béuin"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Dr. Max Leo Keller"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Henri Guisan"
+	desc = ""
+	picture = "gfx/leaders/deluge/henri_guisan.dds"
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fritz Platten"
+	desc = "POLITICS_FRITZ_PLATTEN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = jacobin_ideology
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Henri Guisan"
+	portrait_path = "gfx/leaders/deluge/henri_guisan.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+} 
+
+create_corps_commander = {
+	name = "Stefano Franscini"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {  winter_specialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jules Borel"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  winter_specialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+} 
+
+create_corps_commander = {
+	name = "Josef Munzinger"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {  winter_specialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

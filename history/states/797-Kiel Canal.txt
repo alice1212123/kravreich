@@ -1,0 +1,35 @@
+state={
+	id=797
+	name="STATE_797" # 762
+
+	manpower=84300
+
+	state_category = rural
+
+	resources={
+		steel=2
+	}
+
+	history={
+		victory_points = {
+			317 5
+		}
+		
+		set_variable = {language = 1}
+		
+		owner = DDR
+		buildings = {
+			infrastructure = 7
+			3231 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = DDR
+		add_core_of = WGR
+		add_core_of = GER
+	}
+
+	provinces={
+		317 3231
+	}
+}

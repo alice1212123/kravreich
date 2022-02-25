@@ -1,0 +1,160 @@
+﻿﻿capital = 113
+
+oob = "IRE_1936"
+
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = 0.1
+
+add_opinion_modifier = { target = FRA modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = ENG modifier = historic_rivalry_modifier }
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+	}
+	#set_naval_oob = ""
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_battery = 1
+	}
+	#set_naval_oob = ""
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	fascism = 20
+	communism = 20
+	neutrality = 55
+}
+	
+add_ideas = {
+	free_trade
+	limited_conscription
+	civilian_economy
+	restricted
+	welfare_state
+	IRE_indep
+	IRE_eco
+}
+
+create_country_leader = {
+	name = "Éamon de Valera"
+	desc = ""
+	picture = "gfx/leaders/European Countries/Ireland/eamon_de_valera.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Eoin O'Duffy"
+	desc = ""
+	picture = "gfx/leaders/European Countries/Ireland/eoin_oduffy.dds"
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "James Larkin"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William Norton"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = jacobin_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "James Connolly"
+	desc = ""
+	picture = "gfx/leaders/European Countries/Ireland/james_connolly.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Marie I"
+	desc = ""
+	picture = "gfx/leaders/European Countries/Ireland/marie_female.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Michael Collins"
+	portrait_path = "gfx/leaders/European Countries/Ireland/michael_collins.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Eoin O'Duffy"
+	portrait_path = "gfx/leaders/European Countries/Ireland/eoin_oduffy.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Michael Costello"
+	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

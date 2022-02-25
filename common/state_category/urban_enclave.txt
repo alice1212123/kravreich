@@ -1,0 +1,7 @@
+state_categories={
+	urban_enclave = {
+		local_building_slots = 3
+	
+		color = { 255 75 0 }
+	}
+}

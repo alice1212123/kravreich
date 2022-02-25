@@ -1,0 +1,795 @@
+﻿division_template = {
+	name = "Division d'Infanterie"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Division d'Infanterie Territoriale"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Division de Cavalerie"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+        cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Division Cuirassée"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Division d'Infanterie Motorisée"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+        motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Division d'Infanterie Alpine"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+
+units = {
+	
+	division= {	
+		name = "1. Division Cuirassée"
+		location = 11547
+		division_template = "Division Cuirassée"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+	}
+	
+	division= {	
+		name = "1. Division d'Infanterie Motorisée"
+		location = 11547
+		division_template = "Division d'Infanterie Motorisée"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	
+	division= {	
+		name = "2. Division d'Infanterie Motorisée"
+		location = 11547
+		division_template = "Division d'Infanterie Motorisée"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	
+	division= {	
+		name = "1. Division de Cavalerie"
+		location = 6504
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "2. Division de Cavalerie"
+		location = 6504
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "3. Division de Cavalerie"
+		location = 6504
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "1. Division d'Infanterie Alpine"
+		location = 11726
+		division_template = "Division d'Infanterie Alpine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "2. Division d'Infanterie Alpine"
+		location = 771
+		division_template = "Division d'Infanterie Alpine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "3. Division d'Infanterie Alpine"
+		location = 6635
+		division_template = "Division d'Infanterie Alpine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "4. Division d'Infanterie Alpine"
+		location = 11570
+		division_template = "Division d'Infanterie Alpine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "5. Division d'Infanterie Alpine"
+		location = 6529
+		division_template = "Division d'Infanterie Alpine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "6. Division d'Infanterie Alpine"
+		location = 549
+		division_template = "Division d'Infanterie Alpine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "1. Division d'Infanterie"
+		location = 575
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "2. Division d'Infanterie"
+		location = 575
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "3. Division d'Infanterie"
+		location = 575
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "4. Division d'Infanterie"
+		location = 3423
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "5. Division d'Infanterie"
+		location = 3423
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "6. Division d'Infanterie"
+		location = 3423
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "7. Division d'Infanterie"
+		location = 11560
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "8. Division d'Infanterie"
+		location = 11560
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "9. Division d'Infanterie"
+		location = 11560
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "10. Division d'Infanterie"
+		location = 9503
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "11. Division d'Infanterie"
+		location = 9503
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "12. Division d'Infanterie"
+		location = 9503
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "13. Division d'Infanterie"
+		location = 678
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "14. Division d'Infanterie"
+		location = 678
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "15. Division d'Infanterie"
+		location = 678
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "16. Division d'Infanterie"
+		location = 6788
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "17. Division d'Infanterie"
+		location = 6788
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "18. Division d'Infanterie"
+		location = 6788
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		name = "1. Division d'Infanterie Territoriale"
+		location = 11834
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "2. Division d'Infanterie Territoriale"
+		location = 9764
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "3. Division d'Infanterie Territoriale"
+		location = 911
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "4. Division d'Infanterie Territoriale"
+		location = 3838
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "5. Division d'Infanterie Territoriale"
+		location = 9737
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "6. Division d'Infanterie Territoriale"
+		location = 6657
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "7. Division d'Infanterie Territoriale"
+		location = 11465
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "8. Division d'Infanterie Territoriale"
+		location = 3552
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "9. Division d'Infanterie Territoriale"
+		location = 6449
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "10. Division d'Infanterie Territoriale"
+		location = 485
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "11. Division d'Infanterie Territoriale"
+		location = 9994
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "12. Division d'Infanterie Territoriale"
+		location = 1145
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "13. Division d'Infanterie Territoriale"
+		location = 7132
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "14. Division d'Infanterie Territoriale"
+		location = 4948
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "15. Division d'Infanterie Territoriale"
+		location = 12725
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "16. Division d'Infanterie Territoriale"
+		location = 12049
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "17. Division d'Infanterie Territoriale"
+		location = 4073
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "18. Division d'Infanterie Territoriale"
+		location = 1130
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "19. Division d'Infanterie Territoriale"
+		location = 4401
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "20. Division d'Infanterie Territoriale"
+		location = 1185
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "21. Division d'Infanterie Territoriale"
+		location = 5222
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "22. Division d'Infanterie Territoriale"
+		location = 11506
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "23. Division d'Infanterie Territoriale"
+		location = 11506
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "24. Division d'Infanterie Territoriale"
+		location = 11506
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "25. Division d'Infanterie Territoriale"
+		location = 11506
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "26. Division d'Infanterie Territoriale"
+		location = 1149
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division= {	
+		name = "27. Division d'Infanterie Territoriale"
+		location = 9909
+		division_template = "Division d'Infanterie Territoriale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+}
+
+### Air Wings
+air_wings = {
+	# Z.d'Op. Aériennes Nord -- Lille
+	29 = { 
+		# Groupement de Chasse 21 
+		# Groupement de Chasse 23
+		fighter_equipment_0 = {
+			owner = "FRA" 
+			amount = 192
+		}
+		# Groupement de Bombardment 6
+		# Groupement de Bombardment 9
+		tac_bomber_equipment_1 =  {
+			owner = "FRA" 
+			amount = 60
+		}
+	}
+
+	# Z.d'Op. Aériennes Est -- Reims
+	18 = {
+		# Groupement de Chasse 22
+		fighter_equipment_0 = {
+			owner = "FRA" 
+			amount = 96
+		}
+	}
+
+	# Z.d'Op. Aériennes du Alps -- Marseille
+	21 = {
+		# Groupement de Chasse d'Alps
+		fighter_equipment_0 = {
+			owner = "FRA" 
+			amount = 96
+		}
+		# Groupement de Bombardment 1
+		# Groupement de Bombardment 6
+		# Groupement de Bombardment 9
+		tac_bomber_equipment_1 =  {
+			owner = "FRA" 
+			amount = 90
+		}
+		# Groupement de Bombardment d'Assault 19
+		tac_bomber_equipment_0 =  {
+			owner = "FRA" 
+			amount = 24
+		}
+	}
+
+	# Z.d'Op. Aériennes Africain -- Tunis
+	458 = {
+		# Groupement de Chasse du Nord-Africain
+		fighter_equipment_0 = {
+			owner = "FRA" 
+			amount = 48
+		}
+		# Groupement de Bombardment du Nord-Africain
+		tac_bomber_equipment_1 =  {
+			owner = "FRA" 
+			amount = 30
+		}
+	}
+
+	# Aeronautique Navale -- Cherbourg
+	15 = {
+		# Flotille F1
+		nav_bomber_equipment_1 = {
+			owner = "FRA" 
+			amount = 24
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = cv_fighter_equipment_0
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nav_bomber_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = cv_nav_bomber_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "FRA"
+		}
+		requested_factories = 4
+		progress = 0.1
+		efficiency = 50
+	}
+}
+###################

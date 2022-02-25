@@ -1,0 +1,47 @@
+﻿units = {
+	fleet = {
+		name = "Royal Louisianan Navy"
+		naval_base = 7552
+			
+		task_force = {
+			name = "High Seas Fleet"
+			location = 7552
+			ship = { name = "Mississipi" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LOU version_name = "Mississipi Class" } } }
+			ship = { name = "Iowa" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LOU version_name = "Mississipi Class" } } }
+			ship = { name = "Nebraska" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LOU version_name = "Mississipi Class" } } }
+			ship = { name = "Wichita" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LOU version_name = "Wichita Class" } } }
+			ship = { name = "Springfield" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LOU version_name = "Wichita Class" } } }
+			ship = { name = "Tulsa" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LOU version_name = "Wichita Class" } } }
+			ship = { name = "Rivière Rouge" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = LOU version_name = "Rivière Rouge Class" } } }
+			ship = { name = "Leitner" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = LOU version_name = "Rivière Rouge Class" } } }
+			ship = { name = "Yasoux" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = LOU version_name = "Rivière Rouge Class" } } }
+			ship = { name = "Meramec" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = LOU version_name = "Rivière Rouge Class" } } }
+			ship = { name = "Trempealeau" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = LOU version_name = "Rivière Rouge Class" } } }
+			ship = { name = "Nokasippi" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = LOU version_name = "Rivière Rouge Class" } } }
+			ship = { name = "Watonwan" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = LOU version_name = "Rivière Rouge Class" } } }
+		}
+	
+		task_force = {
+			name = "Submarine Squadron"
+			location = 7552
+			ship = { name = "S-101" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LOU version_name = "" } } }
+			ship = { name = "S-102" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LOU version_name = "" } } }
+			ship = { name = "S-103" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LOU version_name = "" } } }
+			ship = { name = "S-104" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LOU version_name = "" } } }
+			ship = { name = "S-105" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LOU version_name = "" } } }
+			ship = { name = "S-106" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LOU version_name = "" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "LOU"
+			version_name = "Rivière Rouge Class"
+		}
+		requested_factories = 6
+		progress = 0.1
+	}
+}

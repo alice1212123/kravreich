@@ -1,0 +1,510 @@
+focus_tree = {
+	id = deluge_america_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = MAR
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = yes
+	
+	focus = {
+		id = america_deluge_bostongover
+		icon = GFX_focus_boston
+		x = 5
+		y = 0
+		cost = 1
+		will_lead_to_war_with = USA
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.2
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+
+	focus = {
+		id = america_deluge_mass_levy
+		icon = GFX_focus_usa_call_to_arms
+		x = 3
+		y = 1
+		cost = 2
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_bostongover
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.3
+			}
+		}
+		ai_will_do = {
+			factor = 7
+		}
+	}
+
+	focus = {
+		id = america_deluge_oligarchs_friends
+		icon = GFX_focus_bag_of_money
+		x = 4
+		y = 2
+		cost = 2
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_bostongover
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.4
+			}
+		}
+		ai_will_do = {
+			factor = 7
+		}
+	}
+
+	focus = {
+		id = america_deluge_liberian_friends
+		will_lead_to_war_with = USA
+		icon = GFX_focus_saka
+		x = 6
+		y = 2
+		cost = 2
+		prerequisite = {
+			focus = america_deluge_bostongover
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+		LIB = {
+			country_event = {
+				id = deluge_maritimes.5
+			}
+		}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = america_deluge_ikesplan
+		icon = GFX_focus_ike
+		x = 7
+		y = 1
+		cost = 2
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_bostongover
+		}
+		bypass = {
+			has_war = yes
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.8
+			}
+		}
+		ai_will_do = {
+			factor = 4
+		}
+	}
+
+	focus = {
+		id = america_deluge_better_dead
+		icon = GFX_focus_killreds
+		x = 5
+		y = 3
+		cost = 2
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_bostongover
+		}
+		prerequisite = {
+			focus = america_deluge_ikesplan
+			focus = america_deluge_mass_levy
+			focus = america_deluge_liberian_friends
+			focus = america_deluge_oligarchs_friends
+		}
+		bypass = {
+			has_war_with = USA
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = 2ACW
+					}
+				}
+				set_global_flag = 2ACW
+			}
+			declare_war_on = {
+    			target = USA
+    			type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 7
+		}
+	}
+
+	focus = {
+		id = america_deluge_kill_dixies
+		icon = GFX_focus_kill_dixies
+		x = 5
+		y = 4
+		cost = 2
+		will_lead_to_war_with = USA
+		prerequisite = {
+			focus = america_deluge_better_dead
+		}
+		bypass = {
+			has_war_with = CSA
+		}
+		available = {
+			is_neighbor_of = CSA
+		}
+		completion_reward = {
+			declare_war_on = {
+    			target = CSA
+    			type = annex_everything
+			}
+			add_timed_idea = {
+				idea = deluge_atacker_advantage
+				days = 20
+			}
+
+		}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_mac_arthurs_lesson
+		icon = GFX_focus_big_mac
+		x = 3
+		y = 4
+		cost = 2
+		prerequisite = {
+			focus = america_deluge_better_dead
+		}
+
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.12
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 9
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_heirs_to_america
+		icon = GFX_focus_heir_to_america
+		x = 2
+		y = 5
+		cost = 4
+		prerequisite = {
+			focus = america_deluge_mac_arthurs_lesson
+		}
+
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.13
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 8
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_the_bonus_army
+		icon = GFX_focus_pershing
+		x = 4
+		y = 5
+		cost = 5
+		bypass = {
+			NOT = {
+				has_global_flag = 2ACW
+			}
+		}
+		prerequisite = {
+			focus = america_deluge_mac_arthurs_lesson
+		}
+
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.14
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 8
+		}
+	}
+
+	focus = {
+		id = america_deluge_doug_commands
+		icon = GFX_focus_doug_commands
+		x = 3
+		y = 6
+		cost = 7
+		bypass = {
+			NOT = {
+				has_global_flag = 2ACW
+			}
+		}
+		prerequisite = {
+			focus = america_deluge_the_bonus_army
+			focus = america_deluge_heirs_to_america
+		}
+
+		completion_reward = {
+			add_to_variable = { big_mac_influence = 5 } 
+			swap_ideas = {
+				remove_idea = mac_arthur_officer
+				add_idea = mac_arthur_officer_2
+			}
+		}
+		ai_will_do = {
+			factor = 8
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_enlist_blacks
+		icon = GFX_focus_royalists_blacks
+		x = 1
+		y = 6
+		cost = 6
+		bypass = {
+			NOT = {
+				has_global_flag = 2ACW
+			}
+		}
+		allowed = {
+			has_war_with = CSA
+		}
+		prerequisite = {
+			focus = america_deluge_heirs_to_america
+		}
+
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.15
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = america_deluge_we_obey
+		icon = GFX_focus_american_marines
+		x = 3
+		y = 7
+		cost = 7
+		bypass = {
+			NOT = {
+				has_global_flag = 2ACW
+			}
+		}
+		prerequisite = {
+			focus = america_deluge_doug_commands
+		}
+
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.22
+				days = 2
+			}
+			swap_ideas = {
+				remove_idea = mac_arthur_officer_2
+				add_idea = mac_arthur_officer_3
+			}
+		}
+		ai_will_do = {
+			factor = 9
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_kennedys_connections
+		icon = GFX_focus_kennedys_friends
+		x = 7
+		y = 4
+		cost = 2
+		prerequisite = {
+			focus = america_deluge_better_dead
+		}
+
+		completion_reward = {
+			set_variable = { providence_circle_influence = 0 }
+			country_event = {
+				id = deluge_maritimes.24
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 8
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_corrupt_ford
+		icon = GFX_focus_corrupt_ford
+		x = 6
+		y = 5
+		cost = 4
+		prerequisite = {
+			focus = america_deluge_kennedys_connections
+		}
+
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.25
+				days = 3
+			}
+		}
+		ai_will_do = {
+			factor = 7
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_church_propaganda
+		icon = GFX_focus_christ_gov
+		x = 8
+		y = 5
+		cost = 5
+		prerequisite = {
+			focus = america_deluge_kennedys_connections
+		}
+
+		completion_reward = {
+			country_event = {
+				id = deluge_maritimes.29
+				days = 3
+			}
+			add_ideas = {
+				church_support
+			}
+		}
+		ai_will_do = {
+			factor = 6
+		}
+	}
+
+	focus = {
+		id = america_deluge_knights_of_columbus
+		icon = GFX_focus_knights_columbus
+		x = 9
+		y = 6
+		cost = 6
+		prerequisite = {
+			focus = america_deluge_church_propaganda
+		}
+
+		completion_reward = {
+			add_to_variable = { kennedy_influence = 5 }
+			country_event = {
+				id = deluge_maritimes.31
+				days = 3
+			}
+			add_manpower = 36231
+			357 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 1
+    			instant_build = yes
+			}
+
+		}
+		}
+		ai_will_do = {
+			factor = 6
+		}
+	}
+
+	focus = {
+		id = america_deluge_concessions_to_oligarchs
+		icon = GFX_focus_capitalist_collaboration
+		x = 7
+		y = 6
+		cost = 7
+		prerequisite = {
+			focus = america_deluge_corrupt_ford
+			focus = america_deluge_church_propaganda
+		}
+
+		completion_reward = {
+			add_to_variable = { kennedy_influence = 5 }
+			swap_ideas = {
+				remove_idea = kennedy_friends
+				add_idea = kennedy_friends_1
+			}
+		}
+		ai_will_do = {
+			factor = 7
+		}
+	}
+
+
+	focus = {
+		id = america_deluge_ignite_rebellion
+		icon = GFX_focus_capitalist_collaboration
+		x = 7
+		y = 6
+		cost = 7
+		prerequisite = {
+			focus = america_deluge_concessions_to_oligarchs
+		}
+
+		completion_reward = {
+			USA = {
+				country_event = {
+					id = deluge_maritimes.33
+					days = 12
+					random = 13
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 8
+		}
+	}
+
+
+
+
+}

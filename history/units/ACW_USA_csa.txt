@@ -1,0 +1,189 @@
+
+division_template = {
+	name = "Klan Paramilitary"
+	division_names_group = USA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }     
+	}
+}
+
+division_template = {
+	name = "Silvershirts"
+	division_names_group = USA_GAR_01
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "State Guard"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+
+
+
+
+
+
+units = {
+
+	
+	division= {	
+		name = "1. American Division"
+		location = 12202
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		name = "True Believers Division"
+		location = 7202
+		division_template = "Klan Paramilitary"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+
+	division= {	
+		name = "New Empire Division"
+		location = 865
+		division_template = "Klan Paramilitary"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+
+	division= {	
+		name = "1. Virginia Guard"
+		location = 865
+		division_template = "State Guard"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "2. Virginia Guard"
+		location = 865
+		division_template = "State Guard"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "3. Virginia Guard"
+		location = 865
+		division_template = "State Guard"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "1. Tennessee Guard"
+		location = 12501
+		division_template = "State Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "2. Tennessee Guard"
+		location = 12501
+		division_template = "State Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+
+	division= {	
+		name = "3. Tennessee Guard"
+		location = 12501
+		division_template = "State Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+
+
+	division= {	
+		name = "Long's Own"
+		location = 12735
+		division_template = "Silvershirts"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+	}
+
+	division= {	
+		name = "Every Man a King Brigade"
+		location = 12735
+		division_template = "Silvershirts"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+	}
+
+	division= {	
+		name = "Jackson Batallion"
+		location = 12735
+		division_template = "Silvershirts"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+	}
+
+	division= {	
+		name = "Minuteman Brigade"
+		location = 1843
+		division_template = "Silvershirts"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+	}
+
+	division= {	
+		name = "Wilson Batallon"
+		location = 1843
+		division_template = "Silvershirts"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+	}
+
+	division= {	
+		name = "Florida Patriots"
+		location = 1843
+		division_template = "Silvershirts"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+	}
+
+
+
+
+	
+}
+		

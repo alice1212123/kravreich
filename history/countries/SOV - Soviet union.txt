@@ -1,0 +1,407 @@
+﻿capital = 219
+
+oob = "SOV_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 100
+
+add_opinion_modifier = { target = JAP modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = FRA modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = USA modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = BLR modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = TUR modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = TUR modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = UKR modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = CAU modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = BAL modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = WGR modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = ENG modifier = great_war_alliance_modifier }
+add_opinion_modifier = { target = HUN modifier = great_war_alliance_modifier }
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+	mass_assault = 1
+	trade_interdiction = 1
+	fuel_silos = 1
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+	}
+}
+
+create_import = {
+	resource = rubber
+	factories = 1
+	exporter = SIA
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 20
+	communism = 5
+	neutrality = 55
+}
+
+create_faction = "Russian Bloc"
+
+add_ideas = {
+	rasputin
+	emperor_russia
+	deluge_great_war_horrors_idea
+	limited_conscription
+	novote
+	deluge_russia_incompetent_military
+}
+
+create_country_leader = {
+	name = "Viktor Chernov"
+	desc = ""
+	picture = "gfx/leaders/deluge/russians/viktor_chernov.dds"
+	expire = "1953.3.1"
+	ideology = jacobin_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Mikhail II"
+	desc = "emperor_russia_desc"
+	picture = "gfx/leaders/deluge/russians/russian_duke.dds"
+	expire = "1953.3.1"
+	ideology = reactionary_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Konstantin Rodzaevsky"
+	desc = ""
+	picture = "Portrait_Soviet_Konstantin_Rodzaevsky.dds"
+	expire = "1953.3.1"
+	ideology = corporatist_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Rasputin"
+	desc = "black_monk_desc"
+	picture = "gfx/leaders/deluge/russians/rasputin.dds"
+	expire = "1953.3.1"
+	ideology = religious_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Alexander Fyodorovich Kerensky"
+	desc = ""
+	picture = "gfx/leaders/deluge/russians/alexander_kerensky.dds"
+	expire = "1953.3.1"
+	ideology = national_liberalism_ideology
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Lavr Kornilov"
+	portrait_path = "gfx/leaders/deluge/russians/lavr_kornilov.dds"
+	traits = { old_guard  }
+	skill = 2
+	id = 90
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Anton Denikin"
+	portrait_path = "gfx/leaders/deluge/russians/anton_denikin.dds"
+	traits = { old_guard  }
+	skill = 2
+	id = 91
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Piotr Wrangal"
+	portrait_path = "gfx/leaders/deluge/russians/piotr_wrangal.dds"
+	traits = { old_guard  }
+	skill = 2
+	id = 92
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vladimir Kappel"
+	portrait_path = "gfx/leaders/deluge/russians/vladimir_kappel.dds"
+	traits = { trickster }
+	skill = 3
+	id = 93
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Piotr Nesterov"
+	portrait_path = "gfx/leaders/deluge/russians/piotr_nesterov.dds"
+	traits = { armor_officer }
+	skill = 3
+	id = 94
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Andrei Shkuro"
+	portrait_path = "gfx/leaders/deluge/russians/andrei_shkuro.dds"
+	traits = { winter_specialist }
+	skill = 3
+	id = 95
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Yevgeny Miller"
+	portrait_path = "gfx/leaders/deluge/russians/yevgeny_miller.dds"
+	traits = {   }
+	skill = 2
+	id = 96
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Roman von Ungern-Sternberg"
+	portrait_path = "gfx/leaders/deluge/russians/roman_von_ungern-sternberg.dds"
+	traits = {   }
+	skill = 2
+	id = 97
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mikhail Dragomirov"
+	portrait_path = "gfx/leaders/deluge/russians/mikhail_dragomirov.dds"
+	traits = {   }
+	skill = 2
+	id = 98
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vladimir Sakharov"
+	portrait_path = "gfx/leaders/deluge/russians/vladimir_sakharov.dds"
+	traits = {   }
+	skill = 2
+	id = 99
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mikhail Diterikhs"
+	portrait_path = "gfx/leaders/deluge/russians/mikhail_diterikhs.dds"
+	traits = {   }
+	skill = 2
+	id = 100
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Nikolai Yudenich"
+	portrait_path = "gfx/leaders/deluge/russians/nikolai_yudenich.dds"
+	traits = {   }
+	skill = 2
+	id = 101
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Alexander Kolchak"
+	portrait_path = "gfx/leaders/deluge/russians/aleksandr_kolchak.dds"
+	traits = { blockade_runner }
+	skill = 3
+	id = 102
+}
+
+create_navy_leader = {
+	name = "Stepan Makarov"
+	portrait_path = "gfx/leaders/deluge/russians/stepan_makarov.dds"
+	traits = { ironside old_guard_navy }
+	skill = 3
+	id = 103
+}
+
+create_navy_leader = {
+	name = "Alexis Vronsky"
+	portrait_path = "gfx/leaders/deluge/russians/actor_vronsky.dds"
+	traits = { }
+	skill = 2
+	id = 104
+}
+
+create_navy_leader = {
+	name = "Oskar Sablin"
+	portrait_path = "gfx/leaders/deluge/russians/actor_navy.dds"
+	traits = { }
+	skill = 2
+	id = 105
+}
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Series II"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Series III"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		sub_engine_upgrade = 2
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 2
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Series V"
+	type = submarine_2
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "Izyaslav Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 3
+		destroyer_engine_upgrade = 3
+		ship_ASW_upgrade = 3
+		ship_anti_air_upgrade = 3
+	}
+}
+
+create_equipment_variant = {
+	name = "Imperatritsa Mariya Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
+		ship_gun_upgrade = 2
+	}
+}
+

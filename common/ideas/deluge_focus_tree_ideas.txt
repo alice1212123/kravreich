@@ -1,0 +1,5710 @@
+ideas = {
+
+	country = {
+	#########BRITAIN
+
+	building_an_empire = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = eng_empire
+
+			removal_cost = -1
+						
+			modifier = {
+				consumer_goods_factor = 0.25
+				stability_factor = -0.13
+				army_org_factor = -0.15
+				war_support_factor = -0.05
+			}
+		}
+
+	assertive_dominion = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = brit_lion
+
+			removal_cost = -1
+						
+			modifier = {
+				subjects_autonomy_gain = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+
+	cooperative_dominion = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = brit_lion
+
+			removal_cost = -1
+						
+			modifier = {
+				industrial_capacity_factory = -0.07
+				stability_factor = 0.07
+			}
+		}
+
+
+	status_quo_dominion = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = brit_lion
+
+			removal_cost = -1
+						
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_factor = -0.33
+			}
+		}
+
+	white_dominion = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = aparth
+
+			removal_cost = -1
+						
+			modifier = {
+				conscription_factor = -0.05
+				MONTHLY_POPULATION = -0.3
+				consumer_goods_factor = -0.04
+				autonomy_gain = -0.3
+				stability_factor = 0.05
+			}
+		}
+
+
+	deluge_great_war_horrors_idea_eng_redu = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = ENG_the_war_to_end_all_wars
+
+			removal_cost = -1
+						
+			modifier = {
+				war_support_factor = -0.05
+				conscription_factor = -0.2
+				ai_get_ally_desire_factor = -5
+				join_faction_tension = 0.05
+				send_volunteers_tension = 0.05
+			}
+		}
+
+	british_small_invest = {
+			
+			allowed = {
+				has_war = no
+			}
+			removal_cost = -1
+
+			picture = coins
+			
+			modifier = {
+				political_power_factor = 0.1
+				communism_drift = 0.02
+				fascism_drift = 0.01
+				stability_weekly = -0.01		
+			}
+	}
+
+	british_med_invest = {
+			
+			allowed = {
+				has_war = no
+			}
+			removal_cost = -1
+
+			picture = coins
+			
+			modifier = {
+				political_power_factor = -0.15
+				communism_drift = -0.02
+				stability_weekly = 0.005	
+			}
+	}
+
+	british_big_invest = {
+			
+			allowed = {
+				has_war = no
+			}
+			removal_cost = -1
+
+			picture = coins
+			
+			modifier = {
+				political_power_factor = -0.35
+				communism_drift = -0.08
+				fascism_drift = -0.02
+				stability_weekly = 0.01		
+			}
+	}
+
+	british_rearmament_ph1 = {
+			
+			allowed = {
+				has_war = no
+			}
+			removal_cost = -1
+
+			picture = economic_boom
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+	}
+
+
+
+
+
+
+
+	############## FRANCE
+
+	force_surrender = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				surrender_limit = -2
+			}
+	}
+
+	idea_france_con_uni_just_made = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = ecsc
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				conscription_factor = -0.25
+				army_org_factor = -0.1
+			}
+	}
+
+	idea_france_eur_more_coop = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = ecsc
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.1
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+	}
+
+	idea_france_eur_subject = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = ecsc
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_factor = -0.1
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				trade_opinion_factor = 0.5
+			}
+	}
+
+	idea_france_eur_control = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = fra_eagle
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				political_power_factor = 0.05
+				industrial_capacity_factory = 0.06
+			}
+	}
+
+	idea_france_eur_coop = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = ecsc
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				political_power_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+	}
+
+	idea_france_decoloniz_stage_3 = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = france_flag
+			
+			modifier = {
+				consumer_goods_factor = -0.08
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				subjects_autonomy_gain = 0.6
+			}
+	}
+
+	france_grants_more_independence = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = france_flag
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.1
+				autonomy_gain = 1.5
+			}
+	}
+
+	idea_france_decoloniz_stage_2 = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = france_flag
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = -0.1
+				stability_factor = -0.075
+				subjects_autonomy_gain = 0.5
+			}
+	}
+
+	idea_france_decoloniz_stage_1 = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = france_flag
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_factor = -0.15
+				stability_factor = -0.1
+			}
+	}
+
+	buyer_colonial_purchase = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = coins
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.05
+			}
+	}
+
+	france_colonial_purchase = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = coins
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.05
+			}
+	}
+
+	fra_spr_guerilla_war = {
+			
+			allowed = {
+				has_war = yes
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_factor = -0.15
+				resistance_damage_to_garrison = 0.35
+				attrition = 0.35
+				army_attack_factor = -0.15
+			}
+	}
+
+
+	fra_continental_system = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = fra_eagle
+			
+			modifier = {
+				political_power_factor = 0.1
+				surrender_limit = 0.1
+			}
+	}
+
+
+
+	fra_renewed_imperialism = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = fra_eagle
+			
+			modifier = {
+				mobilization_speed = 0.05
+				offensive_war_stability_factor = 0.1
+			}
+	}
+
+	fra_rockets = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = SOV_scientist_defect
+			
+			equipment_bonus = {
+				rocket_artillery = {
+					soft_attack = 0.05
+				}
+			}
+			
+			research_bonus = {
+				rocketry = 0.03
+				jet_technology = 0.03
+			}
+		}
+
+	fra_bomber_airforce1 = { #bomber airforce
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = fra_air
+		
+		modifier = {
+			air_close_air_support_attack_factor = 0.1
+			air_cas_present_factor = 0.1
+			experience_gain_air_factor = 0.05
+		}
+
+		equipment_bonus = {
+			cas_bomber = {
+				build_cost_ic = -0.1
+			}
+		}
+
+	}
+
+	fra_bomber_airforce = { #bomber airforce
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = fra_air
+		
+		modifier = {
+			air_close_air_support_attack_factor = 0.05
+			experience_gain_air_factor = 0.05
+		}
+
+		equipment_bonus = {
+			cas_bomber = {
+				build_cost_ic = -0.1
+			}
+		}
+
+	}
+
+	fra_figther_airforce1 = { #figthers airforce
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = fra_air
+		
+		modifier = {
+			air_air_superiority_attack_factor = 0.05
+			air_air_superiority_defence_factor = 0.05
+			air_interception_attack_factor = 0.05
+			experience_gain_air_factor = 0.1
+		}
+
+		equipment_bonus = {
+			light_fighter = {
+				build_cost_ic = -0.1
+			}
+		}
+
+	}
+
+	fra_figther_airforce = { #figthers airforce
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = fra_air
+		
+		modifier = {
+			air_air_superiority_attack_factor = 0.05
+			experience_gain_air_factor = 0.05
+		}
+
+		equipment_bonus = {
+			light_fighter = {
+				build_cost_ic = -0.1
+			}
+		}
+
+	}
+
+	fra_idea_marines = { #marine
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = big_fleet
+		
+		modifier = {
+			amphibious_invasion = 0.05
+			invasion_preparation = -0.05
+		}
+
+	}
+
+	fra_big_bad_navy1 = { #offensive navy
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = big_fleet
+		
+		modifier = {
+			ships_at_battle_start = 0.25
+			naval_hit_chance = 0.03
+			navy_capital_ship_attack_factor = 0.05
+			navy_capital_ship_defence_factor = 0.05
+			consumer_goods_factor = 0.05
+		}
+
+		equipment_bonus = {
+			bb_tech = {
+				build_cost_ic = -0.15
+			}
+		}
+
+	}
+
+	fra_big_bad_navy = { #offensive navy
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = big_fleet
+		
+		modifier = {
+			ships_at_battle_start = 0.25
+			naval_hit_chance = 0.03
+			navy_capital_ship_attack_factor = 0.05
+			navy_capital_ship_defence_factor = 0.05
+		}
+
+
+
+	}
+
+	fra_darlan_defensive_navy2 = { #defensive navy 3:darlan boogabee
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = big_fleet
+		
+		modifier = {
+			convoy_escort_efficiency = 0.35
+			naval_coordination = 0.03
+			navy_screen_attack_factor = 0.05
+			navy_screen_defence_factor = 0.05
+			encryption_factor = 0.1
+		}
+
+		research_bonus = { 
+			encryption_tech = 0.1
+			naval_mines = 0.1
+		} 
+
+	}
+
+	fra_darlan_defensive_navy1 = { #defensive navy 2:darlan boogaloo
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = big_fleet
+		
+		modifier = {
+			convoy_escort_efficiency = 0.35
+			naval_coordination = 0.03
+			navy_screen_attack_factor = 0.05
+			navy_screen_defence_factor = 0.05
+			encryption_factor = 0.1
+		}
+
+		research_bonus = { 
+			encryption_tech = 0.1
+		} 
+
+	}
+
+	fra_darlan_defensive_navy = { #defensive navy
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = big_fleet
+		
+		modifier = {
+			convoy_escort_efficiency = 0.25
+			naval_coordination = 0.03
+			navy_screen_attack_factor = 0.05
+			navy_screen_defence_factor = 0.05
+		}
+
+	}
+
+	fra_lessons_of_pomerania = { #lessons of pomerania
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = fra_rifles
+		
+		modifier = {
+			resistance_damage_to_garrison = -0.1
+			resistance_growth_on_our_occupied_states = -0.1
+			cavalry_attack_factor = 0.05
+		}
+
+	}
+
+	fra_ult_armyd = { #last spirit mobile army
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = fra_nationalism
+		
+		modifier = {
+			political_power_factor = -0.2
+			army_infantry_attack_factor = 0.08
+			army_defence_factor = 0.1
+		}
+
+		equipment_bonus = {
+			infantry_weapons = {
+				soft_attack = 0.1
+				instant = yes
+			}
+		}
+
+		research_bonus = { 
+			cat_grand_battle_plan = 0.05
+		} 
+	}
+
+	fra_improve_infantryman1 = { #new infantryman
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = fra_rifles
+		
+		modifier = {
+			army_infantry_attack_factor = 0.05
+		}
+
+		equipment_bonus = {
+			infantry_weapons = {
+				soft_attack = 0.07
+				instant = yes
+			}
+		}
+
+	}
+
+	fra_improve_infantryman = { #new infantryman
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = fra_rifles
+		
+		modifier = {
+			army_infantry_attack_factor = 0.05
+		}
+	}
+
+	fra_def_army = { #defensive army
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_war_preparation
+		
+		modifier = {
+			army_defence_factor = 0.07
+		}
+	}
+
+
+	fra_military_infrastructure = { #infrastructure for the army
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = ast_all_in
+		
+		modifier = {
+			production_speed_infrastructure_factor = 0.1
+			land_reinforce_rate = 0.3
+		}
+	}
+
+	fra_ult_army1 = { #last spirit mobile army
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = fra_nationalism
+		
+		modifier = {
+			political_power_factor = -0.2
+			motorized_attack_factor = 0.05
+			army_speed_factor = 0.05
+
+		}
+
+		equipment_bonus = {
+			artillery_equipment = {
+				soft_attack = 0.9
+				instant = yes
+			}
+		}
+
+		research_bonus = { 
+			cat_superior_firepower = 0.11
+		} 
+	}
+
+	fra_ult_army = { #last spirit mobile army
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = fra_nationalism
+		
+		modifier = {
+			political_power_factor = -0.2
+			motorized_attack_factor = 0.05
+			army_speed_factor = 0.05
+
+		}
+
+		equipment_bonus = {
+			artillery_equipment = {
+				soft_attack = 0.12
+				instant = yes
+			}
+		}
+
+		research_bonus = { 
+			cat_superior_firepower = 0.11
+		} 
+	}
+
+	fra_new_shells1 = { #new shells
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = new_arty
+		
+		equipment_bonus = {
+			artillery_equipment = {
+				soft_attack = 0.07
+				instant = yes
+			}
+		}
+	}
+
+	fra_new_shells = { #new shells
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = new_arty
+		
+		equipment_bonus = {
+			artillery_equipment = {
+				soft_attack = 0.1
+				instant = yes
+			}
+		}
+	}
+
+	fra_study_napoleon1 = { #legacy of nap
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_reserve_divisions
+		
+		modifier = {
+			political_power_factor = -0.15
+			army_artillery_attack_factor = 0.05		}
+
+		research_bonus = { 
+			cat_superior_firepower = 0.1
+		} 
+	}
+
+	fra_study_napoleon = { #legacy of nap
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_reserve_divisions
+		
+		modifier = {
+			political_power_factor = -0.1	
+		}
+
+		research_bonus = { 
+			cat_superior_firepower = 0.06
+		} 
+	}
+
+	renew_fra_high_command = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		picture = generic_war_preparation
+
+		removal_cost = -1
+						
+		modifier = {
+			high_command_cost_factor = -0.65
+		}
+	}
+
+	fra_tank_research1 = {
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+			
+		removal_cost = -1
+
+		picture = generic_acquire_tanks
+			
+		modifier = {
+			stability_factor = -0.1    
+			army_armor_attack_factor = 0.08
+			army_armor_speed_factor = 0.04
+		}
+
+		research_bonus = {
+			cat_light_armor = 0.08
+		}
+	}
+
+	fra_tank_research = {
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+			
+		removal_cost = -1
+
+		picture = generic_acquire_tanks
+			
+		modifier = {
+			stability_factor = -0.05   		
+		}
+
+		research_bonus = {
+			cat_light_armor = 0.08
+		}
+	}
+
+		fra_chinese_profits = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = economic_boom
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+	france_native_resistence1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				political_power_factor = -0.25
+				consumer_goods_factor = 0.25
+				production_factory_efficiency_gain_factor = -0.15
+			}
+		}
+
+
+	france_economic_boom = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = economic_boom
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+
+	FRA_industry_more_resources = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			picture = fra_decentralization
+			
+			modifier = {
+				local_resources_factor = 0.25
+				political_power_factor = -0.1
+				civilian_factory_use = 3
+			}
+		}
+
+	deluge_france_rail_work = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = ast_all_in
+			
+			modifier = {
+				political_power_factor = -0.05
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+
+	france_presidential_powers_uber = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_decree
+			
+			modifier = {
+				political_power_factor = 0.16
+				war_support_factor = 0.10
+				stability_factor = 0.05
+				surrender_limit = 0.2
+			}
+		}
+
+	deluge_france_junta_caos_gaulle = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+			    drift_defence_factor = -0.15
+				political_power_factor = -0.25
+				consumer_goods_factor = 0.04
+				production_factory_efficiency_gain_factor = -0.02
+			}
+		}
+
+	france_presidential_powers1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_decree
+			
+			modifier = {
+			    economy_cost_factor = -0.05
+			    mobilization_laws_cost_factor = -0.05
+			    political_advisor_cost_factor = -0.05
+			    trade_laws_cost_factor = -0.05
+				political_power_factor = 0.08
+				
+			}
+		}
+
+
+	france_presidential_powers = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_decree
+			
+			modifier = {
+			    economy_cost_factor = -0.1
+			    mobilization_laws_cost_factor = -0.1
+			    political_advisor_cost_factor = -0.1
+			    trade_laws_cost_factor = -0.1
+				political_power_factor = 0.1
+				
+			}
+		}
+
+
+	deluge_france_junta_caos_nap = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+			    drift_defence_factor = -0.2
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.03
+			}
+		}
+
+	deluge_junta_uni_for_rich1 = {
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+			
+		removal_cost = -1
+
+		picture = generic_research_bonus
+			
+		modifier = {
+			research_speed_factor = 0.04
+		}
+	}
+
+	deluge_junta_uni_for_rich = {
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+			
+		removal_cost = -1
+
+		picture = generic_research_bonus
+			
+		modifier = {
+			research_speed_factor	 = 0.03
+			consumer_goods_factor = -0.02
+		}
+	}
+
+	deluge_france_junta_caos2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+
+	deluge_france_junta_caos1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+			    drift_defence_factor = -0.15
+				political_power_factor = -0.25
+				consumer_goods_factor = 0.01
+			}
+		}
+
+	deluge_france_junta_caos = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+			    drift_defence_factor = -0.25
+				political_power_factor = -0.35
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+
+	france_henriot_edu = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				political_power_factor = 0.1
+				MONTHLY_POPULATION = 0.01
+			}
+			
+			research_bonus = {
+				electronics = 0.04
+			}
+		}
+
+	fra_deat_patiots_factories2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.07
+				conscription = -0.005
+			}
+	}
+
+	fra_deat_patiots_factories1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				conscription = -0.005
+			}
+	}
+
+	fra_deat_nat_synd = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = economy_control
+			
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_arms_factory_factor = -0.1
+				local_resources_factor = 0.15
+				line_change_production_efficiency_factor = -0.1
+			}
+		}
+
+	fra_deat_big_bad_union = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = economy_control
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = -0.15
+			}
+		}
+
+	fra_deat_control_center = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = fra_decentralization
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				local_resources_factor = 0.10 
+				line_change_production_efficiency_factor = -0.15
+			}
+		}
+
+	deluge_france_inquisition1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = catholic
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.05
+				subjects_autonomy_gain = -0.05
+				encryption_factor = 0.05
+				decryption_factor = 0.05
+				resistance_damage_to_garrison = -0.15
+			}
+	}
+
+	deluge_france_inquisition2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = catholic
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor	 = 0.02
+				political_power_factor = -0.05
+				communism_drift = -0.1
+				subjects_autonomy_gain = -0.1
+				encryption_factor = 0.1
+				decryption_factor = 0.1
+				resistance_damage_to_garrison = -0.2
+			}
+	}
+
+	deluge_france_inquisition3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = catholic
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor	 = 0.04
+				consumer_goods_factor = 0.15
+				political_power_factor = 0.06
+				communism_drift = -0.5
+				subjects_autonomy_gain = -1
+				encryption_factor = 1
+				decryption_factor = 1
+				resistance_damage_to_garrison = -0.5
+			}
+	}
+
+	fra_decentralization_integralism_power1 = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = fra_decentralization
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = -0.25
+				production_speed_industrial_complex_factor = 0.15
+				local_resources_factor = 0.25
+				industry_air_damage_factor = -0.1
+				global_building_slots_factor = 0.10
+			}
+		}
+
+
+	fra_decentralization_integralism_power = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = fra_decentralization
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = -0.15
+				production_speed_industrial_complex_factor = 0.07
+			}
+		}
+
+	non_christian_discrimination1 = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				conscription_factor = -0.02
+				stability_factor = -0.02
+				political_power_factor = 0.05
+				resistance_target = -2
+			}
+		}
+
+	non_christian_discrimination = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				conscription_factor = -0.01
+				stability_factor = -0.01
+				political_power_factor = 0.01
+
+			}
+		}
+
+	maurras_support_church2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			picture = catholic
+			
+			modifier = {
+			    stability_weekly = 0.005
+				neutrality_drift = 0.10
+				consumer_goods_factor = 0.05
+				political_power_factor = 0.2
+				local_resources_factor = -0.1
+			}
+	}
+
+
+	maurras_support_church1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			picture = catholic
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_factor = 0.1
+			}
+	}
+
+	france_maurras_police1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = crown
+
+			removal_cost = -1
+						
+			modifier = {
+			  	encryption_factor = 0.15
+				decryption_factor = 0.15
+				resistance_damage_to_garrison = -0.25
+			}
+	}
+
+	france_maurras_police = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = crown
+
+			removal_cost = -1
+						
+			modifier = {
+			  	encryption_factor = 0.1
+				decryption_factor = 0.1
+				resistance_damage_to_garrison = -0.2
+			}
+		}
+
+	deluge_france_social_unrest_henriot4 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = france_flag
+			
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.05
+				conscription_factor = 0.05
+			}
+		}
+	deluge_france_social_unrest_henriot5 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = france_flag
+			
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				conscription_factor = 0.1
+			}
+		}
+
+	deluge_france_social_unrest_henriot2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+			    drift_defence_factor = -0.5
+				political_power_factor = -0.5
+				stability_factor = -0.1
+				consumer_goods_factor = 0.25
+				production_factory_efficiency_gain_factor = -0.2
+			}
+		}
+
+	deluge_france_social_unrest_henriot3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+			    drift_defence_factor = -0.25
+				political_power_factor = -0.25
+				stability_factor = -0.05
+				consumer_goods_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+
+	deluge_france_social_unrest_henriot1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+			    drift_defence_factor = -0.8
+				political_power_factor = -0.8
+				stability_factor = -0.15
+				consumer_goods_factor = 0.35
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+
+	deluge_france_social_unrest_henriot = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+			    drift_defence_factor = -1
+				political_power_factor = -1
+				stability_factor = -0.2
+				consumer_goods_factor = 1
+				production_factory_efficiency_gain_factor = -0.35
+			}
+		}
+
+	deluge_france_ultranat_resistence = {
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_democratic_drift_bonus
+			
+		modifier = {
+			army_core_defence_factor = 0.1
+			army_morale_factor = 0.1
+			surrender_limit = 0.05
+		}
+	}
+	
+
+	degaulle_liberal_nationalism = {
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_democratic_drift_bonus
+			
+		modifier = {
+			war_support_weekly = 0.01
+			stability_weekly = 0.005
+			conscription_factor = 0.05
+			army_core_attack_factor = 0.05
+		}
+	}
+
+	france_anti_socialism_petain = {
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_communist_army
+			
+		modifier = {
+			offensive_war_stability_factor = 0.4
+			foreign_subversive_activites = -0.7
+			resistance_target = -2
+		}
+	}
+
+	deluge_france_social_unrest2 = {
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_communist_army
+			
+		modifier = {
+			drift_defence_factor = -0.15
+		    political_power_factor = -0.4
+			stability_factor = -0.05
+			consumer_goods_factor = 0.01
+			production_factory_efficiency_gain_factor = -0.1
+		}
+	}
+
+	france_laval_crack_on_strikers = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			picture = soc_militias
+			
+			modifier = {
+			    communism_drift = -0.04
+			    communism_acceptance = -50
+			    trade_laws_cost_factor = -0.25
+			    money_cost_factor = -0.25
+			}
+	}
+
+
+	france_laval_regulations_gone = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = coins
+			
+			modifier = {
+			    consumer_goods_factor = -0.05
+			    global_building_slots_factor = -0.10
+			    production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+
+	france_laval_loans2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = new_deal
+			
+			modifier = {
+			    consumer_goods_factor = 0.08
+			    stability_weekly = 0.02
+			    money_cost_factor = 5
+			}
+		}
+
+	france_laval_loans1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = new_deal
+			
+			modifier = {
+			    consumer_goods_factor = 0.05
+			    stability_weekly = 0.01
+			    money_cost_factor = 2
+			}
+		}
+
+	france_laval_education = {
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			has_government = democratic
+		}
+			
+		removal_cost = -1
+
+		picture = generic_research_bonus
+			
+		modifier = {
+			research_speed_factor	 = 0.03
+			consumer_goods_factor = -0.01
+		}
+	}
+
+	 deluge_france_social_unrest1 = {
+			
+		allowed = {
+			always = no
+		}
+			
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_communist_army
+			
+		modifier = {
+			drift_defence_factor = -0.35
+		    political_power_factor = -0.5
+			stability_factor = -0.05
+			consumer_goods_factor = 0.03
+			production_factory_efficiency_gain_factor = -0.1
+		}
+	}
+		
+
+	france_laval_tolerated_rigth = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascism_drift = 0.05
+				political_power_factor = -0.2
+				political_advisor_cost_factor = 1
+			}
+	}
+
+	thorez_dead = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				communism_drift = -0.05
+				stability_weekly = 0.02
+			}
+	}
+
+	deluge_thorez_escapes2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				communism_drift = 0.1
+				conscription_factor = -0.17
+				production_factory_max_efficiency_factor = -0.25
+			}
+	}
+
+	deluge_thorez_escapes = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				communism_drift = 0.07
+				conscription_factor = -0.15
+				production_factory_max_efficiency_factor = -0.2
+			}
+	}
+
+	deluge_thorez_arrested = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				communism_drift = 0.05
+				conscription_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+	}
+
+	dada_fra_disjointed_gov = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_advisor_cost_factor = 1
+				mobilization_laws_cost_factor = 1
+				economy_cost_factor = 1
+				surrender_limit = -0.1
+				war_support_factor = -0.10
+			}
+		}
+
+		dada_fra_disjointed_gov2 = {  
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_advisor_cost_factor = 2
+				mobilization_laws_cost_factor = 2
+				economy_cost_factor = 2
+				surrender_limit = -0.1
+				war_support_factor = -0.15
+				political_power_factor = -0.3
+			}
+		}
+
+	france_tax_rich1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = coins
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.08
+				production_speed_arms_factory_factor = 0.1
+			}
+	}
+
+	france_tax_rich2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = coins
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_industrial_complex_factor = 0.07
+				political_power_gain = 0.05
+			}
+	}
+
+	loan_oustric_dada = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = coins
+			
+			modifier = {
+				political_power_factor = -0.15
+				production_speed_industrial_complex_factor = -0.15
+			}
+	}
+
+	france_start_deregulation = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = coins
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				stability_factor = -0.15
+			}
+	}
+
+
+	workers_priest_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = catholic
+			
+			modifier = {
+				fascism_drift = -0.02
+				neutrality_drift = -0.01
+				consumer_goods_factor = 0.03
+				political_power_factor = -0.15
+				local_resources_factor = 0.10
+				production_speed_industrial_complex_factor = 0.08
+			}
+	}
+
+
+	workers_priest_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = catholic
+			
+			modifier = {
+				fascism_drift = 0.01
+				neutrality_drift = 0.01
+				consumer_goods_factor = -0.03
+				political_power_factor = -0.05
+				production_speed_industrial_complex_factor = 0.03
+			}
+	}
+
+	deluge_france_child_lab1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				industrial_capacity_factory = -0.03
+				stability_factor = -0.05
+				research_speed_factor	 = 0.03
+			}
+	}
+
+	deluge_france_child_lab2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor	 = 0.01
+			}
+	}
+
+	idea_france_rigth_to_strike = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.05
+			}
+	}
+
+	deluge_french_dada_church1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			picture = catholic
+			
+			modifier = {
+				fascism_drift = 0.02
+				neutrality_drift = 0.05
+				stability_weekly = 0.01
+				social_order_cost_factor = 5
+				local_resources_factor = 0.3
+			}
+	}
+
+	deluge_french_dada_church2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = catholic
+			
+			modifier = {
+				neutrality_drift = 0.02
+				democratic_drift = 0.04
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.03
+			}
+	}
+
+	deluge_french_dada_church3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = catholic
+			
+			modifier = {
+				democratic_drift = 0.04
+				political_power_factor = -0.15
+				consumer_goods_factor = -0.1
+			}
+	}
+
+	france_women_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = women_free
+			
+			modifier = {
+				conscription_factor = 0.03
+				stability_factor = -0.05
+			}
+	}
+
+	france_women_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = women_free
+			
+			modifier = {
+				conscription_factor = 0.6
+				stability_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+	}
+
+	deluge_france_liberty_beacon_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				money_cost_factor = -0.25
+				social_order_cost_factor = -0.25
+			}
+	}
+
+	deluge_france_liberty_beacon_idea1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				neutrality_acceptance = 85
+				high_command_cost_factor = -0.25
+			}
+	}
+
+	deluge_france_liberty_beacon_idea2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25				
+				economy_cost_factor = -0.25
+				money_cost_factor = -0.25
+				social_order_cost_factor = -0.25
+				democratic_acceptance = 50
+				political_power_factor = 0.25
+			}
+	}
+
+	deluge_france_liberty_beacon_idea3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_advisor_cost_factor = -0.5
+				trade_laws_cost_factor = -0.25				
+				economy_cost_factor = -0.2
+				money_cost_factor = -0.2
+				social_order_cost_factor = -0.5
+				democratic_acceptance = 70
+				conscription_factor = 0.05
+			}
+	}
+
+	deluge_france_social_civil_war = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				political_power_factor = -0.6
+				stability_factor = -0.10
+				consumer_goods_factor = 0.15
+				defence = -0.15
+			}
+		}
+
+	
+	deluge_french_welfare_state = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = new_deal
+			
+			modifier = {
+			    consumer_goods_factor = 0.14
+			    stability_factor = 0.15
+				political_power_factor = 0.35
+			}
+		}
+		
+	deluge_france_cheap_uni_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor	 = 0.02
+				
+			}
+		}
+		
+		deluge_france_cheap_uni_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor	 = 0.04
+				political_power_factor = -0.1
+			}
+		}
+		
+		deluge_france_cheap_uni_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor	 = 0.06
+				political_power_gain = -0.45
+				
+			}
+		}
+		
+		deluge_french_public_works_pay = { #Cost of public works
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_speed_buildings_factor = 0.1 	
+				political_power_factor = -0.5
+			}
+		}
+		
+		
+		
+		deluge_france_office_du_ble = { #Office du Ble
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				consumer_goods_factor = -0.04
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		
+		deluge_france_office_du_ble_0 = { #Office du Ble
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		deluge_france_office_du_ble_1 = { #Office du Ble
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		
+		deluge_france_wgr_embargo = { #france against wgr
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				land_reinforce_rate = -0.5
+				supply_consumption_factor = 0.35
+				army_defence_factor = -0.15
+			}
+		}
+		
+		deluge_france_40h_wweek = { #40 hours work week
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.12
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		
+		deluge_france_40h_wweek_1 = { #40 hours work week
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.14
+				production_factory_start_efficiency_factor = -0.08
+			}
+		}
+
+		blum_welfare_level_1 = { #40 welfare blum badim badadum
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = new_deal
+			
+			modifier = {
+			    consumer_goods_factor = 0.06
+			    stability_factor = 0.1
+				production_speed_buildings_factor = -0.05
+				
+			}
+		}
+
+		blum_welfare_level_2 = { #40 welfare blum badim badadum
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = new_deal
+			
+			modifier = {
+			    consumer_goods_factor = 0.08
+			    stability_weekly = 0.01
+			    war_support_weekly = 0.01
+			    mobilization_speed = 0.05
+				production_speed_buildings_factor = -0.06
+				research_speed_factor = 0.01 
+
+			}
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	##########America
+	deluge_america_fcorporatism = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+			    consumer_goods_factor = 0.1
+			    stability_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+
+			}
+		}
+			
+
+
+	# More control
+
+		deluge_america_morecontrol = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+			    consumer_goods_factor = 0.05
+			    stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+
+			}
+		}
+
+
+		# depression is over
+
+		deluge_america_depressionover = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+			    consumer_goods_factor = -0.07
+			    stability_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+	
+			}
+		}
+
+		## Banned Militias
+
+		deluge_america_militias_banned = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+			    conscription_factor = -0.1
+			    stability_factor = 0.03
+			    army_org_Factor = 0.05
+			}
+		}
+
+		###### Ford for the Amry
+
+
+		deluge_america_fordarmy = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			modifier = {
+			    stability_factor = 0.03
+			    army_org_Factor = 0.05
+			    army_speed_factor = 0.05
+			    army_armor_attack_factor = 0.05
+			    motorized_attack_factor = 0.1
+
+			}
+		}
+
+		
+		
+	   ###### Ford Subsided
+
+
+		deluge_america_ford_subsided = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			modifier = {
+			    consumer_goods_factor = -0.05
+				political_power_factor = -0.1
+
+			}
+		}
+		
+		###########
+	
+	
+		deluge_america_new_unions = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				political_power_gain = 0.15
+				fascism_drift = 0.10
+				communism_drift = 0.05
+
+			}
+		}
+
+
+      ########  partial recovery
+
+		deluge_america_mildepression = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+
+			removal_cost = -1
+						
+			modifier = {
+				consumer_goods_factor = 0.12
+				political_power_gain = -0.15
+				economy_cost_factor = 2
+				industrial_capacity_factory = -0.2
+
+			}
+		}	  
+	
+	
+      ########  aggressive army
+
+		deluge_america_offarmy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_war_preparation
+
+			removal_cost = -1
+						
+			modifier = {
+				conscription_factor = 0.15
+				army_core_attack_factor = 0.15
+	            army_attack_factor = 0.1
+				max_planning = 0.2
+			}
+		}	
+	
+	
+	
+      ########  forced labour
+
+		deluge_america_forcedlabour = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+
+			removal_cost = -1
+						
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.1
+				economy_cost_factor = 2
+				industrial_capacity_factory = -0.1
+				production_speed_arms_factory_factor = 0.05
+			}
+		}		
+	
+	
+      ########  labour camps nei caraibi
+
+		deluge_america_labourcamps = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ast_all_in
+
+			removal_cost = -1
+						
+			modifier = {
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.15
+			}
+		}	
+	
+      ########  Veterans Helped
+
+		deluge_america_veteranshelped = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ENG_the_war_to_end_all_wars
+
+			removal_cost = -1
+						
+			modifier = {
+				conscription_factor = -0.05
+			    political_power_factor = 0.2
+				army_core_attack_factor = 0.15
+	            army_attack_factor = 0.1
+				max_planning = 0.2
+			}
+		}		
+
+      ########  Patriotic America
+
+		deluge_america_patriottism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_war_preparation
+
+			removal_cost = -1
+						
+			modifier = {
+				conscription_factor = 0.15
+			    political_power_factor = 0.2
+				army_core_attack_factor = 0.15
+	            army_attack_factor = 0.15
+				army_morale_factor = 0.1
+				max_planning = 0.2
+			}
+		}
+	
+	
+      ########  Unionism
+
+		deluge_unions_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_central_management
+
+			removal_cost = -1
+						
+			modifier = {
+				industrial_capacity_factory = 0.15
+			    political_power_factor = -0.1
+				local_resources_factor = 0.1
+			}
+		}
+
+
+      ########  Unionism + democracy
+
+		deluge_america_uniondemocracy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_central_management
+
+			removal_cost = -1
+						
+			modifier = {
+				industrial_capacity_factory = 0.15
+			    political_power_factor = -0.05
+				local_resources_factor = 0.1
+				stability_factor = 0.06
+				political_advisor_cost_factor = -0.25
+			}
+		}
+
+		#### Fight for freedom
+		
+		deluge_fightforfreedom = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_war_preparation
+
+			removal_cost = -1
+						
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.15
+				ai_get_ally_desire_factor = 50
+				democratic_acceptance = 85
+				communism_acceptance = 95
+				guarantee_cost = -0.75
+
+			}
+		}
+		
+		#### Elected Officers
+		
+		deluge_electedofficers_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_reserve_divisions
+
+			removal_cost = -1
+						
+			modifier = {
+					war_support_factor = 0.10
+					mobilization_laws_cost_factor = -0.2
+					military_leader_cost_factor = -0.50
+
+			}
+		}		
+		
+		#### Miltias
+		
+		america_deluge_usamilitia = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_reserve_divisions
+
+			removal_cost = -1
+						
+			modifier = {
+					war_support_factor = 0.12
+					mobilization_laws_cost_factor = -0.25
+					military_leader_cost_factor = -0.6
+					conscription_factor = 0.1
+				    army_org_Factor = -0.05
+					army_core_defence_factor = 0.15
+					army_defence_factor = -0.05
+
+			}
+		}		
+		
+		#### Tax the Burgeoise
+		
+		america_deluge_taxburg = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_reserve_divisions
+
+			removal_cost = -1
+						
+			modifier = {
+					political_power_factor = 0.15
+					consumer_goods_factor = -0.05
+
+			}
+		}
+
+		#### nationalization
+		
+		america_deluge_nationalization_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+						
+			modifier = {
+					political_power_factor = -0.05
+					consumer_goods_factor = 0.05
+					production_speed_arms_factory_factor = 0.15
+					production_speed_industrial_complex_factor = 0.05
+					production_speed_infrastructure_factor = 0.2
+
+			}
+		}
+
+		#### empower chman
+		
+		america_deluge_chairman_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+						
+			modifier = {
+					economy_cost_factor = -0.25
+					mobilization_laws_cost_factor = -0.3
+					high_command_cost_factor = -0.25
+					political_advisor_cost_factor = -0.5
+					
+
+			}
+		}
+		
+		#######Purge
+		deluge_radicalpurge_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trotskyite_plot
+
+			removal_cost = -1
+						
+			modifier = {
+				army_morale_factor = -0.1
+				resistance_damage_to_garrison = 0.1
+				war_support_factor = 0.15
+				
+			}
+		}
+
+######### Blacks rights
+
+		deluge_blackrights_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+				political_power_gain = -0.1
+				stability_factor = -0.05
+				
+			}
+		}		
+######### socialist cia
+
+		america_secret_police_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = nkvd
+
+			removal_cost = -1
+			
+			modifier = {
+					communism_drift = 0.2
+					subjects_autonomy_gain = -0.5
+					
+					
+				
+			}
+		}
+		
+######### socialist cia2
+
+		america_secret_police_idea2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = nkvd
+
+			removal_cost = -1
+			
+			modifier = {
+					communism_drift = 0.2
+					subjects_autonomy_gain = -1
+					encryption_factor = 0.2	
+					decryption_factor = 0.2
+			}
+		}
+
+		#######redarmy
+		deluge_americanredarmy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trotskyite_plot
+
+			removal_cost = -1
+						
+			modifier = {
+				war_support_factor = 0.1
+				army_org_Factor = 0.05
+				max_planning = 0.2
+				planning_speed = 0.1
+				training_time_factor = 0.15
+				army_attack_factor = 0.05
+				army_infantry_attack_factor = 0.1
+				
+			}
+		}
+		
+		
+		
+		### Purged Wallace
+		
+		purged_wallace = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				fascism_drift = 0.05
+				political_power_gain = -0.5
+				stability_weekly = -0.01
+				industrial_capacity_factory = -0.1
+			}
+		}
+		
+	### Wallace's Probles
+		
+		wallace_problems = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.6
+				consumer_goods_factor = 0.12
+				industrial_capacity_factory = -0.2
+			}
+		}
+	
+	### Purged Browder
+		
+		purged_browder = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.3
+				consumer_goods_factor = 0.04
+				decryption_factor = -0.5
+				encryption_factor = -0.5
+			}
+		}
+
+	### Browder's rebellion
+		
+		browder_problems = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.35
+				consumer_goods_factor = 0.07
+				
+			}
+		}
+		
+	### Butler's death
+		
+		purged_butler = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				war_support_weekly = -0.01
+				political_power_factor = -0.1
+				army_chief_cost_factor = -0.3
+				army_org_Factor = -0.25
+				
+			}
+		}
+		
+		
+		
+		##Slavery status quo
+		deluge_slavery_status_quo = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = legacy_of_slavery
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.15
+				political_power_factor = 0.1
+			}
+		}
+		
+		##Black Patriots
+		deluge_black_patriots = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = saf_history_of_segregation
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+				political_power_factor = -0.15
+			}
+		}		
+		##Paramilitarism
+		deluge_paramilitarism_long = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = triumphant_will
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_org_Factor = -0.1
+				political_power_factor = -0.1
+			}
+		}				
+		
+		##Paramilitarism
+		deluge_paramilitarism_long_army = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = triumphant_will
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_org_Factor = -0.05
+				land_reinforce_rate = 0.2
+				
+				
+				
+			}
+		}				
+
+		##Paramilitarism
+		deluge_paramilitarism_long_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = triumphant_will
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.05
+				army_core_attack_factor = 0.05
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				
+			}
+		}				
+	###### every man a king
+
+		deluge_america_great_depression_long = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+
+			removal_cost = -1
+						
+			modifier = {
+				consumer_goods_factor = 0.2
+				economy_cost_factor = 3
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.05
+				political_power_factor = 0.1
+
+			}
+		}
+
+	###### every man a king
+
+		deluge_america_great_depression_long2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+
+			removal_cost = -1
+						
+			modifier = {
+				consumer_goods_factor = 0.25
+				economy_cost_factor = 5
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.1
+				political_power_factor = -0.1
+
+			}
+		}
+
+	###### secret police
+
+		deluge_america_secret_police_long = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_central_management
+
+			removal_cost = -1
+						
+			modifier = {
+			  	encryption_factor = 0.1
+				decryption_factor = 0.1
+				stability_factor = 0.05
+				
+
+			}
+		}
+		
+		## Long starting reforms
+		deluge_great_war_horrors_idea_long = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ENG_the_war_to_end_all_wars
+
+			removal_cost = -1
+						
+			modifier = {
+				conscription_factor = -0.1
+				join_faction_tension = 0.1
+				send_volunteers_tension = 0.1
+			}
+		}		
+		
+		## Big Mac's rebellion
+		deluge_great_war_horrors_idea_long2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ENG_the_war_to_end_all_wars
+
+			removal_cost = -1
+						
+			modifier = {
+				conscription_factor = -0.1
+				join_faction_tension = 0.1
+				send_volunteers_tension = 0.1
+				attrition = 0.3
+				experience_gain_army_factor = -0.6
+
+			}
+		}
+	###### ford purged
+
+		deluge_america_great_depression_long3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+
+			removal_cost = -1
+						
+			modifier = {
+				consumer_goods_factor = 0.2
+				economy_cost_factor = 2
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.2
+
+			}
+		}
+
+	###### ford appeased
+
+		deluge_america_great_depression_long4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ast_all_in
+
+			removal_cost = -1
+						
+			modifier = {
+				consumer_goods_factor = -0.05
+				economy_cost_factor = 1.5
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = -0.05
+
+			}
+		}
+
+	###### populist economy
+
+		deluge_america_great_depression_long5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ast_all_in
+
+			removal_cost = -1
+						
+			modifier = {
+				consumer_goods_factor = 0.05
+				economy_cost_factor = 0.05
+				production_speed_buildings_factor = 0.15
+
+			}
+		}
+		
+		##
+		deluge_great_war_horrors_idea_long3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ENG_the_war_to_end_all_wars
+
+			removal_cost = -1
+						
+			modifier = {
+				attrition = 1
+				experience_gain_army_factor = -1
+				army_morale_factor = -0.25
+				planning_speed = -0.8
+
+			}
+		}
+
+	
+
+		##
+		deluge_great_war_horrors_idea_long4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = triumphant_will
+
+			removal_cost = -1
+						
+			modifier = {
+				experience_gain_army_factor = -0.05
+				army_morale_factor = 0.1
+				planning_speed = -0.3
+				army_org_Factor = 0.05
+
+			}
+		}
+
+		##
+		deluge_great_war_horrors_idea_long5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = triumphant_will
+
+			removal_cost = -1
+						
+			modifier = {
+				experience_gain_army_factor = 0.1
+				army_morale_factor = 0.05
+				planning_speed = 0.5
+
+			}
+		}
+
+		##
+		deluge_america_planningschool = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_wall_line
+
+			removal_cost = -1
+						
+			modifier = {
+				max_command_power = 50
+				max_planning = 0.3
+				planning_speed = 0.2
+				training_time_factor = 0.1
+
+			}
+		}
+      
+		##
+		deluge_america_entrenchmenteffort = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_wall_line
+
+			removal_cost = -1
+						
+			modifier = {
+					max_dig_in = 1
+					ai_focus_aggressive_factor = -0.2
+					mobilization_speed = 0.1
+
+			}
+		}
+		##
+		deluge_america_entrenchmenteffort2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_wall_line
+
+			removal_cost = -1
+						
+			modifier = {
+					max_dig_in = 1.5
+					ai_focus_aggressive_factor = -0.2
+					mobilization_speed = 0.1
+					army_infantry_defence_factor = 0.15
+					land_reinforce_rate = 0.25
+
+			}
+		}		
+		##
+		deluge_america_battleships = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_idea_generic_sea_focused_navy
+
+			removal_cost = -1
+						
+			modifier = {
+			        navy_capital_ship_attack_factor = 0.1
+					navy_capital_ship_defence_factor = 0.05
+					naval_coordination = 0.1
+			     
+			}
+		}				
+		##
+		deluge_america_carriers = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_idea_generic_costalnavy
+
+			removal_cost = -1
+						
+			modifier = {
+			        navy_carrier_air_attack_factor = 0.05
+			     
+			}
+		}				
+		##
+		deluge_america_carriers1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_idea_generic_costalnavy
+
+			removal_cost = -1
+						
+			modifier = {
+			        navy_carrier_air_attack_factor = 0.05
+					navy_carrier_air_targetting_factor 0.05
+					navy_carrier_air_agility_factor = 0.05
+					invasion_preparation = -0.25
+					amphibious_invasion = 0.1
+			     
+			}
+		}				
+		
+		##
+		america_quebec_resistence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+						
+			modifier = {
+			        resistance_damage_to_garrison = 0.4
+					land_reinforce_rate = -0.3
+					attrition = 0.2
+					supply_consumption_factor = 0.25
+			     
+			}
+		}			
+		
+		##
+		america_tribes_resistence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+						
+			modifier = {
+				winter_attrition_factor = 0.5
+				out_of_supply_factor = 0.5
+				political_power_factor = 0.05
+			     
+			}
+		}		
+		##
+		america_quebec_resistence1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+						
+			modifier = {
+			        resistance_damage_to_garrison = 1
+					land_reinforce_rate = -0.3
+					attrition = 0.5
+					supply_consumption_factor = 0.5
+					experience_gain_army = -0.03
+			     
+			}
+		}							
+	
+		##
+		deluge_america_firends = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+
+			removal_cost = -1
+						
+			modifier = {
+			        ai_get_ally_desire_factor = -1000
+				    fascism_acceptance = 300
+					fascism_drift = 0.1
+			     
+			}
+		}		
+		##
+		mexican_resistence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+						
+			modifier = {
+			        resistance_damage_to_garrison = 0.25
+					army_speed_factor = -0.15
+					attrition = 0.15
+			     
+			}
+		}	
+		##
+		mexican_resistence1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+						
+			modifier = {
+			        resistance_damage_to_garrison = 0.05
+					army_speed_factor = -0.05   
+			}
+		}	
+		##
+		lou_resistence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+						
+			modifier = {
+			        resistance_damage_to_garrison = 0.1
+					attrition = 0.2
+					max_planning = -0.25
+					decryption_factor = -0.3
+					
+			}
+		}
+		##
+		deluge_america_firends1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+
+			removal_cost = -1
+						
+			modifier = {
+			        ai_get_ally_desire_factor = -1000
+				    fascism_acceptance = 500
+					fascism_drift = 0.15
+					political_power_gain = 0.2
+			}
+		}			
+		##
+		deluge_america_friends_leader = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+
+			removal_cost = -1
+						
+			modifier = {
+					political_power_gain = 0.1
+					industrial_capacity_factory = 0.1
+					min_export = -0.5
+					
+					
+			}
+		}		
+		##
+		american_common_market = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+
+			removal_cost = -1
+						
+			modifier = {
+					political_power_gain = -0.1
+					industrial_capacity_factory = 0.1
+					min_export = 1
+					
+					
+			}
+		}				
+
+		##
+		deluge_america_common_currency_lead = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+
+			removal_cost = -1
+						
+			modifier = {
+					political_power_gain = 0.15
+					consumer_goods_factor = -0.05		
+			}
+		}
+		##
+		deluge_america_common_currency = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+
+			removal_cost = -1
+						
+			modifier = {
+					political_power_gain = -0.1
+					consumer_goods_factor = -0.05		
+			}
+		}		
+		##
+		deluge_america_cuba_bought = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+
+			removal_cost = -1
+						
+			modifier = {
+				civilian_factory_use = 10	
+			}
+		}
+
+		##total mob
+		usa_deluge_total_mobilization = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = triumphant_will
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.3
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.15
+				political_power_factor = -0.6
+				stability_weekly = -0.01	  	
+			}
+		}
+
+		##last try
+		usa_deluge_last_try = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = triumphant_will
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				
+			}
+		}		
+		
+		##french lou resitence
+		deluge_america_lou_resistence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+
+		
+				targeted_modifier = { tag = LOU attack_bonus_against = -0.15 }
+				targeted_modifier = { tag = LOU defense_bonus_against = -0.2 }
+			}
+					
+		
+		##mex resitence
+		deluge_america_mex_resistence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+			
+				targeted_modifier = { tag = MEX attack_bonus_against = -0.2 }
+				targeted_modifier = { tag = MEX defense_bonus_against = -0.1 }
+			}
+		
+
+		##usa-canadian federation
+		usa_can_federation_burden = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.1
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}	
+
+	##south american revolution
+		deluge_south_america_revolution = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_communist_army
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+				communism_drift = 0.1
+			}
+		}	
+		
+	##mex preo against usa
+		deluge_mex_prepared_against_usa = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+
+				targeted_modifier = { tag = USA attack_bonus_against = 0.2 }
+				targeted_modifier = { tag = USA defense_bonus_against = 0.2 }
+				
+		}
+	
+	##mex preo against south
+		deluge_mex_prepared_against_south = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 5
+				army_speed_factor = 2
+				army_defence_factor = -0.3
+			}
+		}	
+	
+	##mex preo against usa
+		deluge_mex_prepared_against_usa1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+
+				targeted_modifier = { tag = USA attack_bonus_against = 0.1 }
+				targeted_modifier = { tag = USA defense_bonus_against = 0.1 }
+				
+		}	
+	
+	##mex preo against usa
+		deluge_mex_prepared_against_usa2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+
+				targeted_modifier = { tag = USA attack_bonus_against = 0.2 }
+				targeted_modifier = { tag = USA defense_bonus_against = 0.3 }
+				
+		}
+
+
+###########Rebuld the rust belt
+
+        deluge_rust_belt_rebuild = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				political_power_factor = -0.15
+				production_speed_infrastructure_factor = 0.3
+			}
+		}		
+		
+		
+		## New deal
+		
+		america_fair_deal = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				political_power_factor = 0.1
+				democratic_acceptance = 85
+				communism_acceptance = 85
+				subjects_autonomy_gain = 1
+				opinion_gain_monthly_factor = 0.2
+			}
+		}
+	
+	
+	
+
+		deluge_meritocracy_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.1
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				money_cost_factor = -0.25
+				social_order_cost_factor = -0.25
+			}
+		}
+
+		deluge_aristocracy_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			picture = triumphant_will
+			
+			modifier = {
+				neutrality_drift = 0.1
+				political_power_factor = 0.15
+			}
+		}
+		
+		deluge_land_reform_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = home_of_revolution
+			
+			modifier = {
+				communism_drift = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		deluge_manorialism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+
+			picture = HUN_hungarian_monarchy
+			
+			modifier = {
+				neutrality_drift = 0.1
+				consumer_goods_factor = -0.03
+				political_power_factor = 0.1
+			}
+		}
+		
+		deluge_individualism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				democratic_drift = 0.05
+				research_speed_factor	 = 0.03
+			}
+		}
+		
+		deluge_corporatism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				fascism_drift = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		deluge_pluralism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				democratic_drift = 0.05
+				consumer_goods_factor = -0.03
+				political_power_factor = 0.1
+			}
+		}
+		
+		deluge_leader_cult_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascism_drift = 0.05
+				conscription = 0.005
+			}
+		}
+		
+		deluge_judiciary_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = neutrality_idea
+			
+			modifier = {
+				democratic_drift = 0.05
+				drift_defence_factor = 0.5
+			}
+		}
+		
+		deluge_state_terror_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				fascism_drift = 0.05
+				drift_defence_factor = 0.5
+			}
+		}
+		
+		deluge_police_consent_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				democratic_drift = 0.05
+				foreign_subversive_activites = -0.5
+				resistance_damage_to_garrison = -0.2
+			}
+		}
+		
+		deluge_secret_police_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				fascism_drift = 0.05
+				subversive_activites_upkeep = -0.5
+				justify_war_goal_time = -0.5
+				resistance_damage_to_garrison = -0.2
+			}
+		}
+		
+		deluge_youth_organisations_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				political_power_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		deluge_pomeranian_populism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = home_of_revolution
+			
+			modifier = {
+				communism_drift = 0.2
+			}
+		}
+
+		deluge_kashubian_nationalism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = triumphant_will
+			
+			modifier = {
+				army_defence_factor = 0.1
+                                out_of_supply_factor = -0.5
+                                supply_consumption_factor = -0.20
+                                no_supply_grace = 72
+                                army_morale_factor = 0.1
+                                surrender_limit = 0.5
+			}
+		}
+		
+		deluge_mandate_institutions_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				democratic_drift = 0.2
+			}
+		}
+		
+		deluge_fascism_diplomacy = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				fascism_drift = 0.2
+			}
+		}
+		
+		deluge_post-great_war_army_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_wall_line
+			
+			modifier = {
+				political_power_factor = -0.1
+				dig_in_speed_factor = 0.2
+				planning_speed = 0.2
+			}
+		}
+
+		deluge_post-great_war_army_idea1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_wall_line
+			
+			modifier = {
+				political_power_factor = -0.05
+				dig_in_speed_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+
+		deluge_nation-at-arms_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+			
+			modifier = {
+				communism_drift = 0.05
+				political_power_factor = -0.2
+				dig_in_speed_factor = 0.25
+				planning_speed = 0.25
+				conscription = 0.01
+				training_time_army_factor = -0.25
+			}
+		}
+		
+		deluge_standing_army_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				communism_drift = -0.05
+				political_power_factor = -0.2
+				dig_in_speed_factor = 0.25
+				planning_speed = 0.25
+				experience_gain_army_unit_factor = 0.25
+			}
+		}
+		
+		deluge_offensive_nation-at-arms_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+			
+			modifier = {
+				communism_drift = 0.05
+				democratic_drift = -0.05
+				political_power_factor = -0.3
+				dig_in_speed_factor = 0.3
+				planning_speed = 0.3
+				conscription = 0.01
+				training_time_army_factor = -0.25
+				army_attack_factor = 0.1
+			}
+		}
+		
+		deluge_defensive_nation-at-arms_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+			
+			modifier = {
+				communism_drift = 0.05
+				democratic_drift = 0.05
+				political_power_factor = -0.3
+				dig_in_speed_factor = 0.3
+				planning_speed = 0.3
+				conscription = 0.01
+				training_time_army_factor = -0.25
+				army_defence_factor = 0.1
+			}
+		}
+		
+		deluge_offensive_standing_army_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				communism_drift = -0.05
+				democratic_drift = -0.05
+				political_power_factor = -0.3
+				dig_in_speed_factor = 0.3
+				planning_speed = 0.3
+				experience_gain_army_unit_factor = 0.25
+				army_attack_factor = 0.1
+			}
+		}
+		
+		deluge_defensive_standing_army_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				communism_drift = -0.05
+				democratic_drift = 0.05
+				political_power_factor = -0.3
+				dig_in_speed_factor = 0.3
+				planning_speed = 0.3
+				experience_gain_army_unit_factor = 0.25
+				army_defence_factor = 0.1
+			}
+		}
+		
+		deluge_offensive_army_tooltip_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				democratic_drift = -0.05
+				political_power_factor = -0.3
+				dig_in_speed_factor = 0.3
+				planning_speed = 0.3
+				army_attack_factor = 0.1
+			}
+		}
+
+		deluge_defensive_army_tooltip_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				democratic_drift = 0.05
+				political_power_factor = -0.3
+				dig_in_speed_factor = 0.3
+				planning_speed = 0.3
+				army_defence_factor = 0.1
+			}
+		}
+
+		deluge_modern_offensive_nation-at-arms_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+			
+			modifier = {
+				communism_drift = 0.05
+				democratic_drift = -0.05
+				political_power_factor = -0.4
+				dig_in_speed_factor = 0.35
+				planning_speed = 0.35
+				conscription = 0.01
+				training_time_army_factor = -0.25
+				army_attack_factor = 0.1
+				army_leader_start_level = 1
+				land_reinforce_rate = 0.02
+				army_speed_factor = 0.05
+			}
+		}
+		
+		deluge_modern_defensive_nation-at-arms_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+			
+			modifier = {
+				communism_drift = 0.05
+				democratic_drift = 0.05
+				political_power_factor = -0.4
+				dig_in_speed_factor = 0.35
+				planning_speed = 0.35
+				conscription = 0.01
+				training_time_army_factor = -0.25
+				army_defence_factor = 0.1
+				army_leader_start_level = 1
+				land_reinforce_rate = 0.02
+				army_speed_factor = 0.05
+			}
+		}
+		
+		deluge_modern_offensive_standing_army_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				communism_drift = -0.05
+				democratic_drift = -0.05
+				political_power_factor = -0.4
+				dig_in_speed_factor = 0.35
+				planning_speed = 0.35
+				experience_gain_army_unit_factor = 0.25
+				army_attack_factor = 0.1
+				army_leader_start_level = 1
+				land_reinforce_rate = 0.02
+				army_speed_factor = 0.05
+			}
+		}
+		
+		deluge_modern_defensive_standing_army_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				communism_drift = -0.05
+				democratic_drift = 0.05
+				political_power_factor = -0.4
+				dig_in_speed_factor = 0.35
+				planning_speed = 0.35
+				experience_gain_army_unit_factor = 0.25
+				army_defence_factor = 0.1
+				army_leader_start_level = 1
+				land_reinforce_rate = 0.02
+				army_speed_factor = 0.05
+			}
+		}
+		
+		deluge_modern_nation-at-arms_tooltip_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			modifier = {
+				communism_drift = 0.05
+				political_power_factor = -0.4
+				dig_in_speed_factor = 0.35
+				planning_speed = 0.35
+				conscription = 0.01
+				training_time_army_factor = -0.25
+				army_leader_start_level = 1
+				land_reinforce_rate = 0.02
+				army_speed_factor = 0.05
+			}
+		}
+		
+		deluge_modern_standing_army_tooltip_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			modifier = {
+				communism_drift = -0.05
+				political_power_factor = -0.4
+				dig_in_speed_factor = 0.35
+				planning_speed = 0.35
+				experience_gain_army_unit_factor = 0.25
+				army_leader_start_level = 1
+				land_reinforce_rate = 0.02
+				army_speed_factor = 0.05
+			}
+		}
+		
+		deluge_modern_army_tooltip_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			
+			modifier = {
+				political_power_factor = -0.4
+				dig_in_speed_factor = 0.35
+				planning_speed = 0.35
+				army_leader_start_level = 1
+				land_reinforce_rate = 0.02
+				army_speed_factor = 0.05
+			}
+		}
+		
+		deluge_production_management_agency_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				political_power_factor = -0.1
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		
+		deluge_land_management_agency_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = ast_all_in
+			
+			modifier = {
+				political_power_factor = -0.1
+				production_speed_infrastructure_factor = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+		
+		deluge_public_works_agency_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				political_power_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		deluge_defence_research_agency_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				political_power_factor = -0.1
+			}
+			
+			research_bonus = {
+				electronics = 0.03
+				nuclear = 0.03
+				rocketry = 0.03
+				jet_technology = 0.03
+			}
+		}
+		
+		deluge_chinese_dare_to_die_corps_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = dare_to_die
+			
+			modifier = {
+				fascism_drift = 0.05
+				army_core_attack_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		
+		deluge_chinese_protracted_peoples_war_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				communism_drift = 0.05
+				resistance_growth_on_our_occupied_states = 0.5
+				stability_factor = 0.05
+			}
+		}
+	
+
+	}
+
+}

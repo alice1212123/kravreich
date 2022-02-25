@@ -1,0 +1,31 @@
+﻿units = {
+	navy = {
+		name = "Hochseeflotte"
+		base = 3552 
+		location = 3552 # Brest			
+		ship = { name = "Arminius" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+		ship = { name = "Baden" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "Bayern" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+		ship = { name = "Sachsen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "Nassau" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }		
+
+		ship = { name = "Beowulf" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = GER } } }
+
+		ship = { name = "Zieten" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }	
+		ship = { name = "Blitz" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "Pfeil" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }	
+		ship = { name = "Wacht" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+
+		ship = { name = "Meteor" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } } 		
+		ship = { name = "Comet" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "Hela" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } } 		
+		ship = { name = "Jagd" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }	
+		
+		ship = { name = "Koyote" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "Delphin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "Drache" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "Hornisse" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "Haifisch" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "Wespe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }		
+	}
+}

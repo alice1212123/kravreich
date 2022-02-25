@@ -1,0 +1,24 @@
+
+state={
+	id=823
+	name="STATE_823"
+
+	history={
+		owner = BRA
+
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = BRA
+		victory_points = {
+			2228 10
+		}
+	}
+
+	provinces={
+		2228 5153 5204 10984 13298
+	}
+	manpower=835100
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

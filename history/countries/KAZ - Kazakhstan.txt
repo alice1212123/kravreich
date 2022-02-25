@@ -1,0 +1,77 @@
+﻿capital = 586 #Almaty
+
+oob = "KAZ_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+
+	tech_support = 1		
+	tech_mountaineers = 1
+	gw_artillery = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 30
+	fascism = 10
+	communism = 10
+	neutrality = 50
+}
+
+create_country_leader = {
+	name = "Nikolay Aleksandrovich Skvortsov"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	expire = "1953.3.1"
+	ideology = marxist_ideology
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Aslan Akhmetov"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+	expire = "1953.3.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Abul Khan"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
+	expire = "1953.3.1"
+	ideology = reactionary_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ilyas Zhansugurov"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_fascism1.dds"
+	expire = "1953.3.1"
+	ideology = social_darwinist_ideology
+	traits = {
+		
+	}
+}
+
+
+
+

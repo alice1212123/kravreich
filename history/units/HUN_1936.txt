@@ -1,0 +1,259 @@
+﻿division_template = {
+	name = "Gyaloghadosztály"
+
+	division_names_group = HUN_INF_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Milícia"
+
+	division_names_group = HUN_GAR_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Lovashadosztály"
+	
+	division_names_group = HUN_CAV_01
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		#name = "1. Lovashadosztály"
+		location = 9660
+		division_template = "Lovashadosztály"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "2. Lovashadosztály"
+		location = 9660
+		division_template = "Lovashadosztály"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# I Hadtest
+	division= {	
+		#name = "1. Milícia"
+		location = 9660
+		division_template = "Milícia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "2. Milícia"
+		location = 9660
+		division_template = "Milícia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# II Hadtest
+	division= {	
+		#name = "3. Milícia"
+		location = 701
+		division_template = "Milícia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "4. Milícia"
+		location = 701
+		division_template = "Milícia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# III Hadtest
+	division= {	
+		#name = "5. Milícia"
+		location = 11627
+		division_template = "Milícia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "6. Milícia"
+		location = 11627
+		division_template = "Milícia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# IV Hadtest
+	division= {	
+		#name = "7. Milícia"
+		location = 11610
+		division_template = "Milícia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "8. Milícia"
+		location = 11610
+		division_template = "Milícia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# V Hadtest
+	division= {	
+		#name = "9. Milícia"
+		location = 679
+		division_template = "Milícia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "1. Gyaloghadosztály"
+		location = 679
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# VI Hadtest
+	division= {	
+		#name = "2. Gyaloghadosztály"
+		location = 11659
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "3. Gyaloghadosztály"
+		location = 11659
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# VII Hadtest
+	division= {	
+		#name = "4. Gyaloghadosztály"
+		location = 6751
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "5. Gyaloghadosztály"
+		location = 6751
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		#name = "6. Gyaloghadosztály"
+		location = 676
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+}
+
+### Magyar Légiero ###
+air_wings = {
+	43 = {
+		# 1. Légi Ezred -- Fiat CR.32 fighters
+		# 2. Légi Ezred -- Fiat CR.32 fighters
+		fighter_equipment_0 = {
+			owner = "HUN" 
+				amount = 72
+		}
+
+	}
+	154 = {
+		# 3. Légi Ezred -- Caproni Ca.101, WM-16 Budapest light bombers
+		CAS_equipment_1 = {
+			owner = "HUN" 
+			amount = 24
+		}
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "HUN"
+		}
+		requested_factories = 4
+		progress = 0.68
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "HUN"
+		}
+		requested_factories = 2
+		progress = 0.60
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "HUN" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 100
+	}
+}

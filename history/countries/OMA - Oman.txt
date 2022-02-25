@@ -1,0 +1,79 @@
+﻿captial = 294
+
+oob = OMA
+
+set_research_slots = 6
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+add_ideas = {
+	extensive_conscription
+	novote
+}
+
+create_country_leader = {
+	name = "Arie Skatkov"
+	desc = ""
+	picture = "gfx/leaders/BLACKTOPIA/fake_arie.dds"
+	expire = "1965.1.1"
+	ideology = social_darwinist_ideology
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "STD LEADER"
+	desc = ""
+	picture = "gfx/leaders/BLACKTOPIA/tsar_STD.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Real Tang?"
+	desc = ""
+	picture = "gfx/leaders/BLACKTOPIA/Buddhist_commie.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "King Sam Gruzinsky"
+	desc = ""
+	picture = "gfx/leaders/BLACKTOPIA/Buddhist_commie.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+		#
+	}
+}

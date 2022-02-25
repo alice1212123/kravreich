@@ -1,0 +1,2475 @@
+###add_namespace = deluge_america
+
+
+
+# Usa gets exposition 
+
+country_event = {
+	id = deluge_america.1
+	title = deluge_america1title
+	desc = deluge_america1desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1936.5.1
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = deluge_america1opt
+		add_political_power = -100
+		country_lock_all_division_template = yes
+		country_event = {
+			id = deluge_america.2
+			days = 2
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_america.2
+	title = deluge_america2title
+	desc = deluge_america2desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america2opt
+		add_political_power = -100
+		country_event = {
+			id = deluge_america.3
+			days = 2
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_america.3
+	title = deluge_america3title
+	desc = deluge_america3desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america3opt
+		add_stability = -0.13
+	}
+}
+
+country_event = {
+	id = deluge_america.4
+	title = deluge_america4title
+	desc = deluge_america4desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1936.5.15
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = deluge_america4opt
+		add_manpower = -254
+	}
+}
+
+
+country_event = {
+	id = deluge_america.5
+	title = deluge_america5title
+	desc = deluge_america5desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1936.5.20
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = deluge_america5opt
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = {
+				deluge_america.6
+				days = 14
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_america.6
+	title = deluge_america6title
+	desc = deluge_america6desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america6opt
+		add_popularity = {
+			ideology = communism
+			popularity = 0.07
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_america.7
+	title = deluge_america7title
+	desc = deluge_america7desc
+	picture = GFX_deluge_hueylong
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1936.5.22
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = deluge_america5opt
+		add_stability = -0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
+		
+	}
+}
+
+country_event = {
+	id = deluge_america.8
+	title = deluge_america8title
+	desc = deluge_america8desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america8opt
+		custom_effect_tooltip = deluge_america8tooltip
+	}
+}
+
+
+country_event = {
+	id = deluge_america.9
+	title = deluge_america9title
+	desc = deluge_america9desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america9opt
+		country_event = {
+			id = deluge_america.10
+			days = 2
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_america.10
+	title = deluge_america10title
+	desc = deluge_america10desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america10opt
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+		country_event = {
+			id = deluge_america.11
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = deluge_america.11
+	title = deluge_america11title
+	desc = deluge_america11desc
+	picture = GFX_deluge_usa_kennedy
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america11opt
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+		add_stability = -0.07
+		remove_ideas = {
+			 usa_pm_kennedy
+		}
+		country_event = {
+			id = deluge_america.12
+			days = 7
+		}
+	}
+	
+}
+
+
+country_event = {
+	id = deluge_america.12
+	title = deluge_america12title
+	desc = deluge_america12desc
+	picture = GFX_deluge_macarthur
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america12opt
+	}	
+}
+
+
+country_event = {
+	id = deluge_america.13
+	title = deluge_america13title
+	desc = deluge_america13desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		has_completed_focus = america_deluge_count_butler
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	option = {
+		name = deluge_america13opt
+		add_stability = -0.05
+		add_manpower = -340
+		
+	}
+}
+
+
+country_event = {
+	id = deluge_america.14
+	title = deluge_america14title
+	desc = deluge_america14desc
+	picture = GFX_deluge_usa_wallace
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america14opt
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.04
+		}
+	}	
+}
+
+
+country_event = {
+	id = deluge_america.15
+	title = deluge_america15title
+	desc = deluge_america15desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america15opta
+		custom_effect_tooltip = deluge_america15tooltipa
+		country_event = {
+			id = deluge_america.16
+			days = 3
+		}
+	}	
+
+	option = {
+		name = deluge_america15optb
+		custom_effect_tooltip = deluge_america15tooltipb
+		country_event = {
+			id = deluge_america.29
+			days = 3
+		}
+	}	
+
+	option = {
+		name = deluge_america15optc
+		custom_effect_tooltip = deluge_america15tooltipc
+		country_event = {
+			id = deluge_america.34
+			days = 2
+		}
+	}	
+}
+
+
+country_event = {
+	id = deluge_america.16
+	title = deluge_america16title
+	desc = deluge_america16desc
+	picture = GFX_deluge_usa_byrd
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america16opt
+		hidden_effect = {
+			country_event = {
+				id = deluge_america.17
+				days = 5
+			}
+			country_event = {
+				id = deluge_america.18
+				days = 12
+			}
+		}
+		
+	}	
+}
+
+
+country_event = {
+	id = deluge_america.17
+	title = deluge_america17title
+	desc = deluge_america17desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america17opt
+		add_manpower = -1245
+		
+	}	
+}
+
+
+
+country_event = { #huey in gov?
+	id = deluge_america.18
+	title = deluge_america18title
+	desc = deluge_america18desc
+	picture = GFX_deluge_hueylong
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #huey becomes finance secretary
+		name = deluge_america18opta
+		country_event = {
+			id = deluge_america.19
+			days = 3
+		}
+	}	
+
+	option = { #we must put huey at bay
+		name = deluge_america18optb
+		country_event = {
+			id = deluge_america.26
+			days = 3
+		}
+	}	
+	
+}
+
+
+country_event = { #long becomes finance secretary
+	id = deluge_america.19
+	title = deluge_america19title
+	desc = deluge_america19desc
+	picture = GFX_deluge_hueylong
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america19opt
+		add_manpower = -2675
+		country_event = {
+			id = deluge_america.20
+			days = 3
+		}
+	}	
+}
+
+country_event = { #the southern program
+	id = deluge_america.20
+	title = deluge_america20title
+	desc = deluge_america20desc
+	picture = GFX_deluge_byrd
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america20opt
+		add_manpower = -2675
+		country_event = {
+			id = deluge_america.21
+			days = 4
+		}
+	}	
+}
+
+country_event = { #infamy day
+	id = deluge_america.21
+	title = deluge_america21title
+	desc = deluge_america21desc
+	picture = GFX_deluge_roosevelt
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america21opt
+		set_country_flag = deluge_usa_long_in_gov
+		set_country_flag = roosevelt_revolutionary
+		country_event = {
+			id = deluge_america.22
+			days = 7
+		}
+	}	
+}
+
+
+country_event = { #Butler's coup
+	id = deluge_america.22
+	title = deluge_america22title
+	desc = deluge_america22desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america22opt
+		###
+		add_ideas = {
+			 america_at_war
+		}
+		load_focus_tree = deluge_usa_focus
+		remove_ideas = {
+			deluge_great_war_horrors_idea
+			usa_great_depression
+		}
+		set_politics = {
+			ruling_party = communism
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.14
+		}
+		hidden_effect = {
+			set_rule = { can_puppet =  no}
+			set_rule = { can_force_government = no }
+			delete_unit_template_and_units = { division_template = "Infantry Division" }
+			delete_unit_template_and_units = { division_template = "Garrison Division" }
+			delete_unit_template_and_units = { division_template = "Cavalry Division" }
+			delete_unit_template_and_units = { division_template = "Royal Armored Division" }
+			delete_unit_template_and_units = { division_template = "Royal Guard Division" }
+			delete_unit_template_and_units = { division_template = "Royal Marine Division" }
+			delete_unit_template_and_units = { division_template = "Native Division" }
+			set_global_flag = AMERICAN_CIVIL_WAR_ON
+			country_event = {
+				id = deluge_america.38
+				days = 7
+			}
+			LIB = { transfer_state = 274 }
+		LIB = { transfer_state = 558 }
+		LIB = { transfer_state = 777 }
+		LIB = { transfer_state = 541 }
+		LIB = {
+			create_country_leader = { name = "John II" desc = "american_king_desc" picture = "gfx/leaders/deluge/american_officer.dds" expire = "1965.1.1" ideology = bonapartist_ideology traits = { } }
+			set_politics = {
+				ruling_party = neutrality
+			}
+		}
+		}
+		
+		country_event = {
+			id = deluge_america.23
+			days = 2
+		}
+	}	
+}
+
+
+country_event = { #Byrd declares virginia freedom
+	id = deluge_america.23
+	title = deluge_america23title
+	desc = deluge_america23desc
+	picture = GFX_deluge_byrd
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_unit_leader = {
+				limit = {
+						OR = {
+							has_id = 607
+							has_id = 610
+							has_id = 611
+						}
+					}
+			 	set_nationality = CSA 
+			 	set_nationality = CSA 
+		 		set_nationality = CSA 
+			}
+
+		country_event = {
+			id = deluge_america.24
+			days = 2
+		} 
+		set_autonomy = {
+            target = LIB
+            autonomy_state = autonomy_free
+        }
+		release = CSA
+		CSA = {
+			set_rule = { can_puppet =  no}
+			set_rule = { can_force_government = no }
+			country_lock_all_division_template = yes
+			add_ideas = {
+				 deluge_legacy_of_slavery
+				 america_at_war
+			}
+			if = {
+				limit = {
+					USA = {
+						OR = {
+							has_country_flag = deluge_usa_long_in_gov
+							has_country_flag = moderate_byrd
+						}
+					}
+					}
+					CSA = {
+						transfer_state = 369
+						transfer_state = 659
+						add_state_core = 369
+						add_state_core = 659
+					}
+					USA = {
+						remove_state_core = 369
+						remove_state_core = 659
+					}
+					if = {
+						limit = {
+							USA = {
+								has_country_flag = deluge_usa_long_in_gov
+							}
+						}
+						CSA = {
+							set_country_flag = deluge_usa_long_in_gov
+						}
+						USA = {
+							clr_country_flag = deluge_usa_long_in_gov
+						}
+					}
+					else = {
+						CSA = {
+							set_country_flag = moderate_byrd
+						}
+						USA = {
+							clr_country_flag = moderate_byrd
+						}
+					}
+				}
+			
+
+			add_popularity = {
+				ideology = fascism 
+				popularity = 0.13
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = 0.15
+			}
+			country_event = {
+				id = deluge_csa.1
+				days = 5
+			}
+		}
+		}
+		
+
+	}
+	
+	option = {
+		name = deluge_america23opta
+		###
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.07
+		}
+		
+	}
+
+	option = {
+		name = deluge_america23optb
+		###
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.07
+		}
+		CSA = { change_tag_from = USA }
+	}		
+}
+
+
+
+country_event = { #Kennedy and Macarthur liberate New England
+	id = deluge_america.24
+	title = deluge_america24title
+	desc = deluge_america24desc
+	picture = GFX_deluge_macarthur
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			CSA = {
+				every_controlled_state = {
+					add_claim_by = MAR
+					add_claim_by = USA 
+				}
+			}
+			MAR = {
+				every_controlled_state = {
+					add_claim_by = USA
+					add_claim_by = CSA
+				}
+			}
+			USA = {
+				every_controlled_state = {
+					add_claim_by = MAR
+					add_claim_by = CSA
+				}
+			}
+			USA = {
+				every_unit_leader = {
+				limit = {
+						OR = {
+							has_id = 601
+							has_id = 602
+							has_id = 604
+							has_id = 605
+							has_id = 606
+							has_id = 612
+						}
+					}
+			 	set_nationality = MAR 
+				}
+				
+			}
+			
+		news_event = {
+			id = deluge_america.25
+			days = 1
+		}
+		
+		MAR = {
+			transfer_state = 357
+			transfer_state = 465
+			transfer_state = 464
+
+			set_rule = { can_puppet =  no}
+			set_rule = { can_force_government = no }
+			country_event = {
+				id = deluge_maritimes.1
+				days = 5
+			}
+			country_lock_all_division_template = yes
+			add_ideas = {
+				 deluge_legacy_of_slavery
+				 america_at_war
+			}
+			add_popularity = {
+				ideology = democratic 
+				popularity = 0.13
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = 0.15
+			}
+		}
+			if = {
+				limit = {
+					USA = {
+						OR = {
+							has_country_flag = landon_prime_minister
+							has_country_flag = moderate_byrd
+						}
+					}
+					}
+					MAR = {
+						transfer_state = 358
+						transfer_state = 359
+						add_state_core = 358
+						add_state_core = 359
+					}
+					MAR = {
+						remove_state_core = 358
+						remove_state_core = 359
+					}
+					if = {
+						limit = {
+							USA = {
+								has_country_flag = landon_prime_minister
+							}
+						}
+						MAR = {
+							set_country_flag = landon_prime_minister
+						}
+						USA = {
+							clr_country_flag = landon_prime_minister
+						}
+					}
+					else = {
+						MAR = {
+							set_country_flag = moderate_byrd
+						}
+						USA = {
+							clr_country_flag = moderate_byrd
+						}
+					}
+				}
+			}
+		}
+	
+	option = {
+		name = deluge_america24opta
+		###
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.07
+		}
+		
+	}
+
+	option = {
+		name = deluge_america24optb
+		###
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.07
+		}
+		MAR = { change_tag_from = USA }
+	}		
+}
+
+
+
+news_event = { #America collapses
+	id = deluge_america.25
+	title = deluge_america25title
+	desc = deluge_france25desc
+	
+	picture = GFX_deluge_butler_large
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america25opt
+		add_stability = -0.01
+	}
+}
+
+country_event = { #byrd and the whighs pass national security act
+	id = deluge_america.26
+	title = deluge_america26title
+	desc = deluge_america26desc
+	picture = GFX_deluge_byrd
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america26opt
+		add_political_power = -100
+		country_event = {
+			id = deluge_america.27
+			days = 3
+		}
+	}	
+}
+
+
+country_event = { #butler ends talking with whighs
+	id = deluge_america.27
+	title = deluge_america27title
+	desc = deluge_america27desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america27topt
+		add_political_power = -100
+		country_event = {
+			id = deluge_america.28
+			days = 3
+		}
+	}	
+}
+
+country_event = { #whighs join kennedy
+	id = deluge_america.28
+	title = deluge_america28title
+	desc = deluge_america28desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america28topt
+		set_country_flag = moderate_byrd
+		add_stability = -0.05
+		country_event = {
+			id = deluge_america.22
+			days = 3
+		}
+	}	
+}
+
+
+country_event = { #alf landon is sworn prime minister
+	id = deluge_america.29
+	title = deluge_america29title
+	desc = deluge_america29desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_america29opt
+		add_stability = 0.03
+		country_event = {
+			id = deluge_america.30
+			days = 4
+		}
+	}	
+}
+
+
+country_event = { #the compromise
+	id = deluge_america.30
+	title = deluge_america30title
+	desc = deluge_america30desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = deluge_america30opt
+		add_political_power = -100
+		country_event = {
+			id = deluge_america.31
+			days = 4
+		}
+	}	
+}
+
+
+country_event = { #
+	id = deluge_america.31
+	title = deluge_america31title
+	desc = deluge_america31desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = deluge_america31opt
+		add_stability = -0.03
+		add_manpower = -156
+		country_event = {
+			id = deluge_america.32
+			days = 7
+		}
+	}	
+}
+
+
+country_event = { #landon against butler
+	id = deluge_america.32
+	title = deluge_america32title
+	desc = deluge_america32desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = deluge_america32opt
+		add_stability = -0.05
+		country_event = {
+			id = deluge_america.33
+			days = 4
+		}
+	}	
+}
+
+
+country_event = { #an empty congress
+	id = deluge_america.33
+	title = deluge_america33title
+	desc = deluge_america33desc
+	picture = GFX_deluge_roosevelt
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = deluge_america33opt
+		set_country_flag = landon_prime_minister
+		add_stability = -0.1
+		country_event = {
+			id = deluge_america.22
+			days = 5
+		}
+	}	
+}
+
+
+country_event = { #king john assumes direct rule
+	id = deluge_america.34
+	title = deluge_america34title
+	desc = deluge_america34desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = deluge_america34opt
+		add_stability = -0.1
+		country_event = {
+			id = deluge_america.35
+			days = 5
+		}
+	}	
+}
+
+country_event = { #king john assumes direct rule -butler's answer
+	id = deluge_america.35
+	title = deluge_america35title
+	desc = deluge_america35desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = deluge_america35opt
+		add_stability = -0.05
+		country_event = {
+			id = deluge_america.36
+			days = 5
+		}
+	}	
+}
+
+country_event = { #the south rises
+	id = deluge_america.36
+	title = deluge_america36title
+	desc = deluge_america36desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = deluge_america36opt
+		set_country_flag = usa_king_tyrant
+		country_event = {
+			id = deluge_america.37
+			days = 5
+		}
+	}	
+}
+
+country_event = { #fdr speaks
+	id = deluge_america.37
+	title = deluge_america37title
+	desc = deluge_america37desc
+	picture = GFX_deluge_roosevelt
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = deluge_america37opt
+		country_event = {
+			id = deluge_america.22
+			days = 5
+		}
+		set_country_flag = roosevelt_revolutionary
+	}	
+}
+
+
+country_event = { #the revolutionary army
+	id = deluge_america.38
+	title = deluge_america38title
+	desc = deluge_america38desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america38opt
+		USA = {
+			load_oob = ACW_USA_soc
+			create_corps_commander = {
+				name = "Louis Secundy"
+				portrait_path = "gfx/leaders/American Countries/United States/louis_secundy.dds"
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Milton Wolf"
+				portrait_path = "gfx/leaders/American Countries/United States/milton_wolf.dds"
+				skill = 1
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Robert Raven"
+				portrait_path = "gfx/leaders/American Countries/United States/raven.dds"
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Robert Marriman"
+				portrait_path = "gfx/leaders/American Countries/United States/robert_merriman.dds"
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}
+	}	
+	
+}
+
+
+country_event = { #the second american revolution
+	id = deluge_america.39
+	title = deluge_america39title
+	desc = deluge_america39desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america39opt
+		custom_effect_tooltip = deluge_america39tooltip
+		set_variable = { moderate_influence = 35 }
+		set_variable = { jacobin_influence = 20 }
+		set_variable = { browder_power = 0 }
+		hidden_effect = {
+			country_event = {
+				id = deluge_america.41
+				days = 3
+			}
+		}
+	}	
+}
+
+
+country_event = { #target our enemy
+	id = deluge_america.40
+	title = deluge_america40title
+	desc = deluge_america40desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		ai_chance = {
+			factor = 10
+		}
+		name = deluge_america40opta
+		set_variable = { usa_acw_enemy = MAR.id }
+		
+	}	
+
+	option = { 
+		ai_chance = {
+			factor = 2
+		}
+		name = deluge_america40optb
+		set_variable = { usa_acw_enemy = CSA.id }
+	}	
+}
+
+
+country_event = { #cannon arrives in phialdelphia
+	id = deluge_america.41
+	title = deluge_america41title
+	desc = deluge_america41desc
+	picture = GFX_deluge_whitehouse_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america41opt
+		hidden_effect = {
+			country_event = {
+				id = deluge_america.42
+				days = 4
+			}
+		}
+	}	
+
+}
+
+
+country_event = { #cannon arrives in phialdelphia
+	id = deluge_america.42
+	title = deluge_america42title
+	desc = deluge_america42desc
+	picture = GFX_deluge_cannon
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america42opt
+		hidden_effect = {
+			country_event = {
+				id = deluge_america.43
+				days = 4
+			}
+		}
+	}	
+
+}
+
+
+
+country_event = { #say it louder: we want browder
+	id = deluge_america.43
+	title = deluge_america43title
+	desc = deluge_america43desc
+	picture = GFX_deluge_browder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america43opt
+		hidden_effect = {
+			country_event = {
+				id = deluge_america.44
+				days = 35
+			}
+		}
+	}	
+
+}
+
+
+country_event = { #life during the revolution
+	id = deluge_america.44
+	title = deluge_america44title
+	desc = deluge_america44desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america44opt
+		hidden_effect = {
+			country_event = {
+				id = deluge_america.45
+				days = 45
+			}
+		}
+	}	
+
+}
+
+
+country_event = { #life during the revolution
+	id = deluge_america.45
+	title = deluge_america45title
+	desc = deluge_america45desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america45opt
+		add_stability = 0.08
+		add_political_power = 100
+	}	
+}
+
+
+country_event = { #arm the workers
+	id = deluge_america.46
+	title = deluge_america46title
+	desc = deluge_america46desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america46opt
+		load_oob = ACW_USA_soc2
+		add_to_variable = { jacobin_influence = 5 } 
+	}	
+}
+
+
+country_event = { #arm the people
+	id = deluge_america.47
+	title = deluge_america47title
+	desc = deluge_america47desc
+	picture = GFX_deluge_cannon
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america47opt
+		load_oob = ACW_USA_soc3
+		add_to_variable = { jacobin_influence = 10 } 
+		add_manpower = 110456
+		add_political_power = -50
+		add_stability = -0.05
+	}	
+}
+
+country_event = { #wallace defends washington
+	id = deluge_america.48
+	title = deluge_america48title
+	desc = deluge_america48desc
+	picture = GFX_deluge_usa_wallace
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america48opt
+		add_to_variable = { moderate_influence = 5 } 
+		add_manpower = 2345
+		360 = {
+			add_building_construction = {
+    			type = bunker
+    			level = 5
+    			instant_build = yes
+    			province = {
+        			limit_to_coastal = yes
+    			}
+			}
+			add_building_construction = {
+    			type = coastal_bunker 
+    			level = 5
+    			instant_build = yes
+    			province = {
+        			limit_to_coastal = yes
+    			}
+			}
+			add_building_construction = {
+    			type = bunker
+    			level = 3
+    			instant_build = yes
+    			province = 11799
+			}
+			add_building_construction = {
+    			type = bunker
+    			level = 3
+    			instant_build = yes
+    			province = 6869
+			}
+		}
+		
+	}	
+}
+
+
+country_event = { #wallace thomson unite
+	id = deluge_america.49
+	title = deluge_america49title
+	desc = deluge_america49desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america49opt
+		add_to_variable = { moderate_influence = 10 } 
+		add_manpower = 1235
+		add_timed_ {
+			 america_socdem_united
+			days = 90
+		}
+		
+		
+	}	
+}
+
+
+country_event = { #factory conversion
+	id = deluge_america.50
+	title = deluge_america50title
+	desc = deluge_america50desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america50opt
+		add_to_variable = { jacobin_influence = 5 } 
+		add_manpower = -11456
+		add_political_power = -70
+		every_controlled_state = {
+			limit = {
+				industrial_complex  > 1
+			}
+			remove_building = {
+    			type = industrial_complex
+    			level = 1
+			}
+			add_building_construction = {
+    			type = arms_factory
+    			level = 1
+    			instant_build = yes
+			}
+		}
+		
+	}	
+}
+
+
+
+country_event = { #factory conversions 2: comme boogalo
+	id = deluge_america.51
+	title = deluge_america51title
+	desc = deluge_america51desc
+	picture = GFX_deluge_browder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = deluge_america50opt
+		add_to_variable = { jacobin_influence = 10 } 
+		add_manpower = -15453
+		add_political_power = -100
+		add_offsite_building = { type = arms_factory level = 3 }
+		add_offsite_building = { type = industrial_complex level = 1 }
+		
+	}	
+}
+
+
+
+country_event = {
+	id = deluge_america.52
+	title = deluge_america52title
+	desc = deluge_america52desc
+	picture = GFX_deluge_usa_byrd
+	
+	fire_only_once = no
+
+	trigger = {
+		OR = {
+			tag = USA
+			tag = MAR
+		}
+		CSA = {
+			is_subject_of = THIS
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = deluge_america52opt
+		annex_country = {
+    		target = CSA
+    		transfer_troops = no
+		}
+	}
+}
+
+country_event = {
+	id = deluge_america.53
+	title = deluge_america53title
+	desc = deluge_america53desc
+	picture = GFX_deluge_butler
+	
+	fire_only_once = no
+
+	trigger = {
+		OR = {
+			tag = CSA
+			tag = MAR
+		}
+		USA = {
+			is_subject_of = THIS
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = deluge_america53opt
+		annex_country = {
+    		target = USA
+    		transfer_troops = no
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_america.54
+	title = deluge_america54title
+	desc = deluge_america54desc
+	picture = GFX_deluge_usa_kennedy
+	
+	fire_only_once = no
+
+	trigger = {
+		OR = {
+			tag = USA
+			tag = CSA
+		}
+		MAR = {
+			is_subject_of = THIS
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = deluge_america54opt
+		annex_country = {
+    		target = MAR
+    		transfer_troops = no
+		}
+	}
+}
+
+country_event = {
+	id = deluge_america.55
+	title = deluge_america55title
+	desc = deluge_america55desc
+	picture = GFX_deluge_usa_cannon
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america55opt
+		add_manpower = 15342
+		add_stability = 0.15
+		add_war_support = 0.2
+		add_political_power = 100
+	}
+}
+
+
+country_event = {
+	id = deluge_america.56
+	title = deluge_america56title
+	desc = deluge_america56desc
+	picture = GFX_deluge_butler
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america56opt
+		add_ideas = {
+			 usa_red_army
+		}
+		load_oob = ACW_USA_soc4
+	}
+}
+
+country_event = {
+	id = deluge_america.57
+	title = deluge_america57title
+	desc = deluge_america57desc
+	picture = GFX_deluge_butler
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america57opta
+		ai_chance = {
+			factor = 5
+		}
+		USA = {
+			country_event = {
+				id = deluge_america.58
+				days = 3
+			}
+		}
+		add_manpower = -15325
+	}
+
+	option = {
+		name = deluge_america57optb
+		ai_chance = {
+			factor = 4
+		}
+		USA = {
+			country_event = {
+				id = deluge_america.59
+				days = 3
+			}
+		}
+	}
+
+	option = {
+		name = deluge_america57optc
+		ai_chance = {
+			factor = 1
+		}
+		USA = {
+			country_event = {
+				id = deluge_america.60
+				days = 3
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = deluge_america.58
+	title = deluge_america58title
+	desc = deluge_america58desc
+	picture = GFX_deluge_usa_cannon
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america58opt
+		load_oob = ACW_USA_soc5
+		add_to_variable = { jacobin_influence = 5 } 
+	}
+}
+
+
+country_event = {
+	id = deluge_america.59
+	title = deluge_america59title
+	desc = deluge_america59desc
+	picture = GFX_deluge_whitehouse_small
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america59opt
+		CAN ={
+			send_equipment = {
+    			equipment = infantry_equipment
+    			amount = 3500
+    			target = USA
+			}
+		} 
+	}
+}
+
+
+
+country_event = {
+	id = deluge_america.60
+	title = deluge_america60title
+	desc = deluge_america60desc
+	picture = GFX_deluge_whitehouse_small
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america60opt
+		load_oob = ACW_USA_soc5
+		add_to_variable = { jacobin_influence = -5 } 
+	}
+}
+
+
+country_event = {
+	id = deluge_america.61
+	title = deluge_america61title
+	desc = deluge_america61desc
+	picture = GFX_deluge_american_crowd_small
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america61opt
+		create_corps_commander = {
+				name = "Henrest Hemingway"
+				portrait_path = "gfx/leaders/American Countries/United States/hemingway.dds"
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+		}
+
+		create_corps_commander = {
+				name = "Oliver Law"
+				portrait_path = "gfx/leaders/American Countries/United States/law.dds"
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 6
+				logistics_skill = 5
+		}
+
+		create_corps_commander = {
+				name = "Edward Allen Carter Jr"
+				portrait_path = "gfx/leaders/American Countries/United States/carter.dds"
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+		}
+	}
+}
+
+
+
+country_event = {
+	id = deluge_america.62
+	title = deluge_america62title
+	desc = deluge_america62desc
+	picture = GFX_deluge_butler
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america62opta
+		add_to_variable = { jacobin_influence = 5 }
+		swap_ideas = {
+    		remove_idea = usa_red_army
+    		add_idea = usa_red_army_militia
+		} 
+	}
+
+	option = {
+		name = deluge_america62opta
+		add_to_variable = { moderate_influence = 5 } 
+		swap_ideas = {
+    		remove_idea = usa_red_army
+    		add_idea = usa_red_army_professional
+		} 
+	}
+}
+
+
+
+
+
+country_event = {
+	id = deluge_america.63
+	title = deluge_america63title
+	desc = deluge_america63desc
+	picture = GFX_deluge_whitehouse_small
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america63opt
+		remove_ideas = {
+			 deluge_legacy_of_slavery
+		}
+		add_stability = -0.05
+		add_political_power = -100
+	}
+
+}
+
+
+
+country_event = { #black perople angry! you racist shit
+	id = deluge_america.64
+	title = deluge_america64title
+	desc = deluge_america64desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = CSA
+		USA = {
+			has_completed_focus = america_deluge_black_emancipation
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = deluge_america64opt
+		add_stability = -0.05
+		country_event = {
+			id = deluge_america.65
+			days = 35
+			random = 7
+		}
+		add_to_variable = { longist_influence = 5}
+		add_mapower = -7231
+	}
+}
+
+
+
+country_event = {
+	id = deluge_america.65
+	title = deluge_america65title
+	desc = deluge_america65desc
+	picture = GFX_deluge_whitehouse_small
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america65opt
+		add_mapower = -15443
+		USA = {
+			country_event = {
+				id = deluge_america.66
+			}
+			load_oob = ACW_USA_soc_black_revolt_1
+		}
+	}
+
+}
+
+
+country_event = {
+	id = deluge_america.66
+	title = deluge_america66title
+	desc = deluge_america66desc
+	picture = GFX_deluge_butler
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america66opt
+		add_mapower = 1230
+		
+	}
+
+}
+
+
+country_event = {
+	id = deluge_america.67
+	title = deluge_america67title
+	desc = deluge_america67desc
+	picture = GFX_deluge_usa_cannon
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america67opt
+		add_political_power = -100
+		add_war_support = -0.1
+		add_stability = -0.1
+		add_to_variable = { jacobin_influence = 15 }
+		load_oob = ACW_USA_soc6
+	}
+
+}
+
+
+country_event = {
+	id = deluge_america.68
+	title = deluge_america68title
+	desc = deluge_america68desc
+	picture = GFX_deluge_american_crowd_small
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america68opt
+		add_timed_ {
+			 final_offensives
+			days = 30
+		}
+		set_country_flag = final_offensive_on
+	}
+
+}
+
+
+country_event = { #final offensives prove useless
+	id = deluge_america.69
+	title = deluge_america69title
+	desc = deluge_america69desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		NOT = {
+			has_ final_offensives
+		}
+		has_country_flag = final_offensive_on
+		AND = {
+			has_war_with = CSA
+			has_war_with = MAR
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = deluge_america69opt
+		add_war_support = -0.1
+		add_timed_ {
+			 final_offensives_failed
+			days = 30
+		}
+	}
+}
+
+
+country_event = { #national mobilization plan
+	id = deluge_america.70
+	title = deluge_america70title
+	desc = deluge_america70desc
+	picture = GFX_deluge_butler
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america70opta
+		add_to_variable = { jacobin_influence = 5 } 
+		add_to_variable = { browder_power = 1 } 
+		add_ideas = {
+			 cannon_war_socialism
+		}
+	}
+
+	option = {
+		name = deluge_america70optb
+		add_to_variable = { moderate_influence = 5 } 
+		add_to_variable = { browder_power = 1 } 
+		add_ideas = {
+			 wallace_war_agricolture
+		}
+	}
+
+}
+
+
+country_event = { #ban strikes
+	id = deluge_america.71
+	title = deluge_america71title
+	desc = deluge_america71desc
+	picture = GFX_deluge_browder
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america71opta
+		add_to_variable = { jacobin_influence = 5 } 
+		add_to_variable = { browder_power = 1 } 
+		add_ideas = strikes_banned
+		add_manpower = -1245
+	}
+
+	option = {
+		name = deluge_america71optb
+		add_to_variable = { moderate_influence = 5 } 
+		add_political_power = 100
+		add_stability = 0.08
+		add_war_support = 0.08
+	}
+
+}
+
+
+
+country_event = { #fate of the burgeoise
+	id = deluge_america.72
+	title = deluge_america72title
+	desc = deluge_america72desc
+	picture = GFX_deluge_butler
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america72opta
+		add_to_variable = { jacobin_influence = 5 } 
+		add_ideas = revolutionary_tribunals
+		
+		add_manpower = -54126
+	}
+
+	option = {
+		name = deluge_america72optb
+		add_manpower = -1320
+		add_to_variable = { browder_power = 1 } 
+		set_country_flag = browder_prison_camps
+
+	}
+
+	option = {
+		name = deluge_america72optc
+		add_to_variable = { moderate_influence = 5 } 
+		add_stability = -0.05
+	}
+
+}
+
+
+country_event = { #fate of richmond
+	id = deluge_america.73
+	title = deluge_america73title
+	desc = deluge_america73desc
+	picture = GFX_deluge_butler
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america73opta
+		add_stability = 0.05
+		add_to_variable = { moderate_influence = 5 } 
+		hidden_effect = {
+			country_event = {
+				id = deluge_america.74
+				days = 9
+			}
+		}
+	}
+
+	option = {
+		name = deluge_america73optb
+		add_political_power = 75
+		country_event = {
+				id = deluge_america.75
+				days = 3
+			}
+	}
+
+}
+
+
+
+
+country_event = { #black rise up
+	id = deluge_america.74
+	title = deluge_america74title
+	desc = deluge_america74desc
+	picture = GFX_deluge_american_crowd_small
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america74opt
+		
+		load_oob = ACW_USA_soc_black_revolt_2
+	}
+
+
+}
+
+
+country_event = { #richmond burns 
+	id = deluge_america.75
+	title = deluge_america75title
+	desc = deluge_america75desc
+	picture = GFX_deluge_american_crowd_small
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america75opt
+		add_manpower = -3560
+		362 = {
+			damage_building = {
+    			type = infrastructure
+    			damage = 3
+			}
+			damage_building = {
+    			type = industrial_complex
+    			damage = 2
+			}
+			remove_building = {
+    			type = arms_factory
+   	 			level = 2
+			}
+		}
+		CSA = {
+			country_event = {
+				id = deluge_america.76
+			}
+		}
+	}
+
+
+}
+
+
+
+
+country_event = { #richmond burns 
+	id = deluge_america.76
+	title = deluge_america76title
+	desc = deluge_america76desc
+	picture = GFX_deluge_american_crowd_small
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america76opt
+		add_war_support = -0.1
+		add_manpower = -5063
+		add_timed_idea = {
+			idea = richmond_burns
+			days = 45
+		}
+		add_to_variable = { secessionists_influence = 5 } 
+	}
+
+
+}
+
+
+
+
+
+####Browder Events
+
+country_event = { #earl browder suggests investigation on Cannonites
+	id = deluge_america.77
+	title = deluge_america77title
+	desc = deluge_america77desc
+	picture = GFX_deluge_browder
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		has_global_flag = 2ACW
+		USA = {
+			check_variable = { browder_power > 1 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	option = {
+		name = deluge_america77opta
+		add_political_power = -25
+	}
+
+	option = {
+		name = deluge_america77optb
+		hidden_effect = {
+			country_event = {
+				deluge_america.78
+				days = 15
+				random = 21
+			}
+		}
+	}
+}
+
+
+country_event = { #a scarlet letter
+	id = deluge_america.78
+	title = deluge_america78title
+	desc = deluge_america78desc
+	picture = GFX_deluge_usa_cannon
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america78opt
+		add_stability = 0.05
+		add_to_variable = { browder_power = 1 } 
+		add_to_variable = { jacobin_influence = -10 } 
+		set_country_flag = cannon_traitor
+	}
+
+
+}
+
+
+
+
+country_event = { #dorothy day
+	id = deluge_america.79
+	title = deluge_america79title
+	desc = deluge_america79desc
+	picture = GFX_deluge_usa_dorothyday
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		has_global_flag = 2ACW
+	}
+	
+	mean_time_to_happen = {
+		days = 40
+	}
+	
+	option = {
+		name = deluge_america79opt
+		add_political_power = 25
+		add_to_variable = { moderate_influence = 5 } 
+	}
+}
+
+
+country_event = { #factionalism
+	id = deluge_america.80
+	title = deluge_america80title
+	desc = deluge_america80desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		has_global_flag = 2ACW
+		OR = {
+			check_variable = { jacobin_influence > 40 }
+		 	check_variable = { moderate_influence > 40 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 40
+	}
+	
+	option = {
+		name = deluge_america80opt
+		set_country_flag = factionalism
+		set_country_flag = factionalist_violence_1
+		add_stability = -0.07
+		add_political_power = -50
+	}
+}
+
+country_event = { #factionalism 2 electric boogaloo
+	id = deluge_america.81
+	title = deluge_america81title
+	desc = deluge_america81desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		has_country_flag = factionalism
+		has_global_flag = 2ACW
+		OR = {
+		 	AND = {
+		 		check_variable = { jacobin_influence > 45 }
+		 		check_variable = { moderate_influence > 45 }
+		 	}
+		 	AND = {
+		 		check_variable = { jacobin_influence < 35 }
+		 		check_variable = { moderate_influence < 35 }
+		 	}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 40
+	}
+	
+	option = {
+		name = deluge_america81opt
+		set_country_flag = factionalism_violence_2
+		add_stability = -0.12
+		add_political_power = -60
+	}
+}
+
+
+
+country_event = { #factionalism
+	id = deluge_america.82
+	title = deluge_america82title
+	desc = deluge_america82desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = no
+
+	trigger = {
+		tag = USA
+		has_global_flag = 2ACW
+		has_country_flag = factionalist_violence_1
+	}
+	
+	mean_time_to_happen = {
+		days = 22
+	}
+	
+	option = {
+		name = deluge_america82opt
+		add_manpower = -567
+		add_war_support = -0.01
+
+	}
+}
+
+
+country_event = { #factionalism
+	id = deluge_america.83
+	title = deluge_america83title
+	desc = deluge_america83desc
+	picture = GFX_deluge_american_crowd_small
+	
+	fire_only_once = no
+
+	trigger = {
+		tag = USA
+		has_global_flag = 2ACW
+		has_country_flag = factionalist_violence_2
+	}
+	
+	mean_time_to_happen = {
+		days = 31
+	}
+	
+	option = {
+		name = deluge_america83opt
+		add_manpower = -1234
+		add_war_support = -0.03
+
+	}
+}
+
+
+
+
+country_event = { #butler's heir
+	id = deluge_america.84
+	title = deluge_america84title
+	desc = deluge_america84desc
+	picture = GFX_deluge_butler
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_america84opta
+		ai_chance = {
+			factor = 1
+			modifier = {
+				add = 10
+				check_variable = { moderate_influence > jacobin_influence }
+			}
+		}
+		add_to_variable = { jacobin_influence = -10 }
+		add_to_variable = { moderate_influence = 10 }
+		if = {
+			limit = {
+				check_variable = { moderate_influence < jacobin_influence }
+			}
+			add_stability = -0.1
+			set_country_flag = butler_wrongly_mod
+			custom_effect_tooltip = wrong_choice
+		}
+	}
+
+
+	option = {
+		name = deluge_america84optb
+		ai_chance = {
+			factor = 1
+			modifier = {
+				add = 10
+				check_variable = { jacobin_influence > moderate_influence }
+						}
+		}
+		trigger = {
+			NOT = {
+				has_country_flag = {
+					cannon_traitor
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { moderate_influence > jacobin_influence }
+			}
+			add_stability = -0.1
+			set_country_flag = butler_wrongly_mod
+			custom_effect_tooltip = wrong_choice
+		}
+		add_to_variable = { jacobin_influence = 10 }
+		add_to_variable = { moderate_influence = -10 }
+	}
+
+
+}
+
+
+country_event = { #factionalism
+	id = deluge_america.85
+	title = deluge_america85title
+	desc = deluge_america85desc
+	picture = GFX_deluge_butler
+	is_triggered_only = yes	
+
+	option = {
+		name = deluge_america85opt
+		add_political_power = 50
+		add_stability = 0.08
+
+	}
+}
+
+
+country_event = { #fdr
+	id = deluge_america.86
+	title = deluge_america86title
+	desc = deluge_america86desc
+	picture = GFX_deluge_roosevelt
+	
+	fire_only_once = no
+
+	trigger = {
+		tag = USA
+		has_global_flag = 2ACW
+		has_country_flag = roosevelt_revolutionary
+	}
+	
+	mean_time_to_happen = {
+		days = 40
+	}
+	
+	option = {
+		name = deluge_america86opt
+		add_to_variable = { moderate_influence = 5 }
+
+	}
+}
+

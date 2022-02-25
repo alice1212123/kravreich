@@ -1,0 +1,31 @@
+
+state={
+	id=676
+	name="STATE_676"
+	resources={
+		oil=8.000
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+
+		}
+		victory_points = {
+			10106 3 
+		}
+		add_core_of = TUR
+		add_core_of = IRQ
+		add_core_of = KUR
+
+	}
+
+	provinces={
+		1463 1600 1938 3916 5014 6826 8123 10106 10793 10804 10811 
+	}
+	manpower=1182741
+	buildings_max_level_factor=1.000
+	state_category=town
+}

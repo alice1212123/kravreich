@@ -1,0 +1,30 @@
+
+state={
+	id=322
+	name="STATE_322"
+	manpower = 1722000
+	
+	state_category = rural
+	
+	resources={
+		tungsten=2
+
+	}
+
+	history={
+		owner = TIB
+		victory_points = {
+			7926 1
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = TIB
+	}
+
+	provinces={
+		2010 5011 7926 8068 10755 10918 8037
+	}
+}

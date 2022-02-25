@@ -1,0 +1,215 @@
+﻿division_template = {
+	name = "Infantry Division"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+
+
+division_template = {
+	name = "Royal Armored Division"
+	division_names_group = USA_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+        motorized = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+
+
+
+
+units = {
+
+	
+	division= {	
+		name = "1. American Division"
+		location = 6732
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "2. American Division"
+		location = 6732
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "3. American Division"
+		location = 6732
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "4. American Division"
+		location = 6732
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "5. American Division"
+		location = 6732
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "6. American Division"
+		location = 6732
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "7. American Division"
+		location = 11830
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "8. American Division"
+		location = 11830
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "9. American Division"
+		location = 11830
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "10. American Division"
+		location = 11830
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "11. American Division"
+		location = 11830
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "12. American Division"
+		location = 11830
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "13. American Division"
+		location = 12459
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "14. American Division"
+		location = 12459
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "15. American Division"
+		location = 12459
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "1. Royal Guard"
+		location = 6732
+		division_template = "Royal Armored Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "2. Royal Guard"
+		location = 6732
+		division_template = "Royal Armored Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "3. Royal Guard"
+		location = 6732
+		division_template = "Royal Armored Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "4. Royal Guard"
+		location = 6732
+		division_template = "Royal Armored Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+	division= {	
+		name = "5. Royal Guard"
+		location = 6732
+		division_template = "Royal Armored Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+	}
+
+}
+		

@@ -1,0 +1,109 @@
+﻿capital = 266
+
+oob = "PER_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 10
+
+add_opinion_modifier = { target = TUR modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = ENG modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = FRA modifier = historic_friendship_modifier }
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	CAS1 = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 5
+	communism = 15
+	neutrality = 60
+}
+	
+add_ideas = {
+	absolute_monarchy_law
+	agrarian_estates_law
+	limited_conscription
+	partial_economic_mobilisation
+	novote
+	neutrality_idea
+}
+
+create_country_leader = {
+	name = "Ahmad Shah Qajar"
+	desc = ""
+	picture = "gfx/leaders/Asian Countries/Iran/persian_shah.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reza Pahlavi"
+	desc = ""
+	picture = "Portrait_Iran_Reza_Shah_Pahlavi.dds"
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {
+		#
+	}
+}
+
+# His son, who came to power 41
+#create_country_leader = {
+#	name = "Mohammad Reza Pahlavi"
+#	desc = "POLITICS_MOHAMMAD_REZA_PAHLAVI_DESC"
+#	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
+#	expire = "1965.1.1"
+#	ideology = despotism
+#	traits = {
+#		#
+#	}
+#}
+
+create_country_leader = {
+	name = "Soleyman Mirza Eskandari"
+	desc = "POLITICS_SOLEYMAN_MIRZA_ESKANDARI_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = jacobin_ideology
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Ahmad Shah Qajar"
+	portrait_path = "gfx/leaders/Asian Countries/Iran/persian_shah_military.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hasan Arfa"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {  desert_fox }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}

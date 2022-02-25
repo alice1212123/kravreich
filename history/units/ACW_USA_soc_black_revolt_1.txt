@@ -1,0 +1,61 @@
+﻿division_template = {
+	name = "Black Rebels"
+	division_names_group = USA_GAR_01
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+
+	division= {	
+		name = "Lincoln Brigade"
+		location = 7640
+		division_template = "Black Rebels"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		name = "Freemont Brigade"
+		location = 7640
+		division_template = "Black Rebels"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		name = "Butler Brigade"
+		location = 7640
+		division_template = "Black Rebels"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		name = "Stevenson Brigade"
+		location = 7583
+		division_template = "Black Rebels"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		name = "Douglas Brigade"
+		location = 7640
+		division_template = "Black Rebels"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	
+
+	
+}
+		

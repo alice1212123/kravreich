@@ -1,0 +1,27 @@
+
+state={
+	id=771
+	name="STATE_771"
+	resources={
+		rubber=4
+		steel=2
+	}
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 3
+			10803 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			10803 1
+		}
+	}
+	provinces={
+		5013 5070 8065 8122 10762 10803 
+	}
+	manpower=2435600
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=281
+	name="STATE_281"
+	manpower=79300
+	
+	state_category = small_island
+
+	history={
+		owner = FRA
+		add_core_of = NEP
+		add_core_of = RAJ
+		add_core_of = BHU
+		buildings = {
+			infrastructure = 3
+			4967 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		4967 
+	}
+}

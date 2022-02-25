@@ -1,0 +1,113 @@
+﻿capital = 214
+
+oob = "WSR_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 20
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	trade_interdiction = 1
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+	#set_naval_oob = ""
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+	}
+	#set_naval_oob = ""
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 60
+	fascism = 10
+	communism = 20
+	neutrality = 10
+}
+
+create_country_leader = {
+	name = "Alexander Kutepov"
+	desc = ""
+	picture = "gfx/leaders/deluge/russians/alexander_kutepov.dds"
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Nikolai Tchaikovsky"
+	desc = ""
+	picture = "gfx/leaders/deluge/russians/nikolai_tchaikovsky.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Yevgeny Miller"
+	desc = ""
+	picture = "gfx/leaders/deluge/russians/yevgeny_miller.dds"
+	expire = "1965.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sergey Kamenev"
+	desc = ""
+	picture = "gfx/leaders/deluge/russians/sergey_kamenev.dds"
+	expire = "1965.1.1"
+	ideology = jacobin_ideology
+	traits = {
+	}
+}
+

@@ -1,0 +1,268 @@
+﻿
+# World firsts and flavour etc
+
+add_namespace = deluge_world
+
+# Country with well developed industry and completed air focuses invents the package tour
+
+country_event = {
+	id = deluge_world.1
+	title = deluge_world1title
+	desc = deluge_world1desc
+	
+	picture = GFX_deluge_package_tour_small
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1939.1.1
+		has_country_flag = air_focus_1
+		has_war = no
+		num_of_civilian_factories > 40
+		NOT = { has_global_flag = flag_package_tours }
+		NOT = { has_idea = tot_economic_mobilisation }
+		NOT = { has_idea = war_economy }
+		NOT = { has_idea = partial_economic_mobilisation }
+		NOT = { has_idea = closed_economy }
+		NOT = { has_idea = limited_exports }
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.9
+			has_idea = civilian_economy
+		}
+		modifier = {
+			factor = 0.9
+			has_idea = free_trade
+		}
+		modifier = {
+			factor = 0.9
+			num_of_civilian_factories > 50
+		}
+		modifier = {
+			factor = 0.9
+			num_of_civilian_factories > 60
+		}
+		modifier = {
+			factor = 0.9
+			num_of_civilian_factories > 70
+		}
+		modifier = {
+			factor = 0.9
+			num_of_civilian_factories > 80
+		}
+		modifier = {
+			factor = 0.9
+			has_country_flag = air_focus_2
+		}
+		modifier = {
+			factor = 0.9
+			has_country_flag = air_focus_3
+		}
+		modifier = {
+			factor = 0.9
+			has_country_flag = air_focus_4
+		}
+	}
+	
+	immediate = {
+		set_global_flag = flag_package_tours
+	}
+
+	option = {
+		name = deluge_world1opt
+		
+		add_political_power = 150
+		
+		air_experience = 100
+		
+		hidden_effect = {
+			news_event = { days = 1 id = deluge_world.2 }
+		}
+	}
+}
+
+# News event for package tours
+
+news_event = {
+	id = deluge_world.2
+	title = deluge_world2title
+	desc = deluge_world2desc
+	
+	picture = GFX_deluge_package_tour_large
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_world2opta
+		trigger = {
+			NOT = { TAG = FROM }
+		}
+	}
+	option = {
+		name = deluge_world2optb
+		trigger = { TAG = FROM }
+	}
+}
+
+# Country has completed post-Great War focus and the general staff are
+# re-examining Napoleonic/19th century theorists - Jomini, Clausewitz and Bülow
+
+country_event = {
+	id = deluge_world.3
+	title = deluge_world3title
+	desc = deluge_world3desc
+	
+	picture = GFX_deluge_napoleon_small
+		
+	trigger = {
+		NOT = { has_country_flag = flag_napoleonic_theorists }
+		OR = {
+			has_idea = deluge_post-great_war_army_idea
+			has_idea = deluge_nation-at-arms_idea
+			has_idea = deluge_standing_army_idea
+			has_idea = deluge_offensive_nation-at-arms_idea
+			has_idea = deluge_defensive_nation-at-arms_idea
+			has_idea = deluge_offensive_standing_army_idea
+			has_idea = deluge_defensive_standing_army_idea
+			has_idea = deluge_modern_offensive_nation-at-arms_idea
+			has_idea = deluge_modern_defensive_nation-at-arms_idea
+			has_idea = deluge_modern_offensive_standing_army_idea
+			has_idea = deluge_modern_defensive_standing_army_idea
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			is_major = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = flag_napoleonic_theorists
+	}
+
+	option = {
+		name = deluge_world3opta
+		
+		country_event = deluge_world.4
+		
+		add_timed_idea = { idea = deluge_jomini_idea days = 720 }
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+	
+	option = {
+		name = deluge_world3optb
+		
+		country_event = deluge_world.5
+		
+		add_timed_idea = { idea = deluge_clausewitz_idea days = 720 }
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+	
+	option = {
+		name = deluge_world3optc
+		
+		country_event = deluge_world.6
+		
+		add_timed_idea = { idea = deluge_bulow_idea days = 720 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_world3optd
+				
+		add_political_power = 150
+				
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				has_war = no
+			}
+		}
+	}
+}
+
+# Biography for Jomini
+
+country_event = {
+	id = deluge_world.4
+	title = deluge_world4title
+	desc = deluge_world4desc
+	
+	picture = GFX_deluge_jomini_small
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_verygood
+	}
+}
+
+# Biography for Clausewitz
+
+country_event = {
+	id = deluge_world.5
+	title = deluge_world5title
+	desc = deluge_world5desc
+	
+	picture = GFX_deluge_clausewitz_small
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_verygood
+	}
+}
+
+# Biography for Bülow
+
+country_event = {
+	id = deluge_world.6
+	title = deluge_world6title
+	desc = deluge_world6desc
+	
+	picture = GFX_deluge_friedrich_von_bulow_small # can't find a portrait of him, this is his brother
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = deluge_verygood
+	}
+}
+
+
+

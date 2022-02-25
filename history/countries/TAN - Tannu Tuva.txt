@@ -1,0 +1,80 @@
+﻿capital = 329
+
+oob = "TAN_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	gw_artillery = 1
+}
+
+add_ideas = {
+	limited_conscription
+	fixed_exchange
+	novote
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 30
+	fascism = 10
+	communism = 10
+	neutrality = 50
+}
+
+create_country_leader = {
+	name = "Salchak Toka"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sholban Kara-ool"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Donduk Kuular"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+	expire = "1965.1.1"
+	ideology = religious_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gombo-Dorzhu Khan"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+		#
+	}
+}
+

@@ -1,0 +1,6 @@
+﻿l_english:
+ DR_OFFENSIVE_WAR:0 "Ideological centrist called into an offensive war: "
+ DIPLOMACY_DEM_NO_THREAT_JUSTIFYING_WAR:0 "Our ideology cannot justify war goals against countries that have not generated world tension."
+ DR_IDEOLOGICAL_ACCEPTANCE:0 "§Y$US$§! is likely to accept $IDEOLOGY|Y$ proposals: "
+ FE_HISTORICAL:0 "Road To War"
+ FE_HISTORICAL_TOOLTIP:0 "In §HRoad To War§! mode, AI nations will tend towards more extreme options.\nCountries will be more likely to declare wars via event, accept requests to join factions, and seek out casus belli in their focus trees."

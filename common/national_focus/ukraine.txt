@@ -1,0 +1,14 @@
+focus_tree = {
+	id = deluge_ukraine_focus
+	
+	#country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = UKR
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = yes

@@ -1,0 +1,460 @@
+﻿capital = 16
+
+oob = "FRA_1936"
+
+set_research_slots = 5
+set_stability = 0.3
+set_war_support = 0.1
+set_convoys = 300
+
+set_variable = {language = 4} #french
+
+give_guarantee = HOL
+give_guarantee = SWI
+
+diplomatic_relation = { country = SPR relation = non_aggression_pact }
+
+add_opinion_modifier = { target = SPR modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = HOL modifier = historic_friendship_modifier }
+
+add_opinion_modifier = { target = AUS modifier = great_war_alliance_modifier }
+add_opinion_modifier = { target = SOV modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = SOV modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = ENG modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = ENG modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = POL modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = HUN modifier = great_war_hostility_modifier }
+add_opinion_modifier = { target = USA modifier = great_war_alliance_modifier }
+add_opinion_modifier = { target = TUR modifier = great_war_alliance_modifier }
+add_opinion_modifier = { target = WGR modifier = great_war_alliance_modifier }
+add_opinion_modifier = { target = WGR modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = SPR modifier = great_war_alliance_modifier }
+add_opinion_modifier = { target = IRE modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = LOU modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = PRC modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = GER modifier = historic_rivalry_modifier }
+add_opinion_modifier = { target = PER modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = CHI modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = SWI modifier = neutral_diplomacy_modifier }
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	naval_bomber1 = 1
+	cv_naval_bomber1 = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		basic_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+	}
+}
+
+
+create_import = {
+	resource = oil
+	factories = 1
+	exporter = MEX
+}
+
+create_import = {
+	resource = oil
+	factories = 1
+	exporter = LOU
+}
+
+set_popularities = {
+	democratic = 24
+	fascism = 3
+	communism = 17
+	neutrality = 56	
+}
+
+set_politics = {
+	
+	ruling_party = neutrality
+	last_election = "1935.7.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = BHU
+		autonomous_state = french_puppet
+		freedom_level = 0.1
+	}
+	set_autonomy = {
+		target = VIN
+		autonomous_state = french_puppet
+		freedom_level = 0.1
+	}
+	set_autonomy = {
+		target = BEL
+		autonomous_state = french_puppet
+		freedom_level = 0.1
+	}
+	else = {
+		puppet = BEL
+		puppet = BHU
+		puppet = VIN
+	}
+}
+
+create_faction = "Entente"
+add_to_faction = FRA
+give_military_access = BEL
+add_to_faction = BEL
+give_military_access = BHU
+add_to_faction = BHU
+give_military_access = VIN
+add_to_faction = VIN
+give_military_access = SPR
+
+
+add_ideas = {
+	private_capital_law
+ 
+	limited_conscription
+	FRA_vic
+	FRA_eco
+	robber_barons
+	restricted
+}
+
+create_country_leader = {
+	name = "Napoléon IV"
+	desc = "emperor_napoleon_desc"
+	picture = "gfx/leaders/European Countries/France/napoleon_iii.dds"
+	expire = "1965.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Napoléon IV"
+	desc = "emperor_napoleon_desc"
+	picture = "gfx/leaders/European Countries/France/napoleon_prince_imperial.dds"
+	expire = "1965.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Léon Blum"
+	picture = "gfx/leaders/European Countries/France/france_blum.dds"
+	expire = "1965.1.1"
+	id = 703
+	ideology = social_democratic_ideology
+	traits = {	
+	}
+}
+
+
+create_country_leader = {
+    name = "Camille Chautemps"
+	picture = "gfx/leaders/European Countries/France/france_chautemps.dds"
+	expire = "1965.1.1"
+	id = 702
+	ideology = social_democratic_ideology
+	traits = {	
+	}
+}
+
+create_country_leader = {
+	name = "Édouard Daladier"
+	desc = ""
+	picture = "gfx/leaders/European Countries/France/france_dada.dds"
+	expire = "1965.1.1"
+	ideology = national_liberalism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Édouard Daladier"
+	desc = ""
+	picture = "gfx/leaders/European Countries/France/france_dada.dds"
+	expire = "1965.1.1"
+	ideology = national_liberalism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Maurice Thorez"
+	desc = ""
+	id = 701
+	picture = "gfx/leaders/European Countries/France/maurice_thorez.dds"
+	expire = "1965.1.1"
+	ideology = 	jacobin_ideology
+	traits = {
+		
+	}
+}
+
+
+create_country_leader = {
+	name = "Marcel Déat"
+	desc = ""
+	picture = "gfx/leaders/European Countries/France/france_henriot.dds"
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Jean de Lattre de Tassigny"
+	portrait_path = "gfx/leaders/European Countries/France/france_tassigny.dds"
+	traits = { trickster brilliant_strategist cavalry_officer war_hero }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Alphonse Juin"
+	portrait_path = "gfx/leaders/European Countries/France/france_juin.dds"
+	traits = { armor_officer career_officer trait_cautious  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Maurice Gamelin"
+	portrait_path = "gfx/leaders/European Countries/France/france_gamelin.dds"
+	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	id = 843
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Maxime Weygand"
+	portrait_path = "gfx/leaders/European Countries/France/france_weygand.dds"
+	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Alphonse Georges"
+	portrait_path = "gfx/leaders/European Countries/France/france_georges.dds"
+	traits = { defensive_doctrine old_guard trait_cautious }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Charles De Gaulle"
+	portrait_path = "gfx/leaders/European Countries/France/france_de_gaulle.dds"
+	id = 842
+	traits = {  armor_officer harsh_leader media_personality }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Philippe Leclerc"
+	portrait_path = "gfx/leaders/European Countries/France/france_leclerc.dds"
+	traits = {  armor_officer trait_reckless career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Henri Giraud"
+	portrait_path = "gfx/leaders/European Countries/France/france_giraud.dds"
+	traits = {  trickster trait_cautious career_officer infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Charles Huntziger"
+	portrait_path = "gfx/leaders/European Countries/France/france_huntzinger.dds"
+	traits = { old_guard infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+
+create_navy_leader = {
+	name = "François Darlan"
+		portrait_path = "gfx/leaders/European Countries/France/france_darlan.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Jean-Marie Charles Abrial"
+		portrait_path = "gfx/leaders/European Countries/France/france_abrial.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Jean-Pierre Esteva"
+		portrait_path = "gfx/leaders/European Countries/France/france_esteva.dds"
+	traits = { seawolf }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Jean de Laborde"
+	picture = "Portrait_France_Jean_de_Laborde.dds"
+	traits = {  }
+	skill = 2
+}
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "630 Series"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Redoutable Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		sub_engine_upgrade = 2
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 2
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Chacal Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Vauquelin Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 2
+		destroyer_engine_upgrade = 2
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 2
+	}
+}
+
+create_equipment_variant = {
+	name = "Charlemagne Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 1
+	}
+}

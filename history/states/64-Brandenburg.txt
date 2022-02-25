@@ -1,0 +1,40 @@
+
+state={
+	id=64
+	name="STATE_64"
+	resources={
+		aluminium=8.000
+	}
+
+	history={
+		owner = GER
+		victory_points = {
+			6521 30 
+		}
+		victory_points = {
+			375 5
+		}
+		victory_points = {
+			3499 5
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 3
+			anti_air_building = 1
+			air_base = 6
+
+		}
+		add_core_of = GER
+		add_core_of = WGR
+		add_core_of = DDR
+
+	}
+
+	provinces={
+		375 3367 3499 6521 9428 9456 11444 11505 
+	}
+	manpower=5745029
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

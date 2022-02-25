@@ -1,0 +1,281 @@
+﻿capital = 380
+
+oob = "DES_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+add_opinion_modifier = { target = ASK modifier = great_northern_war_modifier }
+add_opinion_modifier = { target = AQN modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = CSC modifier = historic_friendship_modifier }
+add_opinion_modifier = { target = CAN modifier = historic_friendship_modifier }
+
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+	}
+	set_naval_oob = "DES_1936_naval_legacy"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_depth_charges = 1
+	}
+	set_naval_oob = "DES_1936_naval_mtg"
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+
+set_popularities = {
+	democratic = 30
+	fascism = 55
+	communism = 10
+	neutrality = 5
+}
+	
+add_ideas = {
+	deluge_DES_native_independence_idea
+	limited_exports
+	extensive_conscription
+	partial_economic_mobilisation
+	restricted
+}
+
+create_country_leader = {
+	name = "Upton Sinclair"
+	desc = ""
+	picture = "gfx/leaders/American Countries/Deseret/upton_sinclair.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Israel M. Smith"
+	desc = "mormon_prophet_desc"
+	picture = "gfx/leaders/American Countries/Deseret/wilford_woodruff.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Lorenzo Benson"
+	desc = ""
+	picture = "gfx/leaders/American Countries/Deseret/ezra_taft_benson.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Heber J. Grant"
+	desc = "mormon_president_desc"
+	picture = "gfx/leaders/American Countries/Deseret/david_mckay.dds"
+	expire = "1965.1.1"
+	ideology = religious_ideology
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "George S. Patton"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_George_S_Patton.dds"
+	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
+	skill = 5
+	attack_skill = 7 
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Oscar Griswold"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Oscar_Griswold.dds"
+	traits = { infantry_officer  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Geoffrey Keyes"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Geoffrey_Keyes.dds"
+	traits = { armor_officer career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "J. Lawton Collins"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lawton_Collins.dds"
+	traits = {  trickster career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Xavier McMahon"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_3.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+
+}
+
+create_corps_commander = {
+	name = "Lloyd Fredendall"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lloyd_Fredendall.dds"
+	traits = { old_guard infantry_officer inflexible_strategist }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Leslie McNair"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lesley_McNair.dds"
+	traits = {  old_guard career_officer armor_officer }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+
+create_corps_commander = {
+	name = "Maurice Rose"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Maurice_Rose.dds"
+	traits = { armor_officer trait_reckless brilliant_strategist  }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+
+create_corps_commander = {
+	name = "Clarence Huebner"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Clarence_Huebner.dds"
+	traits = { old_guard harsh_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lucian Truscott"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lucian_Truscott.dds"
+	traits = { trait_engineer commando cavalry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+create_corps_commander = {
+	name = "William Simpson"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_William_Hood_Simpson.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Harold Rainsford Stark"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Harold_Rainsford_Stark.dds"
+	traits = { blockade_runner spotter }
+	skill = 2
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Type 1"
+		type = ship_hull_submarine_1
+		name_group = FRA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Pawnee Class"
+		type = ship_hull_light_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+	}
+}

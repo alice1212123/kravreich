@@ -1,0 +1,15 @@
+category = {
+	name = "Super Events"
+	soundeffects = {
+		superev_germany
+	}
+	compressor = master_compressor
+}
+
+category = {
+	name = "Super Events"
+	soundeffects = {
+		superev_france
+	}
+	compressor = master_compressor
+}

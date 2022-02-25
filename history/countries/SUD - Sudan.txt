@@ -1,0 +1,50 @@
+﻿capital = 551
+
+oob = "SUD_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 5
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 50
+	fascism = 5
+	communism = 5
+	neutrality = 40
+}
+
+create_country_leader = {
+	name = "Gaafar Nimeiry"
+	desc = ""
+	picture = "gfx/leaders/deluge/gaafar_nimeiry2.dds"
+	ideology = jacobin_ideology
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Gaafar Nimeiry"
+	portrait_path = "gfx/leaders/deluge/gaafar_nimeiry2.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+

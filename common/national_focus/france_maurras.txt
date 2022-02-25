@@ -1,0 +1,595 @@
+focus_tree = {
+	id = france_maurras
+	country = {
+		factor = 0
+	}
+
+	shared_focus = france_deluge_mayday
+	shared_focus = france_league_of_nations
+	shared_focus = france_deluge_wealth_of_the_empire
+	shared_focus = france_deluge_grand_armee_start
+	shared_focus = france_deluge_le_marine_national
+	shared_focus = france_deluge_armee_air_start
+	shared_focus = france_deluge_france_beginning_foreign_policy
+
+#####
+ 
+
+  focus = {
+		id = france_deluge_maurras_pm
+		icon = GFX_focus_henriotmaurras
+		x = 14
+		y = 0
+		cost = 1
+		
+		available = {
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = Christian_victory
+				}
+				country_event = {
+					id = deluge_france.198
+				}
+			}
+			else = {
+				country_event = {
+					id = deluge_france.197
+				}
+			}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+  focus = {
+		id = france_deluge_link_with_aristocracy
+		icon = GFX_focus_champage
+		x = 12
+		y = 1
+		cost = 4
+		
+		prerequisite = { focus = france_deluge_maurras_pm
+		}
+
+		available = {
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = deluge_france.199
+			}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+  focus = {
+		id = france_deluge_link_with_business
+		icon = GFX_focus_bag_of_money
+		x = 14
+		y = 1
+		cost = 4
+		
+		available = {
+		}
+
+		prerequisite = { focus = france_deluge_maurras_pm
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = deluge_france.201
+			}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+  focus = {
+		id = france_deluge_link_with_military
+		icon = GFX_focus_fra_friends_military
+		x = 16
+		y = 1
+		cost = 4
+		
+		available = {
+		}
+
+		prerequisite = { focus = france_deluge_maurras_pm
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = deluge_france.204
+			}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+
+	focus = {
+		id = france_deluge_maurras_true_colors
+		icon = GFX_focus_fra_bourbon_friends
+		x = 14
+		y = 2
+		cost = 10
+		
+		available = {
+		}
+
+		prerequisite = { focus = france_deluge_link_with_military }
+		prerequisite = { focus = france_deluge_link_with_business }
+		prerequisite = { focus = france_deluge_link_with_aristocracy }
+
+		select_effect = {
+        	country_event = {
+        		id = deluge_france.212
+        		days = 1
+        	}
+        }
+ 
+		
+		completion_reward = {
+			custom_effect_tooltip = tooltip_maurras_coup
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_henriot_saves_democracy
+		icon = GFX_focus_henriot_fra_dem
+		x = 12
+		y = 3
+		cost = 3
+		
+		available = {
+			has_war = no
+			has_country_flag = HENRIOT_FRANCE
+		}
+
+		prerequisite = { focus = france_deluge_maurras_true_colors }	
+		
+		completion_reward = {
+			custom_effect_tooltip = tooltip_henriot_democracy
+			country_event = {
+        		id = deluge_france.228
+        		days = 1
+        	}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_henriot_peoples_rigths
+		icon = GFX_focus_liberty
+		x = 11
+		y = 4
+		cost = 4
+		
+		available = {
+			has_war = no
+		}
+
+		prerequisite = { focus = france_deluge_henriot_saves_democracy }
+
+		completion_reward = {
+			custom_effect_tooltip = tooltip_henriot_peoplesrigths
+			country_event = {
+        		id = deluge_france.229
+        		days = 1
+        	}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_henriot_eliminate_extremist
+		icon = GFX_focus_ban_commies
+		x = 11
+		y = 5
+		cost = 4
+		
+		available = {
+			has_war = no
+		}
+
+		prerequisite = { focus = france_deluge_henriot_peoples_rigths }
+		
+		completion_reward = {
+			country_event = {
+        		id = deluge_france.231
+        		days = 2
+        	}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_henriot_TRUTH
+		icon = GFX_focus_dem_justice
+		x = 11
+		y = 6
+		cost = 4
+		
+		available = {
+			has_war = no
+		}
+
+		prerequisite = { focus = france_deluge_henriot_eliminate_extremist }
+		
+		completion_reward = {
+			country_event = {
+        		id = deluge_france.233
+        	}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_loyal_maurras
+		icon = GFX_focus_emperor_napoleon
+		x = 14
+		y = 3
+		cost = 3
+		
+		available = {
+			has_war = no
+			has_country_flag = Loyal_Maurras
+		}
+
+		prerequisite = { focus = france_deluge_maurras_true_colors }	
+		
+		completion_reward = {
+			add_stability = 0.1
+			country_event = {
+        		id = deluge_france.234
+        		days = 1
+        	}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_ideal_sovregnity
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 13
+		y = 4
+		cost = 10
+		
+		available = {
+			has_war = no
+			has_country_flag = Loyal_Maurras
+		}
+
+		prerequisite = { focus = france_deluge_loyal_maurras focus = france_deluge_henriot_saves_democracy }	
+		
+		completion_reward = {
+			add_ideas = france_maurras_police
+			hidden_effect = {
+				id = deluge_france.235
+				days = 15
+			}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_maurras_military
+		icon = GFX_focus_fra_soldiers
+		x = 13
+		y = 5
+		cost = 10
+		
+		available = {
+			has_war = no
+			has_global_flag = FRANCE_ORLEANIST
+		}
+
+		prerequisite = { focus = france_deluge_ideal_sovregnity }	
+		
+		completion_reward = {
+			remove_ideas = {
+				idea = deluge_france_social_unrest
+			}
+			add_ideas = {
+				idea = deluge_france_social_unrest1
+			}
+			hidden_effect = {
+				country_event = {
+					id = deluge_france.237
+				}
+			}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+	focus = {
+		id = france_deluge_maurras_church
+		icon = GFX_focus_cristhianity
+		x = 13
+		y = 6
+		cost = 10
+		
+		available = {
+			has_country_flag = Loyal_Maurras
+		}
+
+		prerequisite = { focus = france_deluge_maurras_military }	
+		
+		completion_reward = {
+			country_event = {
+				id = deluge_france.238
+			}
+			country_event = {
+				id = deluge_france.239
+				days = 3
+			}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_return_king
+		icon = GFX_focus_king_henri_fra
+		x = 16
+		y = 3
+		cost = 3
+		
+		available = {
+			has_war = no
+			has_country_flag = Loyal_Maurras
+		}
+
+		prerequisite = { focus = france_deluge_maurras_true_colors }	
+		
+		completion_reward = {
+			add_stability = 0.1
+			country_event = {
+        		id = deluge_france.242
+        		days = 1
+        	}
+		}
+
+				
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+	focus = {
+		id = france_deluge_france_anti_jews_protestants
+		icon = GFX_focus_jews
+		x = 15
+		y = 4
+		cost = 10
+		
+		available = {
+			has_war = no
+		}
+
+		prerequisite = { focus = france_deluge_loyal_maurras focus = france_deluge_return_king }	
+		
+		completion_reward = {
+			add_ideas = {
+				idea = non_christian_discrimination
+			}
+			hidden_effect = {
+				country_event = {
+					id = deluge_france.244
+					days = 7
+					random = 10
+				}
+			}
+		}
+
+				
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_france_start_organic_kingdom
+		icon = GFX_focus_royal_edicts
+		x = 15
+		y = 5
+		cost = 10
+		
+		available = {
+			has_war = no
+		}
+
+		prerequisite = { focus = france_deluge_france_anti_jews_protestants }	
+		
+		completion_reward = {
+			add_ideas = {
+				idea = fra_decentralization_integralism_power
+			}
+		}
+
+				
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+	focus = {
+		id = france_deluge_france_expel_troublemakers
+		icon = GFX_focus_boot_scales
+		x = 15
+		y = 6
+		cost = 10
+		
+		available = {
+			has_war = no
+		}
+
+		prerequisite = { focus = france_deluge_france_start_organic_kingdom }	
+		
+		completion_reward = {
+			custom_effect_tooltip = tooltip_maurras_remove_social_unrest
+			country_event = {
+				id = deluge_france.247
+			}
+		}
+
+				
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_france_aristocracy_rigths
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 17
+		y = 4
+		cost = 10
+		
+		available = {
+			has_completed_focus = fra_decentralization_integralism_power
+		}
+
+		prerequisite = { focus = france_deluge_return_king }	
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = fra_decentralization_integralism_power1
+				remove_idea = fra_decentralization_integralism_power
+			}
+			country_event = {
+				id = deluge_france.251
+			}
+		}
+
+				
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = france_deluge_france_purge_army
+		icon = GFX_goal_generic_attack_allies
+		x = 17
+		y = 5
+		cost = 10
+		
+		available = {
+		}
+
+		prerequisite = { focus = france_deluge_france_aristocracy_rigths }	
+		
+		completion_reward = {
+			country_event = {
+				id = deluge_france.252
+			}
+			custom_effect_tooltip = deluge_maurras_purge_army
+		}
+
+				
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+	focus = {
+		id = france_deluge_fra_inquisition
+		icon = GFX_focus_royal_inquisition
+		x = 17
+		y = 6
+		cost = 10
+		
+		available = {
+		}
+
+		prerequisite = { focus = france_deluge_france_purge_army }	
+		
+		completion_reward = {
+			country_event = {
+				id = deluge_france.253
+			}
+		}
+
+				
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+
+}
+	
+  

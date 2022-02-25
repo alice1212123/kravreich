@@ -1,0 +1,43 @@
+
+state={
+	id=313
+	name="STATE_313"
+	manpower = 2121000
+	resources={
+		chromium=4
+		steel=5
+	}
+	
+	state_category = large_town
+
+	history={
+		owner = URC
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2 
+			air_base = 1
+			10886 = {
+				naval_base = 1
+			}
+			13085 = {
+				naval_base = 1
+			}
+			2077 = {
+				naval_base = 1
+			}
+		}
+		
+		add_core_of = URC
+		add_core_of = CSC
+		victory_points = {
+			10886 20
+		}
+
+	}
+
+	provinces={
+		4991 10842 10886 13085 2077
+	}
+	
+}

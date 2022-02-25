@@ -1,0 +1,173 @@
+﻿capital = 275
+
+oob = "SAF_1936"
+
+set_cosmetic_tag = SAF_GB
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+	#set_naval_oob = ""
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+	}
+	#set_naval_oob = ""
+}
+
+set_convoys = 25
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 7
+	communism = 8
+	neutrality = 85
+}
+
+add_ideas = {
+	SAF_segregation 
+	boer_unrest
+	labour_camps 
+	novote
+	printing
+	free_trade
+	limited_conscription
+	SAF_trade_war
+
+}
+
+create_country_leader = {
+	name = "J. B. M. Hertzog"
+	desc = ""
+	picture = "gfx/leaders/African Countries/South Africa/JBM_Hertzog.dds"
+	expire = "1965.1.1"
+	ideology = constitutionalist_ideology
+	traits = {
+		#
+	}
+}
+
+
+# Took office 5 days after this date
+create_country_leader = {
+	name = "Jan Smuts"
+	desc = "POLITICS_JAN_SMUTS_DESC"
+	picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "D. F. Malan"
+	desc = "POLITICS_DF_MALAN_DESC"
+	picture = "GFX_SAF_daniel_malan"
+	expire = "1965.1.1"
+	ideology = social_darwinist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pixley Ka Isaka Seme"
+	desc = "POLITICS_PIXLEY_SEME_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Moses Kotane"
+	desc = "POLITICS_MOSES_KOTANE_DESC"
+	picture = "GFX_SAF_moses_kotane"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "J. B. M. Hertzog"
+	desc = ""
+	picture = "gfx/leaders/African Countries/South Africa/JBM_Hertzog.dds"
+	expire = "1965.1.1"
+	ideology = bonapartist_ideology
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "George Edwin Brink"
+	gfx = "GFX_SAF_george_edwin_brink"
+	traits = { desert_fox  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Guy Hallifax"
+	gfx = "GFX_SAF_guy_halifax"
+	traits = { }
+	skill = 3
+}

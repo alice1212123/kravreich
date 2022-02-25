@@ -1,0 +1,167 @@
+﻿division_template = {
+	name = "Indian Brigade"
+	
+	division_names_group = COL_IND_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Indian Division"
+	
+	division_names_group = COL_IND_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Indian Cavalry"
+	
+	division_names_group = COL_IND_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+        cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+}
+
+
+units = {
+	division = {
+		#name = "1. Indian Cavalry"
+		location = 10149
+		division_template = "Indian Cavalry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		#name = "1. Indian Division"
+		location = 10149
+		division_template = "Indian Division"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BHU" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		#name = "1. Indian Brigade"
+		location = 10149
+		division_template = "Indian Brigade"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BHU" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		#name = "2. Indian Brigade"
+		location = 10149
+		division_template = "Indian Brigade"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BHU" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		#name = "3. Indian Brigade"
+		location = 10149
+		division_template = "Indian Brigade"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BHU" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		#name = "4. Indian Brigade"
+		location = 10149
+		division_template = "Indian Brigade"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BHU" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		#name = "5. Indian Brigade"
+		location = 10149
+		division_template = "Indian Brigade"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BHU" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		#name = "6. Indian Brigade"
+		location = 10149
+		division_template = "Indian Brigade"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BHU" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		#name = "7. Indian Brigade"
+		location = 10149
+		division_template = "Indian Brigade"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BHU" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		#name = "8. Indian Brigade"
+		location = 10149
+		division_template = "Indian Brigade"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BHU" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		#name = "9. Indian Brigade"
+		location = 10149
+		division_template = "Indian Brigade"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BHU" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "BHU"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 100
+	}
+}

@@ -1,0 +1,139 @@
+﻿
+# Events dealing with India
+
+add_namespace = deluge_india
+
+# British India annexes French or Portuguese India
+
+country_event = {
+	id = deluge_india.1
+	title = deluge_india1title
+	desc = deluge_india1desc
+	picture = GFX_report_event_generic_read_write
+	
+	trigger = {
+		tag = ENG
+		has_war = no
+		RAJ = { is_subject_of = ENG }
+		OR = {
+			NEP = { is_subject_of = ENG }
+			BHU = { is_subject_of = ENG }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = deluge_india1opt
+
+		if = {
+			limit = {
+				NEP = { is_subject_of = ENG }
+			}
+			RAJ = {
+				annex_country = { target = NEP transfer_troops = no }
+			}
+		}
+		
+		if = {
+			limit = {
+				BHU = { is_subject_of = ENG }
+			}
+			RAJ = {
+				annex_country = { target = BHU transfer_troops = no }
+			}
+		}
+	}
+}
+
+# French India annexes British or Portuguese India
+
+country_event = {
+	id = deluge_india.2
+	title = deluge_india2title
+	desc = deluge_india2desc
+	picture = GFX_report_event_generic_read_write
+	
+	trigger = {
+		tag = FRA
+		has_war = no
+		BHU = { is_subject_of = FRA }
+		OR = {
+			NEP = { is_subject_of = FRA }
+			RAJ = { is_subject_of = FRA }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = deluge_india2opt
+
+		if = {
+			limit = {
+				NEP = { is_subject_of = FRA }
+			}
+			BHU = {
+				annex_country = { target = NEP transfer_troops = no }
+			}
+		}
+		
+		if = {
+			limit = {
+				RAJ = { is_subject_of = FRA }
+			}
+			BHU = {
+				annex_country = { target = RAJ transfer_troops = no }
+			}
+		}
+	}
+}
+
+# Portuguese India annexes French or British India
+
+country_event = {
+	id = deluge_india.3
+	title = deluge_india3title
+	desc = deluge_india3desc
+	picture = GFX_report_event_generic_read_write
+	
+	trigger = {
+		tag = POR
+		has_war = no
+		NEP = { is_subject_of = POR }
+		OR = {
+			RAJ = { is_subject_of = POR }
+			BHU = { is_subject_of = POR }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = deluge_india3opt
+
+		if = {
+			limit = {
+				RAJ = { is_subject_of = POR }
+			}
+			NEP = {
+				annex_country = { target = RAJ transfer_troops = no }
+			}
+		}
+		
+		if = {
+			limit = {
+				BHU = { is_subject_of = POR }
+			}
+			NEP = {
+				annex_country = { target = BHU transfer_troops = no }
+			}
+		}
+	}
+}

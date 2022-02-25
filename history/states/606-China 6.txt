@@ -1,0 +1,34 @@
+state= {
+	id=606
+	name="STATE_606" # Anhui
+	manpower = 18265400
+	
+	state_category = city
+	
+	resources={
+		steel=11
+	}
+
+	history= {
+		owner = ANH
+		victory_points = { 
+			7222 5
+		}
+		victory_points = {
+			1083 3
+		}
+		victory_points = {
+			9937 1
+		}
+		add_core_of = CHI
+		add_core_of = ANH
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	
+	provinces={
+		1083 1146 4079 4158 4203 7035 7094 7222 9937 10008 10017 10040 10064 10079 11916 11994 12036 12061 
+	}
+}

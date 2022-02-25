@@ -1,0 +1,208 @@
+﻿division_template = {
+	name = "Gendarmerie"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+units = {	
+	division= {
+		name = "1. Gendarmerie"
+		location = 11506
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "2. Gendarmerie"
+		location = 3552
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "3. Gendarmerie"
+		location = 9737
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "4. Gendarmerie"
+		location = 6766
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "5. Gendarmerie"
+		location = 11834
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "6. Gendarmerie"
+		location = 9909
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "7. Gendarmerie"
+		location = 6613
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "8. Gendarmerie"
+		location = 9642
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "9. Gendarmerie"
+		location = 3652
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "10. Gendarmerie"
+		location = 11516
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "11. Gendarmerie"
+		location = 9559
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "12. Gendarmerie"
+		location = 575
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "13. Gendarmerie"
+		location = 11483
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "14. Gendarmerie"
+		location = 11548
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "15. Gendarmerie"
+		location = 6536
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "16. Gendarmerie"
+		location = 9434
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "17. Gendarmerie"
+		location = 6449
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "18. Gendarmerie"
+		location = 9898
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "19. Gendarmerie"
+		location = 11518
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "20. Gendarmerie"
+		location = 11491
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "21. Gendarmerie"
+		location = 485
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "22. Gendarmerie"
+		location = 11535
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "23. Gendarmerie"
+		location = 9495
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+	division= {
+		name = "24. Gendarmerie"
+		location = 11506
+		division_template = "Gendarmerie"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	
+}

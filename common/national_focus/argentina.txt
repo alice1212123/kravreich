@@ -1,0 +1,1003 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = deluge_argentina
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARG
+		}
+	}
+	
+	#continuous_focus_position = { x = 6050 y = 2200 }
+	
+	default = no
+	reset_on_civilwar = yes
+
+	focus = {
+		id = ARG_focus_the_league_summit
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 10
+		y = 0
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = ARG_focus_strengthening_the_league
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_the_league_summit }
+		mutually_exclusive = { focus = ARG_focus_subverting_the_league }
+		x = -2
+		y = 1
+		relative_position_id = ARG_focus_the_league_summit
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			is_faction_leader = yes
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+	
+
+	focus = {
+		id = ARG_focus_parade_for_liberty
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_strengthening_the_league }
+		x = -5
+		y = 1
+		relative_position_id = ARG_focus_strengthening_the_league
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = ARG_focus_liberal_propaganda_in_peru
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_parade_for_liberty }
+		x = -2
+		y = 1
+		relative_position_id = ARG_focus_parade_for_liberty
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = ARG_focus_liberal_propaganda_in_uruguay
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_parade_for_liberty }
+		x = 0
+		y = 1
+		relative_position_id = ARG_focus_parade_for_liberty
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = ARG_focus_brothers_in_arms
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_parade_for_liberty }
+		x = 2
+		y = 1
+		relative_position_id = ARG_focus_parade_for_liberty
+		mutually_exclusive = { focus = ARG_focus_first_amongst_equals }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_to_tech_sharing_group = ARG_CHL_tech_group
+			CHL = {
+				add_to_tech_sharing_group = ARG_CHL_tech_group
+			}
+		}
+	}
+
+	focus = {
+		id = ARG_focus_parade_for_unity
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_strengthening_the_league }
+		x = 2
+		y = 1
+		relative_position_id = ARG_focus_strengthening_the_league
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = ARG_focus_first_amongst_equals
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_parade_for_unity }
+		x = -3
+		y = 1
+		relative_position_id = ARG_focus_parade_for_unity
+		mutually_exclusive = { focus = ARG_focus_brothers_in_arms }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			custom_effect_tooltip = if_they_accept
+			effect_tooltip = {
+				set_autonomy = {
+					target = PAR
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ARG_focus_unity_with_chile
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_first_amongst_equals }
+		x = 0
+		y = 1
+		relative_position_id = ARG_focus_first_amongst_equals
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = ARG_focus_the_annexation_of_chile
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_unity_with_chile }
+		x = 0
+		y = 1
+		relative_position_id = ARG_focus_unity_with_chile
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			CHL = { is_subject_of = ROOT }
+		}
+
+		bypass = {
+			OR = {
+				CHL = { exists = no }
+				has_war_with = CHL
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = ARG_focus_unity_with_bolivia
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_parade_for_unity }
+		x = -1
+		y = 1
+		relative_position_id = ARG_focus_parade_for_unity
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			BOL = { is_subject_of = ROOT }
+		}
+
+		bypass = {
+			BOL = { exists = no }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			set_autonomy = {
+				target = BOL
+				autonomous_state = autonomy_integrated_puppet
+				freedom_level = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = ARG_focus_the_annexation_of_bolivia
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_unity_with_bolivia }
+		x = 0
+		y = 1
+		relative_position_id = ARG_focus_unity_with_bolivia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			BOL = { is_subject_of = ROOT }
+		}
+
+		bypass = {
+			OR = {
+				BOL = { exists = no }
+				has_war_with = BOL
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = ARG_focus_unity_with_paraguay
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_parade_for_unity }
+		x = 1
+		y = 1
+		relative_position_id = ARG_focus_parade_for_unity
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			PAR = { is_subject_of = ROOT }
+		}
+
+		bypass = {
+			PAR = { exists = no }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			set_autonomy = {
+				target = PAR
+				autonomous_state = autonomy_integrated_puppet
+				freedom_level = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = ARG_focus_the_annexation_of_paraguay
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_unity_with_paraguay }
+		x = 0
+		y = 1
+		relative_position_id = ARG_focus_unity_with_paraguay
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			PAR = { is_subject_of = ROOT }
+		}
+
+		bypass = {
+			OR = {
+				PAR = { exists = no }
+				has_war_with = PAR
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = ARG_focus_unity_with_brazil
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_parade_for_unity }
+		x = 3
+		y = 1
+		relative_position_id = ARG_focus_parade_for_unity
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = ARG_focus_brazilian_treaty_of_friendship_and_defence
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_unity_with_brazil }
+		x = 0
+		y = 1
+		relative_position_id = ARG_focus_unity_with_brazil
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			is_faction_leader = yes
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = ARG_focus_buenos_aires_sao_paulo_railway
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_brazilian_treaty_of_friendship_and_defence }
+		x = 0
+		y = 1
+		relative_position_id = ARG_focus_brazilian_treaty_of_friendship_and_defence
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			278 = {
+				controller = {
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			510 = {
+				controller = {
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			300 = {
+				controller = {
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			502 = {
+				controller = {
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			503 = {
+				controller = {
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			501 = {
+				controller = {
+					NOT = { has_war_with = ROOT }
+				}
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			278 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			510 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			300 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			502 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			503 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			501 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARG_focus_parade_for_strength
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_strengthening_the_league focus = ARG_focus_subverting_the_league }
+		x = 9
+		y = 1
+		relative_position_id = ARG_focus_strengthening_the_league
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = ARG_focus_central_infrastructure
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_parade_for_strength }
+		x = -2
+		y = 1
+		relative_position_id = ARG_focus_parade_for_strength
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			510 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			278 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ARG_focus_central_development
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_central_infrastructure }
+		prerequisite = { focus = ARG_focus_national_income_tax }
+		x = 0
+		y = 2
+		relative_position_id = ARG_focus_central_infrastructure
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			510 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			278 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ARG_focus_rural_infrastructure
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_parade_for_strength }
+		x = 2
+		y = 1
+		relative_position_id = ARG_focus_parade_for_strength
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			508 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			509 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			511 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			512 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ARG_focus_rural_development
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_rural_infrastructure }
+		prerequisite = { focus = ARG_focus_national_income_tax }
+		x = 0
+		y = 2
+		relative_position_id = ARG_focus_rural_infrastructure
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			508 = {
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+				add_resource = {
+					type = chromium
+					amount = 2
+				}
+				add_resource = {
+					type = tungsten
+					amount = 2
+				}
+			}
+			509 = {
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+			511 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+			512 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ARG_focus_national_bank
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_parade_for_strength }
+		x = 0
+		y = 1
+		relative_position_id = ARG_focus_parade_for_strength
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = ARG_focus_national_income_tax
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_national_bank }
+		x = 0
+		y = 1
+		relative_position_id = ARG_focus_national_bank
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = ARG_focus_subverting_the_league
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = ARG_focus_the_league_summit }
+		mutually_exclusive = { focus = ARG_focus_strengthening_the_league }
+		x = 15
+		y = 1
+		relative_position_id = ARG_focus_the_league_summit
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			is_in_faction = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_war_support = 0.03
+		}
+	}
+	
+}

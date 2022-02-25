@@ -1,0 +1,24 @@
+state={
+	id=405
+	name="STATE_405"
+
+	history={
+		owner = SOV
+		victory_points = {
+			1459 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = SOV
+		add_core_of = UZB
+	}
+
+	provinces={
+		1216 1384 1459 1573 1919 2058 7639 10187 10205 10488 10601 10671 11687 12239 12581 12722 
+	}
+	manpower=6275820
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

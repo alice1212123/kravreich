@@ -1,0 +1,808 @@
+ideas = {
+
+	country = {
+
+		SPR_para = { 
+		
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = SOV_scientist_defect
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_factor = 0.25
+			drift_defence_factor = 0.1
+			stability_factor = -0.1
+			}
+			
+		}
+		
+		
+		SPR_COM = { 
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = catholic
+
+			removal_cost = -1
+			
+			modifier = {
+			
+			stability_weekly = -0.005
+			}
+			
+		}
+		
+		SPR_CAR = { 
+		
+			name = SPR_CAR
+		
+			allowed = {
+				NOT = { 
+				country_exists = SSR
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = SPR_Carlt
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = -0.1
+			political_power_factor = -0.15
+			neutrality_drift = 0.03
+			}
+			
+		}
+		
+		
+		SPR_ECO = { 
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = LOU_eco2
+
+			removal_cost = -1
+			
+			modifier = {
+			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.15
+			consumer_goods_factor = 0.10
+			}
+			
+		}
+		
+		##Reno wins###
+		#Statified Society##
+		
+		SPR_strat = {
+		allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = idea_generic_monarchist_uprising
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.1
+			economy_cost_factor = -0.25
+			mobilization_laws_cost_factor = -0.25
+			trade_laws_cost_factor = -0.25
+			political_advisor_cost_factor = -0.25
+			research_speed_factor = 0.1
+			consumer_goods_factor = -0.05
+			}
+			
+		}
+		
+		
+		SPR_para2 = { 
+		allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = SOV_scientist_defect
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_factor = 0.35
+			drift_defence_factor = 0.35
+			stability_factor = -0.15
+			lend_lease_tension = -0.20
+			}
+			
+		}
+		
+		SPR_eco_polar = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = spr_relocate_the_gold_reserves
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_factory_max_efficiency_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			stability_factor = -0.1
+			}
+		}
+		
+		
+		SPR_ECO2 = { 
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = LOU_eco2
+
+			removal_cost = -1
+			
+			modifier = {
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.1
+			consumer_goods_factor = 0.075
+			}
+			
+		}
+		
+		
+		SPR_ECO3 = { 
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = LOU_eco2
+
+			removal_cost = -1
+			
+			modifier = {
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
+			consumer_goods_factor = 0.05
+			}
+			
+		}
+		
+		SPR_govern_mono = { 
+		
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = commie_indy
+
+			removal_cost = -1
+			
+			modifier = {
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+			consumer_goods_factor = -0.03
+			production_factory_max_efficiency_factor =-0.05
+			}
+			
+		}
+		
+		SPR_red_guard = { 
+		
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = red_army
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = 0.05
+			army_org = 5
+			}
+			
+		}
+		
+		
+		
+		SPR_trade_union = { 
+		
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = trade_union
+
+			removal_cost = -1
+			
+			modifier = {
+			min_export = -0.05
+			political_power_gain = 0.3
+			}
+			
+		}
+		
+		SPR_workers_rights = { 
+		
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = trade_union
+
+			removal_cost = -1
+			
+			modifier = {
+			production_factory_efficiency_gain_factor = -0.25
+			production_factory_start_efficiency_factor = -0.15
+			consumer_goods_factor = 0.05
+
+			}
+			
+		}
+		
+		
+		SPR_union = { 
+		
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = trade_union
+
+			removal_cost = -1
+			
+			modifier = {
+			industrial_capacity_factory = 0.15
+			min_export = -0.05
+			}
+			
+		}
+		
+		
+		
+		SPR_nation = { 
+		
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = trade_union
+
+			removal_cost = -1
+			
+			modifier = {
+			min_export = -0.25
+			local_resources_factor = 0.10
+			political_power_factor = -0.25
+			}
+			
+		}
+		
+		SPR_commie_coup = { 
+		
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = trade_union
+
+			removal_cost = -1
+			
+			modifier = {
+			production_factory_max_efficiency_factor = 0.3
+			industrial_capacity_factory = 0.2
+			industrial_capacity_dockyard = 0.2
+			production_factory_efficiency_gain_factor = 0.2
+			production_speed_buildings_factor = 0.5
+			communism_drift = 0.05
+			}
+			
+		}
+		
+		SPR_pesant = { 
+		
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = trade_union
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = 0.35
+			conscription = 0.03
+			}
+			
+		}
+		
+		SPR_soc_mono = { 
+		
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = trade_union
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = 0.5
+			communism_acceptance = 100
+			}
+			
+		}
+		
+		SPR_art = { 
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = idea_generic_fortify_the_borders
+
+			removal_cost = -1
+			
+			modifier = {
+			army_artillery_attack_factor = 0.05
+			}
+			
+		}
+		
+		SPR_heavy = { 
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = idea_generic_fortify_the_borders
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+			artillery = {
+				hard_attack = 0.1
+				instant = yes
+			}
+			}
+		}
+		
+		
+		SPR_reload = { 
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = idea_generic_fortify_the_borders
+
+			removal_cost = -1
+			
+			modifier = {
+			army_morale_factor = 0.075
+			}
+		}
+		
+		
+		SPR_art2 = { 
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = idea_generic_fortify_the_borders
+
+			removal_cost = -1
+			
+			modifier = {
+			army_artillery_attack_factor = 0.15
+			army_speed_factor = 0.08
+			}
+		}
+		
+		SPR_bomb = { 
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = idea_generic_fortify_the_borders
+
+			removal_cost = -1
+			
+			modifier = {
+			army_artillery_defence_factor = 0.065
+			}
+		}
+		
+		SPR_spear = { 
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+			
+			picture = idea_generic_fortify_the_borders
+
+			removal_cost = -1
+			
+			modifier = {
+			
+			}
+		}
+	}
+
+	political_advisor = {
+
+		SPA_tomas_garciano_goni = {
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		SPA_fidel_davila_arrondo = {
+
+			picture = generic_army_europe_4
+
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+
+	theorist = {
+
+
+		SPA_emilio_herrera = {
+					
+					
+			allowed = {
+				original_tag = SPR
+			}
+			
+			picture = generic_air_europe_3
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+	# MILITARY
+	
+	security_chief_slot = {
+	
+		SPA_luis_valdes_cavanillas = {
+
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { prince_of_terror }
+		}
+	}
+	
+	army_chief = {
+		
+
+		SPA_miguel_cabanellas_ferrer = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { army_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPA_ricardo_rada = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPA_emilio_mola_vidal = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+	air_chief = {
+
+		SPA_alfredo_kindelan_duany = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPA_juan_yague_blanco = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+		
+
+		SPA_salvador_moreno_fernandez = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPA_fransisco_moreno_fernandez = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPA_luis_carrero_blanco = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { navy_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	
+	high_command = {
+		SPA_emilio_esteban_infantes = {
+			
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SPA_joaquin_garcia_morato = {
+			
+			#picture = 
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { air_air_combat_training_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SPA_angel_salas_larrazabal = {
+			
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+
+			
+			traits = { air_strategic_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

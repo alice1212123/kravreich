@@ -1,0 +1,479 @@
+focus_tree = {
+	id = Hungarian_tree_deluge
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HUN
+		}
+	}
+	#Focus for Hungarian Throne
+	focus = {
+		id = HUN_hungarian_throne
+		icon = GFX_focus_hun_elect_a_king
+		x = 6
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HUN_shadow_police_state 
+		}
+		prerequisite = { 
+			focus = HUN_horthism 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Horthism
+	focus = {
+		id = HUN_horthism
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HUN_repeal_the_austrians 
+		}
+		prerequisite = { 
+			focus = HUN_compromise_with_romanians 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Compromise With Romanians
+	focus = {
+		id = HUN_compromise_with_romanians
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_recognizing_the_government }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Remake Hungarian Society
+	focus = {
+		id = HUN_remake_hungarian_society
+		icon = GFX_focus_generic_treaty
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_stabilize_the_nation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Take out Decenters
+	focus = {
+		id = HUN_take_out_decenters
+		icon = GFX_goal_generic_demand_territory
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_found_the_mtr }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stabilize The Nation
+	focus = {
+		id = HUN_stabilize_the_nation
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_hit_a_horthyba }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hit a Horthy-ba!
+	focus = {
+		id = HUN_hit_a_horthyba
+		icon = GFX_goal_tripartite_pact
+		x = 9
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Continue 3 Year Plan
+	focus = {
+		id = HUN_continue_3_year_plan
+		icon = GFX_goal_generic_production
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_hit_a_horthyba }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Shadow Police State
+	focus = {
+		id = HUN_shadow_police_state
+		icon = GFX_focus_secret_rearmament
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HUN_take_out_decenters 
+		}
+		prerequisite = { 
+			focus = HUN_one_national_police_force 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for End Martial Law
+	focus = {
+		id = HUN_end_martial_law
+		icon = GFX_goal_generic_forceful_treaty
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_stabilize_the_nation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Splitting the Police and Army
+	focus = {
+		id = HUN_splitting_the_police_and_army
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_end_martial_law }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Perception of Rights
+	focus = {
+		id = HUN_perception_of_rights
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_end_martial_law }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Found the MTR
+	focus = {
+		id = HUN_found_the_mtr
+		icon = GFX_goal_generic_military_sphere
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_perception_of_rights }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Restrict Military Rights
+	focus = {
+		id = HUN_restrict_military_rights
+		icon = GFX_goal_generic_military_deal
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_splitting_the_police_and_army }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for One National Police Force
+	focus = {
+		id = HUN_one_national_police_force
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_restrict_military_rights }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Autarky in Hungary !
+	focus = {
+		id = HUN_autarky_in_hungary_
+		icon = GFX_goal_generic_construction2
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_continue_3_year_plan }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban The German Tongue
+	focus = {
+		id = HUN_ban_the_german_tongue
+		icon = GFX_goal_generic_political_pressure
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_remake_hungarian_society }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tudás Az Embereknek!
+	focus = {
+		id = HUN_tuds_az_embereknek
+		icon = GFX_goal_generic_scientific_exchange
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_remake_hungarian_society }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Redistribute Austrians Lands
+	focus = {
+		id = HUN_redistribute_austrians_lands
+		icon = GFX_focus_CZE_german_puppet
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_ban_the_german_tongue }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Repeal the Austrians
+	focus = {
+		id = HUN_repeal_the_austrians
+		icon = GFX_goal_generic_political_pressure
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_redistribute_austrians_lands }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Recognizing the Government
+	focus = {
+		id = HUN_recognizing_the_government
+		icon = GFX_focus_generic_self_management
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_tuds_az_embereknek }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Privatize Railroad Industry
+	focus = {
+		id = HUN_privatize_railroad_industry
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_autarky_in_hungary_ }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Aluminum Export
+	focus = {
+		id = HUN_increase_aluminum_export
+		icon = GFX_focus_generic_aluminum
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_autarky_in_hungary_ }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Attract Foreign Investment
+	focus = {
+		id = HUN_attract_foreign_investment
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_privatize_railroad_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Polish Economic Aid
+	focus = {
+		id = HUN_polish_economic_aid
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_attract_foreign_investment }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for High Portions Low Cost
+	focus = {
+		id = HUN_high_portions_low_cost
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_increase_aluminum_export }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Shadow-Scheme Military Investments
+	focus = {
+		id = HUN_shadowscheme_military_investments
+		icon = GFX_goal_generic_consumer_goods
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_high_portions_low_cost }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Low Tariffs
+	focus = {
+		id = HUN_low_tariffs
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HUN_polish_economic_aid 
+		}
+		prerequisite = { 
+			focus = HUN_shadowscheme_military_investments 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hungarian Economic Miracle
+	focus = {
+		id = HUN_hungarian_economic_miracle
+		icon = GFX_focus_mex_privatisation
+		x = 12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HUN_low_tariffs }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prepare For War
+	focus = {
+		id = HUN_prepare_for_war
+		icon = GFX_goal_generic_secret_weapon
+		x = 30
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

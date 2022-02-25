@@ -1,0 +1,31 @@
+
+state={
+	id=780
+	name="STATE_780"
+	resources={
+		steel=6.000
+		aluminium=7.000
+	}
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = CAN
+		victory_points = {
+			7899 1 
+		}
+
+	}
+
+	provinces={
+		1769 1873 4426 4775 4875 7794 7899 11571 13094 13161 
+	}
+	manpower=414680
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

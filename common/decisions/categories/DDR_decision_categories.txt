@@ -1,0 +1,57 @@
+DDR_factionalism_display = {
+	icon = generic_communism
+	visible = {
+		original_tag = DDR
+		has_country_flag = factionalism
+	}
+}
+
+DDR_six_stage_plan = {
+	icon = generic_communism
+	visible = {
+		original_tag = DDR
+		OR = {
+			has_country_flag = agrarian_victory
+			has_country_flag = industrial_victory
+			has_country_flag = militarist_victory
+			has_country_flag = liberal_victory
+		}
+	}
+}
+
+DDR_offa_bills = {
+	icon = ger_mefo_bills
+	visible = {
+		has_country_flag = offa_ongoing
+	}
+}
+
+DDR_infrastructure = {
+	icon = ""
+	visible = {
+		has_completed_focus = radical_germany_infrastructure_programme
+	}
+}
+
+DDR_defence = {
+	icon = ""
+	visible = {
+		has_completed_focus = radical_germany_national_defence
+	}
+}
+
+DDR_resources = {
+	icon = generic_prospect_for_resources
+	visible = {
+		has_completed_focus = radical_germany_minrover
+	}
+}
+
+DDR_agitation_decisions = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_german_agitation
+	visible = {
+		tag = DDR
+		has_country_flag = agitation
+	}
+}

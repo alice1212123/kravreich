@@ -1,0 +1,87 @@
+focus_tree = {
+	id = deluge_america_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = USA
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = yes
+	
+	focus = {
+		id = america_deluge_kingsspeach
+		icon = GFX_focus_John_rules
+		x = 4
+		y = 0
+		cost = 7
+		completion_reward = {
+			country_event = {
+				id = deluge_america.8
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = america_deluge_count_butler
+		icon = GFX_focus_smeldy
+		x = 4
+		y = 1
+		cost = 7
+		prerequisite = {
+			focus = america_deluge_kingsspeach
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_america.9
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = america_deluge_next_pm
+		icon = GFX_focus_freedom
+		x = 4
+		y = 2
+		cost = 5
+		prerequisite = {
+			focus = america_deluge_count_butler
+		}
+		available = {
+			NOT = {
+				has_idea = usa_pm_kennedy
+			}
+		}
+		cancelable = false
+		select_effect = {
+			hidden_effect = {
+				country_event = {
+					id = deluge_america.14
+					days = 2
+				}
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_america.15
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+
+
+}

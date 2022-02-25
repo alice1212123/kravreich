@@ -1,0 +1,39 @@
+
+state={
+	id=104
+	name="STATE_104"
+	resources={
+		aluminium=7.000
+	}
+
+	history={
+		owner = AUS
+		
+		set_variable = {language = 1}
+		
+		victory_points = {
+			11899 5 
+		}
+		victory_points = {
+			6983 3 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 2
+
+		}
+		add_core_of = CRO
+		add_core_of = SER
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		606 953 982 6614 6619 6799 6983 9586 9588 9591 11572 11574 11741 11899 
+	}
+	manpower=1813500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

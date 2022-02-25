@@ -1,0 +1,30 @@
+
+state={
+	id=735
+	name="STATE_735"
+
+	history={
+		owner = FRA
+		set_variable = {
+			language = 4
+
+		}
+		add_core_of = FRA
+		add_core_of = SAV
+		victory_points = {
+			778 5 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		611 778 3612 6609 9587 9603 9745 11570 11573 
+	}
+	manpower=315200
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,22 @@
+
+state={
+	id=557
+	name="STATE_557"
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 0
+
+		}
+
+	}
+
+	provinces={
+		1897 1962 7943 8035 10771 10779 10814 10838 
+	}
+	manpower=19200
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

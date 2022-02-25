@@ -1,0 +1,90 @@
+﻿capital = 321
+
+oob = "NEP_1936"
+
+set_cosmetic_tag = NEP_PR
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 5
+	communism = 5
+	neutrality = 80
+}
+
+add_ideas = {
+	novote
+	fixed_exchange
+	labour_camps
+}
+
+create_country_leader = {
+	name = "José Ricardo Pereira Cabral"
+	desc = ""
+	picture = "gfx/leaders/Asian Countries/Portuguese India/portuguese_officer.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jaya Chamarajendra"
+	desc = ""
+	picture = "gfx/leaders/Asian Countries/Portuguese India/jayachamarajendra_wadiyar.dds"
+	expire = "1965.1.1"
+	ideology = religious_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "P. Krishna Pillai"
+	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = jacobin_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "B. P. Sitaramayya"
+	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		
+	}
+}
+
+
+create_field_marshal = {
+	name = "José Ricardo Pereira Cabral"
+	portrait_path = "gfx/leaders/deluge/portuguese_officer.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

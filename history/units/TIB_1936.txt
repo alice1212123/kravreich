@@ -1,0 +1,87 @@
+﻿division_template = {
+	name = "Dúlì Shī"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Dēngshān Shī"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "1. Dēngshān Shī"
+		location = 4987
+		division_template = "Dēngshān Shī"	
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2. Dēngshān Shī"
+		location = 8010
+		division_template = "Dēngshān Shī"	
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3. Dēngshān Shī"
+		location = 12754
+		division_template = "Dēngshān Shī"	
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1. Dúlì Shī"
+		location = 5033
+		division_template = "Dúlì Shī"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2. Dúlì Shī"
+		location = 8068
+		division_template = "Dúlì Shī"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3. Dúlì Shī"
+		location = 1961
+		division_template = "Dúlì Shī"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "4. Dúlì Shī"
+		location = 1910
+		division_template = "Dúlì Shī"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "TIB"
+		}
+		requested_factories = 2
+		progress = 0.23
+		efficiency = 100
+	}
+}

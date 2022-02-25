@@ -1,0 +1,67 @@
+﻿capital = 431
+
+oob = "FIA_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 51
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+	}
+	#set_naval_oob = "FIA_1936_Navy"
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1932.6.5"
+	election_frequency = 30
+	elections_allowed = yes
+}
+
+
+set_popularities = {
+	democratic = 12
+	fascism = 8
+	communism = 60
+	neutrality = 20
+}
+
+add_ideas = {
+	deluge_FIA_native_independence_idea
+}
+
+create_country_leader = {
+	name = "Subhas Chandra Bose"
+	desc = "POLITICS_netjai_DESC"
+	picture = "gfx/leaders/Asian Countries/Free India/netjai.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}

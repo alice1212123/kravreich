@@ -1,0 +1,59 @@
+﻿capital = 295
+
+oob = "COG_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 5
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 30
+	fascism = 25
+	communism = 40
+	neutrality = 5
+}
+	
+create_country_leader = {
+	
+	name = "François Tolenga"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	
+	name = "Lumumba Lomendja"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	
+	name = "Mobutu Sese Seko"
+	picture = "gfx/leaders/deluge/mobutu.dds"
+	expire = "1965.1.1"
+	ideology = corporatist_ideology
+	traits = {
+		
+	}
+}

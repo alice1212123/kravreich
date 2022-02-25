@@ -1,0 +1,783 @@
+﻿
+# The communism ideology creates a faction once the German Civil War ends
+
+add_namespace = radical_international
+
+# DDR still exists and is offered faction leadership
+
+country_event = {
+	id = radical_international.1
+	title = radical_international1title
+	desc = radical_international1desc
+	
+	picture = GFX_deluge_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DDR
+		has_government = communism
+		has_war = no
+		is_subject = no
+		is_in_faction = no
+		NOT = { has_global_flag = radical_international_formed }
+		NOT = { has_global_flag = ddr_refuses_to_create_international }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+		
+	option = {
+		name = radical_international1opta
+		
+		create_faction = "factionRadicalInternational"
+		
+		set_global_flag = radical_international_formed
+		
+		hidden_effect = {
+			news_event = { hours = 1 id = radical_international.4 }
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = radical_international1optb
+		
+		set_global_flag = ddr_refuses_to_create_international
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Germany refuses, creation falls to a less important country
+
+country_event = {
+	id = radical_international.2
+	title = radical_international2title
+	desc = radical_international2desc
+	
+	picture = GFX_deluge_militia
+		
+	trigger = {
+		has_government = communism
+		country_exists = DDR
+		has_war = no
+		is_subject = no
+		is_in_faction = no
+		has_global_flag = ddr_refuses_to_create_international
+		NOT = { has_global_flag = radical_international_formed }
+		NOT = { has_country_flag = asked_to_create_radical_international }
+	}
+	
+	immediate = {
+		set_country_flag = asked_to_create_radical_international
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		
+		modifier = {
+			factor = 0.1
+			is_major = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 10 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 15 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 20 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 25 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 30 }
+		}
+	}
+	
+	option = {
+		name = radical_international2opta
+		
+		create_faction = "factionRadicalInternational"
+		
+		set_global_flag = radical_international_formed
+		
+		hidden_effect = {
+			news_event = { hours = 1 id = radical_international.4 }
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = radical_international2optb
+				
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Germany has been defeated, creation falls to a less important country
+
+country_event = {
+	id = radical_international.3
+	title = radical_international3title
+	desc = radical_international3desc
+	
+	picture = GFX_deluge_militia
+		
+	trigger = {
+		has_government = communism
+		NOT = { country_exists = DDR }
+		has_war = no
+		is_subject = no
+		is_in_faction = no
+		NOT = { has_global_flag = radical_international_formed }
+		NOT = { has_country_flag = asked_to_create_radical_international }
+	}
+	
+	immediate = {
+		set_country_flag = asked_to_create_radical_international
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		
+		modifier = {
+			factor = 0.1
+			is_major = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 10 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 15 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 20 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 25 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 30 }
+		}
+	}
+	
+	option = {
+		name = radical_international3opta
+		
+		create_faction = "factionRadicalInternational"
+		
+		set_global_flag = radical_international_formed
+		
+		hidden_effect = {
+			news_event = { hours = 1 id = radical_international.4 }
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = radical_international3optb
+				
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# News event for the creation of the International
+
+news_event = {
+	id = radical_international.4
+	title = radical_international4title
+	desc = radical_international4desc
+	
+	picture = GFX_deluge_public_funeral
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = radical_international4opta
+		trigger = { has_government = communism }
+	}
+	option = {
+		name = radical_international4optb
+		trigger = { has_government = democratic }
+	}
+	option = {
+		name = radical_international4optc
+		trigger = { has_government = neutrality }
+	}
+	option = {
+		name = radical_international4optd
+		trigger = { has_government = fascism }
+	}
+}
+
+# Russia is expanding into the republics and an International is needed regardless of the German situation
+
+country_event = {
+	id = radical_international.5
+	title = radical_international5title
+	desc = radical_international5desc
+	
+	picture = GFX_deluge_militia
+		
+	trigger = {
+		has_government = communism
+		country_exists = DDR
+		DDR = {
+			has_war = yes
+		}
+		has_war = no
+		is_subject = no
+		is_in_faction = no
+		has_global_flag = russian_expansionism_started
+		NOT = { has_global_flag = radical_international_formed }
+		NOT = { has_country_flag = asked_to_create_radical_international }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		
+		modifier = {
+			factor = 0.1
+			is_major = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 10 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 15 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 20 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 25 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 30 }
+		}
+	}
+	
+	immediate = {
+		set_country_flag = asked_to_create_radical_international
+	}
+	
+	option = {
+		name = radical_international5opta
+		
+		create_faction = "factionRadicalInternational"
+		
+		set_global_flag = radical_international_formed
+		
+		hidden_effect = {
+			news_event = { hours = 1 id = radical_international.4 }
+		}
+		
+		if = {
+			limit = {
+				BLR = {
+					has_government = democratic
+					is_in_faction = no
+					is_subject = no
+					has_war = no
+				}
+			}
+			BLR = {
+				country_event = { days = 1 id = radical_international.6 }
+			}
+		}
+		
+		if = {
+			limit = {
+				AQN = {
+					has_government = democratic
+					is_in_faction = no
+					is_subject = no
+					has_war = no
+				}
+			}
+			AQN = {
+				country_event = { days = 2 id = radical_international.6 }
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = radical_international5optb
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Belarus and Algonquin request to join even if they aren't communism
+
+country_event = {
+	id = radical_international.6
+	title = radical_international6title
+	desc = radical_international6desc
+	
+	picture = GFX_report_event_pierre_laval
+		
+	is_triggered_only = yes
+	
+	option = {
+		name = radical_international6opta
+		
+		if = {
+			limit = {
+				DDR = {
+					is_faction_leader = yes
+					has_government = communism
+				}
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = DDR
+				value = 500
+			}
+		}
+		
+		if = {
+			limit = {
+				UKR = {
+					is_faction_leader = yes
+					has_government = communism
+				}
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = UKR
+				value = 500
+			}
+		}
+		
+		if = {
+			limit = {
+				CAN = {
+					is_faction_leader = yes
+					has_government = communism
+				}
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = CAN
+				value = 500
+			}
+		}
+		
+		if = {
+			limit = {
+				CAU = {
+					is_faction_leader = yes
+					has_government = communism
+				}
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = CAU
+				value = 500
+			}
+		}
+		
+		if = {
+			limit = {
+				BAL = {
+					is_faction_leader = yes
+					has_government = communism
+				}
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = BAL
+				value = 500
+			}
+		}
+		
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+
+		FROM = {
+			country_event = russia_expansion.3
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = radical_international6optb
+				
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Hidden event to create the right FROM
+
+country_event = {
+	id = radical_international.7
+	title = radical_international7title
+	desc = radical_international7desc
+	
+	picture = GFX_deluge_protest
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Okay
+		news_event = radical_international.8
+	}
+}
+
+# News event when a nation joins the International
+
+news_event = {
+	id = radical_international.8
+	title = radical_international8title
+	desc = radical_international8desc
+	
+	picture = GFX_deluge_protest
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = radical_international8opta
+		trigger = { has_government = communism }
+	}
+	option = {
+		name = radical_international8optb
+		trigger = { has_government = democratic }
+	}
+	option = {
+		name = radical_international8optc
+		trigger = { has_government = neutrality }
+	}
+	option = {
+		name = radical_international8optd
+		trigger = { has_government = fascism }
+	}
+}
+
+# Cores and claims for Ukraine vs Russia
+
+country_event = {
+	id = radical_international.9
+	title = radical_international9title
+	desc = radical_international9desc
+	
+	picture = GFX_deluge_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = UKR
+		has_war_with = SOV
+	}
+	
+	option = {
+		name = radical_international9opt
+		
+		add_state_claim = 218
+		add_state_claim = 245
+		add_state_claim = 265
+		add_state_claim = 217
+		add_state_claim = 260
+		add_state_claim = 240
+		add_state_claim = 258
+		add_state_claim = 220
+		add_state_claim = 222
+		add_state_claim = 223
+		add_state_claim = 205
+		add_state_claim = 219
+		add_state_claim = 224
+		if = {
+			limit = {
+				NOT = {
+					is_in_faction_with = BLR
+				}
+			}
+			add_state_claim = 243
+		}
+	}
+}
+
+# Cores and claims for Belarus vs Russia
+
+country_event = {
+	id = radical_international.10
+	title = radical_international9title
+	desc = radical_international9desc
+	
+	picture = GFX_deluge_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BLR
+		has_war_with = SOV
+	}
+	
+	option = {
+		name = radical_international9opt
+		
+		add_state_claim = 210
+		add_state_claim = 246
+		add_state_claim = 247
+		add_state_claim = 242
+		add_state_claim = 243
+		add_state_claim = 205
+		add_state_claim = 219
+		add_state_claim = 224
+	}
+}
+
+# Cores and claims for Baltics vs Russia
+
+country_event = {
+	id = radical_international.11
+	title = radical_international9title
+	desc = radical_international9desc
+	
+	picture = GFX_deluge_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BAL
+		has_war_with = SOV
+	}
+	
+	option = {
+		name = radical_international9opt
+		
+		add_state_claim = 210
+		add_state_claim = 246
+		add_state_claim = 247
+		add_state_claim = 209
+		add_state_claim = 208
+		add_state_claim = 263
+		add_state_claim = 244
+		add_state_claim = 195
+		add_state_claim = 264
+		add_state_claim = 216
+		add_state_claim = 146
+		if = {
+			limit = {
+				NOT = {
+					is_in_faction_with = BLR
+				}
+			}
+			add_state_claim = 242
+		}
+	}
+}
+
+# Cores and claims for Caucasia vs Russia
+
+country_event = {
+	id = radical_international.12
+	title = radical_international9title
+	desc = radical_international9desc
+	
+	picture = GFX_deluge_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CAU
+		has_war_with = SOV
+	}
+	
+	option = {
+		name = radical_international9opt
+		
+		add_state_claim = 234
+		add_state_claim = 238
+		add_state_claim = 235
+		add_state_claim = 236
+		add_state_claim = 237
+		add_state_claim = 217
+	}
+}
+
+# Cores and claims for Algonquin vs Russia
+
+country_event = {
+	id = radical_international.13
+	title = radical_international9title
+	desc = radical_international9desc
+	
+	picture = GFX_deluge_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AQN
+		has_war_with = SOV
+	}
+	
+	option = {
+		name = radical_international9opt
+		
+		add_state_claim = 471
+		add_state_claim = 463
+		add_state_claim = 739
+	}
+}
+
+# Poland is expanding into the republics and an International is needed regardless of the German situation
+
+country_event = {
+	id = radical_international.14
+	title = radical_international5title
+	desc = radical_international14desc
+	
+	picture = GFX_deluge_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_government = communism
+		country_exists = DDR
+		DDR = {
+			has_war = yes
+		}
+		has_war = no
+		is_subject = no
+		is_in_faction = no
+		has_global_flag = polish_expansionism_started
+		NOT = { has_global_flag = radical_international_formed }
+		NOT = { has_country_flag = asked_to_create_radical_international }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		
+		modifier = {
+			factor = 0.1
+			is_major = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 10 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 15 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 20 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 25 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_factories > 30 }
+		}
+	}
+	
+	immediate = {
+		set_country_flag = asked_to_create_radical_international
+	}
+
+	
+	option = {
+		name = radical_international5opta
+		
+		create_faction = "factionRadicalInternational"
+		
+		set_global_flag = radical_international_formed
+		
+		hidden_effect = {
+			news_event = { hours = 1 id = radical_international.4 }
+		}
+		
+		if = {
+			limit = {
+				BLR = {
+					has_government = democratic
+					is_in_faction = no
+					is_subject = no
+					has_war = no
+				}
+			}
+			BLR = {
+				country_event = { days = 1 id = radical_international.6 }
+			}
+		}
+		
+		if = {
+			limit = {
+				AQN = {
+					has_government = democratic
+					is_in_faction = no
+					is_subject = no
+					has_war = no
+				}
+			}
+			AQN = {
+				country_event = { days = 2 id = radical_international.6 }
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = radical_international5optb
+				
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+

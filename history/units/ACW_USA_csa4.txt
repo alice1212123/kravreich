@@ -1,0 +1,74 @@
+
+
+division_template = {
+	name = "Democratic Paramilitaries"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+
+
+
+
+
+
+units = {
+
+	
+	division= {	
+		name = "Jackson's Faithfuls"
+		location = 7480
+		division_template = "Democratic Paramilitaries"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.6
+	}
+
+	division= {	
+		name = "Jefferson Brigade"
+		location = 7480
+		division_template = "Democratic Paramilitaries"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.6
+	}
+
+	division= {	
+		name = "Woodrow Wilson's Owns"
+		location = 7480
+		division_template = "Democratic Paramilitaries"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.6
+	}
+
+	division= {	
+		name = "Breckinridge Brigade"
+		location = 7202
+		division_template = "Democratic Paramilitaries"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.6
+	}
+
+	division= {	
+		name = "Davis Brigade"
+		location = 7202
+		division_template = "Democratic Paramilitaries"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.6
+	}
+
+	
+
+
+	
+}
+		

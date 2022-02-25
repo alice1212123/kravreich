@@ -1,0 +1,38 @@
+﻿capital = 544
+
+oob = "MZB_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 5
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 40
+	fascism = 25
+	communism = 30
+	neutrality = 5
+}
+
+create_country_leader = {
+	
+	name = "Eduardo Tsonga"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
+}

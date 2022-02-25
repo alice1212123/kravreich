@@ -1,0 +1,759 @@
+ideas = {
+
+	country = {
+
+		usa_pm_kennedy = {
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = usa_kennedy
+			
+			modifier = {
+			}
+		}
+
+
+		pm_beaver = {
+
+			picture = pm_beaver
+			
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+
+		baldwin_pm = {
+
+			picture = pm_baldwin
+			
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+
+		chamb_pm = {
+
+			picture = pm_chamb
+			
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+
+		emperor_napoleon_people = {
+
+			picture = emperor_napoleon_new
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				consumer_goods_factor = -0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		emperor_napoleon_aristoc = {
+
+			picture = emperor_napoleon_new
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				decryption_factor = 0.04
+			}
+		}
+
+
+	france_louis_marin_pm = {
+
+	    	picture = france_louis_marin_pm
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+	france_petain_junta_leader = {
+
+	    	picture = france_pm_petain
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.025
+				war_support_factor = 0.04
+				resistance_damage_to_garrison = -0.05
+				training_time_army_factor = -0.02
+			}
+		}
+
+
+		marcel_deat_pm = {
+
+			picture = france_pm_deat
+
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.03
+				economy_cost_factor = -0.25
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		king_henri = {
+
+			picture = king_henri
+
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+
+		charles_maurras_pm = {
+
+	    	picture = france_pm_maurras
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+
+		philippe_henriot_pm = {
+
+	    	picture = france_pm_henriot
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+
+		philippe_tardieu_pm_almost = {
+
+	    	picture = france_pm_tardieu
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.04
+				stability_factor = 0.04
+				consumer_goods_factor = -0.04
+				political_power_factor = 0.25
+			}
+		}
+
+		philippe_petain_pm_almost = {
+
+	    	picture = france_pm_petain
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				war_support_factor = 0.04
+				resistance_damage_to_garrison = -0.15
+				training_time_army_factor = -0.05
+			}
+		}
+		
+
+		charles_degaulle_pm = {
+
+	    	picture = france_pm_degaulle
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {	
+				neutrality_drift = 0.05
+				democratic_drift = 0.05	
+				stability_factor = 0.05
+			}
+		}
+
+		philippe_petain_pm = {
+
+	    	picture = france_pm_petain
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				fascism_drift = 0.05
+				war_support_factor = 0.05
+						
+			}
+		}
+
+		pierre_laval_pm = {
+
+	    	picture = france_pm_laval
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {		
+			}
+		}
+
+		emperor_napoleon_defeated = {
+
+	    	picture = emperor_napoleon_new
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		emperor_napoleon_puppet = {
+
+	    	picture = emperor_napoleon_new
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+
+		france_petain_idealized_sovreign = {
+
+	    	picture = emperor_napoleon_new
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+
+
+	    emperor_napoleon_weak = {
+
+	    	picture = emperor_napoleon_new
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.05
+			}
+		}
+
+		emperor_napoleon_new = {
+
+	    	picture = emperor_napoleon_new
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+
+		emperor_napoleon_middle = {
+
+	    	picture = emperor_napoleon_new
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.05
+			}
+		}
+
+
+		emperor_napoleon_middle = {
+
+			picture = emperor_napoleon_new
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				stability_factor = 0.05
+				foreign_subversive_activites = -1
+			}
+		}
+
+
+		bourbon_king = {
+
+			allowed = {
+				original_tag = LOU
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+		american_king = {
+			
+			allowed = {
+				original_tag = USA
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+		swedish_king = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+		
+		ottoman_emperor = {
+			
+			allowed = {
+				original_tag = TUR
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+		fighting_king = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				fascism_drift = 0.05
+			}
+		}
+		
+		wettin_king = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				fascism_drift = 0.05
+			}
+		}
+		
+		emperor_puyi = {
+			
+			allowed = {
+				original_tag = CHI
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+		hu_hanmin = {
+			
+			allowed = {
+				original_tag = CHI
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.05
+			}
+		}
+		
+		sohn_seiner_klasse = {
+			
+			allowed = {
+				original_tag = DDR
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.05
+			}
+		}
+		
+		aryan_supremacist = {
+			
+			allowed = {
+				original_tag = AUS
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+		
+		aryan_chancellor = {
+			
+			allowed = {
+				original_tag = AUS
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.1
+				justify_war_goal_time = -0.2
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		
+		habsburg_emperor = {
+			
+			allowed = {
+				original_tag = AUS
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+		westphalian_king = {
+			
+			allowed = {
+				original_tag = WGR
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+		german_emperor = {
+			
+			picture = westphalian_king
+			
+			allowed = {
+				original_tag = WGR
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+		
+		german_king = {
+			
+			picture = westphalian_king
+			
+			allowed = {
+				original_tag = WGR
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				democratic_drift = 0.05
+			}
+		}
+		
+		german_tyrant = {
+			
+			picture = westphalian_king
+			
+			allowed = {
+				original_tag = WGR
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				democratic_drift = -0.05
+			}
+		}
+		
+		life_hussar = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.05
+			}
+		}
+		
+		italian_king = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+		heavenly_king = {
+			
+			allowed = {
+				original_tag = PRC
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.05
+			}
+		}
+		
+		emperor_russia = {
+			
+			allowed = {
+				original_tag = SOV
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+
+	}
+
+}
+		
+	

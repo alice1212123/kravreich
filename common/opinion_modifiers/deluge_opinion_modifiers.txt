@@ -1,0 +1,101 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	revolting_colony_modifier = {
+		value = -50
+	}
+
+	great_northern_war_modifier = {
+		value = -90
+	}
+
+	historic_friendship_modifier = {
+		value = 15
+	}
+
+	historic_rivalry_modifier = {
+		value = -10
+	}
+
+	great_war_friendship_modifier = {
+		value = 10
+	}
+
+	great_war_alliance_modifier = {
+		value = 15
+	}
+
+	great_war_hostility_modifier = {
+		value = -10
+	}
+
+	returned_our_ships_modifier = {
+		value = 15
+	}
+
+	seized_our_ships_modifier = {
+		value = -20
+	}
+	
+	neutral_diplomacy_modifier = {
+		value = 50
+	}
+
+	german_nationalism_modifier = {
+		value = -25
+	}
+
+	suspected_assassins_modifier = {
+		value = -20
+		decay = 3
+	}
+
+	unfounded_accusations_modifier = {
+		value = -20
+		decay = 3
+	}
+	
+	political_mingling_modifier = {
+		value = 45
+		decay = 1
+	}
+	
+	radical_burden_modifier = {
+		value = -15
+		decay = 3
+	}
+
+	assistance_in_civil_war_modifier = {
+		value = 30
+	}
+	
+	new_found_friendship_modifier = {
+		value = 45
+	}
+	
+	refused_treaty_modifier = {
+		value = -50
+	}
+	
+	assets_seized_modifier = {
+		value = -50
+		decay = 1
+	}
+	
+	french_king_deposed_modifier = {
+		value = -20
+	}
+	
+	alliance_abandoned_modifier = {
+		value = -100
+	}
+}

@@ -1,0 +1,426 @@
+ideas = {
+
+	country = {
+
+		deluge_recently_rejected_applicant = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+			}
+		}
+		
+		deluge_anti_commonwealth_sentiment = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				democratic_drift = 0.1
+				communism_drift = 0.1
+			}
+		}
+		
+		deluge_fascism_crackdown_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				fascism_drift = 0.2
+				political_power_factor = -0.15
+			}
+		}
+		
+		deluge_fascism_liberalisation_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
+		deluge_democratic_crackdown_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				democratic_drift = 0.2
+				political_power_factor = -0.15
+			}
+		}
+		
+		deluge_democratic_liberalisation_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
+		deluge_communism_crackdown_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				communism_drift = 0.2
+				political_power_factor = -0.15
+			}
+		}
+		
+		deluge_communism_liberalisation_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
+		deluge_neutrality_crackdown_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				neutrality_drift = 0.2
+				political_power_factor = -0.15
+			}
+		}
+		
+		deluge_neutrality_liberalisation_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
+		deluge_communism_influence_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+
+		deluge_democratic_influence_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+
+		deluge_neutrality_influence_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+
+		deluge_fascism_influence_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+		
+		deluge_anti-war_sentiment_france_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_war_with = DDR }
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		
+		deluge_anti-war_sentiment_communism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				communism_drift = 0.1
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		
+		deluge_anti-war_sentiment_democratic_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				democratic_drift = 0.1
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		
+		deluge_chinese_drift_communism = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		
+		deluge_chinese_drift_fascism = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = anti_soviet_pact
+			
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+		
+		deluge_chinese_mobsters_in_government_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = ROM_king_carol_ii_hedonist
+			
+			modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		deluge_jomini_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_army_war_college
+			
+			modifier = {
+				encryption = 1
+				decryption = 1
+				army_speed_factor = 0.05
+			}
+		}
+		
+		deluge_clausewitz_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_army_war_college
+			
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.2
+			}
+		}
+		
+		deluge_bulow_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_army_war_college
+			
+			modifier = {
+				training_time_army_factor = -0.25
+				experience_gain_army_unit_factor = 0.25
+			}
+		}
+		
+		deluge_paranormal_institution_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = hexagramme_eye
+			
+			cancel = {
+				NOT = { has_idea = generic_supernatural_mystic }
+			}
+			
+			available = {
+			}
+		
+		}
+		
+		deluge_disappearing_researchers_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				research_speed_factor = -0.05
+			}
+		}
+		
+		deluge_german_support_for_war_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+
+		deluge_german_angry_security_forces_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				army_attack_factor = -0.05
+			}
+		}
+
+		deluge_german_pleased_security_forces_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+			}
+		}
+
+	}
+}

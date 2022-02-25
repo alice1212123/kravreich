@@ -1,0 +1,66 @@
+﻿capital = 315
+
+oob = "CUB_1936"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	CUB_plant
+	CUB_slave
+	}
+
+set_popularities = {
+	democratic = 5
+	fascism = 5
+	communism = 5
+	neutrality = 85
+}
+
+set_cosmetic_tag = CUB_SPR
+	
+create_country_leader = {
+	name = "José Agripino Barnet"
+	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Federico Laredo Brú"
+	desc = "POLITICS_FEDERICO_LAREDO_BRU_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = jacobin_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Manuel Goded"
+	desc = ""
+	picture = "gfx/leaders/American Countries/Cuba/Manuel_Goded.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology  
+	traits = {
+		#
+	}
+}

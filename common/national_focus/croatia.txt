@@ -1,0 +1,14 @@
+focus_tree = {
+	id = deluge_croatia_focus
+	
+	#country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = CRO
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = yes

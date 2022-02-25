@@ -1,0 +1,53 @@
+﻿
+
+division_template = {
+	name = "Malayan Infantry"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+
+units = {
+	division = {
+		name = "1. Malayan Infantry"
+		location = 12299
+		division_template = "Malayan Infantry"		
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "2. Malayan Infantry"
+		location = 7371
+		division_template = "Malayan Infantry"		
+		start_experience_factor = 0.5
+	}
+}
+
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "MAL"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+}
+
+#################################

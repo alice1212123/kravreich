@@ -1,0 +1,24 @@
+
+state={
+	id=472
+	name="STATE_472"
+	
+	state_category=wasteland
+	impassable = yes
+
+	history={
+		owner = BCA
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = BCA
+
+	}
+
+	provinces={
+		2407 2976 3800 4272 4695 6779 7348 7696 7766 7830 7858 7901 8653 10527 10703 12534 13075 13167 13168 13185 13187 13189 13192 
+	}
+	manpower=127681
+	buildings_max_level_factor=1.000
+}

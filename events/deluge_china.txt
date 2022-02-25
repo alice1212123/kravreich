@@ -1,0 +1,3236 @@
+﻿
+# Events for China
+
+add_namespace = deluge_china
+
+# Taiping turns outwards and is asked whether to join or form a faction
+
+country_event = {
+	id = deluge_china.1
+	title = deluge_china1title
+	desc = deluge_china1desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china1opta
+		
+		create_faction = "factionTaipingBloc"
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china1optb
+		
+		trigger = {
+			NOT = {
+				has_war_with = JAP
+			}
+			NOT = {
+				has_global_flag = taiping_sought_japanese_alliance
+			}
+		}
+		
+		set_global_flag = taiping_sought_japanese_alliance
+		
+		JAP = {
+			country_event = deluge_china.2
+		}
+		
+		ai_chance = {
+			factor = 2
+			
+			modifier = {
+				factor = 5
+				JAP = { is_same_ideology = yes }
+			}
+			modifier = {
+				factor = 2
+				JAP = { is_close_ideology = yes }
+			}
+		}
+	}
+	
+	option = {
+		name = deluge_china1optc
+		
+		trigger = {
+			NOT = {
+				has_war_with = ENG
+			}
+			NOT = {
+				has_global_flag = taiping_sought_british_alliance
+			}
+		}
+		
+		set_global_flag = taiping_sought_british_alliance
+		
+		ENG = {
+			country_event = deluge_china.2
+		}
+		
+		ai_chance = {
+			factor = 2
+			
+			modifier = {
+				factor = 5
+				ENG = { is_same_ideology = yes }
+			}
+			modifier = {
+				factor = 2
+				ENG = { is_close_ideology = yes }
+			}
+		}
+	}
+	
+	option = {
+		name = deluge_china1optd
+		
+		trigger = {
+			NOT = {
+				has_war_with = FRA
+			}
+			NOT = {
+				has_global_flag = taiping_sought_french_alliance
+			}
+		}
+		
+		set_global_flag = taiping_sought_french_alliance
+		
+		FRA = {
+			country_event = deluge_china.2
+		}
+		
+		ai_chance = {
+			factor = 2
+			
+			modifier = {
+				factor = 5
+				FRA = { is_same_ideology = yes }
+			}
+			modifier = {
+				factor = 2
+				FRA = { is_close_ideology = yes }
+			}
+		}
+	}
+}
+
+# Recipient of the request gets to decide whether to let Taiping in or not
+# Close ideologies will accept
+
+country_event = {
+	id = deluge_china.2
+	title = deluge_china2title
+	desc = deluge_china2desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china2opta
+		
+		if = {
+			limit = {
+				tag = FRA
+			}
+			PRC = {
+				add_ai_strategy = {
+					type = alliance
+					id = FRA
+					value = 9999
+				}
+			}
+			add_to_faction = PRC
+		}
+		
+		if = {
+			limit = {
+				tag = ENG
+			}
+			PRC = {
+				add_ai_strategy = {
+					type = alliance
+					id = ENG
+					value = 9999
+				}
+			}
+			add_to_faction = PRC
+		}
+		
+		if = {
+			limit = {
+				tag = JAP
+			}
+			PRC = {
+				add_ai_strategy = {
+					type = alliance
+					id = JAP
+					value = 9999
+				}
+			}
+			add_to_faction = PRC
+		}
+		
+		hidden_effect = {
+			news_event = { days = 1 id = deluge_china.3 }
+		}
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				PRC = { is_same_ideology = yes }
+			}
+			modifier = {
+				factor = 2
+				PRC = { is_close_ideology = yes }
+			}
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = {
+		name = deluge_china2optb
+		
+		PRC = {
+			country_event = deluge_china.1
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# News event for Taiping joining a faction
+
+news_event = {
+	id = deluge_china.3
+	title = deluge_china3title
+	desc = deluge_china3desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china3opta
+		trigger = {
+			OR = {
+				TAG = PRC
+				is_in_faction_with = PRC
+			}
+		}
+	}
+	option = {
+		name = deluge_china3optb
+		trigger = {
+			OR = {
+				TAG = CHI
+				is_in_faction_with = CHI
+			}
+		}
+	}
+	option = {
+		name = deluge_china3optc
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = CHI
+					is_in_faction_with = CHI
+					TAG = PRC
+					is_in_faction_with = PRC
+				}
+			}
+		}
+	}
+}
+	
+# China demands the Treaty Ports from Britain
+# Fired by Chinese NF
+
+country_event = {
+	id = deluge_china.4
+	title = deluge_china4title
+	desc = deluge_china4desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china4opta
+				
+		if = {
+			limit = {
+				787 = {
+					is_owned_by = ROOT
+				}
+				613 = {
+					is_controlled_by = FROM
+				}
+			}
+			
+			FROM = {
+				transfer_state = 787
+			}
+				
+			else = {
+				if = {
+					limit = {
+						787 = {
+							is_owned_by = ROOT
+						}
+						613 = {
+							owner = {
+								NOT = { has_war_with = ROOT }
+							}
+						}
+					}
+					613 = {
+						owner = {
+							transfer_state = 787
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								787 = {
+									is_owned_by = ROOT
+								}
+							}
+							FROM = {
+								transfer_state = 787
+							}
+						}
+					}
+				}
+			}
+		}
+					
+		if = {
+			limit = {
+				326 = {
+					is_owned_by = ROOT
+				}
+				593 = {
+					is_controlled_by = FROM
+				}
+			}
+			
+			FROM = {
+				transfer_state = 326
+			}
+				
+			else = {
+				if = {
+					limit = {
+						326 = {
+							is_owned_by = ROOT
+						}
+						593 = {
+							owner = {
+								NOT = { has_war_with = ROOT }
+							}
+						}
+					}
+					593 = {
+						owner = {
+							transfer_state = 326
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								326 = {
+									is_owned_by = ROOT
+								}
+							}
+							FROM = {
+								transfer_state = 326
+							}
+						}
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				803 = {
+					is_owned_by = ROOT
+				}
+				597 = {
+					is_controlled_by = FROM
+				}
+			}
+			
+			FROM = {
+				transfer_state = 803
+			}
+				
+			else = {
+				if = {
+					limit = {
+						803 = {
+							is_owned_by = ROOT
+						}
+						597 = {
+							owner = {
+								NOT = { has_war_with = ROOT }
+							}
+						}
+					}
+					597 = {
+						owner = {
+							transfer_state = 803
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								803 = {
+									is_owned_by = ROOT
+								}
+							}
+							FROM = {
+								transfer_state = 803
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			news_event = { days = 1 id = deluge_china.5 }
+		}
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_government = democratic
+			}
+			modifier = {
+				factor = 0.5
+				has_government = neutrality
+			}
+			modifier = {
+				factor = 0.1
+				has_government = fascism
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_in_faction_with = CHI
+					is_in_faction_with = PRC
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = deluge_china4optb
+		
+		if = {
+			limit = {
+				787 = {
+					is_owned_by = ROOT
+				}
+			}
+			787 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 11928
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11928
+					instant_build = yes
+				}
+			}
+			add_political_power = -50
+		}
+		
+		if = {
+			limit = {
+				803 = {
+					is_owned_by = ROOT
+				}
+			}
+			803 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 4205
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4205
+					instant_build = yes
+				}
+			}
+			add_political_power = -50
+		}
+
+		if = {
+			limit = {
+				326 = {
+					is_owned_by = ROOT
+				}
+			}
+			326 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 10062
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 10062
+					instant_build = yes
+				}
+			}
+			add_political_power = -50
+		}
+		
+		set_global_flag = flag_britain_reinforced_treaty_ports
+
+		
+		hidden_effect = {
+			news_event = { days = 1 id = deluge_china.6 }
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# News event for Britain ceding her Treaty Ports
+
+news_event = {
+	id = deluge_china.5
+	title = deluge_china5title
+	desc = deluge_china5desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china5opta
+		trigger = {
+			OR = {
+				TAG = CHI
+				AND = {
+					is_in_faction_with = CHI
+					NOT = { is_in_faction_with = ENG }
+				}
+				TAG = PRC
+				AND = {
+					is_in_faction_with = PRC
+					NOT = { is_in_faction_with = ENG }
+				}
+			}
+		}
+	}
+	option = {
+		name = deluge_china5optb
+		trigger = {
+			OR = {
+				TAG = ENG
+				is_in_faction_with = ENG
+			}
+			NOT = { TAG = CHI }
+			NOT = { TAG = PRC }
+		}
+	}
+	option = {
+		name = deluge_china5optc
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = CHI
+					is_in_faction_with = CHI
+					TAG = PRC
+					is_in_faction_with = PRC
+					TAG = ENG
+					is_in_faction_with = ENG
+				}
+			}
+		}
+	}
+}
+
+
+# News event for Britain refusing to cede her Treaty Ports
+
+news_event = {
+	id = deluge_china.6
+	title = deluge_china6title
+	desc = deluge_china6desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china6opta
+		trigger = {
+			OR = {
+				TAG = CHI
+				AND = {
+					is_in_faction_with = CHI
+					NOT = { is_in_faction_with = ENG }
+				}
+				TAG = PRC
+				AND = {
+					is_in_faction_with = PRC
+					NOT = { is_in_faction_with = ENG }
+				}
+			}
+		}
+	}
+	option = {
+		name = deluge_china6optb
+		trigger = {
+			OR = {
+				TAG = ENG
+				is_in_faction_with = ENG
+			}
+			NOT = { TAG = CHI }
+			NOT = { TAG = PRC }
+		}
+	}
+	option = {
+		name = deluge_china6optc
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = CHI
+					is_in_faction_with = CHI
+					TAG = PRC
+					is_in_faction_with = PRC
+					TAG = ENG
+					is_in_faction_with = ENG
+				}
+			}
+		}
+	}
+}
+
+# China demands the Treaty Ports from France
+# Fired by Chinese NF
+
+country_event = {
+	id = deluge_china.7
+	title = deluge_china7title
+	desc = deluge_china7desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china7opta
+				
+		if = {
+			limit = {
+				743 = {
+					is_owned_by = ROOT
+				}
+				597 = {
+					is_controlled_by = FROM
+				}
+			}
+			
+			FROM = {
+				transfer_state = 743
+			}
+				
+			else = {
+				if = {
+					limit = {
+						743 = {
+							is_owned_by = ROOT
+						}
+						597 = {
+							owner = {
+								NOT = { has_war_with = ROOT }
+							}
+						}
+					}
+					597 = {
+						owner = {
+							transfer_state = 743
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								743 = {
+									is_owned_by = ROOT
+								}
+							}
+							FROM = {
+								transfer_state = 743
+							}
+						}
+					}
+				}
+			}
+		}
+					
+		if = {
+			limit = {
+				728 = {
+					is_owned_by = ROOT
+				}
+				594 = {
+					is_controlled_by = FROM
+				}
+			}
+			
+			FROM = {
+				transfer_state = 728
+			}
+				
+			else = {
+				if = {
+					limit = {
+						728 = {
+							is_owned_by = ROOT
+						}
+						594 = {
+							owner = {
+								NOT = { has_war_with = ROOT }
+							}
+						}
+					}
+					594 = {
+						owner = {
+							transfer_state = 728
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								728 = {
+									is_owned_by = ROOT
+								}
+							}
+							FROM = {
+								transfer_state = 728
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			news_event = { days = 1 id = deluge_china.8 }
+		}
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_government = democratic
+			}
+			modifier = {
+				factor = 0.5
+				has_government = neutrality
+			}
+			modifier = {
+				factor = 0.1
+				has_government = fascism
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_in_faction_with = CHI
+					is_in_faction_with = PRC
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = deluge_china7optb
+		
+		if = {
+			limit = {
+				OR = {
+					743 = {
+						is_owned_by = ROOT
+					}
+					728 = {
+						is_owned_by = ROOT
+					}
+				}
+			}
+			add_political_power = -150
+		}
+		
+		743 = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				province = 10000
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 10000
+				instant_build = yes
+			}
+		}
+
+		728 = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				province = 11981
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 11981
+				instant_build = yes
+			}
+		}
+		
+		set_global_flag = flag_france_reinforced_treaty_ports
+
+		
+		hidden_effect = {
+			news_event = { days = 1 id = deluge_china.9 }
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# News event for France ceding her Treaty Ports
+
+news_event = {
+	id = deluge_china.8
+	title = deluge_china8title
+	desc = deluge_china8desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china8opta
+		trigger = {
+			OR = {
+				TAG = CHI
+				AND = {
+					is_in_faction_with = CHI
+					NOT = { is_in_faction_with = FRA }
+				}
+				TAG = PRC
+				AND = {
+					is_in_faction_with = PRC
+					NOT = { is_in_faction_with = FRA }
+				}
+			}
+		}
+	}
+	option = {
+		name = deluge_china8optb
+		trigger = {
+			OR = {
+				TAG = FRA
+				is_in_faction_with = FRA
+			}
+			NOT = { TAG = CHI }
+			NOT = { TAG = PRC }
+		}
+	}
+	option = {
+		name = deluge_china8optc
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = CHI
+					is_in_faction_with = CHI
+					TAG = PRC
+					is_in_faction_with = PRC
+					TAG = FRA
+					is_in_faction_with = FRA
+				}
+			}
+		}
+	}
+}
+
+
+# News event for France refusing to cede her Treaty Ports
+
+news_event = {
+	id = deluge_china.9
+	title = deluge_china9title
+	desc = deluge_china9desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china9opta
+		trigger = {
+			OR = {
+				TAG = CHI
+				AND = {
+					is_in_faction_with = CHI
+					NOT = { is_in_faction_with = FRA }
+				}
+				TAG = PRC
+				AND = {
+					is_in_faction_with = PRC
+					NOT = { is_in_faction_with = FRA }
+				}
+			}
+		}
+	}
+	option = {
+		name = deluge_china9optb
+		trigger = {
+			OR = {
+				TAG = FRA
+				is_in_faction_with = FRA
+			}
+			NOT = { TAG = CHI }
+			NOT = { TAG = PRC }
+		}
+	}
+	option = {
+		name = deluge_china9optc
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = CHI
+					is_in_faction_with = CHI
+					TAG = PRC
+					is_in_faction_with = PRC
+					TAG = FRA
+					is_in_faction_with = FRA
+				}
+			}
+		}
+	}
+}
+
+
+# China demands the Treaty Ports from Portugal
+# Fired by Chinese NF
+
+country_event = {
+	id = deluge_china.10
+	title = deluge_china10title
+	desc = deluge_china10desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china10opta
+				
+		if = {
+			limit = {
+				729 = {
+					is_owned_by = ROOT
+				}
+				592 = {
+					is_controlled_by = FROM
+				}
+			}
+			
+			FROM = {
+				transfer_state = 729
+			}
+				
+			else = {
+				if = {
+					limit = {
+						729 = {
+							is_owned_by = ROOT
+						}
+						592 = {
+							owner = {
+								NOT = { has_war_with = ROOT }
+							}
+						}
+					}
+					592 = {
+						owner = {
+							transfer_state = 729
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								729 = {
+									is_owned_by = ROOT
+								}
+							}
+							FROM = {
+								transfer_state = 729
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			news_event = { days = 1 id = deluge_china.11 }
+		}
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_government = democratic
+			}
+			modifier = {
+				factor = 0.5
+				has_government = neutrality
+			}
+			modifier = {
+				factor = 0.1
+				has_government = fascism
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_in_faction_with = CHI
+					is_in_faction_with = PRC
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = deluge_china10optb
+		
+		if = {
+			limit = {
+				729 = {
+					is_owned_by = ROOT
+				}
+			}
+			add_political_power = -150
+		}
+		
+		729 = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				province = 4189
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 4189
+				instant_build = yes
+			}
+		}
+		
+		set_global_flag = flag_portugal_reinforced_treaty_port
+
+		
+		hidden_effect = {
+			news_event = { days = 1 id = deluge_china.12 }
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# News event for Portugal ceding her Treaty Ports
+
+news_event = {
+	id = deluge_china.11
+	title = deluge_china11title
+	desc = deluge_china11desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china11opta
+		trigger = {
+			OR = {
+				TAG = CHI
+				AND = {
+					is_in_faction_with = CHI
+					NOT = { is_in_faction_with = POR }
+				}
+				TAG = PRC
+				AND = {
+					is_in_faction_with = PRC
+					NOT = { is_in_faction_with = ENG }
+				}
+			}
+		}
+	}
+	option = {
+		name = deluge_china11optb
+		trigger = {
+			OR = {
+				TAG = POR
+				is_in_faction_with = POR
+			}
+			NOT = { TAG = CHI }
+			NOT = { TAG = PRC }
+		}
+	}
+	option = {
+		name = deluge_china11optc
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = CHI
+					is_in_faction_with = CHI
+					TAG = PRC
+					is_in_faction_with = PRC
+					TAG = POR
+					is_in_faction_with = POR
+				}
+			}
+		}
+	}
+}
+
+
+# News event for Portugal refusing to cede her Treaty Ports
+
+news_event = {
+	id = deluge_china.12
+	title = deluge_china12title
+	desc = deluge_china12desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china12opta
+		trigger = {
+			OR = {
+				TAG = CHI
+				AND = {
+					is_in_faction_with = CHI
+					NOT = { is_in_faction_with = POR }
+				}
+				TAG = PRC
+				AND = {
+					is_in_faction_with = PRC
+					NOT = { is_in_faction_with = POR }
+				}
+			}
+		}
+	}
+	option = {
+		name = deluge_china12optb
+		trigger = {
+			OR = {
+				TAG = POR
+				is_in_faction_with = POR
+			}
+			NOT = { TAG = CHI }
+			NOT = { TAG = PRC }
+		}
+	}
+	option = {
+		name = deluge_china12optc
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = CHI
+					is_in_faction_with = CHI
+					TAG = PRC
+					is_in_faction_with = PRC
+					TAG = POR
+					is_in_faction_with = POR
+				}
+			}
+		}
+	}
+}
+
+# Chinese troops march into Nantong - 787
+
+country_event = {
+	id = deluge_china.13
+	title = deluge_china13title
+	desc = deluge_china13desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		transfer_state = 787
+	}
+	
+	option = {
+		name = deluge_verygood
+	}
+}
+
+
+# Chinese troops march into Weihai - 803
+
+country_event = {
+	id = deluge_china.14
+	title = deluge_china14title
+	desc = deluge_china14desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		transfer_state = 803
+	}
+	
+	option = {
+		name = deluge_verygood
+	}
+}
+
+# Chinese troops march into Hong Kong - 326
+
+country_event = {
+	id = deluge_china.15
+	title = deluge_china15title
+	desc = deluge_china15desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		transfer_state = 326
+	}
+	
+	option = {
+		name = deluge_verygood
+	}
+}
+
+# Chinese troops march into Macau - 729
+
+country_event = {
+	id = deluge_china.16
+	title = deluge_china16title
+	desc = deluge_china16desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		transfer_state = 729
+	}
+	
+	option = {
+		name = deluge_verygood
+	}
+}
+
+# Chinese troops march into Zhanjiang - 728
+
+country_event = {
+	id = deluge_china.17
+	title = deluge_china17title
+	desc = deluge_china17desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		transfer_state = 728
+	}
+	
+	option = {
+		name = deluge_verygood
+	}
+}
+
+# Chinese troops march into Qingdao - 743
+
+country_event = {
+	id = deluge_china.18
+	title = deluge_china18title
+	desc = deluge_china18desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		transfer_state = 743
+	}
+	
+	option = {
+		name = deluge_verygood
+	}
+}
+
+# News event for China claiming Taiping
+
+news_event = {
+	id = deluge_china.19
+	title = deluge_china19title
+	desc = deluge_china19desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china19opta
+		trigger = {
+			OR = {
+				TAG = CHI
+				is_in_faction_with = CHI
+			}
+		}
+	}
+	option = {
+		name = deluge_china19optb
+		trigger = {
+			OR = {
+				TAG = PRC
+				is_in_faction_with = PRC
+			}
+		}
+	}
+	option = {
+		name = deluge_china19optc
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = CHI
+					is_in_faction_with = CHI
+					TAG = PRC
+					is_in_faction_with = PRC
+				}
+			}
+		}
+	}
+}
+
+# News event for Taiping claiming China
+
+news_event = {
+	id = deluge_china.20
+	title = deluge_china20title
+	desc = deluge_china20desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china20opta
+		trigger = {
+			OR = {
+				TAG = PRC
+				is_in_faction_with = PRC
+			}
+		}
+	}
+	option = {
+		name = deluge_china20optb
+		trigger = {
+			OR = {
+				TAG = CHI
+				is_in_faction_with = CHI
+			}
+		}
+	}
+	option = {
+		name = deluge_china20optc
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = CHI
+					is_in_faction_with = CHI
+					TAG = PRC
+					is_in_faction_with = PRC
+				}
+			}
+		}
+	}
+}
+
+# News event for China defeating PRC and uniting the country
+
+news_event = {
+	id = deluge_china.21
+	title = deluge_china21title
+	desc = deluge_china21desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china21opta
+		trigger = {
+			original_tag = CHI
+		}
+	}
+	option = {
+		name = deluge_china21optb
+		trigger = {
+			NOT = { original_tag = CHI}
+			is_in_faction_with = CHI
+		}
+	}
+	option = {
+		name = deluge_china21optc
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = CHI
+					is_in_faction_with = CHI
+				}
+			}
+		}
+	}
+}
+
+# News event for PRC defeating China and uniting the country
+
+news_event = {
+	id = deluge_china.22
+	title = deluge_china22title
+	desc = deluge_china22desc
+	
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china22opta
+		trigger = {
+			original_tag = PRC
+		}
+	}
+	option = {
+		name = deluge_china22optb
+		trigger = {
+			NOT = { original_tag = PRC}
+			is_in_faction_with = PRC
+		}
+	}
+	option = {
+		name = deluge_china22optc
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = PRC
+					is_in_faction_with = PRC
+				}
+			}
+		}
+	}
+}
+
+# Hu Hanmin dies soon after the game starts and is replaced by a republican general or mob boss
+
+country_event = {
+	id = deluge_china.23
+	title = deluge_china23title
+	desc = deluge_china23desc
+	
+	picture = GFX_report_event_polish_army
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHI
+		date > 1936.9.1
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+		
+	option = {
+		name = deluge_china23opta
+		
+		kill_country_leader = yes
+		
+		create_country_leader = {
+			name = "Zhang Xueliang"
+			desc = ""
+			picture = "gfx/leaders/deluge/young_marshall.dds"
+			expire = "1965.1.1"
+			ideology = constitutionalist_ideology
+			traits = {
+				
+			}
+		}
+		
+		add_timed_idea = { idea = deluge_chinese_drift_communism days = 1095 }
+		
+		hidden_effect = {
+			news_event = {
+				id = deluge_china.24
+				days = 1
+			}
+			country_event = {
+				id = deluge_china.27
+				days = 45
+			}
+		}
+		
+		ai_chance = {
+			factor = 2
+		}
+	}
+	
+	option = {
+		name = deluge_china23optb
+		
+		kill_country_leader = yes
+		
+		create_country_leader = {
+			name = "Chiang Kai-shek"
+			desc = ""
+			picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+			expire = "1965.1.1"
+			ideology = constitutionalist_ideology
+			traits = {
+				
+			}
+		}
+		
+		add_timed_idea = { idea = deluge_chinese_drift_fascism days = 1095 }
+		
+		hidden_effect = {
+			news_event = {
+				id = deluge_china.25
+				days = 1
+			}
+			country_event = {
+				id = deluge_china.30
+				days = 45
+			}
+		}
+		
+		ai_chance = {
+			factor = 3
+		}
+	}
+	
+	option = {
+		name = deluge_china23optc
+		
+		kill_country_leader = yes
+		
+		create_country_leader = {
+			name = "Du Yuesheng"
+			desc = ""
+			picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+			expire = "1965.1.1"
+			ideology = constitutionalist_ideology
+			traits = {
+				
+			}
+		}
+		
+		add_timed_idea = { idea = deluge_chinese_mobsters_in_government_idea days = 1095 }
+		
+		hidden_effect = {
+			news_event = {
+				id = deluge_china.26
+				days = 1
+			}
+			country_event = {
+				id = deluge_china.33
+				days = 45
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# News event for Zhang Xueliang taking over
+
+news_event = {
+	id = deluge_china.24
+	title = deluge_china24title
+	desc = deluge_china24desc
+	
+	picture = GFX_deluge_mussolini_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china24opta
+		trigger = {
+			original_tag = CHI
+		}
+	}
+	option = {
+		name = deluge_china24optb
+		trigger = {
+			is_in_faction_with = CHI
+			NOT = { original_tag = CHI }
+		}
+	}
+	option = {
+		name = deluge_china24optc
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = CHI
+					is_in_faction_with = CHI
+				}
+			}
+		}
+	}
+}
+
+# News event for Chiang Kai-shek taking over
+
+news_event = {
+	id = deluge_china.25
+	title = deluge_china25title
+	desc = deluge_china25desc
+	
+	picture = GFX_deluge_mussolini_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china25opta
+		trigger = {
+			original_tag = CHI
+		}
+	}
+	option = {
+		name = deluge_china25optb
+		trigger = {
+			is_in_faction_with = CHI
+			NOT = { original_tag = CHI }
+		}
+	}
+	option = {
+		name = deluge_china25optc
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = CHI
+					is_in_faction_with = CHI
+				}
+			}
+		}
+	}
+}
+
+
+# News event for Du Yuesheng taking over
+
+news_event = {
+	id = deluge_china.26
+	title = deluge_china26title
+	desc = deluge_china26desc
+	
+	picture = GFX_deluge_mussolini_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deluge_china26opta
+		trigger = {
+			original_tag = CHI
+		}
+	}
+	option = {
+		name = deluge_china26optb
+		trigger = {
+			is_in_faction_with = CHI
+			NOT = { original_tag = CHI }
+		}
+	}
+	option = {
+		name = deluge_china26optc
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = CHI
+					is_in_faction_with = CHI
+				}
+			}
+		}
+	}
+}
+
+# Chiang Kai-shek warns Zhang Xueliang not to pursue Radicalism
+
+country_event = {
+	id = deluge_china.27
+	title = deluge_china27title
+	desc = deluge_china27desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = flag_chiang_warns_zhang
+	}
+		
+	option = {
+		name = deluge_china27opta
+	}
+	
+	option = {
+		name = deluge_china27optb
+		
+		set_global_flag = flag_zhang_arrested_chiang
+		
+		remove_unit_leader = 76
+	}
+}
+
+# Zhang Xueliang has ignored the warning and a civil war breaks out
+
+country_event = {
+	id = deluge_china.28
+	title = deluge_china28title
+	desc = {
+		text = deluge_china28desc1
+		trigger = { has_global_flag = flag_zhang_arrested_chiang }
+	}
+	desc = {
+		text = deluge_china28desc2
+		trigger = { NOT = { has_global_flag = flag_zhang_arrested_chiang } }
+	}
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CHI
+		is_subject = no
+		has_government = democratic
+		communism > 0.45
+		has_global_flag = flag_chiang_warns_zhang
+		NOT = { has_global_flag = flag_chinese_civil_war }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_global_flag = flag_chinese_civil_war 
+	}
+	
+	option = {
+		name = deluge_china28opta
+		
+		trigger = { has_global_flag = flag_zhang_arrested_chiang }
+		
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = fascism
+			size = 0.4
+			keep_unit_leaders = { 75 }
+		}
+		
+		set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		
+		hidden_effect = {
+			set_cosmetic_tag = CHI_REPUB
+		}
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = fascism
+			}		
+			set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+			set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+			hidden_effect = {
+				set_cosmetic_tag = CHI_REPUB
+			}
+		}
+	
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china28optb
+		
+		trigger = { NOT = { has_global_flag = flag_zhang_arrested_chiang } }
+				
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = fascism
+			size = 0.6
+			keep_unit_leaders = { 75 }
+		}
+		
+		remove_unit_leader = 76
+
+		set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = fascism
+			}		
+			set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+			set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		}
+		
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = fascism
+				}
+				create_country_leader = {
+					name = "Chiang Kai-shek"
+					desc = ""
+					picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+					expire = "1965.1.1"
+					ideology = corporatist_ideology
+					traits = {
+						
+					}
+				}
+				create_country_leader = {
+					name = "Du Yuesheng"
+					desc = ""
+					picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china28optc
+	
+		trigger = { has_global_flag = flag_zhang_arrested_chiang }
+		
+		start_civil_war = {
+			ruling_party = communism
+			ideology = fascism
+			size = 0.4
+			keep_unit_leaders = { 75 }
+		}
+		
+		set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Zhang Xueliang"
+				desc = ""
+				picture = "gfx/leaders/deluge/young_marshall.dds"
+				expire = "1965.1.1"
+				ideology = jacobin_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Du Yuesheng"
+				desc = ""
+				picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+				expire = "1965.1.1"
+				ideology = constitutionalist_ideology
+				traits = {
+					
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china28optd
+	
+		trigger = { NOT = { has_global_flag = flag_zhang_arrested_chiang } }
+				
+		start_civil_war = {
+			ruling_party = communism
+			ideology = democratic
+			size = 0.6
+			keep_unit_leaders = { 75 }
+		}
+
+		remove_unit_leader = 76
+		
+		set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = democratic
+			}		
+			set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+			set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		}
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Du Yuesheng"
+				desc = ""
+				picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+				expire = "1965.1.1"
+				ideology = constitutionalist_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Zhang Xueliang"
+				desc = ""
+				picture = "gfx/leaders/deluge/young_marshall.dds"
+				expire = "1965.1.1"
+				ideology = jacobin_ideology
+				traits = {
+					
+				}
+			}
+			
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = democratic
+				}
+				create_country_leader = {
+					name = "Chiang Kai-shek"
+					desc = ""
+					picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# China picked left-wing leader but is going ultranationalist, a counter-revolution breaks out
+
+country_event = {
+	id = deluge_china.29
+	title = deluge_china29title
+	desc = {
+		text = deluge_china29desc1
+		trigger = { has_global_flag = flag_zhang_arrested_chiang }
+	}
+	desc = {
+		text = deluge_china29desc2
+		trigger = { NOT = { has_global_flag = flag_zhang_arrested_chiang } }
+	}
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CHI
+		is_subject = no
+		has_government = democratic
+		fascism > 0.45
+		has_global_flag = flag_chiang_warns_zhang
+		NOT = { has_global_flag = flag_chinese_civil_war }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_global_flag = flag_chinese_civil_war 
+	}
+	
+	option = {
+		name = deluge_china29opta
+		
+		trigger = { has_global_flag = flag_zhang_arrested_chiang }
+		
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = fascism
+			size = 0.4
+			keep_unit_leaders = { 75 }
+		}
+		
+		set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = fascism
+			}		
+			set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+			set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		}
+		
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = fascism
+				}
+				create_country_leader = {
+					name = "Du Yuesheng"
+					desc = ""
+					picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china29optb
+		
+		trigger = { NOT = { has_global_flag = flag_zhang_arrested_chiang } }
+				
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = fascism
+			size = 0.5
+			keep_unit_leaders = { 75 }
+		}
+				
+		remove_unit_leader = 76
+		
+		set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = fascism
+			}		
+			set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+			set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		}
+		
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = fascism
+				}
+				create_country_leader = {
+					name = "Chiang Kai-shek"
+					desc = ""
+					picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+					expire = "1965.1.1"
+					ideology = corporatist_ideology
+					traits = {
+						
+					}
+				}
+				create_country_leader = {
+					name = "Du Yuesheng"
+					desc = ""
+					picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china29optc
+	
+		trigger = { has_global_flag = flag_zhang_arrested_chiang }
+		
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = democratic
+			size = 0.6
+			keep_unit_leaders = { 77 }
+		}
+		
+		remove_unit_leader = 75
+		
+		set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = democratic
+			}		
+			set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+			set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		}
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Du Yuesheng"
+				desc = ""
+				picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+				expire = "1965.1.1"
+				ideology = constitutionalist_ideology
+				traits = {
+					
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = democratic
+				}
+				create_country_leader = {
+					name = "Zhang Xueliang"
+					desc = ""
+					picture = "gfx/leaders/deluge/young_marshall.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china29optd
+	
+		trigger = { NOT = { has_global_flag = flag_zhang_arrested_chiang } }
+		
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = democratic
+			size = 0.6
+			keep_unit_leaders = { 76 }
+		}
+		
+		remove_unit_leader = 75
+		
+		set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = democratic
+			}		
+			set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+			set_party_name = { ideology = fascism name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		}
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Chiang Kai-shek"
+				desc = ""
+				picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+				expire = "1965.1.1"
+				ideology = corporatist_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Du Yuesheng"
+				desc = ""
+				picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+				expire = "1965.1.1"
+				ideology = constitutionalist_ideology
+				traits = {
+					
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = democratic
+				}
+				create_country_leader = {
+					name = "Zhang Xueliang"
+					desc = ""
+					picture = "gfx/leaders/deluge/young_marshall.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Zhang Xueliang warns Chiang Kai-shek not to pursue Ultranationalism
+
+country_event = {
+	id = deluge_china.30
+	title = deluge_china30title
+	desc = deluge_china30desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = flag_zhang_warns_chiang
+	}
+		
+	option = {
+		name = deluge_china30opta
+	}
+	
+	option = {
+		name = deluge_china30optb
+		
+		set_global_flag = flag_chiang_arrested_zhang
+		
+		remove_unit_leader = 75
+	}
+}
+
+
+# Chiang Kai-shek has ignored the warning and a civil war breaks out
+
+country_event = {
+	id = deluge_china.31
+	title = deluge_china31title
+	desc = {
+		text = deluge_china31desc1
+		trigger = { has_global_flag = flag_chiang_arrested_zhang }
+	}
+	desc = {
+		text = deluge_china31desc2
+		trigger = { NOT = { has_global_flag = flag_chiang_arrested_zhang } }
+	}
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CHI
+		is_subject = no
+		has_government = democratic
+		fascism > 0.45
+		has_global_flag = flag_zhang_warns_chiang
+		NOT = { has_global_flag = flag_chinese_civil_war }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_global_flag = flag_chinese_civil_war 
+	}
+	
+	option = {
+		name = deluge_china31opta
+		
+		trigger = { has_global_flag = flag_chiang_arrested_zhang }
+		
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = communism
+			size = 0.4
+			keep_unit_leaders = { 75 }
+		}
+		
+		set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = communism
+			}		
+			set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+			set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		}
+	
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china31optb
+		
+		trigger = { NOT = { has_global_flag = flag_chiang_arrested_zhang } }
+				
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = communism
+			size = 0.6
+			keep_unit_leaders = { 76 }
+		}
+		
+		remove_unit_leader = 75
+		
+		set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = communism
+			}		
+			set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+			set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		}
+		
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = communism
+				}
+				create_country_leader = {
+					name = "Zhang Xueliang"
+					desc = ""
+					picture = "gfx/leaders/deluge/young_marshall.dds"
+					expire = "1965.1.1"
+					ideology = jacobin_ideology
+					traits = {
+						
+					}
+				}
+				create_country_leader = {
+					name = "Du Yuesheng"
+					desc = ""
+					picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china31optc
+	
+		trigger = { has_global_flag = flag_chiang_arrested_zhang }
+		
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = democratic
+			size = 0.4
+			keep_unit_leaders = { 76 }
+		}
+		
+		set_party_name = { ideology = fascism name = deluge_china_kuomintang_short long_name = deluge_china_kuomintang_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = democratic
+			}		
+			set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		}
+
+		hidden_effect = {
+			create_country_leader = {
+				name = "Chiang Kai-shek"
+				desc = ""
+				picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+				expire = "1965.1.1"
+				ideology = corporatist_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Du Yuesheng"
+				desc = ""
+				picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+				expire = "1965.1.1"
+				ideology = constitutionalist_ideology
+				traits = {
+					
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china31optd
+	
+		trigger = { NOT = { has_global_flag = flag_chiang_arrested_zhang } }
+				
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = democratic
+			size = 0.6
+			keep_unit_leaders = { 76 }
+		}
+
+		remove_unit_leader = 75
+		
+		set_party_name = { ideology = fascism name = deluge_china_kuomintang_short long_name = deluge_china_kuomintang_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = democratic
+			}		
+			set_party_name = { ideology = democratic name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		}
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Du Yuesheng"
+				desc = ""
+				picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+				expire = "1965.1.1"
+				ideology = constitutionalist_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Chiang Kai-shek"
+				desc = ""
+				picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+				expire = "1965.1.1"
+				ideology = corporatist_ideology
+				traits = {
+					
+				}
+			}
+			
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = democratic
+				}
+				create_country_leader = {
+					name = "Zhang Xueliang"
+					desc = ""
+					picture = "gfx/leaders/deluge/young_marshall.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# China picked right-wing leader but is going radical, a counter-revolution breaks out
+
+country_event = {
+	id = deluge_china.32
+	title = deluge_china32title
+	desc = {
+		text = deluge_china32desc1
+		trigger = { has_global_flag = flag_chiang_arrested_zhang }
+	}
+	desc = {
+		text = deluge_china32desc2
+		trigger = { NOT = { has_global_flag = flag_chiang_arrested_zhang } }
+	}
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CHI
+		is_subject = no
+		has_government = democratic
+		communism > 0.45
+		has_global_flag = flag_zhang_warns_chiang
+		NOT = { has_global_flag = flag_chinese_civil_war }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_global_flag = flag_chinese_civil_war 
+	}
+	
+	option = {
+		name = deluge_china32opta
+		
+		trigger = { has_global_flag = flag_chiang_arrested_zhang }
+		
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = communism
+			size = 0.4
+			keep_unit_leaders = { 76 }
+		}
+		
+		set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = communism
+			}		
+			set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+			set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		}
+		
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = communism
+				}
+				create_country_leader = {
+					name = "Du Yuesheng"
+					desc = ""
+					picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china32optb
+		
+		trigger = { NOT = { has_global_flag = flag_chiang_arrested_zhang } }
+		
+		remove_unit_leader = 75
+		
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = communism
+			size = 0.5
+			keep_unit_leaders = { 76 }
+		}
+				
+		hidden_effect = {
+			set_cosmetic_tag = CHI_REPUB
+		}
+		
+		remove_unit_leader = 75
+		
+		set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = communism
+			}		
+			set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+			set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+			set_cosmetic_tag = CHI_REPUB
+		}
+		
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = communism
+				}
+				create_country_leader = {
+					name = "Zhang Xueliang"
+					desc = ""
+					picture = "gfx/leaders/deluge/young_marshall.dds"
+					expire = "1965.1.1"
+					ideology = jacobin_ideology
+					traits = {
+						
+					}
+				}
+				create_country_leader = {
+					name = "Du Yuesheng"
+					desc = ""
+					picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china32optc
+	
+		trigger = { has_global_flag = flag_chiang_arrested_zhang }
+		
+		start_civil_war = {
+			ruling_party = communism
+			ideology = democratic
+			size = 0.6
+		}
+		
+		hidden_effect = {
+			set_cosmetic_tag = CHI_REPUB
+		}
+		
+		remove_unit_leader = 76
+		
+		set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = democratic
+			}		
+			set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+			set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+			set_cosmetic_tag = CHI_REPUB
+		}
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Du Yuesheng"
+				desc = ""
+				picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+				expire = "1965.1.1"
+				ideology = constitutionalist_ideology
+				traits = {
+					
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = democratic
+				}
+				create_country_leader = {
+					name = "Chiang Kai-shek"
+					desc = ""
+					picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china32optd
+	
+		trigger = { NOT = { has_global_flag = flag_chiang_arrested_zhang } }
+		
+		start_civil_war = {
+			ruling_party = communism
+			ideology = democratic
+			size = 0.6
+		}
+		
+		hidden_effect = {
+			set_cosmetic_tag = CHI_REPUB
+		}
+		
+		remove_unit_leader = 76
+		
+		set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = democratic
+			}		
+			set_cosmetic_tag = CHI_REPUB
+			set_party_name = { ideology = communism name = deluge_china_left-constitutionalists_short long_name = deluge_china_left-constitutionalists_long }
+			set_party_name = { ideology = democratic name = deluge_china_right-constitutionalists_short long_name = deluge_china_right-constitutionalists_long }
+		}
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Zhang Xueliang"
+				desc = ""
+				picture = "gfx/leaders/deluge/young_marshall.dds"
+				expire = "1965.1.1"
+				ideology = jacobin_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Du Yuesheng"
+				desc = ""
+				picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+				expire = "1965.1.1"
+				ideology = constitutionalist_ideology
+				traits = {
+					
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = democratic
+				}
+				create_country_leader = {
+					name = "Chiang Kai-shek"
+					desc = ""
+					picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Du Yuesheng is informed of the precarious situation and can choose to purge the 3 field marshals
+
+country_event = {
+	id = deluge_china.33
+	title = deluge_china33title
+	desc = deluge_china33desc
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = flag_du_received_warning
+	}
+		
+	option = {
+		name = deluge_china33opta
+	}
+	
+	option = {
+		name = deluge_china33optb
+		
+		set_global_flag = flag_du_purges_military
+		
+		remove_unit_leader = 75
+		remove_unit_leader = 76
+		remove_unit_leader = 77
+	}
+}
+
+
+# China is straying from democracy despite the warning to Du. A civil war breaks out.
+
+country_event = {
+	id = deluge_china.34
+	title = deluge_china34title
+	desc = {
+		text = deluge_china34desc1
+		trigger = { has_global_flag = flag_du_purges_military }
+	}
+	desc = {
+		text = deluge_china34desc2
+		trigger = { NOT = { has_global_flag = flag_du_purges_military } }
+	}
+	
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CHI
+		is_subject = no
+		has_government = democratic
+		OR = {
+			communism > 0.45
+			fascism > 0.45
+		}
+		has_global_flag = flag_du_received_warning
+		NOT = { has_global_flag = flag_chinese_civil_war }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_global_flag = flag_chinese_civil_war 
+	}
+	
+	option = {
+		name = deluge_china34opta
+		
+		trigger = { has_global_flag = flag_du_purges_military }
+		
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = communism
+			size = 0.7
+		}
+		
+		hidden_effect = {
+			set_cosmetic_tag = CHI_REPUB
+		}
+		
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = communism
+				}
+				set_cosmetic_tag = CHI_REPUB
+				create_country_leader = {
+					name = "Du Yuesheng"
+					desc = ""
+					picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+				create_country_leader = {
+					name = "Soong Ching-Ling"
+					desc = ""
+					picture = "gfx/leaders/deluge/soong-ching-ling.dds"
+					expire = "1965.1.1"
+					ideology = jacobin_ideology
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Wang Jingwei"
+					desc = ""
+					picture = "gfx/leaders/deluge/wang_jingwai.dds"
+					expire = "1965.1.1"
+					ideology = corporatist_ideology
+					traits = {
+						#
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china34optb
+		
+		trigger = { NOT = { has_global_flag = flag_du_purges_military } }
+				
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = communism
+			size = 0.8
+			keep_unit_leaders = { 76 }
+		}
+				
+		hidden_effect = {
+			set_cosmetic_tag = CHI_REPUB
+		}
+		
+		remove_unit_leader = 75
+		
+		set_party_name = { ideology = fascism name = deluge_china_kuomintang_short long_name = deluge_china_kuomintang_long }
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Chiang Kai-shek"
+				desc = ""
+				picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+				expire = "1965.1.1"
+				ideology = corporatist_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Soong Ching-Ling"
+				desc = ""
+				picture = "gfx/leaders/deluge/soong-ching-ling.dds"
+				expire = "1965.1.1"
+				ideology = jacobin_ideology
+				traits = {
+					#
+				}
+			}
+		}
+			
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = communism
+				}
+				set_cosmetic_tag = CHI_REPUB
+				create_country_leader = {
+					name = "Du Yuesheng"
+					desc = ""
+					picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+				create_country_leader = {
+					name = "Zhang Xueliang"
+					desc = ""
+					picture = "gfx/leaders/deluge/young_marshall.dds"
+					expire = "1965.1.1"
+					ideology = jacobin_ideology
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Wang Jingwei"
+					desc = ""
+					picture = "gfx/leaders/deluge/wang_jingwai.dds"
+					expire = "1965.1.1"
+					ideology = corporatist_ideology
+					traits = {
+						#
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china34optc
+	
+		trigger = { has_global_flag = flag_du_purges_military }
+		
+		start_civil_war = {
+			ruling_party = communism
+			ideology = fascism
+			size = 0.7
+		}		
+		
+		hidden_effect = {
+			set_cosmetic_tag = CHI_REPUB
+		}
+		
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = fascism
+				}
+				set_cosmetic_tag = CHI_REPUB
+				create_country_leader = {
+					name = "Du Yuesheng"
+					desc = ""
+					picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+				create_country_leader = {
+					name = "Soong Ching-Ling"
+					desc = ""
+					picture = "gfx/leaders/deluge/soong-ching-ling.dds"
+					expire = "1965.1.1"
+					ideology = jacobin_ideology
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Wang Jingwei"
+					desc = ""
+					picture = "gfx/leaders/deluge/wang_jingwai.dds"
+					expire = "1965.1.1"
+					ideology = corporatist_ideology
+					traits = {
+						#
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = deluge_china34optd
+	
+		trigger = { NOT = { has_global_flag = flag_du_purges_military } }
+		
+		start_civil_war = {
+			ruling_party = communism
+			ideology = fascism
+			size = 0.8
+		}
+		
+		hidden_effect = {
+			set_cosmetic_tag = CHI_REPUB
+		}
+		
+		remove_unit_leader = 76
+		remove_unit_leader = 77
+		
+		random_other_country = {
+			limit = {
+				original_tag = CHI
+				has_government = fascism
+			}		
+			set_party_name = { ideology = fascism name = deluge_china_kuomintang_short long_name = deluge_china_kuomintang_long }
+			hidden_effect = {
+				set_cosmetic_tag = CHI_REPUB
+			}
+		}
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Zhang Xueliang"
+				desc = ""
+				picture = "gfx/leaders/deluge/young_marshall.dds"
+				expire = "1965.1.1"
+				ideology = jacobin_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Wang Jingwei"
+				desc = ""
+				picture = "gfx/leaders/deluge/wang_jingwai.dds"
+				expire = "1965.1.1"
+				ideology = corporatist_ideology
+				traits = {
+					#
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = CHI
+					has_government = fascism
+				}
+				create_country_leader = {
+					name = "Chiang Kai-shek"
+					desc = ""
+					picture = "gfx/leaders/deluge/chiang_kai_shek_colourised.dds"
+					expire = "1965.1.1"
+					ideology = corporatist_ideology
+					traits = {
+						
+					}
+				}
+				create_country_leader = {
+					name = "Du Yuesheng"
+					desc = ""
+					picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+					expire = "1965.1.1"
+					ideology = constitutionalist_ideology
+					traits = {
+						
+					}
+				}
+				create_country_leader = {
+					name = "Soong Ching-Ling"
+					desc = ""
+					picture = "gfx/leaders/deluge/soong-ching-ling.dds"
+					expire = "1965.1.1"
+					ideology = jacobin_ideology
+					traits = {
+						#
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

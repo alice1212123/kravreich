@@ -1,0 +1,460 @@
+﻿division_template = {
+	name = "Milicyi Dyvizija"
+	
+	division_names_group = BLR_GAR_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Stralkovaja Dyvizija"
+	
+	division_names_group = BLR_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Kavalieryjskaja Dyvizija"
+
+	division_names_group = BLR_CAV_01
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+        cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11370
+		division_template = "Kavalieryjskaja Dyvizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11370
+		division_template = "Stralkovaja Dyvizija"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11370
+		division_template = "Stralkovaja Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11370
+		division_template = "Stralkovaja Dyvizija"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11370
+		division_template = "Stralkovaja Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11370
+		division_template = "Stralkovaja Dyvizija"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11370
+		division_template = "Stralkovaja Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11370
+		division_template = "Stralkovaja Dyvizija"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11370
+		division_template = "Stralkovaja Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 100
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 106
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 107
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 108
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 109
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 110
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 111
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 112
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 113
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 114
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 115
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 116
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 117
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 118
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 119
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 120
+		}
+		location = 11370
+		division_template = "Milicyi Dyvizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BLR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+}
+air_wings = {
+	206	= {
+		fighter_equipment_0 =  {
+			owner = "BLR" 
+			amount = 12
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "BLR" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "BLR" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "BLR"
+		}
+		requested_factories = 4
+		progress = 0.1
+		efficiency = 50
+	}
+}

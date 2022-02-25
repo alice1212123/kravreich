@@ -1,0 +1,48 @@
+oceania_collapse = {                           
+     collapse = {                          
+          allowed = { tag = AST }              
+          available = {              
+                   AND = {
+                   has_completed_focus = "AST_deal_with_the_political_unrest"
+                   check_variable = {
+                   var = avoid_civil_n
+                   value = 10
+                   compare = less_than                 
+                   }    
+                   check_variable = {
+                   var = avoid_civil_l
+                   value = 10
+                   compare = less_than                 
+                   }
+                   check_variable = {
+                   var = avoid_civil_e
+                   value = 10
+                   compare = less_than                 
+                   } 
+                   check_variable = {
+                   var = avoid_civil_m
+                   value = 10
+                   compare = less_than 
+                   }              
+                   }         
+          }
+          activation = {                          
+               tag = AST                      
+          }
+          is_good = yes                          
+          days_mission_timeout = 720           
+          timeout_effect = {                    
+               country_event = australia.884              
+               add_political_power = -200 
+               hidden_effect = {
+               news_event = { days = 4 id = australia.868 }   
+               }       
+          }
+          complete_effect = { 
+               country_event = australia.881 
+               remove_decision = collapse
+               add_political_power = 200                                 
+          }
+}
+}
+

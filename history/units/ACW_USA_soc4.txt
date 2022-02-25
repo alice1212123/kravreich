@@ -1,0 +1,50 @@
+﻿division_template = {
+	name = "Second Continental Army"
+	division_names_group = USA_GAR_01
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0.5
+}
+
+units = {
+
+	division= {	
+		name = "Continental Army Division"
+		location = 9450
+		division_template = "Second Continental Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+
+	division= {	
+		name = "Continental Army Division"
+		location = 9450
+		division_template = "Second Continental Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+
+	division= {	
+		name = "Continental Army Division"
+		location = 9450
+		division_template = "Second Continental Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	
+
+	
+
+	
+}
+		

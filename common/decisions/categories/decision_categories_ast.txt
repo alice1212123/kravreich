@@ -1,0 +1,20 @@
+decision_category_ast = { 
+	icon = GFX_decision_generic_naval
+
+        picture = GFX_decision_ast_naval
+
+	visible = {
+                    has_global_flag = naval
+        }
+}
+
+decision_avoid_display = { 
+	icon = GFX_decision_generic_naval
+	visible = {
+                    has_completed_focus = AST_deal_with_the_political_unrest
+        }
+}
+
+
+
+

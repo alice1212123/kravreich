@@ -1,0 +1,1719 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = deluge_gran_colombia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = GCB
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = yes
+	
+	focus = {
+		id = GCB_focus_the_restoration_of_democracy
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 5
+		y = 0
+		mutually_exclusive = { focus = GCB_focus_permanent_state_of_emergency }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_protect_business_interests
+		icon = GFX_focus_mex_privatisation
+		x = -3
+		y = 1
+		relative_position_id = GCB_focus_the_restoration_of_democracy
+		prerequisite = { focus = GCB_focus_the_restoration_of_democracy }
+		mutually_exclusive = { focus = GCB_focus_protect_workers_and_peasants }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			hidden_effect = {
+				PRU = {
+					country_event = { id = colombia.1 hours = 1 }
+				}
+			}
+			custom_effect_tooltip = peru_will_slip_away
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			swap_ideas = {
+				remove_idea = novote
+				add_idea = restricted
+			}
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_literacy_programme
+		icon = GFX_focus_research2
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_protect_business_interests
+		prerequisite = { focus = GCB_focus_protect_business_interests }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_ideas = colombia_literacy
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_national_university_of_colombia
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_literacy_programme
+		prerequisite = { focus = GCB_focus_literacy_programme }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_privatisations
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_national_university_of_colombia
+		prerequisite = { focus = GCB_focus_national_university_of_colombia }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = private_capital_law
+				}
+				add_political_power = 250
+			}
+			else = {
+				if = {
+					limit = {
+						has_idea = agrarian_estates_law
+					}
+					swap_ideas = {
+						remove_idea = agrarian_estates_law
+						add_idea = private_capital_law
+					}
+				}
+				else = {
+					add_idea = private_capital_law
+				}
+			}
+		}
+		complete_tooltip = {
+			swap_ideas = {
+				remove_idea = agrarian_estates_law
+				add_idea = private_capital_law
+			}
+		}
+	}
+		
+	focus = {
+		id = GCB_focus_trade_protection
+		icon = GFX_focus_generic_navy_battleship2
+		x = 1
+		y = 1
+		relative_position_id = GCB_focus_privatisations
+		prerequisite = { focus = GCB_focus_privatisations }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = tooltip_escort_ships
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+				category = cl_tech
+			}
+			306 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			489 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GCB_focus_foreign_investment_haven
+		icon = GFX_goal_generic_trade
+		x = 1
+		y = 1
+		relative_position_id = GCB_focus_trade_protection
+		prerequisite = { focus = GCB_focus_trade_protection }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = colombia_literacy
+				add_idea = colombia_foreign_investment
+			}
+		}
+	}
+
+	
+	focus = {
+		id = GCB_focus_protect_workers_and_peasants
+		icon = GFX_goal_support_democracy
+		x = 2
+		y = 1
+		relative_position_id = GCB_focus_the_restoration_of_democracy
+		prerequisite = { focus = GCB_focus_the_restoration_of_democracy }
+		mutually_exclusive = { focus = GCB_focus_protect_business_interests }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+			swap_ideas = {
+				remove_idea = novote
+				add_idea = universal
+			}
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_heroic_march_to_plenty
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 1
+		y = 1
+		relative_position_id = GCB_focus_protect_workers_and_peasants
+		prerequisite = { focus = GCB_focus_protect_workers_and_peasants focus = GCB_focus_stability_through_socialism }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_ideas = colombia_heroic_march
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_colombian_polytechnic_institute
+		icon = GFX_focus_research
+		x = 1
+		y = 1
+		relative_position_id = GCB_focus_heroic_march_to_plenty
+		prerequisite = { focus = GCB_focus_heroic_march_to_plenty }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			306 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_battle_for_the_economy
+		icon = GFX_goal_generic_soviet_construction
+		x = 0
+		y = 2
+		relative_position_id = GCB_focus_heroic_march_to_plenty
+		prerequisite = { focus = GCB_focus_heroic_march_to_plenty }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = carlos_mahecha
+						amount_taken_ideas = {
+							amount > 4
+							slots = { political_advisor }
+						}
+					}
+				}
+				add_political_power = 150
+			}
+			else = {
+				add_ideas = carlos_mahecha
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = maria_cano
+						amount_taken_ideas = {
+							amount > 4
+							slots = { political_advisor }
+						}
+					}
+				}
+				add_political_power = 150
+			}
+			else = {
+				add_ideas = maria_cano
+			}
+		}
+		complete_tooltip = {
+			add_ideas = carlos_mahecha
+			add_ideas = maria_cano
+		}
+	}
+
+	focus = {
+		id = GCB_focus_seize_the_commanding_heights
+		icon = GFX_focus_generic_soviet_politics
+		x = -1
+		y = 1
+		relative_position_id = GCB_focus_battle_for_the_economy
+		prerequisite = { focus = GCB_focus_battle_for_the_economy }
+		mutually_exclusive = { focus = GCB_focus_occupy_the_factories }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = state_collectives_law
+				}
+				add_political_power = 250
+			}
+			else = {
+				if = {
+					limit = {
+						has_idea = agrarian_estates_law
+					}
+					swap_ideas = {
+						remove_idea = agrarian_estates_law
+						add_idea = state_collectives_law
+					}
+				}
+				else = {
+					add_idea = state_collectives_law
+				}
+			}
+		}
+		complete_tooltip = {
+			swap_ideas = {
+				remove_idea = agrarian_estates_law
+				add_idea = state_collectives_law
+			}
+		}
+	}
+
+	focus = {
+		id = GCB_focus_occupy_the_factories
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 1
+		y = 1
+		relative_position_id = GCB_focus_battle_for_the_economy
+		prerequisite = { focus = GCB_focus_battle_for_the_economy }
+		mutually_exclusive = { focus = GCB_focus_seize_the_commanding_heights }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = worker_cooperatives_law
+				}
+				add_political_power = 250
+			}
+			else = {
+				if = {
+					limit = {
+						has_idea = agrarian_estates_law
+					}
+					swap_ideas = {
+						remove_idea = agrarian_estates_law
+						add_idea = worker_cooperatives_law
+					}
+				}
+				else = {
+					add_idea = worker_cooperatives_law
+				}
+			}
+		}
+		complete_tooltip = {
+			swap_ideas = {
+				remove_idea = agrarian_estates_law
+				add_idea = worker_cooperatives_law
+			}
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_pensions_for_heroes_of_labour
+		icon = GFX_focus_generic_concessions
+		x = 1
+		y = 1
+		relative_position_id = GCB_focus_seize_the_commanding_heights
+		prerequisite = { focus = GCB_focus_seize_the_commanding_heights focus = GCB_focus_occupy_the_factories }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = colombia_heroic_march
+				add_idea = colombia_heroic_march_2
+			}
+			#if = {
+			#	limit = {
+			#		has_idea = universal_benefits_law
+			#	}
+			#	add_political_power = 50
+			#}
+			#else = {
+			#	if = {
+			#		limit = {
+			#			has_idea = charity_law
+			#		}
+			#		swap_ideas = {
+			#			remove_idea = charity_law
+			#			add_idea = universal_benefits_law
+			#		}
+			#	}
+			#	else = {
+			#		add_idea = universal_benefits_law
+			#	}
+			#}
+		}
+		complete_tooltip = {
+			swap_ideas = {
+				remove_idea = colombia_heroic_march
+				add_idea = colombia_heroic_march_2
+			}
+			#swap_ideas = {
+			#	remove_idea = charity_law
+			#	add_idea = universal_benefits_law
+			#}
+		}
+	}
+
+	focus = {
+		id = GCB_focus_modernised_internal_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -3
+		y = 1
+		relative_position_id = GCB_focus_heroic_march_to_plenty
+		prerequisite = { focus = GCB_focus_heroic_march_to_plenty focus = GCB_focus_literacy_programme }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+					OR = {
+						state = 305
+						state = 306
+						state = 305
+						state = 493
+						state = 489
+						state = 307
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_modernised_export_infrastructure
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_modernised_internal_infrastructure
+		prerequisite = { focus = GCB_focus_modernised_internal_infrastructure }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			307 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			305 = {
+				add_building_construction = {
+					province = 8252
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			306 = {
+				add_building_construction = {
+					province = 7991
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			493 = {
+				add_building_construction = {
+					province = 10494
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					province = 12790
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					province = 8056
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			489 = {
+				add_building_construction = {
+					province = 1944
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			307 = {
+				add_building_construction = {
+					province = 8113
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					province = 7968
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			488 = {
+				add_building_construction = {
+					province = 1981
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			687 = {
+				add_building_construction = {
+					province = 4982
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GCB_focus_modernised_resource_extraction
+		icon = GFX_focus_generic_steel
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_modernised_export_infrastructure
+		prerequisite = { focus = GCB_focus_modernised_export_infrastructure }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			unlock_decision_tooltip = develop_la_libertad_chromium_deposits
+			unlock_decision_tooltip = develop_meta_rubber_plantations
+			unlock_decision_tooltip = develop_bogota_oil_fields
+			unlock_decision_tooltip = develop_bolivar_iron_deposits
+			unlock_decision_tooltip = develop_bolivar_bauxite_deposits
+		}
+	}
+
+	focus = {
+		id = GCB_focus_the_integration_of_peru
+		icon = GFX_goal_anschluss
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_pensions_for_heroes_of_labour
+		prerequisite = { focus = GCB_focus_pensions_for_heroes_of_labour }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			PRU = {
+				add_ideas = colombia_integrate_peru
+			}
+		}
+	}
+
+	
+	focus = {
+		id = GCB_focus_permanent_state_of_emergency
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 11
+		y = 0
+		mutually_exclusive = { focus = GCB_focus_the_restoration_of_democracy }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = constitutional_republic_law
+				add_idea = dictatorial_republic_law
+			}
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_stability_through_socialism
+		icon = GFX_goal_support_communism
+		x = -2
+		y = 1
+		relative_position_id = GCB_focus_permanent_state_of_emergency
+		prerequisite = { focus = GCB_focus_permanent_state_of_emergency }
+		mutually_exclusive = { focus = GCB_focus_order_through_discipline }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_order_through_discipline
+		icon = GFX_goal_support_fascism
+		x = 2
+		y = 1
+		relative_position_id = GCB_focus_permanent_state_of_emergency
+		prerequisite = { focus = GCB_focus_permanent_state_of_emergency }
+		mutually_exclusive = { focus = GCB_focus_stability_through_socialism }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			hidden_effect = {
+				PRU = {
+					country_event = { id = colombia.1 hours = 1 }
+				}
+			}
+			custom_effect_tooltip = peru_will_slip_away
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_restore_the_haciendas
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 1
+		y = 1
+		relative_position_id = GCB_focus_order_through_discipline
+		prerequisite = { focus = GCB_focus_order_through_discipline }
+		mutually_exclusive = { focus = GCB_focus_military_governors }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_military_governors
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = -1
+		y = 1
+		relative_position_id = GCB_focus_order_through_discipline
+		prerequisite = { focus = GCB_focus_order_through_discipline }
+		mutually_exclusive = { focus = GCB_focus_restore_the_haciendas }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_supreme_military_authority
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_military_governors
+		prerequisite = { focus = GCB_focus_military_governors }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = PAN_enrique_jimenez_brin
+			show_ideas_tooltip = PAN_marcos_a_gelabert
+			show_ideas_tooltip = VEN_carlos_garcia_mendoza
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_restore_the_holy_church
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_restore_the_haciendas
+		prerequisite = { focus = GCB_focus_restore_the_haciendas }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = GCB_ismael_perdomo_borrero
+						amount_taken_ideas = {
+							amount > 4
+							slots = { political_advisor }
+						}
+					}
+				}
+				add_political_power = 150
+			}
+			else = {
+				add_ideas = GCB_ismael_perdomo_borrero
+			}
+			if = {
+				limit = {
+					has_idea = theocracy_law
+				}
+				add_political_power = 50
+			}
+			else = {
+				if = {
+					limit = {
+						has_idea = atheist_state_law
+					}
+					swap_ideas = {
+						remove_idea = atheist_state_law
+						add_idea = theocracy_law
+					}
+				}
+				else = {
+					add_idea = theocracy_law
+				}
+			}
+		}
+		complete_tooltip = {
+			add_ideas = GCB_ismael_perdomo_borrero
+			swap_ideas = {
+				remove_idea = atheist_state_law
+				add_idea = theocracy_law
+			}
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_repress_the_socialists
+		icon = GFX_goal_generic_war_with_comintern
+		x = -2
+		y = 3
+		relative_position_id = GCB_focus_supreme_military_authority
+		prerequisite = { focus = GCB_focus_supreme_military_authority focus = GCB_focus_restore_the_holy_church }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_restore_order_in_peru
+		icon = GFX_goal_generic_major_war
+		x = 1
+		y = 1
+		relative_position_id = GCB_focus_foreign_investment_haven
+		prerequisite = { focus = GCB_focus_repress_the_socialists focus = GCB_focus_foreign_investment_haven }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			OR = {
+				PRU = {
+					exists = no
+				}
+				PRU = {
+					is_subject_of = ROOT
+				}
+				PRU = {
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRU
+				expire = 0
+			}
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_great_colombia_great_power
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 2
+		y = 1
+		relative_position_id = GCB_focus_restore_order_in_peru
+		prerequisite = { focus = GCB_focus_the_integration_of_peru focus = GCB_focus_restore_order_in_peru }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = GCB_focus_army_reorganisation
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = -3
+		y = 1
+		relative_position_id = GCB_focus_great_colombia_great_power
+		prerequisite = { focus = GCB_focus_great_colombia_great_power }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_mountain_brigades
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_army_reorganisation
+		prerequisite = { focus = GCB_focus_army_reorganisation }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_crossing_the_andes
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_mountain_brigades
+		prerequisite = { focus = GCB_focus_mountain_brigades }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_the_fate_of_argentina
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_crossing_the_andes
+		prerequisite = { focus = GCB_focus_crossing_the_andes }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = GCB_focus_naval_expansion
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_great_colombia_great_power
+		prerequisite = { focus = GCB_focus_great_colombia_great_power }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = GCB_focus_naval_infantry
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_naval_expansion
+		prerequisite = { focus = GCB_focus_naval_expansion }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_securing_the_amazon_river
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_naval_infantry
+		prerequisite = { focus = GCB_focus_naval_infantry }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_the_fate_of_brazil
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_securing_the_amazon_river
+		prerequisite = { focus = GCB_focus_securing_the_amazon_river }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = GCB_focus_independent_air_corps
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 3
+		y = 1
+		relative_position_id = GCB_focus_great_colombia_great_power
+		prerequisite = { focus = GCB_focus_great_colombia_great_power }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = GCB_focus_parachutists
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_independent_air_corps
+		prerequisite = { focus = GCB_focus_independent_air_corps }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = GCB_focus_the_liberation_of_panama
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_parachutists
+		prerequisite = { focus = GCB_focus_parachutists }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = GCB_focus_the_fate_of_centroamerica
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_the_liberation_of_panama
+		prerequisite = { focus = GCB_focus_the_liberation_of_panama }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+	
+	focus = {
+		id = GCB_focus_confronting_the_great_powers
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_the_fate_of_brazil
+		prerequisite = { focus = GCB_focus_the_fate_of_argentina focus = GCB_focus_the_fate_of_brazil focus = GCB_focus_the_fate_of_centroamerica }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+	focus = {
+		id = GCB_focus_latin_american_hegemony
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = GCB_focus_confronting_the_great_powers
+		prerequisite = { focus = GCB_focus_confronting_the_great_powers }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			# TODO
+		}
+	}
+
+
+}

@@ -1,0 +1,1637 @@
+
+	#Focus for Rapid Movement
+	shared_shared_focus = {
+		id = rapid_movement
+		icon = GFX_focus_chi_army_reform
+		x = 29
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = offensive_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Offensive Army
+	shared_focus = {
+		id = offensive_army
+		icon = GFX_goal_poland_goal
+		x = 30
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = military_theory }
+		mutually_exclusive = { focus = defensive_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Preparation Make Perfect
+	shared_focus = {
+		id = preparation_make_perfect
+		icon = GFX_goal_generic_fortify_city
+		x = 23
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = defensive_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Military Theory
+	shared_focus = {
+		id = military_theory
+		icon = GFX_goal_generic_small_arms
+		x = 27
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 10
+		}
+	}
+
+	#Focus for Defensive Army
+	shared_focus = {
+		id = defensive_army
+		icon = GFX_goal_generic_military_sphere
+		x = 24
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = military_theory }
+		mutually_exclusive = { focus = offensive_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Selective Elections
+	shared_focus = {
+		id = selective_elections
+		icon = GFX_focus_usa_voter_registration_act
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = consulism 
+			focus = limited_democracy 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Military Building
+	shared_focus = {
+		id = military_building
+		icon = GFX_focus_generic_tank_production
+		x = 30
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = military_spending }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_mil_indy
+		}
+	}
+
+	#Focus for Industrialized Country
+	shared_focus = {
+		id = industrialized_country
+		icon = GFX_goal_generic_construct_civilian
+		x = 27
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = military_building 
+		}
+		prerequisite = { 
+			focus = industrial_infrastructure 
+		}
+		prerequisite = { 
+			focus = civilian_commodities 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			num_of_factories> 20
+		}
+		completion_reward = {
+			add_ideas= g_indy_soc
+		}
+	}
+
+	#Focus for Civilian Commodities
+	shared_focus = {
+		id = civilian_commodities
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = civilian_foundation }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER }
+		}
+	}
+
+	#Focus for Industrial Infrastructure (#NEEDS A STATE#)
+	shared_focus = {
+		id = industrial_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 27
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = common_infrastructure }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_building_construction = {
+            type = infrastructure
+            level = 3
+            instant_build = yes
+        }
+		add_building_construction = {
+            type = infrastructure
+            level = 3
+            instant_build = yes
+		}
+	}
+	}
+
+	#Focus for Military Spending
+	shared_focus = {
+		id = military_spending
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 30
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = military_build_up }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 3 add_building_construction = { type = arms_factory level = 3 instant_build = yes } set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER }
+		}
+	}
+
+	#Focus for Civilian Foundation
+	shared_focus = {
+		id = civilian_foundation
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = civilian_industries }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER }
+		}
+	}
+
+	#Focus for Steelworks 
+	shared_focus = {
+		id = steelworks
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = civilian_industries 
+		}
+		prerequisite = { 
+			focus = basic_infrastructure 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource= { 
+            type = steel
+            amount = 3 
+            state = random_owned_controlled_state 
+            }
+		}
+	}
+
+	#Focus for Common Infrastructure 
+	shared_focus = {
+		id = common_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = basic_infrastructure }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+		random_owned_controlled_state = { add_building_construction = {
+            type = infrastructure
+            level = 3
+            instant_build = yes
+            }
+		}
+		random_owned_controlled_state = { add_building_construction = {
+            type = infrastructure
+            level = 3
+            instant_build = yes
+			}
+		}
+	}
+	}
+
+	#Focus for A Moving Wall
+	shared_focus = {
+		id = a_moving_wall
+		icon = GFX_focus_generic_little_entente
+		x = 31
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = offensive_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Research Spending
+	shared_focus = {
+		id = research_spending
+		icon = GFX_focus_research2
+		x = 27
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = industrialized_country }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Civilian Industries 
+	shared_focus = {
+		id = civilian_industries
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = industrial_vitalization }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER }#
+		}
+	}
+
+	#Focus for Basic Infrastructure 
+	shared_focus = {
+		id = basic_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 27
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = industrial_vitalization }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		random_owned_controlled_state = { add_building_construction = {
+		type = infrastructure
+		level = 3
+		instant_build = yes
+		}
+		}
+		random_owned_controlled_state = { add_building_construction = {
+            type = infrastructure
+            level = 3
+            instant_build = yes
+		}
+		}
+	}
+	}
+
+	#Focus for Promote Academia
+	shared_focus = {
+		id = promote_academia
+		icon = GFX_goal_generic_scientific_exchange
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = basic_infrastructure 
+		}
+		prerequisite = { 
+			focus = military_build_up 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_research
+		}
+	}
+
+	#Focus for Red Takeover
+	shared_focus = {
+		id = red_takeover
+		icon = GFX_focus_generic_join_comintern
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = agricultural_collectivization }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = { ruling_party = communism elections_allowed = yes }
+		}
+	}
+
+	#Focus for Agricultural Collectivization
+	shared_focus = {
+		id = agricultural_collectivization
+		icon = GFX_focus_por_workers_of_iberia
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = communist_directory 
+			focus = universal_suffrage 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_collect
+		}
+	}
+
+	#Focus for Trade Unions
+	shared_focus = {
+		id = trade_unions
+		icon = GFX_goal_support_communism
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = liberalization }
+		mutually_exclusive = { 
+			focus = free_speech 
+		}
+		mutually_exclusive = { 
+			focus = limited_democracy 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_liberal
+add_idea = g_commie
+}
+		}
+	}
+
+	#Focus for Limited Democracy
+	shared_focus = {
+		id = limited_democracy
+		icon = GFX_goal_generic_political_pressure
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = liberalization }
+		mutually_exclusive = { focus = trade_unions }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_liberal
+add_idea = g_authority
+}
+		}
+	}
+
+	#Focus for Free Speech
+	shared_focus = {
+		id = free_speech
+		icon = GFX_goal_support_democracy
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = liberalization }
+		mutually_exclusive = { focus = trade_unions }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_liberal
+add_idea = g_demo
+}
+		}
+	}
+
+	#Focus for International Diplomacy
+	shared_focus = {
+		id = international_diplomacy
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 9
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = first_consulship 
+			focus = nation_at_arms 
+			focus = for_king_and_country 
+			focus = authoritarian_democracy 
+			focus = model_democracy 
+			focus = the_international_workers 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	#Focus for Autocratic Integrity
+	shared_focus = {
+		id = autocratic_integrity
+		icon = GFX_goal_generic_dangerous_deal
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = political_redirection }
+		mutually_exclusive = { focus = liberalization }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_autocrat
+		}
+	}
+
+	#Focus for Liberalization
+	shared_focus = {
+		id = liberalization
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = political_redirection }
+		mutually_exclusive = { focus = autocratic_integrity }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea= { 
+idea = g_liberal
+days = 150 
+}
+		}
+	}
+
+	#Focus for Military junta
+	shared_focus = {
+		id = military_junta
+		icon = GFX_focus_generic_military_mission
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = military_society }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_mil_gov
+		}
+	}
+
+	#Focus for First Consulship
+	shared_focus = {
+		id = first_consulship
+		icon = GFX_goal_generic_small_arms
+		x = 10
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = military_junta }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= neutrality
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_consul 
+add_idea = g_consul_2
+}
+		}
+	}
+
+	#Focus for Defend The Old Ways
+	shared_focus = {
+		id = defend_the_old_ways
+		icon = GFX_goal_generic_defence
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = feudal_roots }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#Focus for The International Workers!
+	shared_focus = {
+		id = the_international_workers
+		icon = GFX_focus_eng_crush_the_dream
+		x = 2
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = red_takeover }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = communism
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_commie
+add_idea = g_commie2
+}
+		}
+	}
+
+	#Focus for Communist Directory
+	shared_focus = {
+		id = communist_directory
+		icon = GFX_focus_generic_soviet_politics
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = trade_unions }
+		mutually_exclusive = { focus = universal_suffrage }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_com_d
+		}
+	}
+
+	#Focus for Military Society
+	shared_focus = {
+		id = military_society
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = consulism 
+		}
+		prerequisite = { 
+			focus = selective_elections 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_mil_soc
+		}
+	}
+
+	#Focus for Political Redirection
+	shared_focus = {
+		id = political_redirection
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = political_calls_for_revaluation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	#Focus for Feudal Roots
+	shared_focus = {
+		id = feudal_roots
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = autocratic_integrity }
+		mutually_exclusive = { 
+			focus = consulism 
+		}
+		mutually_exclusive = { 
+			focus = hypernationalism 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_autocrat
+add_idea = g_mono
+}
+		}
+	}
+
+	#Focus for Political Calls For Revaluation
+	shared_focus = {
+		id = political_calls_for_revaluation
+		icon = GFX_goal_generic_propaganda
+		x = 9
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Consul-ism
+	shared_focus = {
+		id = consulism
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = autocratic_integrity }
+		mutually_exclusive = { focus = feudal_roots }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_autocrat
+add_idea = g_consul
+}
+		}
+	}
+
+	#Focus for Rising Nationalism
+	shared_focus = {
+		id = rising_nationalism
+		icon = GFX_focus_secret_rearmament
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = hypernationalism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Free Trade
+	shared_focus = {
+		id = free_trade
+		icon = GFX_goal_generic_trade
+		x = 6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = create_constitution }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_fmarket
+		}
+	}
+
+	#Focus for Hyper-Nationalism
+	shared_focus = {
+		id = hypernationalism
+		icon = GFX_goal_support_fascism
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = autocratic_integrity }
+		mutually_exclusive = { focus = feudal_roots }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_autocrat
+add_idea = g_national 
+}
+		}
+	}
+
+	#Focus for Aristocracy
+	shared_focus = {
+		id = aristocracy
+		icon = GFX_goal_generic_improve_relations
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = free_speech }
+		mutually_exclusive = { focus = universal_suffrage }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_ario
+		}
+	}
+
+	#Focus for Uniting our People's
+	shared_focus = {
+		id = uniting_our_peoples
+		icon = GFX_goal_demand_sudetenland
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ethnic_purity 
+			focus = historic_nationalism 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_fas
+		}
+	}
+
+	#Focus for Create Constitution
+	shared_focus = {
+		id = create_constitution
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = universal_suffrage 
+			focus = aristocracy 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_const
+		}
+	}
+
+	#Focus for Model Democracy
+	shared_focus = {
+		id = model_democracy
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 6
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = free_trade }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= democratic
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_demo
+add_idea = g_demo2
+}
+		}
+	}
+
+	#Focus for Universal Suffrage
+	shared_focus = {
+		id = universal_suffrage
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = trade_unions 
+			focus = free_speech 
+		}
+		mutually_exclusive = { 
+			focus = communist_directory 
+		}
+		mutually_exclusive = { 
+			focus = aristocracy 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_uni_suf
+		}
+	}
+
+	#Focus for Powerful Oligarchy
+	shared_focus = {
+		id = powerful_oligarchy
+		icon = GFX_focus_generic_self_management
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = limited_democracy 
+		}
+		prerequisite = { 
+			focus = selective_elections 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_olig
+		}
+	}
+
+	#Focus for Unified Government
+	shared_focus = {
+		id = unified_government
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = powerful_oligarchy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_uni_gov
+		}
+	}
+
+	#Focus for Authoritarian Democracy
+	shared_focus = {
+		id = authoritarian_democracy
+		icon = GFX_focus_generic_support_the_left_right
+		x = 8
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = unified_government }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= neutrality
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_authority
+add_idea = g_authority2
+}
+		}
+	}
+
+	#Focus for Chained Monarchy
+	shared_focus = {
+		id = chained_monarchy
+		icon = GFX_focus_rom_handle_king
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = defend_the_old_ways }
+		mutually_exclusive = { focus = absolutism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_top
+		}
+	}
+
+	#Focus for Absolutism
+	shared_focus = {
+		id = absolutism
+		icon = GFX_focus_generic_home_defense
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = defend_the_old_ways }
+		mutually_exclusive = { focus = chained_monarchy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_crown
+		}
+	}
+
+	#Focus for Kings Prospects
+	shared_focus = {
+		id = kings_prospects
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = absolutism 
+			focus = chained_monarchy 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_king
+		}
+	}
+
+	#Focus for For King and Country
+	shared_focus = {
+		id = for_king_and_country
+		icon = GFX_focus_generic_monarchy_2
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = kings_prospects }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= monarchism
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_mono
+add_idea = g_mono2
+}
+		}
+	}
+
+	#Focus for Contingency Planning
+	shared_focus = {
+		id = contingency_planning
+		icon = GFX_goal_generic_position_armies
+		x = 9
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = threat_containment 
+			focus = aggressive_defense 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_warplan
+		}
+	}
+
+	#Focus for Secure Independence
+	shared_focus = {
+		id = secure_independence
+		icon = GFX_goal_generic_fortify_city
+		x = 13
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = neutral_focus }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea= { 
+idea = g_ind_build
+days = 180 
+}
+		}
+	}
+
+	#Focus for Balanced Approach
+	shared_focus = {
+		id = balanced_approach
+		icon = GFX_focus_generic_coastal_fort
+		x = 9
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = international_diplomacy }
+		mutually_exclusive = { 
+			focus = interventionist 
+		}
+		mutually_exclusive = { 
+			focus = neutral_focus 
+		}
+		mutually_exclusive = { 
+			focus =  
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Neutral Focus
+	shared_focus = {
+		id = neutral_focus
+		icon = GFX_goal_generic_neutrality_focus
+		x = 13
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = international_diplomacy }
+		mutually_exclusive = { focus = balanced_approach }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= neutrality_idea
+		}
+	}
+
+	#Focus for Aggressive Defense
+	shared_focus = {
+		id = aggressive_defense
+		icon = GFX_goal_generic_build_tank
+		x = 11
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = balanced_approach }
+		mutually_exclusive = { focus = threat_containment }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_ba_d
+		}
+	}
+
+	#Focus for Nation At Arms
+	shared_focus = {
+		id = nation_at_arms
+		icon = GFX_goal_support_fascism
+		x = 16
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = uniting_our_peoples }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= fascism
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = g_national
+add_idea = g_national2
+}
+		}
+	}
+
+	#Focus for Historic Nationalism
+	shared_focus = {
+		id = historic_nationalism
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = rising_nationalism }
+		mutually_exclusive = { focus = ethnic_purity }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_country
+		}
+	}
+
+	#Focus for Ethnic Purity
+	shared_focus = {
+		id = ethnic_purity
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = rising_nationalism }
+		mutually_exclusive = { focus = historic_nationalism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_ethnic
+		}
+	}
+
+	#Focus for Interventionist
+	shared_focus = {
+		id = interventionist
+		icon = GFX_goal_generic_territory_or_war
+		x = 5
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = international_diplomacy }
+		mutually_exclusive = { focus = balanced_approach }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			num_of_factories > 30
+		}
+		completion_reward = {
+			add_ideas= g_inter
+		}
+	}
+
+	#Focus for Threat Containment
+	shared_focus = {
+		id = threat_containment
+		icon = GFX_goal_rhineland
+		x = 7
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = balanced_approach }
+		mutually_exclusive = { focus = aggressive_defense }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_ba_o
+		}
+	}
+
+	#Focus for Our Place In the World
+	shared_focus = {
+		id = our_place_in_the_world
+		icon = GFX_goal_generic_alliance
+		x = 5
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = interventionist }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			activate_decision= generic_faction
+		}
+	}
+
+	#Focus for Industrial Sector
+	shared_focus = {
+		id = industrial_sector
+		icon = GFX_goal_generic_construction2
+		x = 27
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			name = industrial_bonus
+bonus = 0.75
+uses = 2
+category = industry
+		}
+	}
+
+	#Focus for Industrial Vitalization
+	shared_focus = {
+		id = industrial_vitalization
+		icon = GFX_focus_generic_industry_2
+		x = 27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = industrial_sector }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 3 add_building_construction = { type = industrial_complex level = 3 instant_build = yes } set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER }
+            random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 3 add_building_construction = { type = arms_factory level = 3 instant_build = yes } set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER }
+		}
+	}
+
+	#Focus for Military Build Up
+	shared_focus = {
+		id = military_build_up
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = industrial_vitalization }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 3 add_building_construction = { type = arms_factory level = 3 instant_build = yes } set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER }
+		}
+	}
+
+	#Focus for Telephone Revolution
+	shared_focus = {
+		id = telephone_revolution
+		icon = GFX_goal_generic_radar
+		x = 29
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = common_infrastructure 
+		}
+		prerequisite = { 
+			focus = promote_academia 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 0.5 
+uses = 2 
+category = radar_tech 
+}
+		}
+	}
+
+	#Focus for Trade Blocks
+	shared_focus = {
+		id = trade_blocks
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 25
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = steelworks 
+		}
+		prerequisite = { 
+			focus = common_infrastructure 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= g_trade
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Hold The Line!
+	shared_focus = {
+		id = hold_the_line
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 25
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = defensive_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Planning Assaults
+	shared_focus = {
+		id = planning_assaults
+		icon = GFX_goal_generic_position_armies
+		x = 29
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = rapid_movement }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Push Through Pain!
+	shared_focus = {
+		id = push_through_pain
+		icon = GFX_focus_prc_infiltration
+		x = 29
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = planning_assaults }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Weaving Warfare
+	shared_focus = {
+		id = weaving_warfare
+		icon = GFX_focus_generic_little_entente
+		x = 31
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = a_moving_wall }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Break Morale
+	shared_focus = {
+		id = break_morale
+		icon = GFX_goal_generic_political_pressure
+		x = 31
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = weaving_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Defense To The Last Man
+	shared_focus = {
+		id = defense_to_the_last_man
+		icon = GFX_focus_generic_manpower
+		x = 23
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = preparation_make_perfect }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for An Army of Eagles
+	shared_focus = {
+		id = an_army_of_eagles
+		icon = GFX_goal_generic_secret_weapon
+		x = 30
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = push_through_pain 
+		}
+		prerequisite = { 
+			focus = break_morale 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Organize Divisions
+	shared_focus = {
+		id = organize_divisions
+		icon = GFX_focus_generic_little_entente
+		x = 25
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = hold_the_line }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Defensive Officers
+	shared_focus = {
+		id = defensive_officers
+		icon = GFX_focus_generic_military_academy
+		x = 25
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = organize_divisions }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Wave Defense
+	shared_focus = {
+		id = wave_defense
+		icon = GFX_focus_generic_coastal_fort
+		x = 24
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = homeland_vigor 
+		}
+		prerequisite = { 
+			focus = defensive_officers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Homeland Vigor
+	shared_focus = {
+		id = homeland_vigor
+		icon = GFX_goal_generic_military_sphere
+		x = 23
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = defense_to_the_last_man }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+#End of focuses 
+ }

@@ -1,0 +1,24 @@
+ideas = {
+	small_arms_manufacturer_slot = {
+		
+		designer = yes
+		
+		browning = {
+			
+			allowed = {
+				original_tag = DES
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { civilian_firearms_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+}

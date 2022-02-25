@@ -1,0 +1,1272 @@
+﻿add_namespace = australia
+
+country_event = {
+	id = australia.884
+	title = australia884title
+	desc = australia884desc
+	picture = GFX_deluge_package_tour_small
+
+        fire_only_once = yes
+ 
+        is_triggered_only = yes
+
+        trigger = {   
+	}	
+
+        mean_time_to_happen = {
+		days = 1
+	}
+
+        option = {
+		name = australia884opta
+
+                hidden_effect = {
+                    remove_ideas = enforced_naval
+                    remove_ideas = prepare
+                    remove_ideas = Oceania_end
+                    remove_ideas = AST_natives 
+                    remove_ideas = white_oceania_policy
+                    remove_ideas = japanese_threat
+                    set_global_flag = "The Civil War Is All But Guaranteed"
+                    AST = {
+                       delete_unit_template_and_units = { division_template = "Infantry Division" }
+                       delete_unit_template_and_units = { division_template = "Cavalry Division" }
+                       delete_unit_template_and_units = { division_template = "Armored-Division" }
+                    }
+                    ENG = {
+                        end_puppet = AST
+                        remove_from_faction = AST
+                    }
+                    set_cosmetic_tag = AST_EM_fascism
+                    release = ABG
+                    ABG = { 
+                      transfer_state = 520
+                      transfer_state = 674
+                      520 = {
+                           add_core_of = ABG
+                      }
+                      674 = {
+                           add_core_of = ABG
+                      }
+                      declare_war_on = { type = annex_everything    target = AST }
+                      declare_war_on = { type = annex_everything    target = PRT }
+                      declare_war_on = { type = annex_everything    target = BIG }
+                      add_ideas = Oceania_end
+                       division_template = {
+					name = "Aboriginal Insurgents"
+					division_names_group = ABG_INF_1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+					}
+					support = {
+                                        }
+				}
+                                520 = {
+                                     create_unit = {
+				     division = "name = \"Aboriginal Insurgents\" division_template = \"Aboriginal Insurgents\" start_experience_factor = 1.0" 
+				     owner = ABG
+                                     }
+                                }
+                                520 = {
+                                     create_unit = {
+				     division = "name = \"Aboriginal Insurgents\" division_template = \"Aboriginal Insurgents\" start_experience_factor = 1.0" 
+				     owner = ABG
+                                     }
+                                }
+                                520 = {
+                                     create_unit = {
+				     division = "name = \"Aboriginal Insurgents\" division_template = \"Aboriginal Insurgents\" start_experience_factor = 1.0" 
+				     owner = ABG
+                                     }
+                                }
+                                520 = {
+                                     create_unit = {
+				     division = "name = \"Aboriginal Insurgents\" division_template = \"Aboriginal Insurgents\" start_experience_factor = 1.0" 
+				     owner = ABG
+                                     }
+                                }
+                                520 = {
+                                     create_unit = {
+				     division = "name = \"Aboriginal Insurgents\" division_template = \"Aboriginal Insurgents\" start_experience_factor = 1.0" 
+				     owner = ABG
+                                     }
+                                }
+                    }
+                    release = PRT
+                    PRT = {
+                      transfer_state = 522
+                      522 = {
+                           add_core_of = PRT
+                      }
+                      declare_war_on = { type = annex_everything    target = AST }
+                      declare_war_on = { type = annex_everything    target = ABG }
+                      declare_war_on = { type = annex_everything    target = BIG }
+                      add_ideas = Oceania_end
+                      division_template = {
+					name = "People's militia"
+					division_names_group = PRT_INF_1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+					}
+					support = {
+                                        }
+				}
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"People's militia\" division_template = \"People's militia\" start_experience_factor = 1.0" 
+				     owner = PRT
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = PRT
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"People's militia\" division_template = \"People's militia\" start_experience_factor = 1.0" 
+				     owner = PRT
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"People's militia\" division_template = \"People's militia\" start_experience_factor = 1.0" 
+				     owner = PRT
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"People's militia\" division_template = \"People's militia\" start_experience_factor = 1.0" 
+				     owner = PRT
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"People's militia\" division_template = \"People's militia\" start_experience_factor = 1.0" 
+				     owner = PRT
+                                     }
+                                } 
+                    }
+                    release = BIG
+                    BIG = {
+                      transfer_state = 519 
+                      transfer_state = 517
+                      517 = {
+                           add_core_of = BIG
+                      }
+                      519 = {
+                           add_core_of = BIG
+                      }
+                      declare_war_on = { type = annex_everything    target = AST }
+                      declare_war_on = { type = annex_everything    target = ABG }
+                      declare_war_on = { type = annex_everything    target = PRT }
+                      add_ideas = Oceania_end
+                      division_template = {
+					name = "Bight Loyalists"
+					division_names_group = AST_INF_10
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+					}
+					support = {
+                                        }
+				}
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                } 
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                } 
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = BIG
+                                     }
+                                } 
+                                random_owned_controlled_state = {
+			             limit = { ROOT = { has_full_control_of_state = PREV } }
+			             prioritize = { 517 }
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = AST
+		                     }
+                                }
+                                random_owned_controlled_state = {
+			             limit = { ROOT = { has_full_control_of_state = PREV } }
+			             prioritize = { 519 }
+                                     create_unit = {
+				     division = "name = \"Bight Loyalists\" division_template = \"Bight Loyalists\" start_experience_factor = 1.0" 
+				     owner = AST
+		                     }
+                                }
+                    }
+                    AST = {
+                    release = NZL
+                    }
+                    NZL = {
+                      transfer_state = 723
+                      add_ideas = Oceania_end
+                      723 = {
+                           add_core_of = NZL
+                      }
+                      284 = {
+                           add_core_of = NZL
+                      }
+                      division_template = {
+					name = "New Zealand Patriots"
+					division_names_group = NZL_INF_1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+					}
+					support = {
+                                        }
+				}
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"New Zealand Patriots\" division_template = \"New Zealand Patriots\" start_experience_factor = 1.0" 
+				     owner = NZL
+                                     }
+		                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"New Zealand Patriots\" division_template = \"New Zealand Patriots\" start_experience_factor = 1.0" 
+				     owner = NZL
+                                     }
+		                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"New Zealand Patriots\" division_template = \"New Zealand Patriots\" start_experience_factor = 1.0" 
+				     owner = NZL
+                                     }
+		                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"New Zealand Patriots\" division_template = \"New Zealand Patriots\" start_experience_factor = 1.0" 
+				     owner = NZL
+                                     }
+		                }
+                                random_owned_controlled_state = {
+                                     create_unit = {
+				     division = "name = \"New Zealand Patriots\" division_template = \"New Zealand Patriots\" start_experience_factor = 1.0" 
+				     owner = NZL
+                                     }
+		                }
+                    } 
+                    AST = {
+                      division_template = {
+					name = "Military Police"
+					division_names_group = AST_INF_10
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+					}
+					support = {
+                                        military_police = { x = 0 y = 0 }
+                                        }
+				}
+                       }
+                       285 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }	
+                      285 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }	
+                      285 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }	
+                      285 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }
+                      521 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }
+                      521 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }
+                      521 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }
+                      518 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }
+                      521 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }
+                      284 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }
+                      284 = {
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }
+                      random_owned_controlled_state = {
+			  limit = { ROOT = { has_full_control_of_state = PREV } }
+			  prioritize = { 521 }
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }	
+                      random_owned_controlled_state = {
+			  limit = { ROOT = { has_full_control_of_state = PREV } }
+			  prioritize = { 285 }
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }
+                      random_owned_controlled_state = {
+			  limit = { ROOT = { has_full_control_of_state = PREV } }
+			  prioritize = { 521 }
+                          create_unit = {
+				division = "name = \"Military Police\" division_template = \"Military Police\" start_experience_factor = 1.0" 
+				owner = AST
+		                }
+                      }
+                      declare_war_on = { type = annex_everything    target = NZL }
+                      add_ideas = Oceania_end   
+                      }
+                }		
+		ai_chance = {
+			factor = 1
+                }
+        }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.888
+	title = australia888title
+	desc = australia888desc
+	picture = GFX_deluge_package_tour_small
+ 
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+		tag = AST
+        }
+
+	option = {
+		name = australia888opta
+                
+		ai_chance = {
+			factor = 1
+                }
+         }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.885
+	title = australia885title
+	desc = australia885desc
+	picture = GFX_deluge_package_tour_small
+ 
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia885opta
+                
+                517 = {
+                      add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+                                }
+                }                
+		ai_chance = {
+			factor = 1
+                }
+         }
+         option = {
+		name = australia885optb
+                 
+                517 = {
+                      add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+                                }
+                }               
+		ai_chance = {
+			factor = 1
+                }
+         }
+         option = {
+		name = australia885optc
+                  
+                517 = {
+                      add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+                                }
+                }                
+		ai_chance = {
+			factor = 1
+                }
+         }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.883
+	title = australia883title
+	desc = australia883desc
+	picture = GFX_deluge_package_tour_small
+ 
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia883opta
+                
+		ai_chance = {
+			factor = 1
+                }
+         }
+}
+
+country_event = {
+	id = australia.882
+	title = australia882title
+	desc = australia882desc
+	picture = GFX_deluge_package_tour_small
+ 
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia882opta
+                custom_effect_tooltip = australia3tooltip            
+		ai_chance = {
+			factor = 1
+                }
+        }
+        option = {
+                name = australia882optb
+                custom_effect_tooltip = australia2tooltip
+                hidden_effect = {     
+                add_timed_idea = { idea = prepare  days = 720 }
+                285 = {
+		add_building_construction = {
+			type = coastal_bunker
+			province = {
+				all_provinces = yes
+				limit_to_naval_base = yes
+				}
+				level = 4
+				instant_build = yes
+				}
+				add_building_construction = {
+            	    	                type = coastal_bunker
+            	    	                province = {
+            	    	                all_provinces = yes
+            	    	                limit_to_coastal = yes
+            	    	                }
+            	    	                level = 2
+            	    	                instant_build = yes
+            	    	                }
+                }
+                517 = {
+		add_building_construction = {
+			type = coastal_bunker
+			province = {
+				all_provinces = yes
+				limit_to_naval_base = yes
+				}
+				level = 4
+				instant_build = yes
+				}
+				add_building_construction = {
+            	    	                type = coastal_bunker
+            	    	                province = {
+            	    	                all_provinces = yes
+            	    	                limit_to_coastal = yes
+            	    	                }
+            	    	                level = 2
+            	    	                instant_build = yes
+            	    	                }
+                }
+                519 = {
+		add_building_construction = {
+			type = coastal_bunker
+			province = {
+				all_provinces = yes
+				limit_to_naval_base = yes
+				}
+				level = 4
+				instant_build = yes
+				}
+				add_building_construction = {
+            	    	                type = coastal_bunker
+            	    	                province = {
+            	    	                all_provinces = yes
+            	    	                limit_to_coastal = yes
+            	    	                }
+            	    	                level = 2
+            	    	                instant_build = yes
+            	    	                }
+                }
+                522 = {
+		add_building_construction = {
+			type = coastal_bunker
+			province = {
+				all_provinces = yes
+				limit_to_naval_base = yes
+				}
+				level = 4
+				instant_build = yes
+				}
+				add_building_construction = {
+            	    	                type = coastal_bunker
+            	    	                province = {
+            	    	                all_provinces = yes
+            	    	                limit_to_coastal = yes
+            	    	                }
+            	    	                level = 2
+            	    	                instant_build = yes
+            	    	                }
+                }
+                520 = {
+		add_building_construction = {
+			type = coastal_bunker
+			province = {
+				all_provinces = yes
+				limit_to_naval_base = yes
+				}
+				level = 4
+				instant_build = yes
+				}
+				add_building_construction = {
+            	    	                type = coastal_bunker
+            	    	                province = {
+            	    	                all_provinces = yes
+            	    	                limit_to_coastal = yes
+            	    	                }
+            	    	                level = 2
+            	    	                instant_build = yes
+            	    	                }
+                }
+                521 = {
+		add_building_construction = {
+			type = coastal_bunker
+			province = {
+				all_provinces = yes
+				limit_to_naval_base = yes
+				}
+				level = 4
+				instant_build = yes
+				}
+				add_building_construction = {
+            	    	                type = coastal_bunker
+            	    	                province = {
+            	    	                all_provinces = yes
+            	    	                limit_to_coastal = yes
+            	    	                }
+            	    	                level = 2
+            	    	                instant_build = yes
+            	    	                }
+                }
+                284 = {
+		add_building_construction = {
+			type = coastal_bunker
+			province = {
+				all_provinces = yes
+				limit_to_naval_base = yes
+				}
+				level = 4
+				instant_build = yes
+				}
+				add_building_construction = {
+            	    	                type = coastal_bunker
+            	    	                province = {
+            	    	                all_provinces = yes
+            	    	                limit_to_coastal = yes
+            	    	                }
+            	    	                level = 2
+            	    	                instant_build = yes
+            	    	                }
+                }
+                723 = {
+		add_building_construction = {
+			type = coastal_bunker
+			province = {
+				all_provinces = yes
+				limit_to_naval_base = yes
+				}
+				level = 4
+				instant_build = yes
+				}
+				add_building_construction = {
+            	    	                type = coastal_bunker
+            	    	                province = {
+            	    	                all_provinces = yes
+            	    	                limit_to_coastal = yes
+            	    	                }
+            	    	                level = 2
+            	    	                instant_build = yes
+            	    	                }
+                } 
+                723 = {
+		add_building_construction = {
+			type = coastal_bunker
+			province = {
+				all_provinces = yes
+				limit_to_naval_base = yes
+				}
+				level = 4
+				instant_build = yes
+				}
+				add_building_construction = {
+            	    	                type = coastal_bunker
+            	    	                province = {
+            	    	                all_provinces = yes
+            	    	                limit_to_coastal = yes
+            	    	                }
+            	    	                level = 2
+            	    	                instant_build = yes
+            	    	                }
+                        }
+                }
+		ai_chance = {
+			factor = 1
+                }
+         }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.881
+	title = australia881title
+	desc = australia881desc
+	picture = GFX_deluge_package_tour_small
+ 
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia881opta
+                
+		ai_chance = {
+			factor = 1
+                }
+         }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.880
+	title = australia880title
+	desc = australia880desc
+	picture = GFX_deluge_package_tour_small
+ 
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia880opta
+                
+		ai_chance = {
+			factor = 1
+                }
+         }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.879
+	title = australia879title
+	desc = australia879desc
+	picture = GFX_deluge_package_tour_small
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia879opta
+
+                AST = {
+                transfer_state = 669
+                country_event = { days = 1 id = australia.875 }
+                }
+                672 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				        }
+                }
+		ai_chance = {
+			factor = 100
+                }
+         }
+         option = {
+		name = australia879optb
+                AST = {
+                country_event = { days = 1 id = australia.874 }
+                }
+		ai_chance = {
+			factor = 1
+                }
+         }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.878
+	title = australia878title
+	desc = australia879desc
+	picture = GFX_deluge_package_tour_small
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia878opta
+
+                AST = {
+                country_event = { days = 1 id = australia.875 }
+                transfer_state = 626
+                }
+                41 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				        }
+                }
+		ai_chance = {
+			factor = 100
+                }
+         }
+         option = {
+		name = australia878optb
+                AST = {
+                country_event = { days = 1 id = australia.874 }
+                }
+		ai_chance = {
+			factor = 0
+                }
+         }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.877
+	title = australia877title
+	desc = australia877desc
+	picture = GFX_deluge_package_tour_small
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia877opta
+
+                AST = {
+                transfer_state = 631
+                country_event = { days = 1 id = australia.875 }
+                }
+                629 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				        }
+                }
+		ai_chance = {
+			factor = 100
+                }
+         }
+         option = {
+		name = australia877optb
+                AST = {
+                country_event = { days = 1 id = australia.874 }
+                }
+		ai_chance = {
+			factor = 1
+                }
+         }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.876
+	title = australia876title
+	desc = australia876desc
+	picture = GFX_deluge_package_tour_small
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia876opta
+
+                AST = {
+                country_event = { days = 1 id = australia.875 }
+                transfer_state = 650
+                }
+                653 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				        }
+                }
+		ai_chance = {
+			factor = 100
+                }
+         }
+         option = {
+		name = australia876optb
+                AST = {
+                country_event = { days = 1 id = australia.874 }
+                }
+		ai_chance = {
+			factor = 1
+                }
+         }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.875
+	title = australia875title
+	desc = australia875desc
+	picture = GFX_deluge_package_tour_small
+
+        is_triggered_only = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia875opta
+
+
+		ai_chance = {
+			factor = 100
+                }
+         }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.874
+	title = australia874title
+	desc = australia874desc
+	picture = GFX_deluge_package_tour_small
+
+        is_triggered_only = yes
+	
+        trigger = {
+        }
+
+	option = {
+		name = australia874opta
+
+
+		ai_chance = {
+			factor = 100
+                }
+         }
+}
+
+news_event = {
+	id = australia.873
+	title = australia873title
+	desc = australia873desc
+	picture = GFX_deluge_workers_strike
+        fire_only_once = yes
+
+        trigger = {
+                tag = AST
+		date > 1936.8.1
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+                name = australia873opta
+        }
+}
+
+country_event = {
+	id = australia.872
+	title = australia872title
+	desc = australia872desc
+	picture = GFX_deluge_package_tour_small
+        fire_only_once = yes
+ 
+        is_triggered_only = yes
+
+        trigger = {
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+                name = australia872opta
+                ENG = {
+                country_event = { days = 5 id = australia.871 }
+                }
+        }
+}
+
+country_event = {
+	id = australia.871
+	title = australia871title
+	desc = australia871desc
+	picture = GFX_deluge_package_tour_small
+        fire_only_once = yes
+ 
+        is_triggered_only = yes
+
+        trigger = {
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+                name = australia871opta
+                AST = { 
+                country_event = { days = 3 id = australia.870 }
+                load_oob = "china_fleet" 
+                }
+                ENG = {
+		if = { limit = { 326 = { is_controlled_by = ENG } }
+                326 = {
+                                     create_unit = {
+				     division = "name = \"Colonial Garrison\" division_template = \"Colonial Divisions\" start_experience_factor = 1.0" 
+				     owner = AST
+                                     } 
+                                     create_unit = {
+				     division = "name = \"Colonial Garrison\" division_template = \"Colonial Divisions\" start_experience_factor = 1.0" 
+				     owner = AST
+                                     }
+                }
+                }
+                }
+                ENG = {
+		if = { limit = { 787 = { is_controlled_by = ENG } }
+                787 = {
+                                     create_unit = {
+				     division = "name = \"Colonial Garrison\" division_template = \"Colonial Divisions\" start_experience_factor = 1.0" 
+				     owner = AST
+                                     }
+                                     create_unit = {
+				     division = "name = \"Colonial Garrison\" division_template = \"Colonial Divisions\" start_experience_factor = 1.0" 
+				     owner = AST
+                                     }
+                }
+                }
+                }
+                ENG = {
+		if = { limit = { 803 = { is_controlled_by = ENG } }
+                803 = {
+                                     create_unit = {
+				     division = "name = \"Colonial Garrison\" division_template = \"Colonial Divisions\" start_experience_factor = 1.0" 
+				     owner = AST
+                                     }
+                                     create_unit = {
+				     division = "name = \"Colonial Garrison\" division_template = \"Colonial Divisions\" start_experience_factor = 1.0" 
+				     owner = AST
+                                     }
+                }
+                }
+                }
+                ai_chance = {
+			factor = 100
+                }
+        }
+        option = {
+                name = australia871optb
+                AST = {
+                country_event = { days = 3 id = australia.869 }
+                }
+                ai_chance = {
+			factor = 0
+                }
+        }
+}
+
+country_event = {
+	id = australia.870
+	title = australia870title
+	desc = australia870desc
+	picture = GFX_deluge_package_tour_small
+        fire_only_once = yes
+ 
+        is_triggered_only = yes
+
+        trigger = {
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+                name = australia870opta
+        }
+}
+
+country_event = {
+	id = australia.869
+	title = australia869title
+	desc = australia869desc
+	picture = GFX_deluge_package_tour_small
+        fire_only_once = yes
+ 
+        is_triggered_only = yes
+
+        trigger = {
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+                name = australia869opta
+        }
+}
+
+news_event = {
+	id = australia.868
+	title = australia868title
+	desc = australia868desc
+	picture = GFX_deluge_rev
+        fire_only_once = yes
+ 
+        is_triggered_only = yes
+
+        trigger = {
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+                name = australia868opta
+        }
+}
+
+country_event = {
+	id = australia.867
+	title = australia867title
+	desc = australia867desc
+	picture = GFX_deluge_rev
+        fire_only_once = yes
+ 
+        is_triggered_only = yes
+
+        trigger = {
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+                name = australia867opta
+        }
+}
+
+add_namespace = australia
+
+country_event = {
+	id = australia.866
+	title = australia866title
+	desc = australia866desc
+	picture = GFX_deluge_package_tour_small
+ 
+        is_triggered_only = yes
+
+        fire_only_once = yes
+	
+        trigger = {
+		tag = AST
+        }
+
+	option = {
+		name = australia866opta
+                
+		ai_chance = {
+			factor = 1
+                }
+         }
+}

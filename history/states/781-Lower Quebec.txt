@@ -1,0 +1,36 @@
+
+state={
+	id=781
+	name="STATE_781" # 746
+	resources={
+		aluminium=4.000
+	}
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 2
+
+		}
+		add_core_of = CAN
+		victory_points = {
+			4769 1 
+		}
+		victory_points = {
+			10534 1 
+		}
+		victory_points = {
+			11682 1 
+		}
+
+	}
+
+	provinces={
+		983 1341 1356 1764 3911 4419 4769 7435 7683 7807 7810 7875 7893 10249 10534 10700 10715 11682 11902 12205 12223 12276 13160 
+	}
+	manpower=718860
+	buildings_max_level_factor=1.000
+	state_category=town
+}

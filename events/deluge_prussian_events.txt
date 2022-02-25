@@ -1,0 +1,19 @@
+﻿add_namespace = GER
+
+country_event = {
+	id = german_berlin.60
+        title = german_berlin60title
+        desc = german_berlin60desc
+	picture = GFX_deluge_german_berlin_small
+
+        fire_only_once = yes
+     
+        is_triggered_only = yes
+         
+        option = {
+		ai_chance = {
+                    base = 1
+                }
+                name = german_civil_war60opta
+        }
+}

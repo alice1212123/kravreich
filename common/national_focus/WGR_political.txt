@@ -1,0 +1,310 @@
+shared_focus = {
+	id = westphalia_emergency_diet
+	icon = GFX_focus_WGR_emergency_diet
+	x = 40
+	y = 0
+	cost = 20
+	cancelable = no
+	
+	bypass = {
+		NOT = {
+			DDR = {exists = yes}
+			GER = {exists = yes}
+		}
+	}
+	
+	completion_reward = {
+		country_event = {
+			id = westphalia.5
+		}
+	}
+}
+
+#shared_focus = {
+#	id = westphalia_loosen_conscription_requirements
+#	icon = GFX_focus_WGR_loosen_conscription_requirements
+#	prerequisite = {focus = westphalia_emergency_diet}
+#	relative_position_id = westphalia_emergency_diet
+#	x = -2
+#	y = 1
+#	cost = 5
+#	
+#	bypass = {
+#		NOT = {
+#			DDR = {exists = yes}
+#			GER = {exists = yes}
+#		}
+#	}
+#	
+#	completion_reward = {
+#		upgrade_conscription = yes
+#		add_popularity = {
+#			ideology = neutrality
+#			popularity = -0.1
+#		}
+#	}
+#}
+#
+#shared_focus = {
+#	id = westphalia_request_french_aid
+#	icon = GFX_focus_WGR_request_french_aid
+#	prerequisite = {focus = westphalia_emergency_diet}
+#	relative_position_id = westphalia_emergency_diet
+#	x = 0
+#	y = 1
+#	cost = 5
+#	
+#	bypass = {
+#		NOT = {
+#			DDR = {exists = yes}
+#			GER = {exists = yes}
+#		}
+#	}
+#	
+#	completion_reward = {
+#		add_political_power = -50
+#		FRA = {
+#			country_event = {
+#				id = ""
+#				hours = 4
+#			}
+#		}
+#	}
+#}
+#
+#shared_focus = {
+#	id = westphalia_promise_political_reform
+#	icon = GFX_focus_WGR_promise_political_reform
+#	prerequisite = {focus = westphalia_emergency_diet}
+#	relative_position_id = westphalia_emergency_diet
+#	x = 2
+#	y = 1
+#	cost = 5
+#	
+#	bypass = {
+#		NOT = {
+#			DDR = {exists = yes}
+#			GER = {exists = yes}
+#		}
+#	}
+#	
+#	completion_reward = {
+#		add_political_power = 100
+#		add_war_support = 0.1
+#		custom_effect_tooltip = westphalia_promise_political_reform_tooltip
+#	}
+#}
+#
+#shared_focus = {
+#	id = westphalia_stabilize
+#	icon = GFX_focus_WGR_stabilize
+#	available = {
+#		surrender_progress < 0.6
+#		date > 1936.08.01
+#	}
+#	x = 40
+#	y = 0
+#	cost = 10
+#	
+#	bypass = {
+#		NOT = {
+#			DDR = {exists = yes}
+#			GER = {exists = yes}
+#		}
+#	}
+#	
+#	completion_reward = {
+#		add_stability = 0.1
+#		add_war_support = 0.2
+#	}
+#}
+
+shared_focus = {
+	id = westphalia_attack_GER
+	icon = GFX_focus_WGR_attack_GER
+	x = 1
+	y = 1
+	relative_position_id = westphalia_emergency_diet
+	prerequisite = { focus = westphalia_emergency_diet }
+	bypass = {
+		GER = {
+			exists = no
+		}
+		NOT = {has_war_with = GER}
+	}
+	cost = 5
+	completion_reward = {
+		add_timed_idea = {
+			idea = GCW_attack_GER
+			days = 30
+		}
+	}
+}
+
+shared_focus = {
+	id = westphalia_attack_DDR
+	icon = GFX_focus_WGR_attack_DDR
+	x = -1
+	y = 1
+	relative_position_id = westphalia_emergency_diet
+	prerequisite = { focus = westphalia_emergency_diet }
+	bypass = {
+		DDR = {
+			exists = no
+		}
+		NOT = {has_war_with = DDR}
+	}
+	cost = 5
+	completion_reward = {
+		add_timed_idea = {
+			idea = GCW_attack_DDR
+			days = 30
+		}
+	}
+}
+
+
+### END OF GCW ###
+
+shared_focus = {
+	id = westphalia_frankfurt_parliament
+	icon = GFX_focus_WGR_frankfurt_parliament
+	
+	prerequisite = {focus = westphalia_attack_DDR}
+	prerequisite = {focus = westphalia_attack_GER}
+	available = {
+		has_full_control_of_state = 55
+	}
+	relative_position_id = westphalia_emergency_diet
+	x = 0
+	y = 2
+	cost = 10
+	
+	completion_reward = {
+		country_event = {
+			id = westphalia.9
+		}
+	}
+}
+
+shared_focus = {
+	id = westphalia_rejoin_continental_system
+	icon = GFX_focus_WGR_rejoin_continental_system
+	
+	prerequisite = {focus = westphalia_frankfurt_parliament}
+	available = {
+		NOT = { 
+			has_war_with = FRA 
+			is_in_faction = yes
+		}
+		OR = {
+			FRA = {
+				has_opinion = {
+					target = WGR
+					value > 49
+				}
+			}
+			is_ai = yes
+		}
+		FRA = {
+			is_faction_leader = yes
+		}
+	}
+	mutually_exclusive = {focus = westphalia_self_determination}
+	relative_position_id = westphalia_frankfurt_parliament
+	x = -4
+	y = 1
+	cost = 5
+	
+	completion_reward = {
+		FRA = {
+			country_event = {
+				id = westphalia.11
+				hours = 4
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 5
+	}
+}
+
+shared_focus = {
+	id = westphalia_self_determination
+	icon = GFX_focus_WGR_self_determination
+	
+	prerequisite = {focus = westphalia_frankfurt_parliament}
+	mutually_exclusive = {focus = westphalia_rejoin_continental_system}
+	relative_position_id = westphalia_frankfurt_parliament
+	x = 4
+	y = 1
+	cost = 5
+	
+	completion_reward = {
+		add_stability = 0.1
+		reverse_add_opinion_modifier = {
+			target = FRA
+			modifier = faction_traitor
+		}
+	}
+}
+
+shared_focus = {
+	id = westphalia_reject_reforms
+	icon = GFX_focus_WGR_reject_reforms
+	
+	prerequisite = {focus = westphalia_rejoin_continental_system}
+	mutually_exclusive = {focus = westphalia_kingdom_of_germany}
+	mutually_exclusive = {focus = westphalia_german_federation}
+	relative_position_id = westphalia_frankfurt_parliament
+	x = -8
+	y = 2
+	cost = 5
+	
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = westphalia_german_federation
+	icon = GFX_focus_WGR_german_federation
+	
+	prerequisite = {
+		focus = westphalia_rejoin_continental_system
+		focus = westphalia_self_determination
+	}
+	mutually_exclusive = {focus = westphalia_reject_reforms}
+	mutually_exclusive = {focus = westphalia_kingdom_of_germany}
+	relative_position_id = westphalia_frankfurt_parliament
+	x = 0
+	y = 2
+	cost = 5
+	
+	completion_reward = {
+		country_event = {
+			id = westphalia.13
+		}
+	}
+}
+
+shared_focus = {
+	id = westphalia_kingdom_of_germany
+	icon = GFX_focus_WGR_kingdom_of_germany
+	
+	prerequisite = {focus = westphalia_self_determination}
+	mutually_exclusive = {focus = westphalia_reject_reforms}
+	mutually_exclusive = {focus = westphalia_german_federation}
+	relative_position_id = westphalia_frankfurt_parliament
+	x = 8
+	y = 2
+	cost = 5
+	
+	completion_reward = {
+		country_event = {
+			id = westphalia.14
+		}
+	}
+}
+	

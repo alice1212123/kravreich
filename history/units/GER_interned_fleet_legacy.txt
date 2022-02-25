@@ -1,0 +1,31 @@
+﻿units = {
+	navy = {
+		name = "Hochseeflotte"
+		base = 241
+		location = 241
+		ship = { name = "KMS Arminius" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+		ship = { name = "KMS Baden" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "KMS Bayern" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+		ship = { name = "KMS Sachsen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "KMS Nassau" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }		
+
+		ship = { name = "KMS Beowulf" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = GER } } }
+
+		ship = { name = "KMS Zieten" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }	
+		ship = { name = "KMS Blitz" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "KMS Pfeil" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }	
+		ship = { name = "KMS Wacht" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+
+		ship = { name = "KMS Meteor" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } } 		
+		ship = { name = "KMS Comet" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "KMS Hela" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } } 		
+		ship = { name = "KMS Jagd" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }		
+		
+		ship = { name = "KMS Koyote" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "KMS Delphin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "KMS Drache" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "KMS Hornisse" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "KMS Haifisch" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }		
+		ship = { name = "KMS Wespe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }		
+	}
+}

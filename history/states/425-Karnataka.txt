@@ -1,0 +1,33 @@
+
+state={
+	id=425
+	name="STATE_425" # Mysore
+	manpower = 7348200
+	
+	state_category = town
+	
+	resources={
+		chromium=10
+		tungsten=76
+	}
+
+	history={
+		owner = BHU
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+
+		add_core_of = FIA
+		add_core_of = RAJ
+		add_core_of = BHU
+
+		victory_points = {
+			8011 1
+		}
+	}
+
+	provinces={
+		1412   4315 4344  5032 7244  7391   8011 8100 10190 10208    12146   12734 
+	}
+}

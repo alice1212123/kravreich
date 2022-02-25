@@ -1,0 +1,460 @@
+﻿division_template = {
+	name = "Tianjun"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Renmin Jundui"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "1. Tianjun"
+		location = 7137
+		division_template = "Tianjun"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2. Tianjun"
+		location = 7137
+		division_template = "Tianjun"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3. Tianjun"
+		location = 7137
+		division_template = "Tianjun"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4. Tianjun"
+		location = 7222
+		division_template = "Tianjun"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5. Tianjun"
+		location = 7222
+		division_template = "Tianjun"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6. Tianjun"
+		location = 7222
+		division_template = "Tianjun"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name =  "1. Renmin Jundui"
+		location = 12014
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "2. Renmin Jundui"
+		location = 12014
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "3. Renmin Jundui"
+		location = 12014
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "4. Renmin Jundui"
+		location = 12014
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "5. Renmin Jundui"
+		location = 12014
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	
+	division = {
+		name =  "6. Renmin Jundui"
+		location = 3992
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "7. Renmin Jundui"
+		location = 3992
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "8. Renmin Jundui"
+		location = 3992
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "9. Renmin Jundui"
+		location = 3992
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "10. Renmin Jundui"
+		location = 3992
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	
+	division = {
+		name =  "11. Renmin Jundui"
+		location = 12055
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "12. Renmin Jundui"
+		location = 12055
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "13. Renmin Jundui"
+		location = 12055
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "14. Renmin Jundui"
+		location = 12055
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "15. Renmin Jundui"
+		location = 12055
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	
+	division = {
+		name =  "16. Renmin Jundui"
+		location = 1089
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "17. Renmin Jundui"
+		location = 1089
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "18. Renmin Jundui"
+		location = 1089
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "19. Renmin Jundui"
+		location = 1089
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "20. Renmin Jundui"
+		location = 1089
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "21. Renmin Jundui"
+		location = 1202
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "22. Renmin Jundui"
+		location = 1202
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "23. Renmin Jundui"
+		location = 1202
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "24. Renmin Jundui"
+		location = 1202
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "25. Renmin Jundui"
+		location = 1202
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "26. Renmin Jundui"
+		location = 7191
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "27. Renmin Jundui"
+		location = 7191
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "28. Renmin Jundui"
+		location = 7191
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "29. Renmin Jundui"
+		location = 7191
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "30. Renmin Jundui"
+		location = 7191
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "31. Renmin Jundui"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "32. Renmin Jundui"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "33. Renmin Jundui"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "34. Renmin Jundui"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "35. Renmin Jundui"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "36. Renmin Jundui"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "37. Renmin Jundui"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "38. Renmin Jundui"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "39. Renmin Jundui"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "40. Renmin Jundui"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "41. Renmin Jundui"
+		location = 10057
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "42. Renmin Jundui"
+		location = 10057
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "43. Renmin Jundui"
+		location = 10057
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "44. Renmin Jundui"
+		location = 10057
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "45. Renmin Jundui"
+		location = 10057
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "46. Renmin Jundui"
+		location = 1083
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "47. Renmin Jundui"
+		location = 1083
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "48. Renmin Jundui"
+		location = 1083
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "49. Renmin Jundui"
+		location = 1083
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	division = {
+		name =  "50. Renmin Jundui"
+		location = 1083
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.95
+		start_experience_factor = 0.15
+	}
+	##### NAVAL UNITS #####
+	navy = {
+		name = "Taiping Navy"				
+		base = 7014
+		location =  7014 # Shanghai
+		ship = { name = "Nanjing" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Suzhou" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Shanghai" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Zhejiang" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Yangtze" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Gan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Hainan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Nangbo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Hangzhou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Fujian" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Xiamen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }
+		ship = { name = "Guangzhou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }
+	}					
+}
+
+air_wings = {
+	613 = { 
+		fighter_equipment_0 = { owner = "PRC" amount = 30 }
+		tac_bomber_equipment_0 =  { owner = "PRC" amount = 20 }
+	}
+}
+
+##### STARTING PRODUCTION #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRC"
+		}
+		requested_factories = 2
+		progress = 0.33
+		efficiency = 100
+	}
+}

@@ -1,0 +1,12 @@
+
+music = {
+	name = "maintheme"
+	file = "dvorak_symphony_9_movement_4.ogg"
+	volume = 2.00
+}
+
+music = {
+	name = "hoi4mainthemeallies"
+	file = "hoi4mainthemeallies.ogg"
+	volume = 0.65
+}

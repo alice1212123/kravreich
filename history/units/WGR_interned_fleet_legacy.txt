@@ -1,0 +1,31 @@
+﻿units = {
+	navy = {
+		name = "Hochseeflotte"
+		base = 241
+		location = 241
+		ship = { name = "SMS Arminius" definition = battleship equipment = { battleship_1 = { amount = 1 owner = WGR } } }
+		ship = { name = "SMS Baden" definition = battleship equipment = { battleship_1 = { amount = 1 owner = WGR } } }		
+		ship = { name = "SMS Bayern" definition = battleship equipment = { battleship_1 = { amount = 1 owner = WGR } } }
+		ship = { name = "SMS Sachsen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = WGR } } }		
+		ship = { name = "SMS Nassau" definition = battleship equipment = { battleship_1 = { amount = 1 owner = WGR } } }		
+
+		ship = { name = "SMS Beowulf" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = WGR } } }
+
+		ship = { name = "SMS Zieten" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = WGR } } }	
+		ship = { name = "SMS Blitz" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = WGR } } }
+		ship = { name = "SMS Pfeil" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = WGR } } }	
+		ship = { name = "SMS Wacht" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = WGR } } }
+
+		ship = { name = "SMS Meteor" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = WGR } } } 		
+		ship = { name = "SMS Comet" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = WGR } } }		
+		ship = { name = "SMS Hela" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = WGR } } } 		
+		ship = { name = "SMS Jagd" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = WGR } } }		
+		
+		ship = { name = "SMS Koyote" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WGR } } }		
+		ship = { name = "SMS Delphin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WGR } } }		
+		ship = { name = "SMS Drache" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WGR } } }		
+		ship = { name = "SMS Hornisse" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WGR } } }		
+		ship = { name = "SMS Haifisch" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WGR } } }		
+		ship = { name = "SMS Wespe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WGR } } }		
+	}
+}

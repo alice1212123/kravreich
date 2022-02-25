@@ -1,0 +1,31 @@
+
+state={
+	id=767
+	name="STATE_767"
+	manpower = 65000
+	resources={
+		oil=21
+	}
+	
+	state_category = rural
+
+
+	history={
+		owner = ENG
+		victory_points = {
+			8051 1 
+		}
+		buildings = {
+			infrastructure = 2
+			8051 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = QAT
+
+	}
+
+	provinces={
+		8051
+	}
+}

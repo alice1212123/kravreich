@@ -1,0 +1,62 @@
+
+state={
+	id=42
+	name="STATE_42"
+	resources={
+		steel=19.000
+		aluminium=24.000
+	}
+
+	history={
+		owner = FRA
+		set_variable = {
+			language = 4
+
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			3558 = {
+				bunker = 1
+
+			}
+			3423 = {
+				bunker = 1
+
+			}
+			11560 = {
+				bunker = 1
+
+			}
+
+		}
+		add_core_of = FRA
+		add_core_of = ALS
+		victory_points = {
+			9575 5 
+		}
+		victory_points = {
+			3423 5 
+		}
+		victory_points = {
+			11531 10 
+		}
+		victory_points = {
+			11560 5 
+		}
+		victory_points = {
+			3558 3 
+		}
+		victory_points = {
+			11435 1 
+		}
+
+	}
+
+	provinces={
+		563 3423 3558 9575 11435 11470 11531 11547 11560 
+	}
+	manpower=2318308
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,45 @@
+
+state={
+	id=817
+	name="STATE_817"
+	resources={
+		steel=3.000
+		aluminium=1.000
+	}
+
+	history={
+		owner = AUS
+		set_variable = {
+			language = 1
+
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			6673 = {
+				bunker = 1
+
+			}
+			671 = {
+				bunker = 1
+
+			}
+
+		}
+		victory_points = {
+			3673 5 
+		}
+		victory_points = {
+			11612 3 
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		668 671 3673 3674 6673 11612 
+	}
+	manpower=416270
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

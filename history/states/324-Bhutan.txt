@@ -1,0 +1,33 @@
+
+state={
+	id=324
+	name="STATE_324"
+	manpower = 450000
+	
+	
+	state_category = rural
+	
+	resources={
+
+		tungsten=2
+
+	}
+
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			8010 1
+		}
+		add_core_of = TIB
+		add_core_of = RAJ
+		add_core_of = FIA
+	}
+
+	provinces={
+		8010 12860 
+	}
+}

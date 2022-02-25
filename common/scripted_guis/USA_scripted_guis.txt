@@ -1,0 +1,41 @@
+scripted_gui = {
+
+	usa_rep_conflicts_decision_gui = {
+		context_type = decision_category
+		window_name = "usa_rep_conflicts_ui_window"
+
+		properties = {
+			usa_rep_conflicts_icon = {
+				image = "GFX_icon_usa_rep_conflicts"
+			}
+
+		}
+	}
+
+
+	usa_maritim_conflicts_decision_gui = {
+		context_type = decision_category
+		window_name = "usa_maritim_conflicts_ui_window"
+
+		properties = {
+			usa_rep_conflicts_icon = {
+				image = "GFX_icon_usa_rep_conflicts"
+			}
+
+		}
+	}
+
+
+	usa_dixieland_conflicts_decision_gui = {
+		context_type = decision_category
+		window_name = "usa_dixie_conflicts_ui_window"
+
+		properties = {
+			usa_rep_conflicts_icon = {
+				image = "GFX_icon_usa_dixie_conflicts"
+			}
+
+		}
+	}
+}
+
