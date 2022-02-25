@@ -1,71 +1,91 @@
-﻿﻿capital = 113
+﻿capital = 113
 
 oob = "IRE_1936"
 
-set_research_slots = 2
-set_stability = 0.6
-set_war_support = 0.1
-
-add_opinion_modifier = { target = FRA modifier = historic_friendship_modifier }
-add_opinion_modifier = { target = ENG modifier = historic_rivalry_modifier }
+set_research_slots = 3
 
 set_technology = {
 	infantry_weapons = 1
-	gw_artillery = 1
-}
-
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_destroyer = 1
-	}
-	#set_naval_oob = ""
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_light = 1
-		basic_battery = 1
-	}
-	#set_naval_oob = ""
+	infantry_weapons1 = 1
+	fuel_silos = 1
 }
 
 set_convoys = 10
 
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "IRE_1939"
+	set_technology = {
+		gw_artillery = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		fuel_refining = 1
+	}
+}
+
 set_politics = {
 	ruling_party = democratic
-	last_election = "1935.3.5"
+	last_election = "1933.1.24"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
-
 set_popularities = {
-	democratic = 5
-	fascism = 20
-	communism = 20
-	neutrality = 55
-}
-	
-add_ideas = {
-	free_trade
-	limited_conscription
-	civilian_economy
-	restricted
-	welfare_state
-	IRE_indep
-	IRE_eco
+	democratic = 98
+	fascism = 1
+	communism = 1
 }
 
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1938.6.17"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
 create_country_leader = {
 	name = "Éamon de Valera"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Ireland/eamon_de_valera.dds"
+	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
+	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
 	expire = "1965.1.1"
-	ideology = social_liberalism_ideology
+	ideology = conservatism
 	traits = {
 		#
 	}
@@ -73,10 +93,10 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Eoin O'Duffy"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Ireland/eoin_oduffy.dds"
+	desc = "POLITICS_EOIN_ODUFFY_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = corporatist_ideology
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
@@ -84,10 +104,10 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "James Larkin"
-	desc = ""
+	desc = "POLITICS_JAMES_LARKIN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = marxist_ideology
+	ideology = marxism
 	traits = {
 		#
 	}
@@ -95,57 +115,13 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "William Norton"
-	desc = ""
+	desc = "POLITICS_JAMES_LARKIN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = jacobin_ideology
+	ideology = centrism
 	traits = {
 		#
 	}
-}
-
-create_country_leader = {
-	name = "James Connolly"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Ireland/james_connolly.dds"
-	expire = "1965.1.1"
-	ideology = marxist_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Marie I"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Ireland/marie_female.dds"
-	expire = "1965.1.1"
-	ideology = reactionary_ideology
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "Michael Collins"
-	portrait_path = "gfx/leaders/European Countries/Ireland/michael_collins.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Eoin O'Duffy"
-	portrait_path = "gfx/leaders/European Countries/Ireland/eoin_oduffy.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -155,6 +131,6 @@ create_corps_commander = {
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
-	planning_skill = 2
+	planning_skill = 1
 	logistics_skill = 2
 }

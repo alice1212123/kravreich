@@ -1,46 +1,33 @@
+state = {
+	id = 185
+	name = "STATE_185"
+	manpower = 460900
+	state_category = four
+	local_supplies = 9.0
 
-state={
-	id=185
-	name="STATE_185"
-	resources={
-		chromium=14.000
-		steel=14.000
+	resources = {
+		chromium = 17
+		steel = 17
 	}
 
-	history={
-		owner = ALB
-		
-		set_variable = {language = 9}
-		
-		buildings = {
-			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 1
-			air_base = 3
-			9805 = {
-				naval_base = 1
-
-			}
-
-		}
-		add_core_of = ALB
+	history = {
+		owner = GRE
 		add_core_of = GRE
 		victory_points = {
-			3914 5 
+			9916 1
 		}
-		victory_points = {
-			10203 1 
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			industrial_complex = 2
+			9805 = {
+				naval_base = 1
+			}
 		}
-		victory_points = {
-			11767 3 
-		}
-
 	}
 
-	provinces={
-		841 914 3914 3980 9805 9916 10203 11767 
+	provinces = {
+		3914 9805 9916
 	}
-	manpower=760900
-	buildings_max_level_factor=1.000
-	state_category=rural
 }
+

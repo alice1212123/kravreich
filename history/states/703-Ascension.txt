@@ -1,10 +1,11 @@
-state={
-	id=703
-	name="STATE_703"
-	manpower=458
-	state_category = tiny_island
-	history= {
-		owner = ENG
+state = {
+	id = 703
+	name = "STATE_703"
+	manpower = 458
+	state_category = zero_island
+	history = {
+		owner = GER
+
 		buildings = {
 			infrastructure = 1
 			13013 = {
@@ -12,8 +13,9 @@ state={
 			}
 		}
 	}
-	
-	provinces={
-		13013 
+
+	provinces = {
+		13013
 	}
 }
+

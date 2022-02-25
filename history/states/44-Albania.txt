@@ -1,35 +1,40 @@
+state = {
+	id = 44
+	name = "STATE_44"
+	manpower = 750035
+	state_category = four
+	local_supplies = 5.0
 
-state={
-	id=44
-	name="STATE_44"
-	resources={
-		aluminium=3.000
-		chromium=3.000
+	resources = {
+		aluminium = 3
+		chromium = 3
 	}
 
-	history={
+	history = {
 		owner = ALB
-		
-		set_variable = {language = 9}
-		
 		victory_points = {
-			9780 20
+			9914 5 #Tirana
+		}
+		victory_points = {
+			9780 4 #Scutari/Shkodër
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 2
 			air_base = 3
-
+			9914 = {
+				naval_base = 4
+			}
+			11767 = {
+				bunker = 1
+			}
 		}
 		add_core_of = ALB
-
 	}
 
-	provinces={
-		3896 9780 11762 
+	provinces = {
+		3884 3896 9780 9875 9914 10245 11762 11767
 	}
-	manpower=813000
-	buildings_max_level_factor=1.000
-	state_category=town
 }
+

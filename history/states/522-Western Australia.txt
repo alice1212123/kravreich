@@ -1,30 +1,32 @@
+state = {
+	id = 522
+	name = "STATE_522"
+	manpower = 425308
+	state_category = three
 
-state={
-	id=522
-	name="STATE_522"
-	
-	manpower = 407200
-	state_category = rural
-
-	history={
+	history = {
 		owner = AST
+		add_core_of = AST
+		victory_points = {
+			1652 3 #Perth
+		}
+		victory_points = {
+			8228 1 #Fremantle
+		}
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 1
-            dockyard = 1
-			air_base = 2
-			1652 = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+			8228 = {
 				naval_base = 1
 				coastal_bunker = 1
 			}
 		}
-		victory_points = {
-			1652 3 
-		}
-		add_core_of = AST
 	}
 
-	provinces={
-		1652 2157 4630 5175 7453 8130 8228 8243 10983 
+	provinces = {
+		1526 1652 2157 2191 4630 5175 7453 8130 8200 8228 8243 10949 10969 10983 10997 11011 12948 12962 12976 12990
 	}
 }
+

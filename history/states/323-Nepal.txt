@@ -1,31 +1,28 @@
-
-state={
-	id=323
-	name="STATE_323"
+state = {
+	id = 323
+	name = "STATE_323"
 	manpower = 5573791
-	
-	state_category = rural
-	resources={
-		
-		chromium=2
-		
+
+	state_category = four
+	resources = {
+
+		chromium = 2
 	}
-	history={
-		owner = RAJ
+	history = {
+		owner = NEP
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 3
 		}
 		victory_points = {
-			4987 1
+			4987 3
 		}
-		add_core_of = TIB
-		add_core_of = RAJ
-		add_core_of = FIA
+		add_core_of = NEP
 	}
 
-	provinces={
-		4386 4987 5310 7374 10825 10910 12892 4435
+	provinces = {
+		4386 4987 5310 7374 10825 10910 12892
 	}
 }
+

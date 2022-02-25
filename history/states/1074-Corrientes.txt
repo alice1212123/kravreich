@@ -1,0 +1,24 @@
+state = {
+	id = 1074
+	name = "STATE_1074"
+	manpower = 179723
+	state_category = one
+
+	history = {
+		owner = ARG
+		set_demilitarized_zone = yes
+		add_core_of = ARG
+		add_claim_by = FOP
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			11007 3
+		}
+	}
+
+	provinces = {
+		11007 13242
+	}
+}
+

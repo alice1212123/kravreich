@@ -1,31 +1,68 @@
 ﻿capital = 405
 
-oob = "UZB_1936"
-
-set_research_slots = 3
-set_stability = 0.4
-set_war_support = 0.2
+#oob = ""
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-
-	tech_support = 1
-	tech_mountaineers = 1
-	gw_artillery = 1
 }
 
+set_convoys = 5
+
+1939.1.1 = {
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.3.5"
+	ruling_party = democratic
+	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
-
 set_popularities = {
-	democratic = 30
-	fascism = 10
-	communism = 10
-	neutrality = 50
+	democratic = 50
+	fascism = 1
+	communism = 40
+	neutrality = 9
 }
 
+#create_country_leader = {
+#	
+#	name = "Jonas Lote"
+#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+#	expire = "1965.1.1"
+#	ideology = centrism
+#	traits = {
+#		#
+#	}
+#}

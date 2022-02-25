@@ -1,21 +1,16 @@
-
-state={
-	id=313
-	name="STATE_313"
-	manpower = 2121000
-	resources={
-		chromium=4
-		steel=5
+state = {
+	id = 313
+	name = "STATE_313"
+	resources = {
+		chromium = 5
 	}
-	
-	state_category = large_town
 
-	history={
-		owner = URC
+	history = {
+		owner = GUA
 		buildings = {
-			infrastructure = 5
-			arms_factory = 1
-			industrial_complex = 2 
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
 			air_base = 1
 			10886 = {
 				naval_base = 1
@@ -23,21 +18,20 @@ state={
 			13085 = {
 				naval_base = 1
 			}
-			2077 = {
-				naval_base = 1
-			}
 		}
-		
-		add_core_of = URC
-		add_core_of = CSC
+		add_core_of = GUA
 		victory_points = {
-			10886 20
+			10886 6
 		}
-
+		victory_points = {
+			10842 1
+		}
 	}
 
-	provinces={
-		4991 10842 10886 13085 2077
+	provinces = {
+		4991 10842 10886 13085 13441 13444 13446 13701 13702 13703 13704
 	}
-	
+	manpower = 2046000
+	state_category = five
 }
+

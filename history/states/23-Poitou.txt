@@ -1,35 +1,32 @@
+state = {
+	id = 23
+	name = "STATE_23"
+	manpower = 1732886
+	state_category = five
 
-state={
-	id=23
-	name="STATE_23"
-	resources={
-		steel=30.000
+	resources = {
+		steel = 37
 	}
 
-	history={
+	history = {
 		owner = FRA
+		add_core_of = FRA
+		add_claim_by = NFA
 		victory_points = {
-			6657 3 
+			6657 1 #La Rochelle
 		}
 		buildings = {
-			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 1
+			infrastructure = 3
+			dockyard = 1
 			6657 = {
-				naval_base = 3
-
+				naval_base = 5
+				coastal_bunker = 1
 			}
-
 		}
-		add_core_of = FRA
-		add_core_of = OCC
-
 	}
 
-	provinces={
-		595 655 6657 9597 9631 11565 11582 11600 
+	provinces = {
+		595 625 629 655 3659 6657 9597 9631 11582 11596 11600 11869
 	}
-	manpower=1603100
-	buildings_max_level_factor=1.000
-	state_category=town
 }
+

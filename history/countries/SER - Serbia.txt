@@ -1,12 +1,12 @@
 ﻿capital = 107
 
-oob = "SER_1936"
+oob = "YUG_1936"
 
 set_research_slots = 3
-set_stability = 0.4
-set_war_support = 0.8
 
-set_variable = {language = 7}
+add_ideas = {
+	anti_german_military
+}
 
 set_technology = {
 	tech_support = 1		
@@ -16,151 +16,157 @@ set_technology = {
 	gwtank = 1
 	basic_light_tank = 1
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	fuel_silos = 1
 }
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
 	}
 	set_technology = {
-		early_submarine = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
+		early_submarine = 1
 		transport = 1
 	}
-	#set_naval_oob = ""
 }
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		basic_naval_mines = 1
+		early_ship_hull_submarine = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
-		early_ship_hull_submarine = 1
-		mtg_transport = 1
-		basic_torpedo = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
-		basic_depth_charges = 1
+		basic_torpedo = 1
+		mtg_transport = 1
 	}
-	#set_naval_oob = ""
 }
+
+1939.1.1 = {
+
+	add_ideas = {
+		limited_conscription
+	}
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "YUG_1939"
+	set_technology = {
+		fighter1 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		CAS1 = 1
+		naval_bomber1 = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		basic_destroyer = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		construction1 = 1
+		concentrated_industry = 1
+	}
+}
+
+set_convoys = 0
 
 set_politics = {
-	ruling_party = communism
-	last_election = "1934.6.5"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 36
+	elections_allowed = yes
 }
-
 set_popularities = {
-	democratic = 18
-	fascism = 20
-	communism = 39
-	neutrality = 23
+	democratic = 20
+	fascism = 30
+	communism = 20
+	neutrality = 30
 }
 
-add_ideas = {
-	extensive_conscription
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1939.1.1"
+		election_frequency = 36
+		elections_allowed = yes
+	}
 }
+set_stability = 0.6
 
 create_country_leader = {
-	name = "Alexander I"
+	name = "Draza Mihailovic"
 	desc = ""
-	picture = "gfx/leaders/European Countries/Serbia/king_alex1.dds"
+	picture = "gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
 	expire = "1965.1.1"
-	ideology = bonapartist_ideology
+	ideology = conservatism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Milan Stojadinovic"
-	desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
+	name = "Milan Nedic"
+	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = corporatist_ideology
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
 }
 
-create_country_leader = { # anti-communist partisan and ethnic cleanser
-	name = "Draža Mihailović"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Serbia/draza_mihailovic.dds"
-	expire = "1965.1.1"
-	ideology = social_darwinist_ideology
-	traits = {
-	}
-}
-
 create_country_leader = {
-	name = "Milan Grol"
-	desc = "POLITICS_MILAN_GROL_DESC"
+	name = "Peter Karadordevic"
+	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = national_liberalism_ideology
+	ideology = Despotism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Blagoje Nešković"
+	name = "Zivorad Jovanovic"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = marxist_ideology
+	ideology = leninism
 	traits = {
 		#
 	}
 }
-
-create_field_marshal = {
-	name = "Petar Bojović"
-	portrait_path = "gfx/leaders/European Countries/Serbia/petar_bojovic.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Stepa Stepanović"
-	portrait_path = "gfx/leaders/European Countries/Serbia/stepa_stepanovic.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Draža Mihailović"
-	portrait_path = "gfx/leaders/European Countries/Serbia/draza_mihailovic.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Živojin Mišić"
-	portrait_path = "gfx/leaders/European Countries/Serbia/zivojin_misic.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-

@@ -1,30 +1,30 @@
-state={
-	id=427
-	name="STATE_427"
-	manpower = 14013400
-	
-	state_category = town
-	
-	resources={
-		chromium=18
+state = {
+	id = 427
+	name = "STATE_427"
+	manpower = 15252450
+	state_category = six
+	local_supplies = 7.0
+
+	resources = {
+		chromium = 7
 	}
 
-	history={
-		owner = RAJ
-		add_core_of = RAJ
-		add_core_of = FIA
-		victory_points = {
-			8087 1
-		}
+	history = {
+		owner = PRF
+		add_core_of = PRF
+		add_claim_by = HND
+		add_claim_by = RAJ
+		victory_points = { 8087 10 } #Hyderabad
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 1
+			industrial_complex = 2
 			air_base = 3
+			arms_factory = 4
 		}
-
 	}
 
-	provinces={
-		1275 1317 1359 4280 4472 5019 5063 5104 8087 10311 10324 10511 11950 12114 12226 
+	provinces = {
+		1275 1317 1359 4280 4472 5019 5063 5104 7060 7411 8087 10259 10311 10324 10511 11950 12114 12226
 	}
 }
+

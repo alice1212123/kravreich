@@ -1,30 +1,20 @@
+state = {
+	id = 735
+	name = "STATE_735"
+	manpower = 239100
+	state_category = two
 
-state={
-	id=735
-	name="STATE_735"
-
-	history={
+	history = {
 		owner = FRA
-		set_variable = {
-			language = 4
-
-		}
 		add_core_of = FRA
-		add_core_of = SAV
-		victory_points = {
-			778 5 
-		}
+		add_claim_by = NFA
 		buildings = {
-			infrastructure = 4
-
+			infrastructure = 2
 		}
-
 	}
 
-	provinces={
-		611 778 3612 6609 9587 9603 9745 11570 11573 
+	provinces = {
+		6609 9745 11573
 	}
-	manpower=315200
-	buildings_max_level_factor=1.000
-	state_category=rural
 }
+

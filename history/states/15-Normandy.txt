@@ -1,54 +1,47 @@
+state = {
+	id = 15
+	name = "STATE_15"
+	manpower = 2331100
+	state_category = six
 
-state={
-	id=15
-	name="STATE_15"
-	resources={
-		steel=20.000
+	resources = {
+		steel = 27
 	}
 
-	history={
+	history = {
 		owner = FRA
+		add_core_of = FRA
+		add_claim_by = NFA
 		victory_points = {
-			9434 10 
+			9434 10 #Le Havre
 		}
 		victory_points = {
-			485 1 
+			6449 3 #Cherbourg
 		}
 		victory_points = {
-			11563 20 
+			11563 3 #Rouen
 		}
 		victory_points = {
-			11420 1 
-		}
-		victory_points = {
-			6585 1 
-		}
-		victory_points = {
-			454 1 
+			11535 1 #Caen
 		}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 3
 			industrial_complex = 1
-			dockyard = 1
-			485 = {
-				naval_base = 1
-
+			arms_factory = 1
+			air_base = 6
+			6449 = {
+				naval_base = 6
+				coastal_bunker = 1
 			}
 			9434 = {
-				naval_base = 1
-
+				naval_base = 3
+				coastal_bunker = 1
 			}
-
 		}
-		add_core_of = FRA
-		add_core_of = NMD
-
 	}
 
-	provinces={
-		454 485 3549 6569 6585 6599 9434 9578 11420 11563 
+	provinces = {
+		539 553 3534 3549 3579 6449 6599 9434 9550 9578 11521 11535 11563 485 6569
 	}
-	manpower=1802100
-	buildings_max_level_factor=1.000
-	state_category=city
 }
+

@@ -1,30 +1,24 @@
+state = {
+	id = 156
+	name = "STATE_156"
+	manpower = 2315000
 
-state={
-	id=156
-	name="STATE_156"
-	resources={
-		steel=2.000
-	}
-
-	history={
-		owner = ITA
-		victory_points = {
-			12066 5 
-		}
-		
+	state_category = five
+	history = {
+		owner = SIC
+		add_core_of = SIC
+		add_claim_by = SRI
+		add_claim_by = ITA
+		victory_points = { 9990 2 } #Reggio di Calabria
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 2
+			air_base = 5
+			industrial_complex = 2
 		}
-		add_core_of = NAP
-		add_core_of = ITA
-
 	}
 
-	provinces={
-		3901 3968 9990 10027 12066 12098 
+	provinces = {
+		3901 3958 3968 6972 9856 9990 10027 12066 12098
 	}
-	manpower=1024315
-	buildings_max_level_factor=1.000
-	state_category=rural
 }
+

@@ -2,62 +2,85 @@
 
 oob = "PER_1936"
 
-set_research_slots = 3
-set_stability = 0.4
-set_war_support = 0.2
-set_convoys = 10
-
-add_opinion_modifier = { target = TUR modifier = historic_rivalry_modifier }
-add_opinion_modifier = { target = ENG modifier = historic_friendship_modifier }
-add_opinion_modifier = { target = FRA modifier = historic_friendship_modifier }
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 	gw_artillery = 1
 	early_fighter = 1
 	CAS1 = 1
 }
 
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1932.5.1"
-	election_frequency = 48
-	elections_allowed = no
-}
+1939.1.1 = {
 
-set_popularities = {
-	democratic = 20
-	fascism = 5
-	communism = 15
-	neutrality = 60
-}
+	add_political_power = 1198
 	
-add_ideas = {
-	absolute_monarchy_law
-	agrarian_estates_law
-	limited_conscription
-	partial_economic_mobilisation
-	novote
-	neutrality_idea
-}
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "PER_1939"
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		gw_artillery = 1
+		interwar_antiair = 1
+		interwar_artillery = 1
+		gwtank = 1
 
-create_country_leader = {
-	name = "Ahmad Shah Qajar"
-	desc = ""
-	picture = "gfx/leaders/Asian Countries/Iran/persian_shah.dds"
-	expire = "1965.1.1"
-	ideology = reactionary_ideology
-	traits = {
+		#doctrines
+		air_superiority = 1
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
 	}
 }
 
+set_convoys = 10
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
 create_country_leader = {
-	name = "Reza Pahlavi"
-	desc = ""
+	name = "Reza Shah Pahlavi"
+	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
 	picture = "Portrait_Iran_Reza_Shah_Pahlavi.dds"
 	expire = "1965.1.1"
-	ideology = corporatist_ideology
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -80,21 +103,10 @@ create_country_leader = {
 	desc = "POLITICS_SOLEYMAN_MIRZA_ESKANDARI_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = jacobin_ideology
+	ideology = anarchist_communism
 	traits = {
 		#
 	}
-}
-
-create_field_marshal = {
-	name = "Ahmad Shah Qajar"
-	portrait_path = "gfx/leaders/Asian Countries/Iran/persian_shah_military.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
 }
 
 create_corps_commander = {

@@ -1,28 +1,27 @@
+state = {
+	id = 636
+	name = "STATE_636"
+	manpower = 180000
 
-state={
-	id=636
-	name="STATE_636"
-	manpower = 185000
-	
-	state_category = rural
+	state_category = one_island
 
-	history={
-		owner = HAW
-		add_core_of = HAW
+	history = {
+		owner = AST
+		add_core_of = AST
 		buildings = {
-			arms_factory = 1
-			infrastructure = 3
-			4286 = {
+			infrastructure = 1
+			7302 = {
 				naval_base = 1
 			}
 		}
-		
+
 		victory_points = {
-			4286 1 
+			4286 1
 		}
 	}
-	
-	provinces={
-		4286 7302 12159 
+
+	provinces = {
+		4286 7302 12159
 	}
 }
+

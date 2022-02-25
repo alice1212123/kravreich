@@ -1,19 +1,21 @@
-state={
-	id=699
-	name="STATE_699"
-	manpower = 32000
-	
-	state_category = pastoral
+state = {
+	id = 699
+	name = "STATE_699"
+	manpower = 21056
+	state_category = wasteland
+	impassable = yes
 
-	history={
-		owner = SPR
+	history = {
+		owner = SPA
 		add_core_of = MOR
+		add_claim_by = SPA
 		buildings = {
 			infrastructure = 1
 		}
 	}
-	
-	provinces={
-		4920 5012 7979 8038 8111 10875  
+
+	provinces = {
+		5012
 	}
 }
+

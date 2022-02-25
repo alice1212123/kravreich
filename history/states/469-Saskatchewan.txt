@@ -1,27 +1,28 @@
+state = {
+	id = 469
+	name = "STATE_469"
+	manpower = 908888
 
-state={
-	id=469
-	name="STATE_469"
+	state_category = three
 
-	history={
-		owner = BCA
+	history = {
+		owner = CAN
 		buildings = {
-			infrastructure = 8
-			industrial_complex = 2
-			arms_factory = 2
-
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 		}
-		add_core_of = BCA
 		victory_points = {
-			736 3 
+			12603 4
 		}
-
+		victory_points = {
+			4739 1
+		}
+		add_core_of = CAN
 	}
 
-	provinces={
-		736 1671 1788 3481 3498 3769 4739 9669 10552 10611 10656 11440 12593 12603 12663 12682 13183 
+	provinces = {
+		736 1671 1788 3481 3498 3769 3800 4695 4739 6779 9669 10552 10611 10656 11440 12593 12603 12663 12682 13168 13183 13185 13187
 	}
-	manpower=1265605
-	buildings_max_level_factor=1.000
-	state_category=large_town
 }
+

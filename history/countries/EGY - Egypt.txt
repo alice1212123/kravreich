@@ -1,17 +1,61 @@
 ﻿capital = 446
 
-oob = "EGY_1936_deluge"
-
-set_research_slots = 3
-set_stability = 0.4
-set_war_support = 0.2
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_support = 1
-	tech_engineers = 1
+	gwtank = 1
 }
+
+set_convoys = 20
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
 
 set_politics = {
 	ruling_party = neutrality
@@ -19,44 +63,18 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
-	democratic = 40
-	fascism = 5
+	democratic = 25
+	fascism = 20
 	communism = 5
 	neutrality = 50
 }
 
-set_convoys = 12
-
-set_cosmetic_tag = EGY_SPR
-
-	
 create_country_leader = {
 	name = "Muhammad Naguib"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
-	ideology = social_liberalism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Youssef Wahba Pasha"
-	desc = ""
-	picture = "gfx/leaders/deluge/youssef_wahba_pasha.dds"
-	ideology = national_liberalism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Saad Zaghloul"
-	desc = ""
-	picture = "gfx/leaders/deluge/saad_zaghloul.dds"
-	ideology = national_liberalism_ideology
+	ideology = liberalism
 	traits = {
 		#
 	}
@@ -66,27 +84,17 @@ create_country_leader = {
 	name = "Ahmed Husayn"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
-	ideology = corporatist_ideology
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Shaykh Abd al-Majid Salim"
+	name = "Farouk Muhammad Ali"
 	desc = ""
-	picture = "gfx/leaders/deluge/caucasian_imam.dds"
-	ideology = religious_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Farouk I"
-	desc = ""
-	picture = "gfx/leaders/African Countries/Egypt/king_farouk_egypt.dds"
-	ideology = reactionary_ideology
+	picture = "GFX_portrait_egy_faud_i"
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -96,31 +104,8 @@ create_country_leader = {
 	name = "Hosni al-Arabi"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = marxist_ideology
+	ideology = leninism
 	traits = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Gamal Abdel Nasser"
-	desc = ""
-	picture = "gfx/leaders/deluge/nasser_time_magazine.dds"
-	ideology = jacobin_ideology
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Gamal Abdel Nasser"
-	portrait_path = "gfx/leaders/deluge/nasser_time_magazine.dds"
-	traits = { }
-	skill = 2
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-

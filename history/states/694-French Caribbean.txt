@@ -1,15 +1,18 @@
-state={
-	id=694
-	name="STATE_694"
-	manpower = 444290
+state = {
+	id = 694
+	name = "STATE_694"
+	manpower = 555540
+	state_category = one_island
+	local_supplies = 3.0
 
-	state_category = small_island
-
-	history={
-		owner = LOU
-		add_core_of = CBN
+	history = {
+		owner = WIF
+		add_core_of = WIF
+		victory_points = {
+			177 4
+		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			air_base = 1
 			177 = {
 				naval_base = 3
@@ -17,13 +20,11 @@ state={
 			9377 = {
 				naval_base = 1
 			}
-			13084 = {
-				naval_base = 1
-			}
 		}
 	}
-	
-	provinces={
-		177 9377 13084 
+
+	provinces = {
+		177 9377
 	}
 }
+

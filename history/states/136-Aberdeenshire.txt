@@ -1,28 +1,30 @@
+state = {
+	id = 136
+	name = "STATE_136"
+	manpower = 803563
+	state_category = five
 
-state={
-	id=136
-	name="STATE_136"
-	manpower = 745466
-	
-	state_category = town
-	resources={
-		tungsten=4
-		aluminium=3
+	resources = {
+		tungsten = 5
+		aluminium = 3
 	}
 
-	history={
+	history = {
 		owner = ENG
-		victory_points = {
-			11136 3
-		}
-		buildings = {
-			infrastructure = 6
-			dockyard = 2
-		}
 		add_core_of = ENG
+		add_claim_by = CAN
+		victory_points = { 3150 5 }
+		victory_points = { 9161 1 }
+		victory_points = { 11136 3 }
+		buildings = {
+			infrastructure = 3
+			dockyard = 2
+			industrial_complex = 1
+		}
 	}
 
-	provinces={
-		200 3150 9161 11055 11136 11207 11306 
+	provinces = {
+		200 3150 9161 11055 11136 11207 11306
 	}
 }
+

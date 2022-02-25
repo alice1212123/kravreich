@@ -1,26 +1,29 @@
+state = {
+	id = 242
+	name = "STATE_242"
+	manpower = 1129365
+	state_category = five
 
-state={
-	id=242
-	name="STATE_242"
-	manpower = 1300028
-	
-	state_category = large_town
-
-	history={
-		owner = SOV
+	history = {
+		owner = RUS
+		add_core_of = RUS
+		add_claim_by = TRM
+		add_claim_by = WHR
 		victory_points = {
-			306 20
+			306 15
+		}
+		victory_points = {
+			11336 2
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 2
 			industrial_complex = 1
-			air_base = 2
+			air_base = 5
 		}
-		add_core_of = SOV
-		add_core_of = MOS
 	}
 
-	provinces={
-		306 335 3247 3279 3313 3362 6273 6387 9272 9318 9382 9399 11254 11290 11353 11384 
+	provinces = {
+		223 236 287 306 3210 3235 3247 3297 3313 3362 6243 6273 6305 6367 6387 6400 9351 9399 11336
 	}
 }
+

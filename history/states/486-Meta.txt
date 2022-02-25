@@ -1,24 +1,22 @@
+state = {
+	id = 486
+	name = "STATE_486"
 
-state={
-	id=486
-	name="STATE_486"
-	manpower = 213160
-	
-	state_category = rural
-
-	history={
-		owner = GCB
+	history = {
+		owner = COL
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = GCB
 		add_core_of = COL
 		victory_points = {
-			12729 1
+			1887 2
 		}
 	}
 
-	provinces={
-		1887 2007 5026 10792 12729 12770 12825 13237 13238 13239 13240 13277 13278 13279 13280 13281 13282 13305 13306
+	provinces = {
+		1887 5026 13411 13413 13416 13426 13542
 	}
+	manpower = 57214
+	state_category = one
 }
+

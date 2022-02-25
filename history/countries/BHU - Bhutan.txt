@@ -1,16 +1,53 @@
-﻿capital = 320
+﻿capital = 324
 
 oob = "BHU_1936"
-
-set_cosmetic_tag = BHU_FR
-
-set_research_slots = 3
-set_stability = 0.4
-set_war_support = 0.2
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+set_war_support = 0.1
+set_stability = 0.8
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "BHU_1939"
+	set_technology = {
+		infantry_weapons = 1
+		tech_mountaineers = 1
+
+		#doctrines
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		dispersed_industry = 1
+	}
 }
 
 set_politics = {
@@ -21,81 +58,28 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 10
-	fascism = 5
-	communism = 5
-	neutrality = 80
-}
-
-add_ideas = {
-	novote
-	fixed_exchange
-	labour_camps
+	neutrality = 100
 }
 
 create_country_leader = {
-	name = "Rajagopala Tondaiman"
-	desc = ""
-	picture = "gfx/leaders/Asian Countries/French IndiaAsian Countries/French India/mir_osman_ali_khan.dds"
+	name = "Jigme Wangchuck"
+	desc = "POLITICS_JIGME_WANGCHUCK_DESC"
+	picture = "GFX_portrait_buthan_jigme_wangchuk"
 	expire = "1965.1.1"
-	ideology = corporatist_ideology
+	ideology = despotism
 	traits = {
 		#
 	}
 }
 
-create_country_leader = {
-	name = "Chithira Thirunal"
-	desc = ""
-	picture = "gfx/leaders/Asian Countries/French India/chithira_thirunal_balarama_varma.dds"
-	expire = "1965.1.1"
-	ideology = bonapartist_ideology
-	traits = {
-		#
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
 	}
-}
-
-create_country_leader = {
-	name = "Louis Alexis Étienne Bonvin"
-	desc = ""
-	picture = "gfx/leaders/Asian Countries/French India/louis_faidherbe.dds"
-	expire = "1965.1.1"
-	ideology = reactionary_ideology
-	traits = {
-		#
+	set_popularities = {
+		neutrality = 100
 	}
-}
-
-create_country_leader = {
-	name = "P. Krishna Pillai"
-	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = jacobin_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "B. P. Sitaramayya"
-	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = social_liberalism_ideology
-	traits = {
-		
-	}
-}
-
-
-create_field_marshal = {
-	name = "Louis Alexis Étienne Bonvin"
-	portrait_path = "gfx/leaders/Asian Countries/French India/louis_faidherbe.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
 }

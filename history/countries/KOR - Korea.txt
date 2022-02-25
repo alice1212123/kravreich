@@ -2,10 +2,6 @@
 
 oob = "KOR_1936"
 
-set_research_slots = 3
-set_stability = 0.4
-set_war_support = 0.2
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -20,31 +16,30 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-
 set_popularities = {
-	democratic = 10
-	fascism = 20
-	communism = 5
-	neutrality = 65
+	democratic = 35
+	fascism = 25
+	communism = 30
+	neutrality = 10
 }
 
 create_country_leader = {
-	name = "King Gojong"
+	name = "Syngman Rhee"
 	desc = ""
-	picture = "gfx/leaders/deluge/emperor_gojong.dds"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = reactionary_ideology
+	ideology = conservatism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Syngman Rhee"
+	name = "Yi Kang"
 	desc = ""
-	picture = "gfx/leaders/deluge/syngman_rhee.dds"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = national_liberalism_ideology
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -53,20 +48,20 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kim Il-sung"
 	desc = ""
-	picture = "gfx/leaders/deluge/kim_il-sung.dds"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = marxist_ideology
+	ideology = stalinism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Crown Prince Sunjong"
+	name = "Yi Un"
 	desc = ""
-	picture = "gfx/leaders/deluge/rooftop_prince.dds"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = social_darwinist_ideology
+	ideology = fascism_ideology
 	traits = {
 		#
 	}

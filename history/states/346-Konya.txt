@@ -1,27 +1,39 @@
+state = {
+	id = 346
+	name = "STATE_346"
+	manpower = 1427903
+	state_category = four
+	local_supplies = 7.0
 
-state={
-	id=346
-	name="STATE_346"
-
-	history={
+	history = {
 		owner = TUR
+		add_core_of = TUR
 		buildings = {
+			infrastructure = 2
 			arms_factory = 1
-			infrastructure = 3
-			air_base = 5
-
+			1005 = {
+				naval_base = 2
+			}
+			4127 = {
+				bunker = 1
+			}
+			4124 = {
+				bunker = 1
+			}
 		}
 		victory_points = {
-			940 10
+			940 5
 		}
-		add_core_of = TUR
-
+		victory_points = {
+			1005 3
+		}
+		victory_points = {
+			10056 3
+		}
 	}
 
-	provinces={
-		940 3788 6807 6894 9755 9763 9811 11792 11860 
+	provinces = {
+		784 869 940 961 1005 1119 1122 3788 3876 4008 4124 4127 4962 6807 6894 7026 7143 9755 9763 9830 9861 10056 11792 11810 11860 12013 12016 13122
 	}
-	manpower=430305
-	buildings_max_level_factor=1.000
-	state_category=rural
 }
+

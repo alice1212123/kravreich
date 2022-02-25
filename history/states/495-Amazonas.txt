@@ -1,25 +1,28 @@
+state = {
+	id = 495
+	name = "STATE_495"
+	manpower = 408400
+	state_category = one
 
-state={
-	id=495
-	name="STATE_495"
-	manpower = 70000
-	
-	state_category = wasteland
-	impassable = yes
-	
-	resources={
+	resources = {
+		aluminium = 4
 	}
 
-	history={
+	history = {
 		owner = BRA
 		buildings = {
-			infrastructure = 0
-
+			infrastructure = 1
+			industrial_complex = 1
 		}
 		add_core_of = BRA
+
+		victory_points = {
+			10934 10
+		}
 	}
 
-	provinces={
-		2198 5083 5214 5216 5232 8172 8185 8254 10956 10960 12919 13083 13285 13283
+	provinces = {
+		1979 10934 12919 13083 13319 13325 13329 13330 13338 13339 13340 13341 13351 13353 13355 13358 13359 13363 13366 13525 13527 13535
 	}
 }
+

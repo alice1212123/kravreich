@@ -1,78 +1,78 @@
-﻿captial = 294
+﻿capital = 294
 
-oob = OMA
-
-set_research_slots = 6
-set_stability = 0.4
-set_war_support = 0.2
+oob = "OMA_1936"
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 }
 
-set_convoys = 5
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+
+set_convoys = 10
+set_war_support = 0.1
+set_stability = 0.8
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "OMA_1939"
+	set_technology = {
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
-}
-
-add_ideas = {
-	extensive_conscription
-	novote
+	neutrality = 100
 }
 
 create_country_leader = {
-	name = "Arie Skatkov"
-	desc = ""
-	picture = "gfx/leaders/BLACKTOPIA/fake_arie.dds"
+	name = "Said bin Taimur"
+	desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+	picture = "GFX_portrait_oman_said_bin_taimur"
 	expire = "1965.1.1"
-	ideology = social_darwinist_ideology
-	traits = {
-		#
-	}
-}
-
-
-create_country_leader = {
-	name = "STD LEADER"
-	desc = ""
-	picture = "gfx/leaders/BLACKTOPIA/tsar_STD.dds"
-	expire = "1965.1.1"
-	ideology = social_liberalism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Real Tang?"
-	desc = ""
-	picture = "gfx/leaders/BLACKTOPIA/Buddhist_commie.dds"
-	expire = "1965.1.1"
-	ideology = marxist_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "King Sam Gruzinsky"
-	desc = ""
-	picture = "gfx/leaders/BLACKTOPIA/Buddhist_commie.dds"
-	expire = "1965.1.1"
-	ideology = reactionary_ideology
+	ideology = despotism
 	traits = {
 		#
 	}

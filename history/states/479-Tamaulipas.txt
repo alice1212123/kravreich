@@ -1,34 +1,27 @@
-
-state={
-	id=479
-	name="STATE_479"
+state = {
+	id = 479
+	name = "STATE_479"
 	manpower = 1032988
-	
-	state_category = town
+	state_category = four
 
-	resources={
-		oil=9
-		#steel=2 moved to Guerrero
+	resources = {
+		oil = 14 #10
 	}
-	
-	history={
+
+	history = {
 		owner = MEX
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-		}
 		add_core_of = MEX
 		victory_points = {
-			4956 10
+			4956 2
 		}
-		victory_points = {
-			5015 5
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
 		}
-
 	}
 
-	provinces={
-		1952 2083 4956 5015 5021 12721 13088 
+	provinces = {
+		1952 2083 4956 5015 5021 12721 13088 13471 13472 13476
 	}
-	
 }
+

@@ -1,25 +1,26 @@
-state=
-{
-	id=638
-	name="STATE_638"
-	state_category = small_island
-	manpower=75153
-	history=
-	{
-		owner = FRA
-		
+state = {
+	id = 638
+	name = "STATE_638"
+	state_category = one_island
+	manpower = 20900
+
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_claim_by = JAP
+		victory_points = {
+			12140 1
+		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 2
 			12140 = {
 				naval_base = 1
 			}
 		}
-		victory_points = {
-			12140 1
-		 }
-
 	}
-	provinces={
+
+	provinces = {
 		12140
 	}
 }
+

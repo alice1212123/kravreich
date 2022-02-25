@@ -1,0 +1,45 @@
+ideologies = {
+	vanguard_socialism = {
+		types = {
+			
+		}
+	}
+	union_socialism = {
+		types = {
+			
+		}
+	}
+	social_democracy = {
+		types = {
+			
+		}
+	}
+	social_liberalism = {
+		types = {
+			
+		}
+	}
+	market_liberalism = {
+		types = {
+			
+		}
+	}
+	social_conservatism = {
+		types = {
+			
+		}
+	}
+	authoritarian_democracy = {
+		types = {
+			
+		}
+	}
+	autocracy = {
+		types = {
+			
+		}
+	}
+	esoteric_nationalism = {
+
+	}
+}

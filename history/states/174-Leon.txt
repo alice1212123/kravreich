@@ -1,27 +1,28 @@
+state = {
+	id = 174
+	name = "STATE_174"
+	manpower = 749041
+	state_category = two
+	local_supplies = 12.0
 
-state={
-	id=174
-	name="STATE_174"
-	manpower = 1049041
-	
-	state_category = town
-
-	history={
-		owner = SPR
+	history = {
+		owner = SPA
+		add_core_of = SPA
 		victory_points = {
-			726 5
-		}
-		victory_points = {
-			918 3
+			726 1
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
+			arms_factory = 1
 			industrial_complex = 1
+			6907 = {
+				bunker = 1
+			}
 		}
-		add_core_of = SPR
 	}
 
-	provinces={
-		726 918 920 3725 3727 3918 3920 6746 6907 9699 11843 13219 13232
+	provinces = {
+		726 918 920 3725 3727 3918 3920 4024 6746 6907 9699 11843 13602 13610
 	}
 }
+

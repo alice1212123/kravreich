@@ -1,16 +1,62 @@
-﻿capital = 321
+﻿capital = 323
 
 oob = "NEP_1936"
 
-set_cosmetic_tag = NEP_PR
-
-set_research_slots = 3
-set_stability = 0.4
-set_war_support = 0.2
+add_ideas = {
+	NEP_royal_army
+}
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+set_war_support = 0.1
+set_stability = 0.8
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "NEP_1939"
+	set_technology = {
+		gw_artillery = 1
+		tech_support = 1		
+		tech_engineers = 1
+		infantry_weapons1 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
 }
 
 set_politics = {
@@ -19,72 +65,17 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
-	democratic = 10
-	fascism = 5
-	communism = 5
-	neutrality = 80
-}
-
-add_ideas = {
-	novote
-	fixed_exchange
-	labour_camps
+	neutrality = 100
 }
 
 create_country_leader = {
-	name = "José Ricardo Pereira Cabral"
-	desc = ""
-	picture = "gfx/leaders/Asian Countries/Portuguese India/portuguese_officer.dds"
+	name = "Juddha Rana"
+	desc = "POLITICS_JUDDHA_RANA_DESC"
+	picture = "GFX_portrait_nepal_portrait_juddah_rana"
 	expire = "1965.1.1"
-	ideology = reactionary_ideology
+	ideology = despotism
 	traits = {
 		#
 	}
-}
-
-create_country_leader = {
-	name = "Jaya Chamarajendra"
-	desc = ""
-	picture = "gfx/leaders/Asian Countries/Portuguese India/jayachamarajendra_wadiyar.dds"
-	expire = "1965.1.1"
-	ideology = religious_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "P. Krishna Pillai"
-	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = jacobin_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "B. P. Sitaramayya"
-	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = social_liberalism_ideology
-	traits = {
-		
-	}
-}
-
-
-create_field_marshal = {
-	name = "José Ricardo Pereira Cabral"
-	portrait_path = "gfx/leaders/deluge/portuguese_officer.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
 }

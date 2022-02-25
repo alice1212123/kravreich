@@ -1,57 +1,96 @@
 ﻿capital = 629
 
-oob = "HAW_1936"
-
-set_cosmetic_tag = HAW_GB
-
-set_research_slots = 3
-set_stability = 0.4
-set_war_support = 0.2
-set_convoys = 10
+#oob = ""
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
 
+set_convoys = 20
+
+1939.1.1 = {
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
-	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
-	democratic = 20
-	fascism = 5
-	communism = 5
-	neutrality = 70
-}
-
-add_ideas = {
-	extensive_conscription
-	deluge_hawaii_march_idea
+	democratic = 38
+	fascism = 6
+	communism = 6
+	neutrality = 50
 }
 
 create_country_leader = {
-	name = "Edward I"
+	name = "David Kalakaua Kawananakoa"
 	desc = ""
-	picture = "gfx/leaders/Oceanic Countries/Hawaii/Edward_A_Kawānanakoa_gb.dds"
-	expire = "1965.1.1"
-	ideology = bonapartist_ideology
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	ideology = despotism
 	traits = {
 		#
 	}
 }
 
+create_country_leader = {
+	name = "David Kalakaua Kawananakoa"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
 
-create_field_marshal = {
-	name = "Edward I"
-	portrait_path = "gfx/leaders/Oceanic Countries/Hawaii/Edward_A_Kawānanakoa_mil.dds"
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
+create_country_leader = {
+	name = "Joseph Poindexter"
+	desc = ""
+	picture = "gfx/leaders/USA/Portrait_USA_Generic_land_1.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Charles Fujimoto"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+	ideology = marxism
+	traits = {
+		#
+	}
 }

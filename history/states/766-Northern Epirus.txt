@@ -1,0 +1,21 @@
+state = {
+	id = 766
+	name = "STATE_766"
+	manpower = 298965
+
+
+	state_category = two
+
+	history = {
+		owner = ALB
+		add_core_of = ALB
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		914 3448 6900
+	}
+}
+

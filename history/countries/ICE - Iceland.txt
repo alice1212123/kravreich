@@ -3,16 +3,14 @@
 oob = "ICE_1936"
 
 set_research_slots = 3
-set_stability = 0.4
-set_war_support = 0.2
-
-set_variable = {language = 2} #north germanic
 
 add_ideas = {
+	disarmed_nation
 }
 
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 	tech_support = 1		
 	tech_engineers = 1
 	early_fighter = 1
@@ -20,36 +18,58 @@ set_technology = {
 	tech_recon = 1
 }
 
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "ICE_1939"
 	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
 	}
-	#set_naval_oob = ""
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		basic_naval_mines = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_submarine = 1
-		basic_torpedo = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_secondary_battery = 1
-		basic_depth_charges = 1
-	}
-	#set_naval_oob = ""
 }
 
 set_convoys = 30
+set_stability = 0.75
 
 set_politics = {
 	ruling_party = democratic
@@ -57,20 +77,33 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = yes
 }
-
 set_popularities = {
-	democratic = 50
-	fascism = 10
-	communism = 20
-	neutrality = 20
+	democratic = 96
+	fascism = 2
+	communism = 2
 }
-	
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1936.10.19"
+		election_frequency = 36
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 84
+		fascism = 2
+		communism = 2
+		neutrality = 12
+	}
+}
+
 create_country_leader = {
 	name = "Sveinn Björnsson"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "portrait_ice_sveinn_bjornsson.dds"
 	expire = "1965.1.1"
-	ideology = social_liberalism_ideology
+	ideology = conservatism
 	traits = {
 		#
 	}
@@ -81,7 +114,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = corporatist_ideology
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
@@ -92,7 +125,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = bonapartist_ideology
+	ideology = centrism
 	traits = {
 		#
 	}
@@ -103,7 +136,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = marxist_ideology
+	ideology = marxism
 	traits = {
 		#
 	}

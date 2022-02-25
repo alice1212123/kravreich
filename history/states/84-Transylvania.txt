@@ -1,41 +1,39 @@
+state = {
+	id = 84
+	name = "STATE_84"
+	manpower = 1723144
+	state_category = three
 
-state={
-	id=84
-	name="STATE_84"
-	resources={
-		steel=3.000
+	resources = {
+		steel = 3
 	}
 
-	history={
-		owner = ROM
-		
-		set_variable = {language = 10}
-		
+	history = {
+		owner = HUN
+		add_core_of = HUN
+		add_core_of = TRS
+		add_claim_by = ROM
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
-
+			6709 = {
+				bunker = 1
+			}
+			3676 = {
+				bunker = 1
+			}
 		}
 		victory_points = {
-			690 3 
+			6679 2
 		}
 		victory_points = {
-			676 5 
+			3676 5
 		}
-		victory_points = {
-			6711 10 
-		}
-		add_core_of = HUN
-		add_core_of = ROM
-		add_core_of = TRN
-
 	}
 
-	provinces={
-		676 690 693 727 3665 3676 3694 6679 6709 6711 6714 6731 9619 9672 9685 9704 11622 11639 11676 
+	provinces = {
+		676 3665 3676 6679 6709 9619 11622 11639
 	}
-	manpower=2574300
-	buildings_max_level_factor=1.000
-	state_category=town
 }
+

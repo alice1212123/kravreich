@@ -1,22 +1,23 @@
-state={
-	id=708
-	name="STATE_708"
+state = {
+	id = 708
+	name = "STATE_708"
 	manpower = 126703
 
-	state_category = small_island
+	state_category = one_island
 
-	history={
-		owner = FRA
-		add_core_of = MAD
+	history = {
+		owner = GER
+
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			13072 = {
 				naval_base = 1
 			}
 		}
 	}
 
-	provinces={
-		13072 
+	provinces = {
+		13072
 	}
 }
+

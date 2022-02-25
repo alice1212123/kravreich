@@ -1,11 +1,11 @@
-state={
-	id=727
-	name="STATE_727"
-	manpower=5367
-	state_category = small_island
+state = {
+	id = 727
+	name = "STATE_727"
+	manpower = 5367
+	state_category = zero_island
 
-	history={
-		owner = HAW
+	history = {
+		owner = USA
 		buildings = {
 			infrastructure = 1
 			13048 = {
@@ -18,10 +18,11 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = HAW
+		add_core_of = USA
 	}
-	
-	provinces={
-		13048 13049 13053 
+
+	provinces = {
+		13048 13049 13053
 	}
 }
+

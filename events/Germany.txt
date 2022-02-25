@@ -1,2 +1,0 @@
-﻿
-# Delete this once Paradox fixes the replace_path bug

@@ -1,134 +1,111 @@
-﻿capital = 206
-
-set_research_slots = 3
-set_stability = 0.4
-set_war_support = 0.2
-set_convoys = 1
+﻿capital = 206 #Minsk
 
 oob = "BLR_1936"
 
-diplomatic_relation = { country = CAU relation = non_aggression_pact }
-diplomatic_relation = { country = BAL relation = non_aggression_pact }
-diplomatic_relation = { country = UKR relation = non_aggression_pact }
-
-add_opinion_modifier = { target = BAL modifier = great_war_alliance_modifier }
-add_opinion_modifier = { target = UKR modifier = great_war_alliance_modifier }
-add_opinion_modifier = { target = CAU modifier = great_war_alliance_modifier }
-add_opinion_modifier = { target = DDR modifier = great_war_friendship_modifier }
-add_opinion_modifier = { target = FRA modifier = great_war_friendship_modifier }
-add_opinion_modifier = { target = USA modifier = great_war_friendship_modifier }
-add_opinion_modifier = { target = TUR modifier = great_war_friendship_modifier }
-add_opinion_modifier = { target = SOV modifier = great_war_hostility_modifier }
-add_opinion_modifier = { target = POL modifier = great_war_hostility_modifier }
-add_opinion_modifier = { target = HUN modifier = great_war_hostility_modifier }
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1
+	tech_support = 1		
 	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
 	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
+	fighter1 = 1
 	early_bomber = 1
-	fuel_silos = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	mass_assault = 1
+	fleet_in_being = 1
 }
 
-create_import = {
-		resource = steel
-		factories = 2
-		exporter = UKR
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
 }
-
-set_politics = {
-	ruling_party = democratic
-	last_election = "1937.3.5"
-	election_frequency = 48
-	elections_allowed = yes
-}
-
-set_popularities = {
-	democratic = 50
-	fascism = 15
-	communism = 30
-	neutrality = 5
-}
-	
-add_ideas = {
-	constitutional_republic_law
-	private_capital_law
-	free_trade
-	extensive_conscription
-	partial_economic_mobilisation
-	restricted
-	floating_exchange
-	robber_barons
-	deluge_BLR_revolutionary_republic_idea
-}
-
-create_country_leader = {
-	name = "Lev Dovator"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Belarus/lev_dovator.dds"
-	expire = "1965.1.1"
-	ideology = marxist_ideology
-	traits = {
-		#
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
 	}
 }
 
-create_country_leader = {
-	name = "Piotr Miklashevich"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Belarus/belarusian_judge.dds"
-	expire = "1965.1.1"
-	ideology = social_liberalism_ideology
-	traits = {
-		#
-	}
+set_popularities = {	democratic = 15	neutrality = 20	communism = 60	fascism = 5
 }
 
 create_country_leader = {
-	name = "Mikoła Abramčyk"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Belarus/Mikoła_Abramčyk.dds"
-	expire = "1965.1.1"
-	ideology = social_liberalism_ideology
-	traits = {
-		#
-	}
+    name = "Vasil Zacharka"
+    desc = ""
+    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    expire = "1965.1.1"
+    ideology = centrism
+    traits = {
+        #
+    }
 }
 
 create_country_leader = {
-	name = "Raman Skirmut"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Belarus/raman_skirmut.dds"
-	expire = "1965.1.1"
-	ideology = bonapartist_ideology
-	traits = {
-		#
-	}
+    name = "Radasłaŭ Astroŭski"
+    desc = ""
+    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+    expire = "1965.1.1"
+    ideology = fascism_ideology
+    traits = {
+        #
+    }
 }
 
 create_country_leader = {
-	name = "Exarch Paul of Belarus"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Belarus/belarusian_bishop.dds"
-	expire = "1965.1.1"
-	ideology = religious_ideology
-	traits = {
-		#
-	}
+    name = "Panteleimon Ponomarenko"
+    desc = ""
+    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+    expire = "1965.1.1"
+    ideology = stalinism
+    traits = {
+        #
+    }
 }
 
 create_country_leader = {
-	name = "Stanisław Bułak-Bałachowicz"
-	desc = ""
-	picture = "gfx/leaders/European Countries/Belarus/stanislaw_balachowicz.dds"
-	expire = "1965.1.1"
-	ideology = corporatist_ideology
-	traits = {
-		#
-	}
+    name = "Adam Stankievič"
+    desc = ""
+    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+    expire = "1965.1.1"
+    ideology = socialism
+    traits = {
+        #
+    }
 }
+
+
 

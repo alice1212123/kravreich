@@ -1,22 +1,22 @@
-state={
-	id=734
-	name="STATE_734"
+state = {
+	id = 734
+	name = "STATE_734"
 	manpower = 5167
-	state_category = tiny_island
+	state_category = zero_island
 
-	history={
-		owner = AST
+	history = {
+		owner = GEA
+		add_core_of = GEA
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			7390 = {
 				naval_base = 1
 			}
 		}
 	}
 
-	buildings_max_level_factor=1.000
-
-	provinces={
-		7390 
+	provinces = {
+		7390
 	}
 }
+

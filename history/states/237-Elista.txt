@@ -1,25 +1,24 @@
+state = {
+	id = 237
+	name = "STATE_237"
+	manpower = 239620
+	state_category = one
 
-state={
-	id=237
-	name="STATE_237"
-	manpower = 169620
-	
-	state_category = rural
-
-	history={
-		owner = CAU
-		buildings = {
-			infrastructure = 2
-		}
-		add_core_of = SOV
-		add_core_of = TSR
-		add_core_of = CAU
+	history = {
+		owner = DKB
+		add_core_of = DKB
+		add_core_of = RUS
+		add_claim_by = TRM
 		victory_points = {
-			11724 1
+			6794 2 #Elista
+		}
+		buildings = {
+			infrastructure = 1
 		}
 	}
 
-	provinces={
-		481 742 745 759 3413 3439 3475 3597 3746 3774 6463 6791 6794 9426 9594 9720 9739 11566 11724 
+	provinces = {
+		481 742 745 759 3413 3439 3461 3475 3487 3597 3726 3746 3774 6463 6758 6760 6791 6794 9426 9440 9594 9720 9735 9739 11566 11579 11706 11724
 	}
 }
+

@@ -1,33 +1,30 @@
+state = {
+	id = 151
+	name = "STATE_151"
+	manpower = 1610727
+	state_category = six
 
-state={
-	id=151
-	name="STATE_151"
-	manpower = 328711
-	
-	
-	state_category = town
-	
-	resources={
-		aluminium=15
+	resources = {
+		aluminium = 18
 	}
 
-	history={
+	history = {
 		owner = SWI
-		
-		set_variable = {language = 6}
-		
-		victory_points = {
-			9600 1
-		}
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 2
+			663 = {
+				bunker = 2
+			}
+		}
+		victory_points = {
+			663 15
 		}
 		add_core_of = SWI
-		add_core_of = ITA
 	}
 
-	provinces={
-		658   3641 3662 9600   
+	provinces = {
+		658 661 663 3660 3662 11601 11623
 	}
 }
+

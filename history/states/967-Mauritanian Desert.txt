@@ -1,0 +1,20 @@
+state = {
+	id = 967
+	name = "STATE_967"
+	manpower = 40000
+	state_category = wasteland
+	impassable = yes
+
+	history = {
+		owner = NFA
+		add_claim_by = NFA
+		add_core_of = MRT
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		7992
+	}
+}

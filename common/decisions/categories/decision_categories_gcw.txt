@@ -1,9 +1,0 @@
-decision_category_gcw = {
-	icon = GFX_decision_generic_civil_support
-
-        picture = GFX_decision_gcw
-
-	visible = {
-	}
-}
-

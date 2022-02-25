@@ -1,24 +1,21 @@
+state = {
+	id = 472
+	name = "STATE_472"
 
-state={
-	id=472
-	name="STATE_472"
-	
-	state_category=wasteland
+	state_category = wasteland
 	impassable = yes
 
-	history={
-		owner = BCA
+	history = {
+		owner = CAN
 		buildings = {
-			infrastructure = 0
-
+			infrastructure = 1
 		}
-		add_core_of = BCA
-
+		add_core_of = CAN
 	}
 
-	provinces={
-		2407 2976 3800 4272 4695 6779 7348 7696 7766 7830 7858 7901 8653 10527 10703 12534 13075 13167 13168 13185 13187 13189 13192 
+	provinces = {
+		2976 3691 4272 8653 8962 10527 10721 13167 13188 13189 13190 13191 13192
 	}
-	manpower=127681
-	buildings_max_level_factor=1.000
+	manpower = 10700
 }
+

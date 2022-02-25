@@ -1,23 +1,23 @@
+state = {
+	id = 549
+	name = "STATE_549"
+	manpower = 2462862
+	state_category = one
 
-state={
-	id=549
-	name="STATE_549"
-	manpower = 3694293
-	
-	state_category = rural
-	
-	
-	history={
-		owner = FRA
-		buildings = {
-			infrastructure = 2
-		}
-
-		add_core_of = SUD
+	history = {
+		owner = EGY
 		add_core_of = EGY
+		add_core_of = SUD
+		victory_points = {
+			10764 1 #Waw
+		}
+		buildings = {
+			infrastructure = 1
+		}
 	}
 
-	provinces={
-		1914 1953 1960 2016 2096 4033 4918 5060 7996 8052 8084 10739 10764 10795 10827 10851 10857 10859 10877 10908 12744 12800 12887
+	provinces = {
+		1080 1953 2096 4033 4910 7156 7996 10097 10764 10857 10859 10877 10908 12800 12889
 	}
 }
+

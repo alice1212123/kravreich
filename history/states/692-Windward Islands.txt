@@ -1,22 +1,23 @@
-state={
-	id=692
-	name="STATE_692"
-	manpower=76485
-	
-	state_category = small_island
+state = {
+	id = 692
+	name = "STATE_692"
+	manpower = 365120
+	state_category = one_island
+	local_supplies = 4.0
 
-	history={
-		owner = USA
-		add_core_of = CBN
+	history = {
+		owner = WIF
+		add_core_of = WIF
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			11350 = {
 				naval_base = 1
 			}
 		}
 	}
-	
-	provinces={
-		379 11106 11350 13009 
+
+	provinces = {
+		379 11106 11350 13009
 	}
 }
+

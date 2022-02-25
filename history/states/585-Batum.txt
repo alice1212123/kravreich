@@ -1,0 +1,33 @@
+state = {
+	id = 585
+	name = "STATE_585"
+	manpower = 358620
+	state_category = one
+
+	history = {
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = GEO
+		victory_points = {
+			3653 2
+		}
+		buildings = {
+			infrastructure = 1
+			3653 = {
+				naval_base = 3
+				bunker = 2
+			}
+			7454 = {
+				bunker = 2
+			}
+			10403 = {
+				bunker = 1
+			}
+		}
+	}
+
+	provinces = {
+		3653 7454 10403
+	}
+}
+

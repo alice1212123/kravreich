@@ -1,30 +1,28 @@
+state = {
+	id = 448
+	name = "STATE_448"
+	manpower = 1206000
+	state_category = four
 
-state={
-	id=448
-	name="STATE_448"
-
-	history={
-		owner = FRA
-		add_core_of = LBA
+	history = {
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = TRP
 		victory_points = {
-			1149 10 
+			1149 5
 		}
 		buildings = {
-			infrastructure = 3
-			air_base = 6
+			infrastructure = 1
+			air_base = 1
+			industrial_complex = 1
 			1149 = {
-				naval_base = 5
-
+				naval_base = 3
 			}
-
 		}
-
 	}
 
-	provinces={
-		1149 1189 4194 7066 7209 9980 12039 
+	provinces = {
+		1041 1057 1118 1149 1174 1189 4047 4117 4176 4194 7066 7136 7154 7194 7209 9980 10037 10046 10067 10117 11940 12009 12039 12088 13073
 	}
-	manpower=469136
-	buildings_max_level_factor=1.000
-	state_category=town
 }
+

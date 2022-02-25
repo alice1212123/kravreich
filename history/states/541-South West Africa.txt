@@ -1,32 +1,35 @@
+state = {
+	id = 541
+	name = "STATE_541"
+	manpower = 204200
 
-state={
-	id=541
-	name="STATE_541"
-	manpower = 462000
-	
-	state_category = pastoral
-	resources={
-		chromium=8
-		tungsten=2
-	}
-	history={
-		owner = USA
-		add_core_of = SAF
+	state_category = two
+
+	history = {
+		owner = MAF
+		add_core_of = MAF
+		add_core_of = NMB
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
+			arms_factory = 1
+			air_base = 1
 			2207 = {
+				naval_base = 3
+			}
+			5154 = {
 				naval_base = 1
 			}
 		}
 		victory_points = {
-			4879 2
+			4879 3
 		}
 		victory_points = {
-			2207 1 
+			2207 1
 		}
 	}
 
-	provinces={
-		2207 2229 4879 5154 5189 7605 7770 8136 10957 10963 10978 12519 12921 13217
+	provinces = {
+		2207 2229 4879 5154 5189 7605 7770 10957 10963
 	}
 }
+
